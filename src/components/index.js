@@ -3,16 +3,16 @@ import Navbar from './navbar';
 import Header from './header';
 import Particles from "react-tsparticles";
 import { makeStyles } from '@material-ui/core/styles';
-import reactImg from '../reactImg.png';
+import awsImg from '../awsImg.png';
 import codeImg from '../codeImg.png';
 import css3Img from '../css3Img.png';
+import gitImg from '../gitImg.png';
 import html5Img from '../html5Img.png';
 import jsImg from '../jsImg.png';
-import nodejsImg from '../nodejsImg.png';
-import gitImg from '../gitImg.png';
 import nginxImg from '../nginxImg.png';
+import nodejsImg from '../nodejsImg.png';
 import photoshopImg from '../photoshopImg.png';
-import awsImg from '../awsImg.png';
+import reactImg from '../reactImg.png';
 
 const useStyles = makeStyles({
   particlesCanva: {
@@ -25,6 +25,7 @@ const useStyles = makeStyles({
 const Home = () => {
 
   const classes = useStyles();
+
     return (
       <div>
         <Navbar />
@@ -106,27 +107,30 @@ const Home = () => {
                 }
               },
               shape: {
-                type: [
-                  "image"
-                ],
+                type: "image",
                   image: [
                     {
+                      src: `${awsImg}`,
+                      width: 120,
+                      height: 80
+                    },
+                    {
                       src: `${codeImg}`
-                    },
-                    {
-                      src: `${reactImg}`
-                    },
-                    {
-                      src: `${nodejsImg}`
-                    },
-                    {
-                      src: `${jsImg}`
                     },
                     {
                       src: `${css3Img}`,
                     },
                     {
+                      src: `${gitImg}`
+                    },
+                    {
                       src: `${html5Img}`
+                    },
+                    {
+                      src: `${jsImg}`
+                    },
+                    {
+                      src: `${nodejsImg}`
                     },
                     {
                       src: `${nginxImg}`
@@ -135,12 +139,7 @@ const Home = () => {
                       src: `${photoshopImg}`
                     },
                     {
-                      src: `${awsImg}`,
-                      width: 120,
-                      height: 80
-                    },
-                    {
-                      src: `${gitImg}`
+                      src: `${reactImg}`
                     }
                   ],
                 polygon: {
@@ -153,9 +152,7 @@ const Home = () => {
                   speed: 10,
                   size_min: 40,
                   sync: false,
-                  // minimumValue: 0.1
                 },
-                // random: true,
                 value: 30
               },
               opacity: {
@@ -170,7 +167,6 @@ const Home = () => {
               }
             }
           }}
-
         />
       </div>
     )
