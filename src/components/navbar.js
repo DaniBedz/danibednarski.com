@@ -116,7 +116,7 @@ const Navbar = () => {
             <IconButton onClick={toggleSlider("right", true)}>
               <ArrowBack style={{ color: "white", background: "black", borderRadius: "50%", marginTop: "-0.15em" }} />
             </IconButton>
-            <Typography variant="h5" style={{ stroke: "3px black" }, { color: "white" }}>Menu</Typography>
+            <Typography variant="h5" style={{ stroke: "3px black", color: "white" }}>Menu</Typography>
             <MobileRightMenuSlider
               anchor="right"
               open={state.right}
