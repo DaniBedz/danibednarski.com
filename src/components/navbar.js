@@ -116,7 +116,7 @@ const Navbar = () => {
             <IconButton onClick={toggleSlider("right", true)}>
               <Dehaze style={{ color: "white", background: "black", borderRadius: "50%", marginTop: "-0.15em", width: "30px", height: "30px", padding: "3px" }} />
             </IconButton>
-            <Typography variant="h5" style={{ stroke: "3px black", color: "white" }}>Menu</Typography>
+            <Typography onClick={toggleSlider("right", true)} variant="h5" style={{ stroke: "3px black", color: "white", cursor: "pointer" }}>Menu</Typography>
             <MobileRightMenuSlider
               anchor="right"
               open={state.right}
