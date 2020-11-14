@@ -15,7 +15,7 @@ import {
 } from "@material-ui/core";
 
 import {
-  ArrowBack,
+  Dehaze,
   AssignmentInd,
   Home,
   Apps,
@@ -114,7 +114,7 @@ const Navbar = () => {
         <AppBar position="static" style={{ background: "#034694" }}>
           <Toolbar>
             <IconButton onClick={toggleSlider("right", true)}>
-              <ArrowBack style={{ color: "white", background: "black", borderRadius: "50%", marginTop: "-0.15em" }} />
+              <Dehaze style={{ color: "white", background: "black", borderRadius: "50%", marginTop: "-0.15em", width: "30px", height: "30px", padding: "3px" }} />
             </IconButton>
             <Typography variant="h5" style={{ stroke: "3px black", color: "white" }}>Menu</Typography>
             <MobileRightMenuSlider
