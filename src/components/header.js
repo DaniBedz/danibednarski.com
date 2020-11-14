@@ -25,12 +25,13 @@ const useStyles = makeStyles(theme => ({
     "-webkit-text-stroke": "1px black",
     background: "#000",
     borderRadius: "25px",
-    borderWidth: "1px",
+    borderWidth: "0.5px",
     borderColor: "white",
     borderStyle: "solid",
     fontSize: "5vw",
-    width: "45vw",
-    marginLeft: "-15vw"
+    width: "40vw",
+    marginLeft: "-13vw",
+    paddingTop: "0.5vw"
   },
 
    subtitle: {
@@ -38,13 +39,14 @@ const useStyles = makeStyles(theme => ({
      marginBottom: "1rem",
      background: "#000",
      borderRadius: "25px",
-     borderWidth: "1px",
+     borderWidth: "0.5px",
      borderColor: "white",
      borderStyle: "solid",
      marginTop: "-10px",
      fontSize: "3.5vw",
      width: "40vw",
-     marginLeft: "-13vw"
+     marginLeft: "-13vw",
+     paddingTop: "0.5vw"
     },
     
     typedContainer: {

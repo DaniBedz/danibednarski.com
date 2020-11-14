@@ -41,6 +41,9 @@ const useStyles = makeStyles(theme => ({
   },
   listItem: {
     color: "white"
+  },
+  listIcon: {
+    color: "white",
   }
 }));
 
@@ -92,7 +95,7 @@ const Navbar = () => {
           {menuItems.map((lsItem, key) => (
 
             <ListItem button key={key} component={Link} to={lsItem.listPath}>
-            <ListItemIcon className={classes.listItem}>
+            <ListItemIcon className={classes.listIcon}>
               {lsItem.listIcon}
             </ListItemIcon>
               <ListItemText
