@@ -30,7 +30,7 @@ import MobileRightMenuSlider from "@material-ui/core/Drawer";
 const useStyles = makeStyles(theme => ({
   menuSliderContainer: {
     width: 250,
-    background: "black",
+    background: "#034694",
     height: "100%"
   },
   avatar: {
@@ -40,7 +40,7 @@ const useStyles = makeStyles(theme => ({
     height: theme.spacing(13)
   },
   listItem: {
-    color: "#57877D"
+    color: "white"
   }
 }));
 
@@ -108,12 +108,12 @@ const Navbar = () => {
   return (
     <>
       <Box component="nav">
-        <AppBar position="static" style={{ background: "#57877D" }}>
+        <AppBar position="static" style={{ background: "#034694" }}>
           <Toolbar>
             <IconButton onClick={toggleSlider("right", true)}>
-              <ArrowBack style={{ color: "#57877D", background: "black", borderRadius: "50%" }} />
+              <ArrowBack style={{ color: "white", background: "black", borderRadius: "50%", marginTop: "-0.15em" }} />
             </IconButton>
-            <Typography variant="h5" style={{ color: "black" }}>Menu</Typography>
+            <Typography variant="h5" style={{ stroke: "3px black" }, { color: "white" }}>Menu</Typography>
             <MobileRightMenuSlider
               anchor="right"
               open={state.right}
