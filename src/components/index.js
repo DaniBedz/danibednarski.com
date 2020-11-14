@@ -3,16 +3,16 @@ import Navbar from './navbar';
 import Header from './header';
 import Particles from "react-tsparticles";
 import { makeStyles } from '@material-ui/core/styles';
-import reactImg from '../reactImg.svg';
-import codeImg from '../codeImg.svg';
-import css3Img from '../css3Img.svg';
-import html5Img from '../html5Img.svg';
-import jsImg from '../jsImg.svg';
-import nodejsImg from '../nodejsImg.svg';
-import gitImg from '../gitImg.svg';
-import nginxImg from '../nginxImg.svg';
-import photoshopImg from '../photoshopImg.svg';
-import awsImg from '../awsImg.svg';
+import reactImg from '../reactImg.png';
+import codeImg from '../codeImg.png';
+import css3Img from '../css3Img.png';
+import html5Img from '../html5Img.png';
+import jsImg from '../jsImg.png';
+import nodejsImg from '../nodejsImg.png';
+import gitImg from '../gitImg.png';
+import nginxImg from '../nginxImg.png';
+import photoshopImg from '../photoshopImg.png';
+import awsImg from '../awsImg.png';
 
 const useStyles = makeStyles({
   particlesCanva: {
@@ -24,156 +24,156 @@ const useStyles = makeStyles({
 
 const Home = () => {
 
-  const classes = useStyles()
-
-  return (
-    <div>
-      <Navbar />
-      <Particles
-        canvasClassName={classes.particlesCanva}
-        options = {{
-        fpsLimit: 60,
-        particles: {
-          number: {
-            value: 40,
-            density: {
-              enable: true,
-              value_area: 800
-            }
-          },
-          color: {
-            value: ["#2EB67D", "#ECB22E", "#E01E5B", "#36C5F0"]
-          },
-          shape: {
-            type: ["image"],
-            stroke: {
-              width: 0,
-              color: "#fff"
-            },
-            polygon: {
-              nb_sides: 5
-            },
-            image: [{
-                    "src": `${codeImg}`
-                  },
-                  {
-                    "src": `${reactImg}`
-                  },
-                  {
-                    "src": `${nodejsImg}`
-                  },
-                  {
-                    "src": `${jsImg}`
-                  },
-                  {
-                    "src": `${css3Img}`
-                  },
-                  {
-                    "src": `${html5Img}`
-                  },
-                  {
-                    "src": `${nginxImg}`
-                  },
-                  {
-                    "src": `${photoshopImg}`
-                  },
-                  {
-                    "src": `${awsImg}`,
-                    height: 40,
-                    width: 80
-                  },
-                  {
-                    "src": `${gitImg}`
-                  }]
-          },
-          opacity: {
-            value: 1,
-            random: false,
-            anim: {
-              enable: false,
-              speed: 1,
-              opacity_min: 0.1,
-              sync: false
-            }
-          },
-          size: {
-            value: 20,
-            random: false,
-            anim: {
-              enable: false,
-              speed: 10,
-              size_min: 10,
-              sync: false
-            }
-          },
-          line_linked: {
-            enable: true,
-            distance: 150,
-            color: "#808080",
-            opacity: 1,
-            width: 2
-          },
-          move: {
-            enable: true,
-            speed: 5,
-            direction: "none",
-            random: false,
-            straight: false,
-            out_mode: "out",
-            bounce: true,
-            attract: {
-              enable: false,
-              rotateX: 600,
-              rotateY: 1200
-            }
-          }
-        },
-        interactivity: {
-          detect_on: "canvas",
-          events: {
-            onhover: {
-              enable: true,
-              mode: "grab"
-            },
-            onclick: {
-              enable: true,
-              mode: "push"
-            },
-            resize: true
-          },
-          modes: {
-            grab: {
-              distance: 140,
-              line_linked: {
-                opacity: 1
+  const classes = useStyles();
+    return (
+      <div>
+        <Navbar />
+        <Header />
+        <Particles
+          canvasClassName={classes.particlesCanva}
+          params={{
+            retina_detect: true,
+            fpsLimit: 60,
+            interactivity: {
+              detectsOn: "canvas",
+              events: {
+                onHover: {
+                  enable: true,
+                  mode: "grab"
+                },
+                onClick: {
+                  enable: true,
+                  mode: "push"
+                },
+                resize: true
+              },
+              modes: {
+                grab: {
+                  distance: 140,
+                  line_linked: {
+                    opacity: 1
+                  }
+                },
+                bubble: {
+                  distance: 400,
+                  size: 40,
+                  duration: 2,
+                  opacity: 8,
+                  speed: 3
+                },
+                repulse: {
+                  distance: 200,
+                  duration: 0.4
+                },
+                push: {
+                  particles_nb: 2
+                },
+                remove: {
+                  particles_nb: 2
+                }
               }
             },
-            bubble: {
-              distance: 400,
-              size: 40,
-              duration: 2,
-              opacity: 8,
-              speed: 3
-            },
-            repulse: {
-              distance: 200,
-              duration: 0.4
-            },
-            push: {
-              particles_nb: 2
-            },
-            remove: {
-              particles_nb: 2
+            particles: {
+              color: {
+                value: "#fff000",
+              },
+              line_linked: {
+                enable: true,
+                distance: 150,
+                color: "#808080",
+                opacity: 1,
+                width: 2
+              },
+              move: {
+                attract: {
+                  enable: true,
+                  rotateX: 600,
+                  rotateY: 1200
+                },
+                enable: true,
+                speed: 5,
+                direction: "none",
+                random: true,
+                straight: false,
+                out_mode: "out",
+                bounce: true
+              },
+              number: {
+                value: 30,
+                density: {
+                  enable: true,
+                  value_area: 1000
+                }
+              },
+              shape: {
+                type: [
+                  "image"
+                ],
+                  image: [
+                    {
+                      src: `${codeImg}`
+                    },
+                    {
+                      src: `${reactImg}`
+                    },
+                    {
+                      src: `${nodejsImg}`
+                    },
+                    {
+                      src: `${jsImg}`
+                    },
+                    {
+                      src: `${css3Img}`,
+                    },
+                    {
+                      src: `${html5Img}`
+                    },
+                    {
+                      src: `${nginxImg}`
+                    },
+                    {
+                      src: `${photoshopImg}`
+                    },
+                    {
+                      src: `${awsImg}`,
+                      height: 40,
+                      width: 80
+                    },
+                    {
+                      src: `${gitImg}`
+                    }
+                  ],
+                polygon: {
+                  nb_sides: 5
+                }
+              },
+              size: {
+                animation: {
+                  enable: false,
+                  speed: 10,
+                  size_min: 10,
+                  sync: false,
+                  minimumValue: 0.1
+                },
+                random: false,
+                value: 30
+              },
+              opacity: {
+                value: 1,
+                random: false,
+                animation: {
+                  enable: true,
+                  speed: 1,
+                  opacity_min: 0.5,
+                  sync: false
+                }
+              }
             }
-          }
-        },
-        retina_detect: true
-      }}
+          }}
 
-      />
-      <Header />
-    </div>
-  )
+        />
+      </div>
+    )
 }
 
 export default Home

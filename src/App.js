@@ -12,7 +12,7 @@ function App() {
        <Route path="/resume" component={ Resume }/>
 
     </>
-  );
+  )
 }
 
 export default App;
