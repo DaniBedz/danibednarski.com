@@ -79,10 +79,10 @@ const Home = () => {
               },
               line_linked: {
                 enable: true,
-                distance: 150,
+                distance: 200,
                 color: "#808080",
                 opacity: 1,
-                width: 2
+                width: 3
               },
               move: {
                 attract: {
@@ -94,7 +94,7 @@ const Home = () => {
                 speed: 5,
                 direction: "none",
                 random: true,
-                straight: false,
+                straight: true,
                 out_mode: "out",
                 bounce: true
               },
@@ -136,8 +136,8 @@ const Home = () => {
                     },
                     {
                       src: `${awsImg}`,
-                      height: 40,
-                      width: 80
+                      width: 120,
+                      height: 80
                     },
                     {
                       src: `${gitImg}`
@@ -149,13 +149,13 @@ const Home = () => {
               },
               size: {
                 animation: {
-                  enable: false,
+                  enable: true,
                   speed: 10,
-                  size_min: 10,
+                  size_min: 40,
                   sync: false,
-                  minimumValue: 0.1
+                  // minimumValue: 0.1
                 },
-                random: false,
+                // random: true,
                 value: 30
               },
               opacity: {
@@ -164,7 +164,7 @@ const Home = () => {
                 animation: {
                   enable: true,
                   speed: 1,
-                  opacity_min: 0.5,
+                  opacity_min: 0.4,
                   sync: false
                 }
               }
