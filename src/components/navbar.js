@@ -44,7 +44,15 @@ const useStyles = makeStyles(theme => ({
   },
   listIcon: {
     color: "white",
-  }
+  },
+  noSelect: {
+    webkitTouchCallout: "none", /* iOS Safari */
+    webkitUserSelect: "none", /* Safari */
+    khtmlUserSelect: "none", /* Konqueror HTML */
+    mozUserSelect: "none", /* Old versions of Firefox */
+    msUserSelect: "none", /* Internet Explorer/Edge */
+    userSelect: "none", /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
 }));
 
 const menuItems = [
@@ -89,12 +97,19 @@ const Navbar = () => {
       component="div"
       onClick={toggleSlider(slider, false)}  
     >
-        <Avatar className={classes.avatar} src={avatar} alt="Dani Bednarski" />
+      <Avatar
+        className={classes.avatar}
+        src={avatar}
+        alt="Dani Bednarski"
+      />
         <Divider />
         <List>
           {menuItems.map((lsItem, key) => (
 
-            <ListItem button key={key} component={Link} to={lsItem.listPath}>
+            <ListItem
+              button key={key}
+              component={Link}
+              to={lsItem.listPath}>
             <ListItemIcon className={classes.listIcon}>
               {lsItem.listIcon}
             </ListItemIcon>
@@ -114,9 +129,22 @@ const Navbar = () => {
         <AppBar position="static" style={{ background: "#034694" }}>
           <Toolbar>
             <IconButton onClick={toggleSlider("right", true)}>
-              <Dehaze style={{ color: "white", background: "black", borderRadius: "50%", marginTop: "-0.15em", width: "30px", height: "30px", padding: "3px" }} />
+              <Dehaze
+                style={{
+                  color: "white",
+                  background: "black",
+                  borderRadius: "50%",
+                  marginTop: "-0.15em",
+                  width: "30px",
+                  height: "30px",
+                  padding: "3px"
+                }} />
             </IconButton>
-            <Typography onClick={toggleSlider("right", true)} variant="h5" style={{ stroke: "3px black", color: "white", cursor: "pointer" }}>Menu</Typography>
+            <Typography
+              onClick={toggleSlider("right", true)}
+              variant="h5" className={classes.noSelect}
+              style={{ stroke: "3px black", color: "white", cursor: "pointer" }}
+            >Menu</Typography>
             <MobileRightMenuSlider
               anchor="right"
               open={state.right}

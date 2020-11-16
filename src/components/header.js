@@ -8,7 +8,7 @@ import {
 import avatar from "../images/avatar.png";
 import Typed from "react-typed";
 import { makeStyles } from "@material-ui/core/styles";
-import 'react-typed/dist/animatedCursor.css';
+
 
 
 // CSS Styles
@@ -57,7 +57,15 @@ const useStyles = makeStyles(theme => ({
       width: "15vw",
       textAlign: "center",
       zIndex: 1
-   }
+  },
+  noSelect: {
+    webkitTouchCallout: "none", /* iOS Safari */
+    webkitUserSelect: "none", /* Safari */
+    khtmlUserSelect: "none", /* Konqueror HTML */
+    mozUserSelect: "none", /* Old versions of Firefox */
+    msUserSelect: "none", /* Internet Explorer/Edge */
+    userSelect: "none", /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
 }));
 
 
@@ -69,11 +77,11 @@ const Header = () => {
       <Grid container justify="center">
         <Avatar className={classes.avatar} src={avatar} alt="Dani Bednarski" />
       </Grid>
-      <Typography className={classes.title} variant="h3">
+      <Typography className={`${classes.title} ${classes.noSelect}`} variant="h3">
         Dani Bednarski
       </Typography>
       <br/>
-      <Typography className={classes.subtitle} variant="h5">
+      <Typography className={`${classes.subtitle} ${classes.noSelect}`} variant="h5">
         <Typed
           strings={["Junior Web Developer", "Creator of Things", "Problem Solver", "Always Learning"]}
           typeSpeed={40}
