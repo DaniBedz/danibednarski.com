@@ -79,7 +79,7 @@ const useStyles = makeStyles(theme => ({
     background: "#034694",
     color: "white",
     lineHeight: 1,
-    padding: "0.5rem 0 1rem",
+    padding: "1.2rem 0 1rem",
     "&:before": {
       display: "none"
     },
@@ -96,7 +96,7 @@ const useStyles = makeStyles(theme => ({
     }
   },
   heading: {
-    color: "#034694",
+    color: "white",
     padding: "3rem 0",
     textTransform: "uppercase"
   },
