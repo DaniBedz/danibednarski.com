@@ -22,7 +22,7 @@ import {
   ContactMail
 } from "@material-ui/icons";
 
-import avatar from "../avatar.png"
+import avatar from "../images/avatar.png"
 import { makeStyles } from '@material-ui/core/styles';
 import MobileRightMenuSlider from "@material-ui/core/Drawer";
 

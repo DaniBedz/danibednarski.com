@@ -5,7 +5,7 @@ import {
   Grid,
   Box
 } from "@material-ui/core";
-import avatar from "../avatar.png";
+import avatar from "../images/avatar.png";
 import Typed from "react-typed";
 import { makeStyles } from "@material-ui/core/styles";
 import 'react-typed/dist/animatedCursor.css';

@@ -3,16 +3,16 @@ import Navbar from './navbar';
 import Header from './header';
 import Particles from "react-tsparticles";
 import { makeStyles } from '@material-ui/core/styles';
-import awsImg from '../awsImg.png';
-import codeImg from '../codeImg.png';
-import css3Img from '../css3Img.png';
-import gitImg from '../gitImg.png';
-import html5Img from '../html5Img.png';
-import jsImg from '../jsImg.png';
-import nginxImg from '../nginxImg.png';
-import nodejsImg from '../nodejsImg.png';
-import photoshopImg from '../photoshopImg.png';
-import reactImg from '../reactImg.png';
+import awsImg from '../images/awsImg.png';
+import codeImg from '../images/codeImg.png';
+import css3Img from '../images/css3Img.png';
+import gitImg from '../images/gitImg.png';
+import html5Img from '../images/html5Img.png';
+import jsImg from '../images/jsImg.png';
+import nginxImg from '../images/nginxImg.png';
+import nodejsImg from '../images/nodejsImg.png';
+import photoshopImg from '../images/photoshopImg.png';
+import reactImg from '../images/reactImg.png';
 
 const useStyles = makeStyles({
   particlesCanva: {
