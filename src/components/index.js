@@ -118,7 +118,7 @@ const Home = () => {
                       src: `${codeImg}`
                     },
                     {
-                      src: `${css3Img}`,
+                      src: `${css3Img}`
                     },
                     {
                       src: `${gitImg}`
@@ -151,7 +151,7 @@ const Home = () => {
                   enable: true,
                   speed: 10,
                   size_min: 40,
-                  sync: false,
+                  sync: false
                 },
                 value: 30
               },
