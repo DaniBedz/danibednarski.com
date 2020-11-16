@@ -2,10 +2,10 @@ import React from 'react';
 import { makeStyles } from "@material-ui/core/styles";
 import { Typography, Box } from "@material-ui/core";
 import Navbar from "./navbar";
-import squarespaceImg from "../squarespaceImg.png";
-import acuityImg from "../acuityImg.png";
-import kineticImg from "../kineticImg.png";
-import sagovImg from "../sagovImg.png";
+import squarespaceImg from "../images/squarespaceImg.png";
+import acuityImg from "../images/acuityImg.png";
+import kineticImg from "../images/kineticImg.png";
+import sagovImg from "../images/sagovImg.png";
 
 const useStyles = makeStyles(theme => ({
   mainContainer: {
