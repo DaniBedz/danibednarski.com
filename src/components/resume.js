@@ -8,9 +8,6 @@ import kineticImg from "../images/kineticImg.png";
 import sagovImg from "../images/sagovImg.png";
 
 const useStyles = makeStyles(theme => ({
-  mainContainer: {
-    background: "black"
-  },
   timeLine: {
     position: "relative",
     padding: "1rem",
@@ -37,7 +34,9 @@ const useStyles = makeStyles(theme => ({
     }
   },
   timeLineItem: {
+    backgroundColor: "black",
     padding: "1rem",
+    borderRadius: "25px",
     borderBottom: "2px solid #034694",
     position: "relative",
     margin: "1rem 3rem 1rem 1rem",
@@ -97,8 +96,24 @@ const useStyles = makeStyles(theme => ({
   },
   heading: {
     color: "white",
-    padding: "3rem 0",
-    textTransform: "uppercase"
+    textTransform: "uppercase",
+    backgroundColor: "black",
+    borderRadius: "25px",
+    borderBottom: "2px solid #034694",
+    textAlign: "center",
+    maxWidth: "23rem",
+    margin: "1rem 1rem 0 auto",
+    fontSize: "1.4rem",
+    lineHeight: 1,
+    padding: "1.2rem 0 1rem",
+    "&:before": {
+      display: "none"
+    },
+    [theme.breakpoints.up("md")]: {
+      textAlign: "center",
+      margin: "0 auto",
+      marginTop:"1rem"
+    }
   },
   subHeading: {
     color: "white",
