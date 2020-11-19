@@ -1,6 +1,5 @@
 {
   "extends": [
     "wesbos"
-  ],
-  "arrow-parens": "as-needed"
+  ]
 }

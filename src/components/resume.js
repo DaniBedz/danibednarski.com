@@ -7,7 +7,7 @@ import acuityImg from '../images/acuityImg.png';
 import kineticImg from '../images/kineticImg.png';
 import sagovImg from '../images/sagovImg.png';
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   timeLine: {
     position: 'relative',
     padding: '1rem',

@@ -27,7 +27,7 @@ import MobileRightMenuSlider from '@material-ui/core/Drawer';
 import avatar from '../images/avatar.png';
 
 // CSS STYLES
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   menuSliderContainer: {
     width: 250,
     background: '#034694',
@@ -89,7 +89,7 @@ const Navbar = () => {
   };
   const classes = useStyles();
 
-  const sideList = slider => (
+  const sideList = (slider) => (
     <Box
       className={classes.menuSliderContainer}
       component="div"
