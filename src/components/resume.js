@@ -1,7 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Typography, Box } from '@material-ui/core';
-import Navbar from './Navbar.js';
+import Navbar from './navbar';
 import squarespaceImg from '../images/squarespaceImg.png';
 import acuityImg from '../images/acuityImg.png';
 import kineticImg from '../images/kineticImg.png';

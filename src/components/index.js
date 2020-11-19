@@ -1,8 +1,8 @@
 import React from 'react';
 import Particles from 'react-tsparticles';
 import { makeStyles } from '@material-ui/core/styles';
-import Navbar from './Navbar.js';
-import Header from './Header.js';
+import Navbar from './navbar';
+import Header from './header';
 import awsImg from '../images/awsImg.png';
 import codeImg from '../images/codeImg.png';
 import css3Img from '../images/css3Img.png';
