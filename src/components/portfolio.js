@@ -11,7 +11,7 @@ import {
   Button,
   Typography,
 } from '@material-ui/core';
-import Navbar from './Navbar';
+import Navbar from './Navbar.js';
 import project1 from '../images/project1.png';
 import project2 from '../images/project2.png';
 import project3 from '../images/project3.png';
