@@ -13,6 +13,11 @@ import nginxImg from '../images/nginxImg.png';
 import nodejsImg from '../images/nodejsImg.png';
 import photoshopImg from '../images/photoshopImg.png';
 import reactImg from '../images/reactImg.png';
+import bootstrapImg from '../images/bootstrapImg.png';
+import figmaImg from '../images/figmaImg.png';
+import cypressImg from '../images/cypressImg.png';
+import postmanImg from '../images/postmanImg.png';
+import mysqlImg from '../images/mysqlImg.png';
 
 const useStyles = makeStyles({
   particlesCanva: {
@@ -139,6 +144,21 @@ const Home = () => {
                 },
                 {
                   src: `${reactImg}`,
+                },
+                {
+                  src: `${bootstrapImg}`,
+                },
+                {
+                  src: `${figmaImg}`,
+                },
+                {
+                  src: `${cypressImg}`,
+                },
+                {
+                  src: `${postmanImg}`,
+                },
+                {
+                  src: `${mysqlImg}`,
                 },
               ],
               polygon: {
