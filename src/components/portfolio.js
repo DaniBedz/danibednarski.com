@@ -19,14 +19,20 @@ import project2 from '../images/project2.png';
 const useStyles = makeStyles({
   mainContainer: {
     height: '100%',
+    fontFamily: 'Rubik',
   },
   cardContainer: {
     maxWidth: 500,
     margin: '5rem auto',
     borderRadius: '15px',
+    fontFamily: 'Rubik',
   },
   title: {
     textAlign: 'center',
+    fontFamily: 'Rubik',
+  },
+  rubik: {
+    fontFamily: 'Rubik',
   },
 });
 
@@ -50,7 +56,12 @@ const Portfolio = () => {
                   <a href="https://bedz.me/">bedz.me</a>
                   <br />A Simple Link Shortener Service
                 </Typography>
-                <Typography variant="body2" color="textSecondary" component="p">
+                <Typography
+                  variant="body2"
+                  color="textSecondary"
+                  component="p"
+                  className={classes.rubik}
+                >
                   I decided to make a link shortener service as I have always
                   wondered how they worked and owned a short domain from a
                   previous project.
@@ -81,10 +92,20 @@ const Portfolio = () => {
                 </Typography>
               </CardContent>
               <CardActions>
-                <button type="button" size="small" color="primary">
+                <button
+                  type="button"
+                  className={classes.rubik}
+                  size="small"
+                  color="primary"
+                >
                   GitHub
                 </button>
-                <button type="button" size="small" color="primary">
+                <button
+                  type="button"
+                  className={classes.rubik}
+                  size="small"
+                  color="primary"
+                >
                   Live Demo
                 </button>
               </CardActions>
@@ -105,7 +126,12 @@ const Portfolio = () => {
                   <a href="https://xrat.es/">xrat.es</a>
                   <br />A Simple Currency Converter
                 </Typography>
-                <Typography variant="body2" color="textSecondary" component="p">
+                <Typography
+                  variant="body2"
+                  color="textSecondary"
+                  component="p"
+                  className={classes.rubik}
+                >
                   I wanted to create a simple, but useful React App that used an
                   external API.
                   <br />
@@ -138,10 +164,20 @@ const Portfolio = () => {
                 </Typography>
               </CardContent>
               <CardActions>
-                <button type="button" size="small" color="primary">
+                <button
+                  type="button"
+                  className={classes.rubik}
+                  size="small"
+                  color="primary"
+                >
                   GitHub
                 </button>
-                <button type="button" size="small" color="primary">
+                <button
+                  type="button"
+                  className={classes.rubik}
+                  size="small"
+                  color="primary"
+                >
                   Live Demo
                 </button>
               </CardActions>

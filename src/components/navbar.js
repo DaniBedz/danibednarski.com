@@ -32,6 +32,7 @@ const useStyles = makeStyles((theme) => ({
     width: 250,
     background: '#034694',
     height: '100%',
+    fontFamily: 'Rubik',
   },
   avatar: {
     display: 'block',
@@ -127,6 +128,7 @@ const Navbar = () => {
                   width: '30px',
                   height: '30px',
                   padding: '3px',
+                  fontFamily: 'Rubik',
                 }}
               />
             </IconButton>

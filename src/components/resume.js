@@ -71,8 +71,9 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   timeLineYear: {
+    fontFamily: 'Rubik',
     textAlign: 'center',
-    maxWidth: '9.375rem',
+    maxWidth: '7.375rem',
     margin: '0 3rem 0 auto',
     fontSize: '1.8rem',
     background: '#034694',
@@ -95,13 +96,15 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   heading: {
+    fontFamily: 'Rubik',
+    fontWeight: 'bolder',
     color: 'white',
     textTransform: 'uppercase',
     backgroundColor: 'black',
     borderRadius: '25px',
     borderBottom: '2px solid #034694',
     textAlign: 'center',
-    maxWidth: '23rem',
+    maxWidth: '20rem',
     margin: '1rem 1rem 0 auto',
     fontSize: '1.4rem',
     lineHeight: 1,
@@ -116,9 +119,14 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   subHeading: {
+    fontFamily: 'Rubik',
+    fontWeight: 'bolder',
     color: 'white',
     padding: '0',
     textTransform: 'uppercase',
+  },
+  mainText: {
+    fontFamily: 'Rubik',
   },
 }));
 
@@ -129,7 +137,7 @@ const Resume = () => {
       <Navbar />
       <Box component="header" className={classes.mainContainer}>
         <Typography variant="h4" align="center" className={classes.heading}>
-          Working Experience
+          Work Experience
         </Typography>
         <Box component="div" className={classes.timeLine}>
           <Typography
@@ -144,12 +152,12 @@ const Resume = () => {
               align="center"
               className={classes.subHeading}
             >
-              Technical Consultant - Customer & QA
+              Technical Advisor / QA Specialist / Dev. Support
             </Typography>
             <Typography
               variant="body1"
               align="center"
-              style={{ color: '#034694' }}
+              style={{ color: '#034694', paddingTop: '15px' }}
             >
               <img src={squarespaceImg} alt="Squarespace" width="250vw" />
             </Typography>
@@ -157,6 +165,7 @@ const Resume = () => {
               variant="subtitle1"
               align="left"
               style={{ color: 'white' }}
+              className={classes.mainText}
             >
               <ul>
                 <li>
@@ -201,12 +210,12 @@ const Resume = () => {
               align="center"
               className={classes.subHeading}
             >
-              Customer Advisor
+              Software Integration Specialist
             </Typography>
             <Typography
               variant="body1"
               align="center"
-              style={{ color: '#034694' }}
+              style={{ color: '#034694', paddingTop: '15px' }}
             >
               <img src={acuityImg} alt="Acuity Scheduling" width="250vw" />
               <br />
@@ -215,7 +224,8 @@ const Resume = () => {
             <Typography
               variant="subtitle1"
               align="left"
-              style={{ color: 'white' }}
+              style={{ color: 'white', paddingTop: '15px' }}
+              className={classes.mainText}
             >
               <ul>
                 <li>
@@ -270,7 +280,7 @@ const Resume = () => {
             <Typography
               variant="body1"
               align="center"
-              style={{ color: '#034694' }}
+              style={{ color: '#034694', paddingTop: '15px' }}
             >
               <img src={kineticImg} alt="Kinetic IT" width="150vw" />
             </Typography>
@@ -278,6 +288,7 @@ const Resume = () => {
               variant="subtitle1"
               align="left"
               style={{ color: 'white' }}
+              className={classes.mainText}
             >
               <ul>
                 <li>
@@ -335,7 +346,7 @@ const Resume = () => {
             <Typography
               variant="body1"
               align="center"
-              style={{ color: '#034694' }}
+              style={{ color: '#034694', paddingTop: '15px' }}
             >
               <img src={sagovImg} alt="SA Government" width="200vw" />
             </Typography>
@@ -343,6 +354,7 @@ const Resume = () => {
               variant="subtitle1"
               align="left"
               style={{ color: 'white' }}
+              className={classes.mainText}
             >
               <ul>
                 <li>

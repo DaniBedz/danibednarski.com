@@ -24,6 +24,7 @@ const useStyles = makeStyles((theme) => ({
     width: '40vw',
     marginLeft: '-13vw',
     paddingTop: '0.5vw',
+    fontFamily: 'Rubik',
   },
 
   subtitle: {
@@ -39,6 +40,7 @@ const useStyles = makeStyles((theme) => ({
     width: '40vw',
     marginLeft: '-13vw',
     paddingTop: '0.5vw',
+    fontFamily: 'Rubik',
   },
 
   typedContainer: {
@@ -49,6 +51,7 @@ const useStyles = makeStyles((theme) => ({
     width: '15vw',
     textAlign: 'center',
     zIndex: 1,
+    fontFamily: 'Rubik',
   },
   noSelect: {
     webkitTouchCallout: 'none' /* iOS Safari */,
@@ -81,7 +84,7 @@ const Header = () => {
       >
         <Typed
           strings={[
-            'Junior Web Developer',
+            'Web Developer',
             'Creator of Things',
             'Problem Solver',
             'Always Learning',
