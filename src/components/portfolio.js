@@ -66,6 +66,7 @@ const useStyles = makeStyles({
     fontSize: '1.15rem',
     borderRadius: '15px',
     paddingBottom: '12px',
+    cursor: 'pointer',
   },
 });
 
