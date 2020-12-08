@@ -4,12 +4,10 @@ import {
   Box,
   Grid,
   Card,
-  CardActionArea,
   CardActions,
   CardContent,
   CardMedia,
   Badge,
-  // Button,
   Typography,
 } from '@material-ui/core';
 import Navbar from './navbar';
@@ -156,6 +154,7 @@ const Portfolio = () => {
             </CardActions>
           </Card>
         </Grid>
+
         {/* Project 2 */}
         <Grid item xs={12} sm={10} md={5}>
           <Card className={classes.cardContainer}>
@@ -237,6 +236,7 @@ const Portfolio = () => {
             </CardActions>
           </Card>
         </Grid>
+
         {/* Project 3 */}
         <Grid item xs={12} sm={10} md={5}>
           <Card className={classes.cardContainer}>
@@ -311,6 +311,7 @@ const Portfolio = () => {
             </CardActions>
           </Card>
         </Grid>
+
         {/* Project 4 */}
         <Grid item xs={12} sm={10} md={5}>
           <Card className={`${classes.cardContainer} ${classes.bottomCard} `}>
