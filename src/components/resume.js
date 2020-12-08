@@ -128,6 +128,9 @@ const useStyles = makeStyles((theme) => ({
   mainText: {
     fontFamily: 'Rubik',
   },
+  mainContainer: {
+    marginTop: '5rem',
+  },
 }));
 
 const Resume = () => {

@@ -23,6 +23,7 @@ const useStyles = makeStyles({
     height: '100%',
     fontFamily: 'Rubik',
     cursor: 'default',
+    marginTop: '3rem',
   },
   cardContainer: {
     maxWidth: 600,
