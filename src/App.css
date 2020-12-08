@@ -9,12 +9,31 @@ li {
   padding-bottom: 1rem;
 }
 
+a {
+  color: #0060cd;
+  text-decoration: none;
+}
+
+button {
+  border-color: #0060cd;
+}
+
 .MuiTypography-h5 {
-  font-family: 'Rubik' !important;
+  font-family: 'Rubik';
   font-weight: bolder !important;
 }
 
 .MuiTypography-body1 {
-  font-family: 'Rubik' !important;
+  font-family: 'Rubik';
   font-weight: bolder !important;
+}
+
+.MuiBadge-root {
+  background-color: #8fc3ff;
+  color: #004089;
+  border-radius: 50px;
+  border: 2px solid #004089;
+  padding: 2px 7px;
+  font-size: 1rem;
+  margin: 5px 0px;
 }
