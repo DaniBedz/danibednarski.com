@@ -116,7 +116,7 @@ const Navbar = () => {
   return (
     <>
       <Box component="nav">
-        <AppBar position="static" style={{ background: '#034694' }}>
+        <AppBar style={{ background: '#034694', position: 'fixed' }}>
           <Toolbar>
             <IconButton onClick={toggleSlider('right', true)}>
               <Dehaze
