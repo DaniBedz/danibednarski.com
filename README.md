@@ -3,8 +3,10 @@
 ## Some technologies/tools used:
 
 - React
-- Material-ui
+- Next.js
+- Material-UI
+- react-awesome-slider
 - tsParticles
 - react-typed
-- DevIcons
-- Family Guy Yourself
+- Sass
+- EmailJS

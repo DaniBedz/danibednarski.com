@@ -1,0 +1,30 @@
+@media all and (max-width: 1100px) {
+  .contact-form {
+    width: 80vw !important;
+  }
+}
+
+.btn-send {
+  color: white !important;
+  border: 2px solid #002654 !important;
+  border-radius: 15px !important;
+  margin-top: 1rem !important;
+  display: grid !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  text-transform: none !important;
+  font-size: larger !important;
+}
+
+.btn-sent {
+  background-color: green !important;
+  color: white !important;
+  border: 2px solid #002654 !important;
+  border-radius: 15px !important;
+  margin-top: 1rem !important;
+  display: grid !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  text-transform: none !important;
+  font-size: larger !important;
+}

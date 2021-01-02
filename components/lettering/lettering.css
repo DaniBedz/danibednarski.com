@@ -1,0 +1,26 @@
+.lettering {
+  color: #fff;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  text-align: center;
+  position: relative;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding: 1rem;
+  background: RGBA(0, 0, 0, 0.6);
+  border-radius: 25px;
+  border: 2px solid #002654;
+}
+
+.lettering h1 {
+  font-size: 32px;
+  line-height: 40px;
+  margin-bottom: 24px;
+}
+
+.lettering p {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 8px;
+}

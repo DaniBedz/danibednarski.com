@@ -1,11 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { Typography, Box } from '@material-ui/core';
-import Navbar from './navbar';
-import squarespaceImg from '../images/squarespaceImg.png';
-import acuityImg from '../images/acuityImg.png';
-import kineticImg from '../images/kineticImg.png';
-import sagovImg from '../images/sagovImg.png';
+import { Typography, Box, Badge } from '@material-ui/core';
+import "./resume.scss";
 
 const useStyles = makeStyles((theme) => ({
   timeLine: {
@@ -16,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
       content: "''",
       position: 'absolute',
       height: '100%',
-      border: '1px solid #034694',
+      border: '4px solid #034694',
       right: '40px',
       top: 0,
     },
@@ -37,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: 'black',
     padding: '1rem',
     borderRadius: '25px',
-    borderBottom: '2px solid #034694',
+    border: '3px solid #002654',
     position: 'relative',
     margin: '1rem 3rem 1rem 1rem',
     clear: 'both',
@@ -51,7 +47,7 @@ const useStyles = makeStyles((theme) => ({
       right: '-0.625rem',
       top: 'calc(50% - 5px)',
       borderStyle: 'solid',
-      borderColor: '#034694 #034694 transparent transparent',
+      borderColor: '#002654 #002654 transparent transparent',
       borderWidth: '0.625rem',
       transform: 'rotate(45deg)',
     },
@@ -61,12 +57,12 @@ const useStyles = makeStyles((theme) => ({
       '&:nth-of-type(2n)': {
         float: 'right',
         margin: '1rem',
-        borderColor: '#034694',
+        borderColor: '#002654',
       },
       '&:nth-of-type(2n):before': {
         right: 'auto',
         left: '-0.625rem',
-        borderColor: 'transparent transparent #034694 #034694',
+        borderColor: 'transparent transparent #002654 #002654',
       },
     },
   },
@@ -102,7 +98,7 @@ const useStyles = makeStyles((theme) => ({
     textTransform: 'uppercase',
     backgroundColor: 'black',
     borderRadius: '25px',
-    borderBottom: '2px solid #034694',
+    border: '3px solid #002654',
     textAlign: 'center',
     maxWidth: '20rem',
     margin: '1rem 1rem 0 auto',
@@ -129,7 +125,12 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: 'Rubik',
   },
   mainContainer: {
-    marginTop: '5rem',
+    marginTop: '-8rem',
+  },
+  projectImg: {
+    margin: 'auto',
+    marginTop: '1rem',
+    marginBottom: '1rem',
   },
 }));
 
@@ -137,7 +138,6 @@ const Resume = () => {
   const classes = useStyles();
   return (
     <>
-      <Navbar />
       <Box component="header" className={classes.mainContainer}>
         <Typography variant="h4" align="center" className={classes.heading}>
           Work Experience
@@ -157,13 +157,7 @@ const Resume = () => {
             >
               Technical Advisor / QA Specialist / Dev. Support
             </Typography>
-            <Typography
-              variant="body1"
-              align="center"
-              style={{ color: '#034694', paddingTop: '15px' }}
-            >
-              <img src={squarespaceImg} alt="Squarespace" width="250vw" />
-            </Typography>
+            <img src='images/squarespaceImg.png' alt="Squarespace" className={ classes.projectImg } width="250vw"/>
             <Typography
               variant="subtitle1"
               align="left"
@@ -184,19 +178,19 @@ const Resume = () => {
                   Acuity Scheduling’s integration into the Squarespace CMS.
                 </li>
                 <li>
-                  Performing manual tests of code deployed to the staging
-                  environment and communicating with the developers any relevant
-                  outcomes, including bugs, performance issues and then
-                  verifying fixes.
-                </li>
-                <li>
                   Maintaining and improving automated tests in Ghost Inspector,
                   including the addition of data attributes to site elements to
                   improve the resilience of tests.
                 </li>
                 <li>
-                  Assisting in the migration of automated tests from Ghost
-                  Inspector into Cypress.io.
+                  Performing the migration of automated tests from Ghost
+                  Inspector to Cypress.io.
+                </li>
+                <li>
+                  Performing manual tests of code deployed to the staging
+                  environment and communicating with the developers any relevant
+                  outcomes including bugs/performance issues, and then
+                  verifying fixes.
                 </li>
               </ul>
             </Typography>
@@ -215,19 +209,12 @@ const Resume = () => {
             >
               Software Integration Specialist
             </Typography>
-            <Typography
-              variant="body1"
-              align="center"
-              style={{ color: '#034694', paddingTop: '15px' }}
-            >
-              <img src={acuityImg} alt="Acuity Scheduling" width="250vw" />
-              <br />
-              Acquired by Squarespace (2019)
-            </Typography>
+            <img src='images/acuityImg.png' alt="Acuity Scheduling" className={ classes.projectImg } width="250vw" />
+            <Badge style={{display: 'block', textAlign: 'center'}}>Acquired by Squarespace (2019)</Badge>
             <Typography
               variant="subtitle1"
               align="left"
-              style={{ color: 'white', paddingTop: '15px' }}
+              style={{ color: 'white' }}
               className={classes.mainText}
             >
               <ul>
@@ -280,13 +267,7 @@ const Resume = () => {
             >
               Senior Service Desk Technician
             </Typography>
-            <Typography
-              variant="body1"
-              align="center"
-              style={{ color: '#034694', paddingTop: '15px' }}
-            >
-              <img src={kineticImg} alt="Kinetic IT" width="150vw" />
-            </Typography>
+              <img src='images/kineticImg.png' alt="Kinetic IT" className={ classes.projectImg } width="150vw" />
             <Typography
               variant="subtitle1"
               align="left"
@@ -346,13 +327,7 @@ const Resume = () => {
             >
               System Admin
             </Typography>
-            <Typography
-              variant="body1"
-              align="center"
-              style={{ color: '#034694', paddingTop: '15px' }}
-            >
-              <img src={sagovImg} alt="SA Government" width="200vw" />
-            </Typography>
+              <img src='images/sagovImg.png' alt="SA Government" className={ classes.projectImg } width="200vw" />
             <Typography
               variant="subtitle1"
               align="left"

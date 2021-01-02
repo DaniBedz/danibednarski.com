@@ -1,46 +1,24 @@
 import React from 'react';
 import Particles from 'react-tsparticles';
 import { makeStyles } from '@material-ui/core/styles';
-import Navbar from './navbar';
-import Header from './header';
-import awsImg from '../images/awsImg.png';
-import codeImg from '../images/codeImg.png';
-import css3Img from '../images/css3Img.png';
-import gitImg from '../images/gitImg.png';
-import html5Img from '../images/html5Img.png';
-import jsImg from '../images/jsImg.png';
-import nginxImg from '../images/nginxImg.png';
-import nodejsImg from '../images/nodejsImg.png';
-import photoshopImg from '../images/photoshopImg.png';
-import reactImg from '../images/reactImg.png';
-import bootstrapImg from '../images/bootstrapImg.png';
-import figmaImg from '../images/figmaImg.png';
-import cypressImg from '../images/cypressImg.png';
-import postmanImg from '../images/postmanImg.png';
-import mysqlImg from '../images/mysqlImg.png';
+import "./particlesElement.scss";
 
 const useStyles = makeStyles({
   particlesCanva: {
-    position: 'absolute',
-    height: '100%',
-    width: '100%',
   },
 });
 
-const Home = () => {
+const ParticlesElement = () => {
   const classes = useStyles();
 
   return (
-    <div>
-      <Navbar />
-      <Header />
       <Particles
         canvasClassName={classes.particlesCanva}
         params={{
           retina_detect: true,
           fpsLimit: 60,
           interactivity: {
-            detectsOn: 'canvas',
+            detectsOn: 'window',
             events: {
               onHover: {
                 enable: true,
@@ -114,51 +92,52 @@ const Home = () => {
               type: 'image',
               image: [
                 {
-                  src: `${awsImg}`,
-                  width: 120,
-                  height: 80,
+                  src: '/images/awsImg.png',
                 },
                 {
-                  src: `${codeImg}`,
+                  src: '/images/codeImg.png',
                 },
                 {
-                  src: `${css3Img}`,
+                  src: '/images/css3Img.png',
                 },
                 {
-                  src: `${gitImg}`,
+                  src: '/images/gitImg.png',
                 },
                 {
-                  src: `${html5Img}`,
+                  src: '/images/html5Img.png',
                 },
                 {
-                  src: `${jsImg}`,
+                  src: '/images/jsImg.png',
                 },
                 {
-                  src: `${nodejsImg}`,
+                  src: '/images/nodejsImg.png',
                 },
                 {
-                  src: `${nginxImg}`,
+                  src: '/images/nginxImg.png',
                 },
                 {
-                  src: `${photoshopImg}`,
+                  src: '/images/photoshopImg.png',
                 },
                 {
-                  src: `${reactImg}`,
+                  src: '/images/reactImg.png',
                 },
                 {
-                  src: `${bootstrapImg}`,
+                  src: '/images/bootstrapImg.png',
                 },
                 {
-                  src: `${figmaImg}`,
+                  src: '/images/figmaImg.png',
                 },
                 {
-                  src: `${cypressImg}`,
+                  src: '/images/cypressImg.png',
                 },
                 {
-                  src: `${postmanImg}`,
+                  src: '/images/postmanImg.png',
                 },
                 {
-                  src: `${mysqlImg}`,
+                  src: '/images/mysqlImg.png',
+                },
+                {
+                  src: '/images/nextImg.png',
                 },
               ],
               polygon: {
@@ -187,8 +166,7 @@ const Home = () => {
           },
         }}
       />
-    </div>
   );
 };
 
-export default Home;
+export default ParticlesElement;
