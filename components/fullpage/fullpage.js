@@ -22,7 +22,7 @@ export default withNavigationContext(({ fullpage }) => {
     <>
     <Slider
       startupScreen={<Startup />}
-      startupDelay={0}
+      startupDelay={1000}
       animation={animation}
       className="awesome-slider"
       onTransitionEnd={() => {
