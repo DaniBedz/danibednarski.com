@@ -383,7 +383,7 @@ const Portfolio = () => {
             <CardMedia
               component="img"
               alt="Twenty One - Card Game"
-              image='/images/project4.png'
+              image='/images/project5.png'
             />
             <CardContent>
               <Typography gutterBottom variant="h5" className={classes.title}>
@@ -454,7 +454,7 @@ const Portfolio = () => {
         {/* Project 6 */}
         <Grid item xs={12} sm={10} md={5}>
           <Card className={`${classes.cardContainer} ${classes.bottomCard} `}>
-            <CardMedia component="img" alt="Tic-Tac-Toe" image='/images/project5.png' />
+            <CardMedia component="img" alt="Tic-Tac-Toe" image='/images/project6.png' />
             <CardContent>
               <Typography gutterBottom variant="h5" className={classes.title}>
                 <a href="https://bedz.me/tictactoe">Tic-Tac-Toe</a>

@@ -19,7 +19,7 @@ export const Home = withNavigationContext(({ fullpage }) => {
     <>
       <Content
             main={
-              <div className="intro">
+              <div id="intro">
                 <Header />
                   <Lettering
                     className="lettering"
@@ -38,7 +38,7 @@ export const Home = withNavigationContext(({ fullpage }) => {
                             fullpage.navigate("/portfolio");
                           }}
                         >
-                        Check out my Portfolio
+                        My Portfolio
                         </AwesomeButton>
                       </div>
                 <ParticlesElement />
@@ -51,17 +51,13 @@ export const Home = withNavigationContext(({ fullpage }) => {
 
 export const Resume = withNavigationContext(({ fullpage }) => {
   return (
-    <Section wrapper={false} backgroundColor="#ff6f5e">
-      <Background src=""/>
       <Content
         main={
           <ResumeElement/>
         }
       />
-    </Section>
   );
 });
-
 
 export const Contact = withNavigationContext(({ fullpage }) => {
   return (
@@ -92,9 +88,7 @@ export const media = [
     slug: "resume",
     className: "slide page-three",
     children: (
-    <Page>
       <Resume />   
-    </Page>
     )
   },
   {

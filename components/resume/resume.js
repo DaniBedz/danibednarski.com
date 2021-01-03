@@ -124,9 +124,6 @@ const useStyles = makeStyles((theme) => ({
   mainText: {
     fontFamily: 'Rubik',
   },
-  mainContainer: {
-    marginTop: '-8rem',
-  },
   projectImg: {
     margin: 'auto',
     marginTop: '1rem',
@@ -138,7 +135,7 @@ const Resume = () => {
   const classes = useStyles();
   return (
     <>
-      <Box component="header" className={classes.mainContainer}>
+      <Box id="resume" component="header" className={classes.mainContainer}>
         <Typography variant="h4" align="center" className={classes.heading}>
           Work Experience
         </Typography>

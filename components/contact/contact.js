@@ -6,7 +6,7 @@ import "./contact.scss";
 
 const useStyles = makeStyles(theme => ({
   form: {
-    top: "3rem",
+    top: "6rem",
     left: "50%",
     transform: "translate(-50%, -0%)",
     position: "absolute",
