@@ -6,7 +6,7 @@ import "./contact.scss";
 
 const useStyles = makeStyles(theme => ({
   form: {
-    top: "6rem",
+    top: "3rem",
     left: "50%",
     transform: "translate(-50%, -0%)",
     position: "absolute",
@@ -113,12 +113,18 @@ const Contact = () => {
                 "message": document.querySelector("#message").value
               }
               if (template_params.from_name !== "" && template_params.email !== "" && template_params.message !== "") {
+                document.querySelector("#send-btn").innerText = "Sending.."
                 emailjs.send('service_i47aoaq', 'template_aflqbbg', template_params, 'user_O8soHnleeJBxVzS3CBIrf')
                   .then((result) => {
                     document.querySelector("#send-btn").classList.add("btn-sent")
                     document.querySelector("#send-btn").textContent = "Sent!"
+                    document.querySelector("#from_name").value = "";
+                    document.querySelector("#email").value = "";
+                    document.querySelector("#company").value = "";
+                    document.querySelector("#message").value = "";
                   }, (error) => {
-                    console.log(error.text);
+                      console.log(error.text);
+                      document.querySelector("#send-btn").textContent = "Error"
                   });
               } else {
             alert("Please complete all required fields.");

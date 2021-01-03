@@ -70,7 +70,7 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: 'Rubik',
     textAlign: 'center',
     maxWidth: '7.375rem',
-    margin: '0 3rem 0 auto',
+    margin: '0 0 0 auto',
     fontSize: '1.8rem',
     background: '#034694',
     color: 'white',

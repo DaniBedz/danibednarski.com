@@ -101,8 +101,9 @@ body {
   width: calc(15rem + 1vw) !important;
   white-space: nowrap;
   font-size: large;
+  margin-top: -2rem;
 }
 
 #intro {
-  margin-top: 23rem;
+  margin-top: 20rem;
 }
