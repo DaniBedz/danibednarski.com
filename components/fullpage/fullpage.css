@@ -5,6 +5,14 @@ html {
   margin: 0;
 }
 
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
 * {
   font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif !important;
   outline: 0;
@@ -49,7 +57,7 @@ html {
 }
 
 .intro {
-  margin-top: -7rem !important;
+  margin-top: 0rem !important;
 }
 
 .page-one-bg {
@@ -60,7 +68,6 @@ html {
 .aws-btn {
   color: white;
   --button-default-height: 100px;
-  --button-default-font-size: 20px;
   --button-default-border-radius: 25px;
   --button-horizontal-padding: 50px;
   --button-raise-level: 5px;

@@ -5,6 +5,12 @@ import "./particlesElement.scss";
 
 const useStyles = makeStyles({
   particlesCanva: {
+    height: "100vh !important",
+    width: "auto !important",
+    position: "fixed",
+    top: "0",
+    left: "0",
+    zIndex: "-1",
   },
 });
 

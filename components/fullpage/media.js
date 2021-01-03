@@ -17,7 +17,6 @@ import ContactElement from "../contact/contact";
 export const Home = withNavigationContext(({ fullpage }) => {
   return (
     <>
-      <ParticlesElement />
       <Content
             main={
               <div className="intro">
@@ -32,16 +31,17 @@ export const Home = withNavigationContext(({ fullpage }) => {
                     ] }
                   />
                       <div className="button">
-                <AwesomeButton
+                        <AwesomeButton
                           className="btn-portfolio"
-                           type="secondary"
-                           onPress={ () => {
+                          type="secondary"
+                          onPress={ () => {
                             fullpage.navigate("/portfolio");
-                           }}
+                          }}
                         >
                         Check out my Portfolio
                         </AwesomeButton>
                       </div>
+                <ParticlesElement />
               </div>
             }
       />

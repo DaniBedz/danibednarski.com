@@ -17,7 +17,7 @@ function App({ Component, pageProps }) {
 
         <meta
           name="viewport"
-          content="width=device-width,minimum-scale=0.8,maximum-scale=1,user-scalable=no"
+          content="width=device-width, initial-scale=1, user-scalable=false"
         />
         <meta
           name="description"
