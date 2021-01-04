@@ -71,7 +71,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: 'center',
     maxWidth: '7.375rem',
     margin: '0 0 0 auto',
-    fontSize: '1.8rem',
+    fontSize: '2.2rem',
     background: '#034694',
     color: 'white',
     lineHeight: 1,
@@ -102,7 +102,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: 'center',
     maxWidth: '20rem',
     margin: '1rem 1rem 0 auto',
-    fontSize: '1.4rem',
+    fontSize: '1.8rem',
     lineHeight: 1,
     padding: '1.2rem 0 1rem',
     '&:before': {
@@ -115,6 +115,8 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   subHeading: {
+    marginTop: '1rem',
+    fontSize: '2rem !important',
     fontFamily: 'Rubik',
     fontWeight: 'bolder',
     color: 'white',
@@ -123,6 +125,7 @@ const useStyles = makeStyles((theme) => ({
   },
   mainText: {
     fontFamily: 'Rubik',
+    fontSize: '1.5rem',
   },
   projectImg: {
     margin: 'auto',
@@ -136,7 +139,7 @@ const Resume = () => {
   return (
     <>
       <Box id="resume" component="header" className={classes.mainContainer}>
-        <Typography variant="h4" align="center" className={classes.heading}>
+        <Typography variant="h2" align="center" className={classes.heading}>
           Work Experience
         </Typography>
         <Box component="div" className={classes.timeLine}>
@@ -148,7 +151,6 @@ const Resume = () => {
           </Typography>
           <Box component="div" className={classes.timeLineItem}>
             <Typography
-              variant="h5"
               align="center"
               className={classes.subHeading}
             >
@@ -200,7 +202,6 @@ const Resume = () => {
           </Typography>
           <Box component="div" className={classes.timeLineItem}>
             <Typography
-              variant="h5"
               align="center"
               className={classes.subHeading}
             >
@@ -258,7 +259,6 @@ const Resume = () => {
           </Typography>
           <Box component="div" className={classes.timeLineItem}>
             <Typography
-              variant="h5"
               align="center"
               className={classes.subHeading}
             >
@@ -318,7 +318,6 @@ const Resume = () => {
           </Typography>
           <Box component="div" className={classes.timeLineItem}>
             <Typography
-              variant="h5"
               align="center"
               className={classes.subHeading}
             >

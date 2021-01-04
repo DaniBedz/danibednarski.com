@@ -92,7 +92,7 @@ body {
 
 @media all and (max-width: 768px) {
   #intro {
-    margin-top: 17rem !important;
+    margin-top: 17rem;
   }
 }
 
@@ -105,5 +105,5 @@ body {
 }
 
 #intro {
-  margin-top: 20rem;
+  margin-top: 17rem;
 }

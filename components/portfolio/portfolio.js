@@ -28,6 +28,7 @@ const useStyles = makeStyles({
     alignContent: 'space-between',
   },
   title: {
+    fontSize: '2.5rem !important',
     textAlign: 'center',
     color: 'white',
     backgroundColor: 'black',
@@ -46,7 +47,7 @@ const useStyles = makeStyles({
     color: 'white',
     backgroundColor: 'black',
     border: '2px solid #002654',
-    fontSize: '1.15rem',
+    fontSize: '1.75rem',
     borderRadius: '15px',
     paddingBottom: '12px',
     cursor: 'pointer',
@@ -79,7 +80,7 @@ const Portfolio = () => {
                 <br />Fully responsive To-do app
               </Typography>
               <Typography
-                variant="body2"
+                variant="body3"
                 color="textSecondary"
                 component="p"
               >
@@ -152,7 +153,7 @@ const Portfolio = () => {
                 <br />A Simple Link Shortener Service
               </Typography>
               <Typography
-                variant="body2"
+                variant="body3"
                 color="textSecondary"
                 component="p"
               >
@@ -232,7 +233,7 @@ const Portfolio = () => {
                 Currency Converter Web App
               </Typography>
               <Typography
-                variant="body2"
+                variant="body3"
                 color="textSecondary"
                 component="p"
               >
@@ -312,7 +313,7 @@ const Portfolio = () => {
                 <br />This site!
               </Typography>
               <Typography
-                variant="body2"
+                variant="body3"
                 color="textSecondary"
                 component="p"
               >
@@ -391,7 +392,7 @@ const Portfolio = () => {
                 <br />A Blackjack Game
               </Typography>
               <Typography
-                variant="body2"
+                variant="body3"
                 color="textSecondary"
                 component="p"
               >
@@ -462,7 +463,7 @@ const Portfolio = () => {
                 Noughts and Crosses
               </Typography>
               <Typography
-                variant="body2"
+                variant="body3"
                 color="textSecondary"
                 component="p"
               >
