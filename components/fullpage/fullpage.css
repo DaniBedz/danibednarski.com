@@ -90,12 +90,6 @@ body {
   top: 14rem;
 }
 
-@media all and (max-width: 768px) {
-  #intro {
-    margin-top: 17rem;
-  }
-}
-
 .btn-portfolio {
   height: calc(10rem + 1vw) !important;
   width: calc(15rem + 1vw) !important;
@@ -105,5 +99,5 @@ body {
 }
 
 #intro {
-  margin-top: 17rem;
+  margin-top: 16rem;
 }
