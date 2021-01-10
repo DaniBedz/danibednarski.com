@@ -99,5 +99,5 @@ body {
 }
 
 #intro {
-  margin-top: 16rem;
+  margin-top: calc(16rem + 2vw);
 }
