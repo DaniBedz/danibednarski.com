@@ -88,7 +88,7 @@ const Portfolio = () => {
                 we utilised pair programming and agile methodology and create a to-do app.
                 <br />
                 <br />
-                Our app utilises Firebase for authorisation, as well as storin  g task data in a database.
+                Our app utilises Firebase for authorisation, as well as storing task data in a database.
                 <br />
                 <br />
                 <b>Technologies used:</b>
