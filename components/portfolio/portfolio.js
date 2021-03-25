@@ -19,7 +19,7 @@ const useStyles = makeStyles({
     cursor: 'default',
   },
   cardContainer: {
-    margin: '2rem 6rem 2rem 6rem',
+    margin: '3rem 6rem 2rem 6rem',
     height: 'max-content',
     borderRadius: '15px',
     color: 'white',
@@ -76,7 +76,7 @@ const Portfolio = () => {
             />
             <CardContent>
               <Typography gutterBottom variant="h5" className={classes.title}>
-                <a href="https://bedz.me/todo/">can.do</a>
+                <a href="https://taskr.me">taskr.me</a>
                 <br />Fully responsive To-do app
               </Typography>
               <Typography
@@ -85,15 +85,15 @@ const Portfolio = () => {
                 component="p"
               >
                 As part of Generation Australia's web developer program,
-                we needed to work in pairs and create a to-do app.
+                we utilised pair programming and agile methodology and create a to-do app.
                 <br />
                 <br />
-                This project is not yet complete.
+                Our app utilises Firebase for authorisation, as well as storin  g task data in a database.
                 <br />
                 <br />
                 <b>Technologies used:</b>
                 <br />
-                <Badge>jQuery</Badge> <Badge>Flatpickr</Badge>{' '}
+                <Badge>Firebase</Badge> <Badge>jQuery</Badge> <Badge>Flatpickr</Badge>{' '}
                 <Badge>Bootstrap</Badge> <Badge>bootstrap-select</Badge>{' '}
                 <Badge>Font Awesome</Badge>
               </Typography>
@@ -320,17 +320,17 @@ const Portfolio = () => {
                 As a web developer, a good way to show off your skills is your personal site. I've tried
                 to make it interesting, test my limits and use new technologies.<br />
                 <br />
-                On the home screen you can see some of the technologies I know, 
+                On the home screen you can see some of the technologies I know,
                 and you can click to add more to the page.
                 <br /><br />
-                Arrows can be used for navigation, as long as a text field isn't selected (because that 
+                Arrows can be used for navigation, as long as a text field isn't selected (because that
                 would be annoying..).
                 <br /><br />
                 <b>Technologies used:</b>
                 <br />
                 <Badge>Next.js</Badge> <Badge>React</Badge>{' '}
                 <Badge>tsparticles</Badge> <Badge>AwesomeButtons</Badge>{' '}
-                <Badge>React Awesome Slider</Badge> <Badge>Material-UI</Badge>{' '} 
+                <Badge>React Awesome Slider</Badge> <Badge>Material-UI</Badge>{' '}
                 <Badge>EmailJS</Badge> <Badge>React Typed</Badge> <Badge>Sass</Badge>{' '}
                 <Badge>AWS</Badge> <Badge>S3</Badge>{' '}
                 <Badge>Route53</Badge> <Badge>CloudFront</Badge>{' '}
