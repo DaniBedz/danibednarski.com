@@ -39,7 +39,8 @@ jobs:
 
     - name: Copy to serving folder
       run: |
-        cd build 
+        cd build
+        mv index.js index.mjs
         mv . /var/danibednarski.com
         rm -rf build /var/danibednarski.com/repo
         cd /var/danibednarski.com
