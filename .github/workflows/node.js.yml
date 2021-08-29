@@ -36,10 +36,3 @@ jobs:
 
     - name: Build
       run: npm run build --if-present
-
-    - name: Copy to serving folder
-      run: |
-        pm2 stop index
-        mv build/. /var/danibednarski.com
-        mv /var/danibednarski.com/index.js /var/danibednarski.com/index.mjs
-        pm2 restart index
