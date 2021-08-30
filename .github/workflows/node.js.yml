@@ -36,12 +36,3 @@ jobs:
 
     - name: Build
       run: npm run build --if-present
-
-    - name: Copy to serving folder
-      run: |
-        cd build
-        mv index.js index.mjs
-        mv . /var/danibednarski.com
-        rm -rf build /var/danibednarski.com/repo
-        cd /var/danibednarski.com
-        mkdir repo
