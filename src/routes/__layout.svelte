@@ -17,6 +17,7 @@
     import AppMenu from '$lib/AppMenu.svelte';
     import AppMenuItem from '$lib/AppMenuItem.svelte';
 </script>
+
     <div>
         <AppBar />
         <AppMenu>

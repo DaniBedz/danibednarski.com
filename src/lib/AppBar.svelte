@@ -1,7 +1,4 @@
 <script>
-    import AppBarHomeIcon from './AppBarHomeIcon.svelte';
-    import AppBarIcon from './AppBarIcon.svelte';
-
     import contact from '../../static/contact.png';
     import cv from '../../static/cv.png';
     import github from '../../static/github.png';
@@ -15,6 +12,10 @@
     import tictactoe from '../../static/tictactoe.png';
 
     import { faHouseUser } from '@fortawesome/free-solid-svg-icons';
+
+    import AppBarHomeIcon from '$lib/AppBarHomeIcon.svelte';
+    import AppBarIcon from '$lib/AppBarIcon.svelte';
+    import AppMenuToggle from '$lib/AppMenuToggle.svelte';
 </script>
 
 <div class="wrapper">
@@ -31,6 +32,7 @@
         <AppBarIcon tooltip={ 'GitHub' } projectIcon={ github } href="https://github.com/danibedz" alt="github icon" external />
         <AppBarIcon tooltip={ 'LinkedIn' } projectIcon={ linkedin } href="https://www.linkedin.com/in/danibednarski" alt="linkedIn icon" external />
         <AppBarIcon tooltip={ 'Contact Me' } projectIcon={ contact } href="/contact" alt="Contact icon" />
+        <AppMenuToggle />
     </nav>
 </div>
 <style>
