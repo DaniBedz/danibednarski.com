@@ -13,7 +13,7 @@
 </script>
 
 {#if showMenu}
-    <div class="wrapper" transition:fly={{ x: -200, duration: 500 }}>
+    <div class="wrapper" transition:fly={{ x: -200 }}>
         <nav>
             <a href="/">
                 <img src={ daniImg } alt="dani text" />
@@ -25,12 +25,6 @@
 
 <style>
     /* Menu styles */
-    @media (max-width: 600px) {
-        .wrapper {
-            display: none;
-        }
-    }
-
     .wrapper {
         min-width: 15rem;
     }
