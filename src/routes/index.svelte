@@ -1,14 +1,5 @@
-<script>
-    import { isMenuOpen } from '$lib/stores.js';
-
-    let showMenu;
-    isMenuOpen.subscribe((value) => {
-        showMenu = value;
-    });
-</script>
-
 <main>
-    <div class={showMenu ? '' : 'closed'}>
+    <div>
         <h1>Ahoy</h1>
         <p>My name is Dani and I'm a web developer based in Melbourne, Australia.</p>
         <p>What motivates me is making things that people love to use, and want to share with others.</p>
@@ -19,15 +10,6 @@
 <slot />
 
 <style>
-    .closed {
-        transition: all .4s ease;
-        transform: translateX(-14rem);
-    }
-    main {
-        display: flex;
-        position: absolute;
-        left: 18rem;
-    }
     div {
         margin-top: 40%;
         margin-left: 3rem;

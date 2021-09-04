@@ -17,13 +17,13 @@
 </script>
 
 <button id="expander" href="/" on:click={ toggleMenu } tooltip={ `${ showMenu ? 'Hide' : 'Show' } Menu` } flow="right">
-    <div id="arrow" class={showMenu ? 'menu-open' : null }>
+    <div id="arrow" class={showMenu ? 'toggle-arrow' : null }>
         <Fa icon={ faAngleLeft } size="2x" />
     </div>
 </button>
 
 <style>
-    .menu-open {
+    .toggle-arrow {
         transform: rotate(-180deg);
         transition: all .3s ease;
     }
