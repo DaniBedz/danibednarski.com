@@ -30,6 +30,9 @@ jobs:
         path: ~/.npm
         key: npm-${{ hashFiles('package-lock.json') }}
         restore-keys: npm-
+        
+    - name: Delete old folder
+      run: rm -rf ./build/
 
     - name: Clean Install
       run: npm ci
