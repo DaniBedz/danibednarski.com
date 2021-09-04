@@ -27,14 +27,12 @@
         display: flex;
         position: absolute;
         left: 18rem;
-        transition: all .3s ease;
     }
     div {
         margin-top: 40%;
         margin-left: 3rem;
         width: calc(35vw + 1.5rem);
         z-index: 1;
-        transition: all .3s ease;
     }
     h1 {
         color: var(--color-primary-light);
@@ -45,7 +43,6 @@
         margin-bottom: 1rem;
         color: var(--color-text);
         font-size: calc(1vw + 0.5rem);
-        transition: all .3s ease;
     }
 
     a {

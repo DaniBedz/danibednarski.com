@@ -3,8 +3,6 @@
 
     import daniImg from '../../static/dani.png';
 
-    import { fly } from 'svelte/transition';
-
     let showMenu;
     isMenuOpen.subscribe((value) => {
         showMenu = value;
@@ -13,7 +11,7 @@
 </script>
 
 {#if showMenu}
-    <div class="wrapper" transition:fly={{ x: -200 }}>
+    <div class="wrapper">
         <nav>
             <a href="/">
                 <img src={ daniImg } alt="dani text" />
