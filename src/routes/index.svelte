@@ -1,6 +1,6 @@
 <main>
     <div>
-        <h1>Ahoy</h1>
+        <h1>Ahoy!</h1>
         <p>My name is Dani and I'm a web developer based in Melbourne, Australia.</p>
         <p>What motivates me is making things that people love to use, and want to share with others.</p>
         <p>Please explore the site, check out some of the projects that I have worked on, and <a href="/contact">reach out</a> if you like what you see.</p>
