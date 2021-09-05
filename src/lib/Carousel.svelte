@@ -65,11 +65,14 @@
     }
 
     :global(.sc-carousel-arrow__circle) {
-        height: 50px !important;
-        width: 50px !important;
+        height: calc(2vw + 2rem) !important;
+        width: calc(2vw + 2rem) !important;
     }
     :global(.sc-carousel-arrow__arrow) {
         border: solid var(--color-text) !important;
         border-width: 0 var(--sc-arrow-size) var(--sc-arrow-size) 0 !important;
+    }
+    :global(*) {
+        --sc-arrow-size: calc(0.4vw) !important;
     }
 </style>

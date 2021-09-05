@@ -12,9 +12,9 @@
 
 <style>
     #description {
-        font-size: 1.5rem;
+        font-size: calc(1vw + 0.5rem);
         color: var(--color-text);
-        margin: 1rem 2rem;
+        margin: 0.5rem 2rem;
     }
     p {
         padding: 1rem;

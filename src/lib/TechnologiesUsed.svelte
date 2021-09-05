@@ -14,7 +14,7 @@
 
     h2 {
         color: var(--color-primary-light);
-        font-size: 2rem;
+        font-size: calc(1vw + 1rem);
         text-align: left;
     }
 

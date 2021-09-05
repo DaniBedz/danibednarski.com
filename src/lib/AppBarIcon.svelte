@@ -23,10 +23,18 @@
 {/if}
 
 <style>
+    img, img + div {
+        transition:transform .25s ease;
+    }
+
+    img:hover, img:hover + div {
+        transform:scale(1.3);
+    }
 
     button {
-        display: flex;
-        margin: 1rem auto;
+        display: block;
+        position: absolute;
+        margin: 0.75rem auto;
         color: var(--color-primary-grey);
         border: none;
         background: transparent;
@@ -40,7 +48,6 @@
         background-color: var(--color-green);
         border-radius: 50%;
     }
-
     /* START TOOLTIP STYLES */
     [tooltip] {
         position: relative;

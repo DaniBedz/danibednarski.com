@@ -12,6 +12,7 @@
 
 <script>
     import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
+    import { fly, fade } from 'svelte/transition';
 
     import AppBar from '$lib/AppBar.svelte';
     import AppMenu from '$lib/AppMenu.svelte';
@@ -20,12 +21,14 @@
 
     <div>
         <AppBar />
-        <AppMenu>
-            <AppMenuItem href='/resume' text='Resume' internal/>
-            <AppMenuItem href='https://github.com/danibedz' text='GitHub' target='_blank' rel='noreferrer' icon={ faExternalLinkAlt } />
-            <AppMenuItem href='https://www.linkedin.com/in/danibednarski/' text='LinkedIn' target='_blank' rel='noreferrer' icon={ faExternalLinkAlt } />
-            <AppMenuItem href='/contact' text='Contact' internal />
-        </AppMenu>
+        <div in:fly|local={{ x: -400, duration: 600 }}>
+            <AppMenu>
+                <AppMenuItem href='/resume' text='Resume' internal/>
+                <AppMenuItem href='https://github.com/danibedz' text='GitHub' target='_blank' rel='noreferrer' icon={ faExternalLinkAlt } />
+                <AppMenuItem href='https://www.linkedin.com/in/danibednarski/' text='LinkedIn' target='_blank' rel='noreferrer' icon={ faExternalLinkAlt } />
+                <AppMenuItem href='/contact' text='Contact' internal />
+            </AppMenu>
+        </div>
         <slot />
     </div>
 

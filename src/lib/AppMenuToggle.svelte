@@ -1,17 +1,17 @@
 <script>
-    import { isMenuOpen } from './stores.js';
-
     import { faAngleLeft } from '@fortawesome/free-solid-svg-icons';
     import Fa from 'svelte-fa/src/fa.svelte';
 
+    import { isNavOpen } from '$lib/store';
+
     let showMenu;
 
-    isMenuOpen.subscribe((value) => {
+    isNavOpen.subscribe((value) => {
         showMenu = value;
     });
 
     function toggleMenu() {
-        isMenuOpen.set(!showMenu);
+        isNavOpen.set(!showMenu);
     }
 
 </script>

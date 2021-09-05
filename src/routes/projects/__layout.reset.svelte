@@ -48,6 +48,7 @@
 
 <script>
     import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
+    import { fly, fade } from 'svelte/transition';
 
     import AppBar from '$lib/AppBar.svelte';
     import AppMenu from '$lib/AppMenu.svelte';
@@ -70,15 +71,15 @@
 
 <main>
     <AppBar />
-    {#key projectNameData}
-        <AppMenu>
-            <AppMenuItem href="#screenshots" text="Screenshots" />
-            <AppMenuItem href="#description" text="Description" />
-            <AppMenuItem href="#technologies-used" text="Technologies used" />
-            <AppMenuItem href={ github } text="GitHub" icon={ faExternalLinkAlt } target="_blank" rel="noreferrer" />
-            <AppMenuItem href={ liveSite } text="Live Site" icon={ faExternalLinkAlt } target="_blank" rel="noreferrer" />
-        </AppMenu>
-    {/key}
+        <div in:fly|local={{ x: -400, duration: 600 }}>
+            <AppMenu>
+                <AppMenuItem href="#screenshots" text="Screenshots" />
+                <AppMenuItem href="#description" text="Description" />
+                <AppMenuItem href="#technologies-used" text="Technologies used" />
+                <AppMenuItem href={ liveSite } text="Live Site" icon={ faExternalLinkAlt } target="_blank" rel="noreferrer" />
+                <AppMenuItem href={ github } text="GitHub" icon={ faExternalLinkAlt } target="_blank" rel="noreferrer" />
+            </AppMenu>
+        </div>
     <article>
         <Carousel { screenshotData } />
         <ProjectHeader { projectNameData } />

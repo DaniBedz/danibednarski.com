@@ -9,7 +9,7 @@
 <style>
     div {
         color: var(--color-primary-light);
-        font-size: 4rem;
+        font-size: calc(1vw + 2.5rem);
         text-align: left;
         margin-left: 3rem;
     }
