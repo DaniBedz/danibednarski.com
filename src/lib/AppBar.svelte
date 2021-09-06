@@ -9,7 +9,6 @@
     import linkedin from '../../static/linkedin.png';
     import lionHead from '../../static/lionHead.png';
     import myob from '../../static/myob.png';
-    import skyjed from '../../static/skyjed.png';
     import taskr from '../../static/taskr.png';
     import thissite from '../../static/thissite.png';
     import tictactoe from '../../static/tictactoe.png';
@@ -36,7 +35,6 @@
 <div class="wrapper">
     <nav>
         <AppBarHomeIcon tooltip={ 'Home' } projectIcon={ faHouseUser } href="/" />
-        <AppBarIcon tooltip={ 'Skyjed' } projectIcon={ skyjed } href="/projects/skyjed" alt="skyjed icon" />
         <AppBarIcon tooltip={ 'bedz.me' } projectIcon={ lionHead } href="/projects/bedzme" alt="bedz.me lion icon" />
         <AppBarIcon tooltip={ 'myob Sales Tracker' } projectIcon={ myob } href="/projects/salestracker" alt="myob icon" />
         <AppBarIcon tooltip={ 'Taskr' } projectIcon={ taskr } href="/projects/taskr" alt="taskr icon" />
