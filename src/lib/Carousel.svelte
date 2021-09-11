@@ -27,12 +27,14 @@
                         srcset={ screenshot.avifSrc }
                         alt="project screenshot"
                         width="100%"
+                        draggable="false"
                     >
                     <img
                         type="image/png"
                         src={ screenshot.pngSrc }
                         alt="project screenshot"
                         on:click={ () => { window.open(screenshot.pngSrc); } }
+                        draggable="false"
                     >
                 </picture>
             {/each}

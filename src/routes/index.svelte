@@ -1,11 +1,15 @@
+<script>
+    import { drag } from '$lib/drag';
+</script>
+
 <main>
-    <div>
+    <div use:drag>
         <h1>Ahoy!</h1>
         <p>My name is Dani and I'm a web developer based in Melbourne, Australia.</p>
         <p>What motivates me is making things that people love to use, and want to share with others.</p>
         <p>Please explore the site, check out some of the projects that I have worked on, and <a href="/contact">reach out</a> if you like what you see.</p>
     </div>
-        <img src="/coding.svg" alt="coder"/>
+        <img use:drag src="/coding.svg" alt="coder" draggable="false" />
 </main>
 <slot />
 
@@ -14,7 +18,8 @@
         margin-top: 40%;
         margin-left: 3rem;
         width: calc(35vw + 1.5rem);
-        z-index: 1;
+        -webkit-user-select: none;
+        -moz-user-select: none;
     }
     h1 {
         color: var(--color-primary-light);

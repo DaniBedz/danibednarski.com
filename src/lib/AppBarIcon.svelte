@@ -1,4 +1,6 @@
 <script>
+    import { drag } from '$lib/drag';
+
     export let alt;
     export let external = null;
     export let href = null;
@@ -7,17 +9,17 @@
 </script>
 
 {#if external}
-    <a { href } target="_blank" rel="noreferrer">
-        <button { tooltip } aria-label={ tooltip } flow="right">
-            <img src={ projectIcon } { alt } height="40px" width="40px">
+    <a { href } on:click|preventDefault target="_blank" rel="noreferrer" draggable="false">
+        <button use:drag={'appBarIcon'} { tooltip } aria-label={ tooltip } flow="right">
+            <img src={ projectIcon } { alt } height="40px" width="40px" draggable="false">
             <div class="external-dot"/>
         </button>
     </a>
 
     {:else}
-        <a {href} sveltekit:prefetch>
-            <button { tooltip } aria-label={ tooltip } flow="right">
-                <img src={ projectIcon } { alt } height="40px" width="40px">
+        <a {href} on:click|preventDefault sveltekit:prefetch draggable="false">
+            <button use:drag={'appBarIcon'} { tooltip } aria-label={ tooltip } flow="right">
+                <img src={ projectIcon } { alt } height="40px" width="40px" draggable="false">
             </button>
         </a>
 {/if}
@@ -26,9 +28,8 @@
     img, img + div {
         transition:transform .25s ease;
     }
-
     img:hover, img:hover + div {
-        transform:scale(1.3);
+        transform:scale(1.4);
     }
 
     button {
