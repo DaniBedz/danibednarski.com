@@ -3,7 +3,6 @@
 
     import contact from '../../static/contact.png';
     import cv from '../../static/cv.png';
-    import daniImg from '../../static/dani.png';
     import github from '../../static/github.png';
     import icon21 from '../../static/icon21.png';
     import linkedin from '../../static/linkedin.png';
@@ -25,12 +24,6 @@
     });
 
 </script>
-
-{#if showMenu}
-    <a href="/">
-        <img src={ daniImg } alt="dani text" />
-    </a>
-{/if}
 
 <div class="wrapper">
     <nav>
@@ -58,15 +51,5 @@
         width: 4rem;
         background: linear-gradient(rgba(125, 211, 252), rgba(45, 212, 191));
         z-index: 1;
-    }
-
-    img {
-        position: fixed;
-        height: calc(171px * 0.4);
-        width: calc(456px * 0.4);
-        display: flex;
-        top: 1rem;
-        left: 5.5rem;
-        padding-bottom: 2rem;
     }
 </style>
