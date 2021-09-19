@@ -9,6 +9,7 @@
     },
     "devDependencies": {
         "@sveltejs/adapter-node": "^1.0.0-next.43",
+        "@sveltejs/adapter-cloudflare-workers": "^1.0.0-next.22",
         "@sveltejs/kit": "next",
         "emailjs-com": "^3.2.0",
         "eslint": "^7.32.0",
@@ -20,7 +21,6 @@
     },
     "dependencies": {
         "@fortawesome/free-solid-svg-icons": "^5.15.3",
-        "@sveltejs/adapter-cloudflare-workers": "^1.0.0-next.22",
         "felte": "^0.8.0",
         "marked": "^3.0.4",
         "svelte-fa": "^2.3.3",
