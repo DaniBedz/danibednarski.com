@@ -20,24 +20,6 @@
   var __toModule = (module) => {
     return __reExport(__markAsModule(__defProp(module != null ? __create(__getProtoOf(module)) : {}, "default", module && module.__esModule && "default" in module ? { get: () => module.default, enumerable: true } : { value: module, enumerable: true })), module);
   };
-  var __accessCheck = (obj, member, msg) => {
-    if (!member.has(obj))
-      throw TypeError("Cannot " + msg);
-  };
-  var __privateGet = (obj, member, getter) => {
-    __accessCheck(obj, member, "read from private field");
-    return getter ? getter.call(obj) : member.get(obj);
-  };
-  var __privateAdd = (obj, member, value) => {
-    if (member.has(obj))
-      throw TypeError("Cannot add the same private member more than once");
-    member instanceof WeakSet ? member.add(obj) : member.set(obj, value);
-  };
-  var __privateSet = (obj, member, value, setter) => {
-    __accessCheck(obj, member, "write to private field");
-    setter ? setter.call(obj, value) : member.set(obj, value);
-    return value;
-  };
 
   // .svelte-kit/cloudflare-workers/node_modules/mime/Mime.js
   var require_Mime = __commonJS({
@@ -119,22 +101,22 @@
     ".svelte-kit/cloudflare-workers/node_modules/@cloudflare/kv-asset-handler/dist/types.js"(exports) {
       "use strict";
       var __extends = exports && exports.__extends || function() {
-        var extendStatics = function(d3, b2) {
-          extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d4, b3) {
-            d4.__proto__ = b3;
-          } || function(d4, b3) {
+        var extendStatics = function(d2, b2) {
+          extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d3, b3) {
+            d3.__proto__ = b3;
+          } || function(d3, b3) {
             for (var p2 in b3)
               if (b3.hasOwnProperty(p2))
-                d4[p2] = b3[p2];
+                d3[p2] = b3[p2];
           };
-          return extendStatics(d3, b2);
+          return extendStatics(d2, b2);
         };
-        return function(d3, b2) {
-          extendStatics(d3, b2);
+        return function(d2, b2) {
+          extendStatics(d2, b2);
           function __() {
-            this.constructor = d3;
+            this.constructor = d2;
           }
-          d3.prototype = b2 === null ? Object.create(b2) : (__.prototype = b2.prototype, new __());
+          d2.prototype = b2 === null ? Object.create(b2) : (__.prototype = b2.prototype, new __());
         };
       }();
       Object.defineProperty(exports, "__esModule", { value: true });
@@ -482,7 +464,147 @@
     }
   });
 
-  // node_modules/@sveltejs/kit/dist/chunks/http.js
+  // node_modules/@fortawesome/free-solid-svg-icons/index.es.js
+  var faAngleLeft = {
+    prefix: "fas",
+    iconName: "angle-left",
+    icon: [256, 512, [], "f104", "M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"]
+  };
+  var faExternalLinkAlt = {
+    prefix: "fas",
+    iconName: "external-link-alt",
+    icon: [512, 512, [], "f35d", "M432,320H400a16,16,0,0,0-16,16V448H64V128H208a16,16,0,0,0,16-16V80a16,16,0,0,0-16-16H48A48,48,0,0,0,0,112V464a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V336A16,16,0,0,0,432,320ZM488,0h-128c-21.37,0-32.05,25.91-17,41l35.73,35.73L135,320.37a24,24,0,0,0,0,34L157.67,377a24,24,0,0,0,34,0L435.28,133.32,471,169c15,15,41,4.5,41-17V24A24,24,0,0,0,488,0Z"]
+  };
+  var faHouseUser = {
+    prefix: "fas",
+    iconName: "house-user",
+    icon: [576, 512, [], "e065", "M570.69,236.27,512,184.44V48a16,16,0,0,0-16-16H432a16,16,0,0,0-16,16V99.67L314.78,10.3C308.5,4.61,296.53,0,288,0s-20.46,4.61-26.74,10.3l-256,226A18.27,18.27,0,0,0,0,248.2a18.64,18.64,0,0,0,4.09,10.71L25.5,282.7a21.14,21.14,0,0,0,12,5.3,21.67,21.67,0,0,0,10.69-4.11l15.9-14V480a32,32,0,0,0,32,32H480a32,32,0,0,0,32-32V269.88l15.91,14A21.94,21.94,0,0,0,538.63,288a20.89,20.89,0,0,0,11.87-5.31l21.41-23.81A21.64,21.64,0,0,0,576,248.19,21,21,0,0,0,570.69,236.27ZM288,176a64,64,0,1,1-64,64A64,64,0,0,1,288,176ZM400,448H176a16,16,0,0,1-16-16,96,96,0,0,1,96-96h64a96,96,0,0,1,96,96A16,16,0,0,1,400,448Z"]
+  };
+
+  // node_modules/emailjs-com/es/store/store.js
+  var store = {
+    _origin: "https://api.emailjs.com"
+  };
+
+  // node_modules/emailjs-com/es/methods/init/init.js
+  var init = (userID, origin = "https://api.emailjs.com") => {
+    store._userID = userID;
+    store._origin = origin;
+  };
+
+  // node_modules/emailjs-com/es/utils/validateParams.js
+  var validateParams = (userID, serviceID, templateID) => {
+    if (!userID) {
+      throw "The user ID is required. Visit https://dashboard.emailjs.com/admin/integration";
+    }
+    if (!serviceID) {
+      throw "The service ID is required. Visit https://dashboard.emailjs.com/admin";
+    }
+    if (!templateID) {
+      throw "The template ID is required. Visit https://dashboard.emailjs.com/admin/templates";
+    }
+    return true;
+  };
+
+  // node_modules/emailjs-com/es/models/EmailJSResponseStatus.js
+  var EmailJSResponseStatus = class {
+    constructor(httpResponse) {
+      this.status = httpResponse.status;
+      this.text = httpResponse.responseText;
+    }
+  };
+
+  // node_modules/emailjs-com/es/api/sendPost.js
+  var sendPost = (url, data, headers = {}) => {
+    return new Promise((resolve2, reject) => {
+      const xhr = new XMLHttpRequest();
+      xhr.addEventListener("load", ({ target }) => {
+        const responseStatus = new EmailJSResponseStatus(target);
+        if (responseStatus.status === 200 || responseStatus.text === "OK") {
+          resolve2(responseStatus);
+        } else {
+          reject(responseStatus);
+        }
+      });
+      xhr.addEventListener("error", ({ target }) => {
+        reject(new EmailJSResponseStatus(target));
+      });
+      xhr.open("POST", store._origin + url, true);
+      Object.keys(headers).forEach((key) => {
+        xhr.setRequestHeader(key, headers[key]);
+      });
+      xhr.send(data);
+    });
+  };
+
+  // node_modules/emailjs-com/es/methods/send/send.js
+  var send = (serviceID, templateID, templatePrams, userID) => {
+    const uID = userID || store._userID;
+    validateParams(uID, serviceID, templateID);
+    const params = {
+      lib_version: "3.2.0",
+      user_id: uID,
+      service_id: serviceID,
+      template_id: templateID,
+      template_params: templatePrams
+    };
+    return sendPost("/api/v1.0/email/send", JSON.stringify(params), {
+      "Content-type": "application/json"
+    });
+  };
+
+  // node_modules/emailjs-com/es/methods/sendForm/sendForm.js
+  var findHTMLForm = (form) => {
+    let currentForm;
+    if (typeof form === "string") {
+      currentForm = document.querySelector(form);
+    } else {
+      currentForm = form;
+    }
+    if (!currentForm || currentForm.nodeName !== "FORM") {
+      throw "The 3rd parameter is expected to be the HTML form element or the style selector of form";
+    }
+    return currentForm;
+  };
+  var sendForm = (serviceID, templateID, form, userID) => {
+    const uID = userID || store._userID;
+    const currentForm = findHTMLForm(form);
+    validateParams(uID, serviceID, templateID);
+    const formData = new FormData(currentForm);
+    formData.append("lib_version", "3.2.0");
+    formData.append("service_id", serviceID);
+    formData.append("template_id", templateID);
+    formData.append("user_id", uID);
+    return sendPost("/api/v1.0/email/send-form", formData);
+  };
+
+  // node_modules/emailjs-com/es/index.js
+  var es_default = {
+    init,
+    send,
+    sendForm
+  };
+
+  // .svelte-kit/output/server/app.js
+  var __accessCheck = (obj, member, msg) => {
+    if (!member.has(obj))
+      throw TypeError("Cannot " + msg);
+  };
+  var __privateGet = (obj, member, getter) => {
+    __accessCheck(obj, member, "read from private field");
+    return getter ? getter.call(obj) : member.get(obj);
+  };
+  var __privateAdd = (obj, member, value) => {
+    if (member.has(obj))
+      throw TypeError("Cannot add the same private member more than once");
+    member instanceof WeakSet ? member.add(obj) : member.set(obj, value);
+  };
+  var __privateSet = (obj, member, value, setter) => {
+    __accessCheck(obj, member, "write to private field");
+    setter ? setter.call(obj, value) : member.set(obj, value);
+    return value;
+  };
+  var _map;
   function get_single_valued_header(headers, key) {
     const value = headers[key];
     if (Array.isArray(value)) {
@@ -496,8 +618,9 @@
     }
     return value;
   }
-
-  // node_modules/@sveltejs/kit/dist/ssr.js
+  function coalesce_to_error(err) {
+    return err instanceof Error || err && err.name && err.message ? err : new Error(JSON.stringify(err));
+  }
   function lowercase_keys(obj) {
     const clone = {};
     for (const key in obj) {
@@ -512,8 +635,8 @@
       headers: {}
     };
   }
-  function is_string(s3) {
-    return typeof s3 === "string" || s3 instanceof String;
+  function is_string(s2) {
+    return typeof s2 === "string" || s2 instanceof String;
   }
   function is_content_type_textual(content_type) {
     if (!content_type)
@@ -774,31 +897,30 @@
     result += '"';
     return result;
   }
-  function noop() {
+  function noop$1() {
   }
-  function safe_not_equal(a2, b2) {
+  function safe_not_equal$1(a2, b2) {
     return a2 != a2 ? b2 == b2 : a2 !== b2 || (a2 && typeof a2 === "object" || typeof a2 === "function");
   }
   Promise.resolve();
-  var subscriber_queue = [];
-  function writable(value, start = noop) {
+  var subscriber_queue$1 = [];
+  function writable$1(value, start = noop$1) {
     let stop;
-    const subscribers = [];
+    const subscribers = new Set();
     function set(new_value) {
-      if (safe_not_equal(value, new_value)) {
+      if (safe_not_equal$1(value, new_value)) {
         value = new_value;
         if (stop) {
-          const run_queue = !subscriber_queue.length;
-          for (let i2 = 0; i2 < subscribers.length; i2 += 1) {
-            const s3 = subscribers[i2];
-            s3[1]();
-            subscriber_queue.push(s3, value);
+          const run_queue = !subscriber_queue$1.length;
+          for (const subscriber of subscribers) {
+            subscriber[1]();
+            subscriber_queue$1.push(subscriber, value);
           }
           if (run_queue) {
-            for (let i2 = 0; i2 < subscriber_queue.length; i2 += 2) {
-              subscriber_queue[i2][0](subscriber_queue[i2 + 1]);
+            for (let i2 = 0; i2 < subscriber_queue$1.length; i2 += 2) {
+              subscriber_queue$1[i2][0](subscriber_queue$1[i2 + 1]);
             }
-            subscriber_queue.length = 0;
+            subscriber_queue$1.length = 0;
           }
         }
       }
@@ -806,19 +928,16 @@
     function update(fn) {
       set(fn(value));
     }
-    function subscribe2(run3, invalidate = noop) {
-      const subscriber = [run3, invalidate];
-      subscribers.push(subscriber);
-      if (subscribers.length === 1) {
-        stop = start(set) || noop;
+    function subscribe2(run2, invalidate = noop$1) {
+      const subscriber = [run2, invalidate];
+      subscribers.add(subscriber);
+      if (subscribers.size === 1) {
+        stop = start(set) || noop$1;
       }
-      run3(value);
+      run2(value);
       return () => {
-        const index2 = subscribers.indexOf(subscriber);
-        if (index2 !== -1) {
-          subscribers.splice(index2, 1);
-        }
-        if (subscribers.length === 0) {
+        subscribers.delete(subscriber);
+        if (subscribers.size === 0) {
           stop();
           stop = null;
         }
@@ -872,11 +991,11 @@
           is_private = true;
         maxage = loaded.maxage;
       });
-      const session = writable($session);
+      const session = writable$1($session);
       const props = {
         stores: {
-          page: writable(null),
-          navigating: writable(null),
+          page: writable$1(null),
+          navigating: writable$1(null),
           session
         },
         page,
@@ -906,14 +1025,14 @@
       ...Array.from(js).map((dep) => `<link rel="modulepreload" href="${dep}">`),
       ...Array.from(css2).map((dep) => `<link rel="stylesheet" href="${dep}">`)
     ].join("\n		");
-    let init3 = "";
+    let init22 = "";
     if (options2.amp) {
-      init3 = `
+      init22 = `
 		<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
 		<noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 		<script async src="https://cdn.ampproject.org/v0.js"><\/script>`;
     } else if (include_js) {
-      init3 = `<script type="module">
+      init22 = `<script type="module">
 			import { start } from ${s$1(options2.entry.file)};
 			start({
 				target: ${options2.target ? `document.querySelector(${s$1(options2.target)})` : "document.body"},
@@ -942,7 +1061,7 @@
 		<\/script>`;
     }
     if (options2.service_worker) {
-      init3 += `<script>
+      init22 += `<script>
 			if ('serviceWorker' in navigator) {
 				navigator.serviceWorker.register('${options2.service_worker}');
 			}
@@ -952,7 +1071,7 @@
       rendered.head,
       styles.size && !options2.amp ? `<style data-svelte>${Array.from(styles).join("\n")}</style>` : "",
       links,
-      init3
+      init22
     ].join("\n\n		");
     const body = options2.amp ? rendered.html : `${rendered.html}
 
@@ -983,7 +1102,7 @@
       return devalue(data);
     } catch (err) {
       if (fail)
-        fail(err);
+        fail(coalesce_to_error(err));
       return null;
     }
   }
@@ -1039,7 +1158,7 @@
     }
     return loaded;
   }
-  var s = JSON.stringify;
+  var s$2 = JSON.stringify;
   async function load_node({
     request,
     options: options2,
@@ -1058,6 +1177,7 @@
     const { module } = node;
     let uses_credentials = false;
     const fetched = [];
+    let set_cookie_headers = [];
     let loaded;
     const page_proxy = new Proxy(page, {
       get: (target, prop, receiver) => {
@@ -1097,7 +1217,7 @@
           let response;
           const filename = resolved.replace(options2.paths.assets, "").slice(1);
           const filename_html = `${filename}/index.html`;
-          const asset = options2.manifest.assets.find((d3) => d3.file === filename || d3.file === filename_html);
+          const asset = options2.manifest.assets.find((d2) => d2.file === filename || d2.file === filename_html);
           if (asset) {
             response = options2.read ? new Response(options2.read(asset.file), {
               headers: asset.type ? { "content-type": asset.type } : {}
@@ -1163,14 +1283,17 @@
                   const body = await response2.text();
                   const headers = {};
                   for (const [key2, value] of response2.headers) {
-                    if (key2 !== "etag" && key2 !== "set-cookie")
+                    if (key2 === "set-cookie") {
+                      set_cookie_headers = set_cookie_headers.concat(value);
+                    } else if (key2 !== "etag") {
                       headers[key2] = value;
+                    }
                   }
                   if (!opts.body || typeof opts.body === "string") {
                     fetched.push({
                       url,
                       body: opts.body,
-                      json: `{"status":${response2.status},"statusText":${s(response2.statusText)},"headers":${s(headers)},"body":${escape(body)}}`
+                      json: `{"status":${response2.status},"statusText":${s$2(response2.statusText)},"headers":${s$2(headers)},"body":${escape$1(body)}}`
                     });
                   }
                   return body;
@@ -1212,10 +1335,11 @@
       loaded: normalize(loaded),
       context: loaded.context || context,
       fetched,
+      set_cookie_headers,
       uses_credentials
     };
   }
-  var escaped = {
+  var escaped$2 = {
     "<": "\\u003C",
     ">": "\\u003E",
     "/": "\\u002F",
@@ -1229,15 +1353,15 @@
     "\u2028": "\\u2028",
     "\u2029": "\\u2029"
   };
-  function escape(str) {
+  function escape$1(str) {
     let result = '"';
     for (let i2 = 0; i2 < str.length; i2 += 1) {
       const char = str.charAt(i2);
       const code = char.charCodeAt(0);
       if (char === '"') {
         result += '\\"';
-      } else if (char in escaped) {
-        result += escaped[char];
+      } else if (char in escaped$2) {
+        result += escaped$2[char];
       } else if (code >= 55296 && code <= 57343) {
         const next = str.charCodeAt(i2 + 1);
         if (code <= 56319 && next >= 56320 && next <= 57343) {
@@ -1273,9 +1397,6 @@
     }
     const prefix = path_match && path_match[0] || base_match && base_match[0] || "";
     return `${prefix}${baseparts.join("/")}`;
-  }
-  function coalesce_to_error(err) {
-    return err instanceof Error ? err : new Error(JSON.stringify(err));
   }
   async function respond_with_error({ request, options: options2, state, $session, status, error: error2 }) {
     const default_layout = await options2.load_component(options2.manifest.layout);
@@ -1373,6 +1494,7 @@
     let branch = [];
     let status = 200;
     let error2;
+    let set_cookie_headers = [];
     ssr:
       if (page_config.ssr) {
         let context = {};
@@ -1391,13 +1513,14 @@
               });
               if (!loaded)
                 return;
+              set_cookie_headers = set_cookie_headers.concat(loaded.set_cookie_headers);
               if (loaded.loaded.redirect) {
-                return {
+                return with_cookies({
                   status: loaded.loaded.status,
                   headers: {
                     location: encodeURI(loaded.loaded.redirect)
                   }
-                };
+                }, set_cookie_headers);
               }
               if (loaded.loaded.error) {
                 ({ status, error: error2 } = loaded.loaded);
@@ -1444,14 +1567,14 @@
                   }
                 }
               }
-              return await respond_with_error({
+              return with_cookies(await respond_with_error({
                 request,
                 options: options2,
                 state,
                 $session,
                 status,
                 error: error2
-              });
+              }), set_cookie_headers);
             }
           }
           if (loaded && loaded.loaded.context) {
@@ -1463,21 +1586,21 @@
         }
       }
     try {
-      return await render_response({
+      return with_cookies(await render_response({
         ...opts,
         page_config,
         status,
         error: error2,
         branch: branch.filter(Boolean)
-      });
+      }), set_cookie_headers);
     } catch (err) {
       const error3 = coalesce_to_error(err);
       options2.handle_error(error3, request);
-      return await respond_with_error({
+      return with_cookies(await respond_with_error({
         ...opts,
         status: 500,
         error: error3
-      });
+      }), set_cookie_headers);
     }
   }
   function get_page_config(leaf, options2) {
@@ -1486,6 +1609,12 @@
       router: "router" in leaf ? !!leaf.router : options2.router,
       hydrate: "hydrate" in leaf ? !!leaf.hydrate : options2.hydrate
     };
+  }
+  function with_cookies(response, set_cookie_headers) {
+    if (set_cookie_headers.length) {
+      response.headers["set-cookie"] = set_cookie_headers;
+    }
+    return response;
   }
   async function render_page(request, route, match, options2, state) {
     if (state.initiator === route) {
@@ -1535,7 +1664,6 @@
       data: new ReadOnlyFormData(map)
     };
   }
-  var _map;
   var ReadOnlyFormData = class {
     constructor(map) {
       __privateAdd(this, _map, void 0);
@@ -1731,133 +1859,13 @@
       };
     }
   }
-
-  // node_modules/@fortawesome/free-solid-svg-icons/index.es.js
-  var faAngleLeft = {
-    prefix: "fas",
-    iconName: "angle-left",
-    icon: [256, 512, [], "f104", "M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"]
-  };
-  var faExternalLinkAlt = {
-    prefix: "fas",
-    iconName: "external-link-alt",
-    icon: [512, 512, [], "f35d", "M432,320H400a16,16,0,0,0-16,16V448H64V128H208a16,16,0,0,0,16-16V80a16,16,0,0,0-16-16H48A48,48,0,0,0,0,112V464a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V336A16,16,0,0,0,432,320ZM488,0h-128c-21.37,0-32.05,25.91-17,41l35.73,35.73L135,320.37a24,24,0,0,0,0,34L157.67,377a24,24,0,0,0,34,0L435.28,133.32,471,169c15,15,41,4.5,41-17V24A24,24,0,0,0,488,0Z"]
-  };
-  var faHouseUser = {
-    prefix: "fas",
-    iconName: "house-user",
-    icon: [576, 512, [], "e065", "M570.69,236.27,512,184.44V48a16,16,0,0,0-16-16H432a16,16,0,0,0-16,16V99.67L314.78,10.3C308.5,4.61,296.53,0,288,0s-20.46,4.61-26.74,10.3l-256,226A18.27,18.27,0,0,0,0,248.2a18.64,18.64,0,0,0,4.09,10.71L25.5,282.7a21.14,21.14,0,0,0,12,5.3,21.67,21.67,0,0,0,10.69-4.11l15.9-14V480a32,32,0,0,0,32,32H480a32,32,0,0,0,32-32V269.88l15.91,14A21.94,21.94,0,0,0,538.63,288a20.89,20.89,0,0,0,11.87-5.31l21.41-23.81A21.64,21.64,0,0,0,576,248.19,21,21,0,0,0,570.69,236.27ZM288,176a64,64,0,1,1-64,64A64,64,0,0,1,288,176ZM400,448H176a16,16,0,0,1-16-16,96,96,0,0,1,96-96h64a96,96,0,0,1,96,96A16,16,0,0,1,400,448Z"]
-  };
-
-  // node_modules/emailjs-com/es/store/store.js
-  var store = {
-    _origin: "https://api.emailjs.com"
-  };
-
-  // node_modules/emailjs-com/es/methods/init/init.js
-  var init = (userID, origin = "https://api.emailjs.com") => {
-    store._userID = userID;
-    store._origin = origin;
-  };
-
-  // node_modules/emailjs-com/es/utils/validateParams.js
-  var validateParams = (userID, serviceID, templateID) => {
-    if (!userID) {
-      throw "The user ID is required. Visit https://dashboard.emailjs.com/admin/integration";
-    }
-    if (!serviceID) {
-      throw "The service ID is required. Visit https://dashboard.emailjs.com/admin";
-    }
-    if (!templateID) {
-      throw "The template ID is required. Visit https://dashboard.emailjs.com/admin/templates";
-    }
-    return true;
-  };
-
-  // node_modules/emailjs-com/es/models/EmailJSResponseStatus.js
-  var EmailJSResponseStatus = class {
-    constructor(httpResponse) {
-      this.status = httpResponse.status;
-      this.text = httpResponse.responseText;
-    }
-  };
-
-  // node_modules/emailjs-com/es/api/sendPost.js
-  var sendPost = (url, data, headers = {}) => {
-    return new Promise((resolve2, reject) => {
-      const xhr = new XMLHttpRequest();
-      xhr.addEventListener("load", ({ target }) => {
-        const responseStatus = new EmailJSResponseStatus(target);
-        if (responseStatus.status === 200 || responseStatus.text === "OK") {
-          resolve2(responseStatus);
-        } else {
-          reject(responseStatus);
-        }
-      });
-      xhr.addEventListener("error", ({ target }) => {
-        reject(new EmailJSResponseStatus(target));
-      });
-      xhr.open("POST", store._origin + url, true);
-      Object.keys(headers).forEach((key) => {
-        xhr.setRequestHeader(key, headers[key]);
-      });
-      xhr.send(data);
-    });
-  };
-
-  // node_modules/emailjs-com/es/methods/send/send.js
-  var send = (serviceID, templateID, templatePrams, userID) => {
-    const uID = userID || store._userID;
-    validateParams(uID, serviceID, templateID);
-    const params = {
-      lib_version: "3.2.0",
-      user_id: uID,
-      service_id: serviceID,
-      template_id: templateID,
-      template_params: templatePrams
-    };
-    return sendPost("/api/v1.0/email/send", JSON.stringify(params), {
-      "Content-type": "application/json"
-    });
-  };
-
-  // node_modules/emailjs-com/es/methods/sendForm/sendForm.js
-  var findHTMLForm = (form) => {
-    let currentForm;
-    if (typeof form === "string") {
-      currentForm = document.querySelector(form);
-    } else {
-      currentForm = form;
-    }
-    if (!currentForm || currentForm.nodeName !== "FORM") {
-      throw "The 3rd parameter is expected to be the HTML form element or the style selector of form";
-    }
-    return currentForm;
-  };
-  var sendForm = (serviceID, templateID, form, userID) => {
-    const uID = userID || store._userID;
-    const currentForm = findHTMLForm(form);
-    validateParams(uID, serviceID, templateID);
-    const formData = new FormData(currentForm);
-    formData.append("lib_version", "3.2.0");
-    formData.append("service_id", serviceID);
-    formData.append("template_id", templateID);
-    formData.append("user_id", uID);
-    return sendPost("/api/v1.0/email/send-form", formData);
-  };
-
-  // node_modules/emailjs-com/es/index.js
-  var es_default = {
-    init,
-    send,
-    sendForm
-  };
-
-  // node_modules/svelte/internal/index.mjs
-  function noop2() {
+  function noop() {
   }
   function run(fn) {
     return fn();
+  }
+  function blank_object() {
+    return Object.create(null);
   }
   function run_all(fns) {
     fns.forEach(run);
@@ -1865,643 +1873,15 @@
   function is_function(thing) {
     return typeof thing === "function";
   }
-  function safe_not_equal2(a2, b2) {
+  function safe_not_equal(a2, b2) {
     return a2 != a2 ? b2 == b2 : a2 !== b2 || (a2 && typeof a2 === "object" || typeof a2 === "function");
-  }
-  function is_empty(obj) {
-    return Object.keys(obj).length === 0;
   }
   function subscribe(store2, ...callbacks) {
     if (store2 == null) {
-      return noop2;
+      return noop;
     }
     const unsub = store2.subscribe(...callbacks);
     return unsub.unsubscribe ? () => unsub.unsubscribe() : unsub;
-  }
-  var tasks = new Set();
-  var active_docs = new Set();
-  var resolved_promise = Promise.resolve();
-  var seen_callbacks = new Set();
-  var outroing = new Set();
-  var globals = typeof window !== "undefined" ? window : typeof globalThis !== "undefined" ? globalThis : global;
-  var boolean_attributes = new Set([
-    "allowfullscreen",
-    "allowpaymentrequest",
-    "async",
-    "autofocus",
-    "autoplay",
-    "checked",
-    "controls",
-    "default",
-    "defer",
-    "disabled",
-    "formnovalidate",
-    "hidden",
-    "ismap",
-    "loop",
-    "multiple",
-    "muted",
-    "nomodule",
-    "novalidate",
-    "open",
-    "playsinline",
-    "readonly",
-    "required",
-    "reversed",
-    "selected"
-  ]);
-  function destroy_component(component, detaching) {
-    const $$ = component.$$;
-    if ($$.fragment !== null) {
-      run_all($$.on_destroy);
-      $$.fragment && $$.fragment.d(detaching);
-      $$.on_destroy = $$.fragment = null;
-      $$.ctx = [];
-    }
-  }
-  var SvelteElement;
-  if (typeof HTMLElement === "function") {
-    SvelteElement = class extends HTMLElement {
-      constructor() {
-        super();
-        this.attachShadow({ mode: "open" });
-      }
-      connectedCallback() {
-        const { on_mount } = this.$$;
-        this.$$.on_disconnect = on_mount.map(run).filter(is_function);
-        for (const key in this.$$.slotted) {
-          this.appendChild(this.$$.slotted[key]);
-        }
-      }
-      attributeChangedCallback(attr, _oldValue, newValue) {
-        this[attr] = newValue;
-      }
-      disconnectedCallback() {
-        run_all(this.$$.on_disconnect);
-      }
-      $destroy() {
-        destroy_component(this, 1);
-        this.$destroy = noop2;
-      }
-      $on(type, callback) {
-        const callbacks = this.$$.callbacks[type] || (this.$$.callbacks[type] = []);
-        callbacks.push(callback);
-        return () => {
-          const index2 = callbacks.indexOf(callback);
-          if (index2 !== -1)
-            callbacks.splice(index2, 1);
-        };
-      }
-      $set($$props) {
-        if (this.$$set && !is_empty($$props)) {
-          this.$$.skip_bound = true;
-          this.$$set($$props);
-          this.$$.skip_bound = false;
-        }
-      }
-    };
-  }
-
-  // node_modules/svelte/store/index.mjs
-  var subscriber_queue2 = [];
-  function readable(value, start) {
-    return {
-      subscribe: writable2(value, start).subscribe
-    };
-  }
-  function writable2(value, start = noop2) {
-    let stop;
-    const subscribers = new Set();
-    function set(new_value) {
-      if (safe_not_equal2(value, new_value)) {
-        value = new_value;
-        if (stop) {
-          const run_queue = !subscriber_queue2.length;
-          for (const subscriber of subscribers) {
-            subscriber[1]();
-            subscriber_queue2.push(subscriber, value);
-          }
-          if (run_queue) {
-            for (let i2 = 0; i2 < subscriber_queue2.length; i2 += 2) {
-              subscriber_queue2[i2][0](subscriber_queue2[i2 + 1]);
-            }
-            subscriber_queue2.length = 0;
-          }
-        }
-      }
-    }
-    function update(fn) {
-      set(fn(value));
-    }
-    function subscribe2(run3, invalidate = noop2) {
-      const subscriber = [run3, invalidate];
-      subscribers.add(subscriber);
-      if (subscribers.size === 1) {
-        stop = start(set) || noop2;
-      }
-      run3(value);
-      return () => {
-        subscribers.delete(subscriber);
-        if (subscribers.size === 0) {
-          stop();
-          stop = null;
-        }
-      };
-    }
-    return { set, update, subscribe: subscribe2 };
-  }
-  function derived(stores, fn, initial_value) {
-    const single = !Array.isArray(stores);
-    const stores_array = single ? [stores] : stores;
-    const auto = fn.length < 2;
-    return readable(initial_value, (set) => {
-      let inited = false;
-      const values = [];
-      let pending = 0;
-      let cleanup = noop2;
-      const sync = () => {
-        if (pending) {
-          return;
-        }
-        cleanup();
-        const result = fn(single ? values[0] : values, set);
-        if (auto) {
-          set(result);
-        } else {
-          cleanup = is_function(result) ? result : noop2;
-        }
-      };
-      const unsubscribers = stores_array.map((store2, i2) => subscribe(store2, (value) => {
-        values[i2] = value;
-        pending &= ~(1 << i2);
-        if (inited) {
-          sync();
-        }
-      }, () => {
-        pending |= 1 << i2;
-      }));
-      inited = true;
-      sync();
-      return function stop() {
-        run_all(unsubscribers);
-        cleanup();
-      };
-    });
-  }
-
-  // node_modules/felte/dist/index.mjs
-  function n(e) {
-    return Object.prototype.toString.call(e) === "[object Object]";
-  }
-  function r(e) {
-    return Object.keys(e || {}).reduce((t, i2) => Object.assign(Object.assign({}, t), { [i2]: n(e[i2]) ? r(e[i2]) : Array.isArray(e[i2]) ? [...e[i2]] : e[i2] }), {});
-  }
-  function i(e, t) {
-    return function(e2, t2) {
-      return Object.keys(e2).reduce((n2, r2) => Object.assign(Object.assign({}, n2), { [r2]: t2(e2[r2]) }), {});
-    }(e, (e2) => n(e2) ? i(e2, t) : Array.isArray(e2) ? e2.map(function(e3) {
-      return function(t2) {
-        return n(t2) ? i(t2, e3) : e3;
-      };
-    }(t)) : t);
-  }
-  function o(...e) {
-    const t = e.pop(), a2 = r(e.shift());
-    if (e.length === 0)
-      return a2;
-    for (const u2 of e) {
-      if (!u2)
-        continue;
-      const e2 = Object.keys(u2);
-      for (const c2 of e2) {
-        const e3 = t(a2[c2], u2[c2]);
-        if (e3 !== void 0)
-          a2[c2] = e3;
-        else if (n(u2[c2]) && n(a2[c2]))
-          a2[c2] = o(a2[c2], u2[c2], t);
-        else if (Array.isArray(u2[c2]) && Array.isArray(a2[c2]))
-          a2[c2] = u2[c2].map((e4, n2) => o(a2[c2][n2], e4, t));
-        else if (n(u2[c2])) {
-          const e4 = i(r(u2[c2]), void 0);
-          a2[c2] = o(e4, u2[c2], t);
-        } else
-          u2[c2] !== void 0 && (a2[c2] = u2[c2]);
-      }
-    }
-    return a2;
-  }
-  function a(e, t) {
-    if (!n(e) || !n(t)) {
-      if (Array.isArray(t)) {
-        if (t.some(n))
-          return;
-        const r2 = Array.isArray(e) ? e : [];
-        return t.map((e2, t2) => {
-          var n2;
-          return (n2 = r2[t2]) !== null && n2 !== void 0 ? n2 : e2;
-        });
-      }
-      return e !== void 0 ? e : void 0;
-    }
-  }
-  function u(...e) {
-    return o(...e, a);
-  }
-  function c(...e) {
-    return o(...e, () => {
-    });
-  }
-  function s2(e, t, n2) {
-    const r2 = (n3) => String.prototype.split.call(t, n3).filter(Boolean).reduce((e2, t2) => e2 != null ? e2[t2] : e2, e), i2 = r2(/[,[\]]+?/) || r2(/[,[\].]+?/);
-    return i2 === void 0 || i2 === e ? n2 : i2;
-  }
-  function l(e, t, n2) {
-    Object(e) !== e ? e = {} : e !== void 0 && (e = r(e));
-    let i2 = Array.isArray(t) ? t : t.toString().match(/[^.[\]]+/g) || [];
-    return i2.slice(0, -1).reduce((e2, t2, n3) => Object(e2[t2]) === e2[t2] ? e2[t2] : e2[t2] = Math.abs(Number(i2[n3 + 1])) >> 0 == +i2[n3 + 1] ? [] : {}, e)[i2[i2.length - 1]] = n2, e;
-  }
-  function d(e, t) {
-    var n2;
-    if (Object(e) !== e)
-      return;
-    e !== void 0 && (e = r(e));
-    let i2 = Array.isArray(t) ? t : t.toString().match(/[^.[\]]+/g) || [];
-    return (n2 = i2.slice(0, -1).reduce((e2, t2) => Object(e2[t2]) === e2[t2] ? e2[t2] : void 0, e)) === null || n2 === void 0 || delete n2[i2[i2.length - 1]], e;
-  }
-  function f(e, t, n2) {
-    Object(e) !== e && (e = {});
-    let r2 = t.toString().match(/[^.[\]]+/g) || [];
-    return r2.slice(0, -1).reduce((e2, t2, n3) => Object(e2[t2]) === e2[t2] ? e2[t2] : e2[t2] = Math.abs(Number(r2[n3 + 1])) >> 0 == +r2[n3 + 1] ? [] : {}, e)[r2[r2.length - 1]] = n2(s2(e, t)), e;
-  }
-  function v(e, t) {
-    return function(e2, t2) {
-      return Object.keys(e2).some((n2) => t2(e2[n2]));
-    }(e, (e2) => n(e2) ? v(e2, t) : t(e2));
-  }
-  function m(e) {
-    return e.hasAttribute("data-felte-index") ? Number(e.dataset.felteIndex) : void 0;
-  }
-  function y(e) {
-    var t;
-    return ((t = e) === null || t === void 0 ? void 0 : t.nodeName) === "INPUT";
-  }
-  function b(e) {
-    var t;
-    return ((t = e) === null || t === void 0 ? void 0 : t.nodeName) === "SELECT";
-  }
-  function h(e) {
-    var t;
-    return ((t = e) === null || t === void 0 ? void 0 : t.nodeName) === "FIELDSET";
-  }
-  function p(e) {
-    return y(e) || function(e2) {
-      var t;
-      return ((t = e2) === null || t === void 0 ? void 0 : t.nodeName) === "TEXTAREA";
-    }(e) || b(e);
-  }
-  function g(e) {
-    return e.nodeType === Node.ELEMENT_NODE;
-  }
-  function A(e, t) {
-    const n2 = m(e);
-    let r2 = "";
-    t ? r2 = t : p(e) && (r2 = e.name), r2 = n2 === void 0 ? r2 : `${r2}[${n2}]`;
-    let i2 = e.parentNode;
-    if (!i2)
-      return r2;
-    for (; i2 && i2.nodeName !== "FORM"; ) {
-      if (h(i2) && i2.name) {
-        const e2 = m(i2);
-        r2 = `${e2 === void 0 ? i2.name : `${i2.name}[${e2}]`}.${r2}`;
-      }
-      i2 = i2.parentNode;
-    }
-    return r2;
-  }
-  function E(e) {
-    const t = e.dataset.felteFieldset, n2 = m(e), r2 = n2 === void 0 ? e.name : `${e.name}[${n2}]`;
-    return t ? `${t}.${r2}` : r2;
-  }
-  function O(e) {
-    let t = e;
-    for (; t && t.nodeName !== "FORM"; ) {
-      if (t.hasAttribute("data-felte-ignore"))
-        return true;
-      t = t.parentElement;
-    }
-    return false;
-  }
-  function S(e) {
-    if (p(e))
-      return [e];
-    if (e.childElementCount === 0)
-      return [];
-    const t = new Set();
-    for (const n2 of e.children) {
-      if (p(n2) && t.add(n2), h(n2))
-        for (const e2 of n2.elements)
-          p(e2) && t.add(e2);
-      n2.childElementCount > 0 && S(n2).forEach((e2) => t.add(e2));
-    }
-    return Array.from(t);
-  }
-  function j(e) {
-    for (const t of e.elements)
-      if (p(t) || h(t)) {
-        if (e.name && t.name) {
-          const n2 = m(e), r2 = n2 === void 0 ? e.name : `${e.name}[${n2}]`;
-          t.dataset.felteFieldset = e.dataset.felteFieldset ? `${e.dataset.felteFieldset}.${r2}` : r2;
-        }
-        e.dataset.felteUnsetOnRemove !== "true" || t.hasAttribute("data-felte-unset-on-remove") || (t.dataset.felteUnsetOnRemove = "true");
-      }
-  }
-  function N(e) {
-    return e.type.match(/^(number|range)$/) ? e.value ? +e.value : void 0 : e.value;
-  }
-  function k(e) {
-    var t;
-    let n2 = {};
-    for (const r2 of e.elements) {
-      if (h(r2) && j(r2), !p(r2) || !r2.name)
-        continue;
-      const i2 = A(r2), o2 = m(r2);
-      if (y(r2)) {
-        if (r2.type === "checkbox") {
-          if (s2(n2, i2) === void 0) {
-            if (Array.from(e.querySelectorAll(`[name="${r2.name}"]`)).filter((e2) => !!p(e2) && (o2 !== void 0 ? Number(e2.dataset.felteIndex) === o2 : i2 === A(e2))).length === 1) {
-              n2 = l(n2, i2, r2.checked);
-              continue;
-            }
-            n2 = l(n2, i2, r2.checked ? [r2.value] : []);
-            continue;
-          }
-          Array.isArray(s2(n2, i2)) && r2.checked && f(n2, i2, (e2) => (o2 === void 0 || Array.isArray(e2) || (e2 = []), [...e2, r2.value]));
-          continue;
-        }
-        if (r2.type === "radio") {
-          if (s2(n2, i2))
-            continue;
-          n2 = l(n2, i2, r2.checked ? r2.value : void 0);
-          continue;
-        }
-        if (r2.type === "file") {
-          n2 = l(n2, i2, r2.multiple ? Array.from(r2.files || []) : (t = r2.files) === null || t === void 0 ? void 0 : t[0]);
-          continue;
-        }
-      }
-      const a2 = N(r2);
-      n2 = l(n2, i2, a2);
-    }
-    return { defaultData: n2 };
-  }
-  function $(e, t) {
-    if (!p(e))
-      return;
-    const n2 = t;
-    if (y(e)) {
-      if (e.type === "checkbox") {
-        const t2 = n2;
-        return t2 === void 0 || typeof t2 == "boolean" ? void (e.checked = !!t2) : void (Array.isArray(t2) && (t2.includes(e.value) ? e.checked = true : e.checked = false));
-      }
-      if (e.type === "radio") {
-        const t2 = n2;
-        return void (e.value === t2 ? e.checked = true : e.checked = false);
-      }
-      if (e.type === "file")
-        return e.files = null, void (e.value = "");
-    }
-    e.value = String(n2 != null ? n2 : "");
-  }
-  function x(e, t) {
-    for (const n2 of e.elements)
-      h(n2) && j(n2), p(n2) && n2.name && $(n2, s2(t, A(n2)));
-  }
-  function L(e, t) {
-    if (!n(e) && !n(t)) {
-      if (e === null)
-        return t;
-      if (t === null)
-        return e;
-      if (e && t)
-        return Array.isArray(e) || (e = [e]), Array.isArray(t) || (t = [t]), [...e, ...t];
-    }
-  }
-  async function T(e, t) {
-    if (t)
-      return Array.isArray(t) ? o(...await Promise.all(t.map((t2) => t2(e))), L) : t(e);
-  }
-  function V() {
-  }
-  function F(e) {
-    let t;
-    return function(e2, ...t2) {
-      if (e2 == null)
-        return V;
-      const n2 = e2.subscribe(...t2);
-      return n2.unsubscribe ? () => n2.unsubscribe() : n2;
-    }(e, (e2) => t = e2)(), t;
-  }
-  function M({ stores: e, config: t, currentExtenders: n2, extender: o2 }) {
-    var a2;
-    const { isSubmitting: f2, data: h2, touched: j2, errors: L2 } = e;
-    function V2(e2) {
-      var r2, o3, a3;
-      const u2 = (r2 = e2 == null ? void 0 : e2.onSubmit) !== null && r2 !== void 0 ? r2 : t.onSubmit, c2 = (o3 = e2 == null ? void 0 : e2.validate) !== null && o3 !== void 0 ? o3 : t.validate, s3 = (a3 = e2 == null ? void 0 : e2.onError) !== null && a3 !== void 0 ? a3 : t.onError;
-      return async function(e3) {
-        e3 == null || e3.preventDefault(), f2.set(true);
-        const t2 = F(h2), r3 = await T(t2, c2);
-        if (j2.update((e4) => i(e4, true)), r3 && (L2.set(r3), v(r3, (e4) => !!e4)))
-          return n2.forEach((e4) => {
-            var n3;
-            return (n3 = e4 == null ? void 0 : e4.onSubmitError) === null || n3 === void 0 ? void 0 : n3.call(e4, { data: t2, errors: r3 });
-          }), void f2.set(false);
-        try {
-          await u2(t2);
-        } catch (e4) {
-          if (!s3)
-            throw e4;
-          const r4 = s3(e4);
-          r4 && (L2.set(r4), n2.forEach((e5) => {
-            var n3;
-            return (n3 = e5 == null ? void 0 : e5.onSubmitError) === null || n3 === void 0 ? void 0 : n3.call(e5, { data: t2, errors: r4 });
-          }));
-        } finally {
-          f2.set(false);
-        }
-      };
-    }
-    function M2(e2, t2) {
-      const n3 = t2 === void 0 ? e2 : `${e2}[${t2}]`;
-      j2.update((e3) => l(e3, n3, true));
-    }
-    function w2(e2) {
-      h2.set(r(e2)), D && x(D, e2);
-    }
-    let D, R = (a2 = t.initialValues) !== null && a2 !== void 0 ? a2 : {};
-    const I = V2();
-    return { handleSubmit: I, createSubmitHandler: V2, reset: function() {
-      w2(r(R)), j2.update((e2) => i(e2, false));
-    }, setTouched: M2, setError: function(e2, t2) {
-      L2.update((n3) => l(n3, e2, t2));
-    }, setField: function(e2, t2, n3 = true) {
-      if (h2.update((n4) => l(n4, e2, t2)), n3 && M2(e2), D)
-        for (const n4 of D.elements) {
-          if (!p(n4) || !n4.name)
-            continue;
-          const r2 = A(n4);
-          if (e2 === r2)
-            return void $(n4, t2);
-        }
-    }, setFields: w2, validate: async function() {
-      const e2 = F(h2);
-      j2.update((e3) => i(e3, true));
-      const n3 = await T(e2, t.validate);
-      return L2.set(n3 || {}), n3;
-    }, form: function(e2) {
-      function a3(n3) {
-        return n3({ form: e2, controls: Array.from(e2.elements).filter(p), data: h2, errors: L2, touched: j2, config: t });
-      }
-      n2 = o2.map(a3), e2.noValidate = !!t.validate;
-      const { defaultData: f3 } = k(e2);
-      function v2(e3) {
-        var n3;
-        const r2 = e3.target;
-        if (!r2 || !p(r2) || b(r2) || O(r2))
-          return;
-        if (["checkbox", "radio", "file"].includes(r2.type))
-          return;
-        if (!r2.name)
-          return;
-        ((n3 = t.touchTriggerEvents) === null || n3 === void 0 ? void 0 : n3.input) && M2(A(r2));
-        const i2 = N(r2);
-        h2.update((e4) => l(e4, A(r2), i2));
-      }
-      function $2(n3) {
-        var r2;
-        const i2 = n3.target;
-        i2 && p(i2) && !O(i2) && i2.name && (((r2 = t.touchTriggerEvents) === null || r2 === void 0 ? void 0 : r2.change) && M2(A(i2)), b(i2) && h2.update((e3) => l(e3, A(i2), i2.value)), y(i2) && (i2.type === "checkbox" && function(t2) {
-          const n4 = m(t2), r3 = A(t2), i3 = Array.from(e2.querySelectorAll(`[name="${t2.name}"]`)).filter((e3) => !!p(e3) && (n4 !== void 0 ? Number(e3.dataset.felteIndex) === n4 : r3 === A(e3)));
-          i3.length === 1 ? h2.update((e3) => l(e3, A(t2), t2.checked)) : h2.update((e3) => l(e3, A(t2), i3.filter(y).filter((e4) => e4.checked).map((e4) => e4.value)));
-        }(i2), i2.type === "radio" && function(t2) {
-          const n4 = e2.querySelectorAll(`[name="${t2.name}"]`), r3 = Array.from(n4).find((e3) => y(e3) && e3.checked);
-          h2.update((e3) => l(e3, A(t2), r3 == null ? void 0 : r3.value));
-        }(i2), i2.type === "file" && function(e3) {
-          const t2 = e3.files;
-          h2.update((n4) => l(n4, A(e3), e3.multiple ? Array.from(t2 != null ? t2 : []) : t2 == null ? void 0 : t2[0]));
-        }(i2)));
-      }
-      function x2(e3) {
-        var n3;
-        const r2 = e3.target;
-        r2 && p(r2) && !O(r2) && r2.name && ((n3 = t.touchTriggerEvents) === null || n3 === void 0 ? void 0 : n3.blur) && M2(A(r2));
-      }
-      function T2(e3) {
-        for (const t2 of e3)
-          t2.dataset.felteUnsetOnRemove === "true" && h2.update((e4) => d(e4, E(t2)));
-      }
-      D = e2, R = c(r(f3), R), w2(R), j2.set(i(R, false));
-      const V3 = new MutationObserver(function(t2) {
-        for (const r2 of t2)
-          if (r2.type === "childList") {
-            if (r2.addedNodes.length > 0) {
-              if (!Array.from(r2.addedNodes).some((e3) => !!g(e3) && (!!p(e3) || S(e3).length > 0)))
-                continue;
-              n2.forEach((e3) => {
-                var t4;
-                return (t4 = e3 == null ? void 0 : e3.destroy) === null || t4 === void 0 ? void 0 : t4.call(e3);
-              }), n2 = o2.map(a3);
-              const { defaultData: t3 } = k(e2), c2 = i(t3, false);
-              h2.update((e3) => u(e3, t3)), j2.update((e3) => u(e3, c2));
-            }
-            if (r2.removedNodes.length > 0)
-              for (const e3 of r2.removedNodes) {
-                if (!g(e3))
-                  continue;
-                const t3 = S(e3);
-                t3.length !== 0 && (n2.forEach((e4) => {
-                  var t4;
-                  return (t4 = e4 == null ? void 0 : e4.destroy) === null || t4 === void 0 ? void 0 : t4.call(e4);
-                }), n2 = o2.map(a3), T2(t3));
-              }
-          }
-      });
-      V3.observe(e2, { childList: true, subtree: true }), e2.addEventListener("input", v2), e2.addEventListener("change", $2), e2.addEventListener("focusout", x2), e2.addEventListener("submit", I);
-      const F2 = L2.subscribe((t2) => {
-        for (const n3 of e2.elements) {
-          if (!p(n3) || !n3.name)
-            continue;
-          const e3 = s2(t2, A(n3)), r2 = Array.isArray(e3) ? e3.join("\n") : typeof e3 == "string" ? e3 : void 0;
-          r2 !== n3.dataset.felteValidationMessage && (r2 ? n3.dataset.felteValidationMessage = r2 : delete n3.dataset.felteValidationMessage);
-        }
-      });
-      return { destroy() {
-        V3.disconnect(), e2.removeEventListener("input", v2), e2.removeEventListener("change", $2), e2.removeEventListener("focusout", x2), e2.removeEventListener("submit", I), F2(), n2.forEach((e3) => {
-          var t2;
-          return (t2 = e3 == null ? void 0 : e3.destroy) === null || t2 === void 0 ? void 0 : t2.call(e3);
-        });
-      } };
-    } };
-  }
-  function w(a2) {
-    return function(e, t) {
-      var i2, a3, u2;
-      (i2 = e.reporter) !== null && i2 !== void 0 || (e.reporter = []), (a3 = e.extend) !== null && a3 !== void 0 || (e.extend = []), (u2 = e.touchTriggerEvents) !== null && u2 !== void 0 || (e.touchTriggerEvents = { change: true, blur: true }), e.validate && !Array.isArray(e.validate) && (e.validate = [e.validate]);
-      const c2 = [...Array.isArray(e.reporter) ? e.reporter : [e.reporter], ...Array.isArray(e.extend) ? e.extend : [e.extend]];
-      let s3 = [];
-      const { isSubmitting: l2, data: d3, errors: f2, touched: v2, isValid: m2 } = t.stores;
-      s3 = c2.map((t2) => t2({ errors: f2, touched: v2, data: d3, config: e }));
-      const y2 = M({ currentExtenders: s3, extender: c2, config: e, stores: { data: d3, errors: f2, touched: v2, isValid: m2, isSubmitting: l2 } });
-      function b2(e2, t2) {
-        if (!n(e2))
-          return e2 !== t2;
-      }
-      function h2(e2, t2) {
-        if (!n(e2))
-          return t2 || e2;
-      }
-      return Object.assign({ data: Object.assign(Object.assign({}, d3), { set: function(t2) {
-        return v2.update((n2) => {
-          const i3 = o(r(t2), e.initialValues, b2);
-          return o(i3, n2, h2);
-        }), d3.set(t2);
-      } }), errors: f2, touched: v2, isValid: m2, isSubmitting: l2 }, y2);
-    }(a2, { stores: function(a3) {
-      const u2 = i(a3.initialValues || {}, false), c2 = writable2(u2), s3 = writable2(a3.initialValues ? r(a3.initialValues) : {}), l2 = writable2({}, (e) => s3.subscribe(async function(t) {
-        let n2 = {};
-        a3.validate && t && (n2 = await T(t, a3.validate), e(n2 || {}));
-      }));
-      function d3(e, t) {
-        if (!n(t)) {
-          if (Array.isArray(t)) {
-            if (t.some(n))
-              return;
-            const r2 = Array.isArray(e) ? e : [];
-            return t.map((e2, t2) => e2 && r2[t2] || null);
-          }
-          return t && e || null;
-        }
-      }
-      const { subscribe: f2 } = derived([l2, c2], ([e, t]) => o(e, t, d3));
-      let m2 = false;
-      const y2 = derived(l2, (e) => !a3.validate || (m2 ? !v(e, (e2) => !!e2) : (m2 = true, false)));
-      return { touched: c2, isSubmitting: writable2(false), isValid: y2, errors: { subscribe: f2, set: l2.set, update: l2.update }, data: s3 };
-    }(a2) });
-  }
-
-  // .svelte-kit/output/server/app.js
-  function noop3() {
-  }
-  function run2(fn) {
-    return fn();
-  }
-  function blank_object() {
-    return Object.create(null);
-  }
-  function run_all2(fns) {
-    fns.forEach(run2);
-  }
-  function safe_not_equal3(a2, b2) {
-    return a2 != a2 ? b2 == b2 : a2 !== b2 || (a2 && typeof a2 === "object" || typeof a2 === "function");
   }
   function null_to_empty(value) {
     return value == null ? "" : value;
@@ -2519,15 +1899,15 @@
     get_current_component().$$.context.set(key, context);
   }
   Promise.resolve();
-  var escaped2 = {
+  var escaped = {
     '"': "&quot;",
     "'": "&#39;",
     "&": "&amp;",
     "<": "&lt;",
     ">": "&gt;"
   };
-  function escape2(html) {
-    return String(html).replace(/["'&<>]/g, (match) => escaped2[match]);
+  function escape(html) {
+    return String(html).replace(/["'&<>]/g, (match) => escaped[match]);
   }
   function each(items, fn) {
     let str = "";
@@ -2569,7 +1949,7 @@
         on_destroy = [];
         const result = { title: "", head: "", css: new Set() };
         const html = $$render(result, props, {}, $$slots, context);
-        run_all2(on_destroy);
+        run_all(on_destroy);
         return {
           html,
           css: {
@@ -2585,11 +1965,11 @@
   function add_attribute(name, value, boolean) {
     if (value == null || boolean && !value)
       return "";
-    return ` ${name}${value === true ? "" : `=${typeof value === "string" ? JSON.stringify(escape2(value)) : `"${value}"`}`}`;
+    return ` ${name}${value === true ? "" : `=${typeof value === "string" ? JSON.stringify(escape(value)) : `"${value}"`}`}`;
   }
   function afterUpdate() {
   }
-  var css$j = {
+  var css$k = {
     code: "#svelte-announcer.svelte-1j55zn5{position:absolute;left:0;top:0;clip:rect(0 0 0 0);clip-path:inset(50%);overflow:hidden;white-space:nowrap;width:1px;height:1px}",
     map: `{"version":3,"file":"root.svelte","sources":["root.svelte"],"sourcesContent":["<!-- This file is generated by @sveltejs/kit \u2014 do not edit it! -->\\n<script>\\n\\timport { setContext, afterUpdate, onMount } from 'svelte';\\n\\n\\t// stores\\n\\texport let stores;\\n\\texport let page;\\n\\n\\texport let components;\\n\\texport let props_0 = null;\\n\\texport let props_1 = null;\\n\\texport let props_2 = null;\\n\\n\\tsetContext('__svelte__', stores);\\n\\n\\t$: stores.page.set(page);\\n\\tafterUpdate(stores.page.notify);\\n\\n\\tlet mounted = false;\\n\\tlet navigated = false;\\n\\tlet title = null;\\n\\n\\tonMount(() => {\\n\\t\\tconst unsubscribe = stores.page.subscribe(() => {\\n\\t\\t\\tif (mounted) {\\n\\t\\t\\t\\tnavigated = true;\\n\\t\\t\\t\\ttitle = document.title || 'untitled page';\\n\\t\\t\\t}\\n\\t\\t});\\n\\n\\t\\tmounted = true;\\n\\t\\treturn unsubscribe;\\n\\t});\\n<\/script>\\n\\n<svelte:component this={components[0]} {...(props_0 || {})}>\\n\\t{#if components[1]}\\n\\t\\t<svelte:component this={components[1]} {...(props_1 || {})}>\\n\\t\\t\\t{#if components[2]}\\n\\t\\t\\t\\t<svelte:component this={components[2]} {...(props_2 || {})}/>\\n\\t\\t\\t{/if}\\n\\t\\t</svelte:component>\\n\\t{/if}\\n</svelte:component>\\n\\n{#if mounted}\\n\\t<div id=\\"svelte-announcer\\" aria-live=\\"assertive\\" aria-atomic=\\"true\\">\\n\\t\\t{#if navigated}\\n\\t\\t\\t{title}\\n\\t\\t{/if}\\n\\t</div>\\n{/if}\\n\\n<style>\\n\\t#svelte-announcer {\\n\\t\\tposition: absolute;\\n\\t\\tleft: 0;\\n\\t\\ttop: 0;\\n\\t\\tclip: rect(0 0 0 0);\\n\\t\\tclip-path: inset(50%);\\n\\t\\toverflow: hidden;\\n\\t\\twhite-space: nowrap;\\n\\t\\twidth: 1px;\\n\\t\\theight: 1px;\\n\\t}\\n</style>"],"names":[],"mappings":"AAsDC,iBAAiB,eAAC,CAAC,AAClB,QAAQ,CAAE,QAAQ,CAClB,IAAI,CAAE,CAAC,CACP,GAAG,CAAE,CAAC,CACN,IAAI,CAAE,KAAK,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CACnB,SAAS,CAAE,MAAM,GAAG,CAAC,CACrB,QAAQ,CAAE,MAAM,CAChB,WAAW,CAAE,MAAM,CACnB,KAAK,CAAE,GAAG,CACV,MAAM,CAAE,GAAG,AACZ,CAAC"}`
   };
@@ -2614,7 +1994,7 @@
       $$bindings.props_1(props_1);
     if ($$props.props_2 === void 0 && $$bindings.props_2 && props_2 !== void 0)
       $$bindings.props_2(props_2);
-    $$result.css.add(css$j);
+    $$result.css.add(css$k);
     {
       stores.page.set(page);
     }
@@ -2652,9 +2032,9 @@ ${``}`;
       amp: false,
       dev: false,
       entry: {
-        file: assets + "/_app/start-b97acddb.js",
-        css: [assets + "/_app/assets/start-61d1577b.css"],
-        js: [assets + "/_app/start-b97acddb.js", assets + "/_app/chunks/vendor-eb904315.js", assets + "/_app/chunks/preload-helper-ec9aa979.js", assets + "/_app/chunks/singletons-12a22614.js"]
+        file: assets + "/_app/start-76b31002.js",
+        css: [assets + "/_app/assets/start-61d1577b.css", assets + "/_app/assets/vendor-ec9510ad.css"],
+        js: [assets + "/_app/start-76b31002.js", assets + "/_app/chunks/vendor-25f6bc4e.js", assets + "/_app/chunks/preload-helper-ec9aa979.js", assets + "/_app/chunks/singletons-12a22614.js"]
       },
       fetched: void 0,
       floc: false,
@@ -2681,7 +2061,7 @@ ${``}`;
       trailing_slash: "never"
     };
   }
-  var d2 = decodeURIComponent;
+  var d$1 = (s2) => s2.replace(/%23/g, "#").replace(/%3[Bb]/g, ";").replace(/%2[Cc]/g, ",").replace(/%2[Ff]/g, "/").replace(/%3[Ff]/g, "?").replace(/%3[Aa]/g, ":").replace(/%40/g, "@").replace(/%26/g, "&").replace(/%3[Dd]/g, "=").replace(/%2[Bb]/g, "+").replace(/%24/g, "$");
   var empty = () => ({});
   var manifest = {
     assets: [{ "file": ".DS_Store", "size": 8196, "type": null }, { "file": "android-chrome-192x192.png", "size": 48542, "type": "image/png" }, { "file": "android-chrome-512x512.png", "size": 234371, "type": "image/png" }, { "file": "apple-touch-icon.png", "size": 43632, "type": "image/png" }, { "file": "coding.svg", "size": 42125, "type": "image/svg+xml" }, { "file": "contact.png", "size": 3617, "type": "image/png" }, { "file": "cv.png", "size": 5255, "type": "image/png" }, { "file": "dani.png", "size": 15154, "type": "image/png" }, { "file": "favicon-16x16.png", "size": 851, "type": "image/png" }, { "file": "favicon-32x32.png", "size": 2452, "type": "image/png" }, { "file": "favicon.ico", "size": 15406, "type": "image/vnd.microsoft.icon" }, { "file": "favicon.png", "size": 1571, "type": "image/png" }, { "file": "github.png", "size": 9406, "type": "image/png" }, { "file": "icon21.png", "size": 10896, "type": "image/png" }, { "file": "kingOfTheHill.jpg", "size": 95648, "type": "image/jpeg" }, { "file": "linkedin.png", "size": 4742, "type": "image/png" }, { "file": "lionHead.png", "size": 14123, "type": "image/png" }, { "file": "myob.png", "size": 9770, "type": "image/png" }, { "file": "projects/.DS_Store", "size": 8196, "type": null }, { "file": "projects/21/.DS_Store", "size": 6148, "type": null }, { "file": "projects/21/210.avif", "size": 28868, "type": "image/avif" }, { "file": "projects/21/210.png", "size": 46836, "type": "image/png" }, { "file": "projects/21/211.avif", "size": 5694, "type": "image/avif" }, { "file": "projects/21/211.png", "size": 12181, "type": "image/png" }, { "file": "projects/21/212.avif", "size": 10644, "type": "image/avif" }, { "file": "projects/21/212.png", "size": 20019, "type": "image/png" }, { "file": "projects/bedzme/.DS_Store", "size": 6148, "type": null }, { "file": "projects/bedzme/bedzme0.avif", "size": 4729, "type": "image/avif" }, { "file": "projects/bedzme/bedzme0.png", "size": 21823, "type": "image/png" }, { "file": "projects/bedzme/bedzme1.avif", "size": 6277, "type": "image/avif" }, { "file": "projects/bedzme/bedzme1.png", "size": 23135, "type": "image/png" }, { "file": "projects/bedzme/bedzme2.avif", "size": 4480, "type": "image/avif" }, { "file": "projects/bedzme/bedzme2.png", "size": 10704, "type": "image/png" }, { "file": "projects/salestracker/salestracker0.avif", "size": 3765, "type": "image/avif" }, { "file": "projects/salestracker/salestracker0.png", "size": 11845, "type": "image/png" }, { "file": "projects/salestracker/salestracker1.avif", "size": 17162, "type": "image/avif" }, { "file": "projects/salestracker/salestracker1.png", "size": 74155, "type": "image/png" }, { "file": "projects/salestracker/salestracker2.avif", "size": 13274, "type": "image/avif" }, { "file": "projects/salestracker/salestracker2.png", "size": 55419, "type": "image/png" }, { "file": "projects/taskr/taskr0.avif", "size": 5820, "type": "image/avif" }, { "file": "projects/taskr/taskr0.png", "size": 25922, "type": "image/png" }, { "file": "projects/taskr/taskr1.avif", "size": 16639, "type": "image/avif" }, { "file": "projects/taskr/taskr1.png", "size": 58657, "type": "image/png" }, { "file": "projects/taskr/taskr2.avif", "size": 13663, "type": "image/avif" }, { "file": "projects/taskr/taskr2.png", "size": 58638, "type": "image/png" }, { "file": "projects/thissite/.DS_Store", "size": 6148, "type": null }, { "file": "projects/thissite/thissite0.avif", "size": 32451, "type": "image/avif" }, { "file": "projects/thissite/thissite0.png", "size": 105505, "type": "image/png" }, { "file": "projects/thissite/thissite1.avif", "size": 50809, "type": "image/avif" }, { "file": "projects/thissite/thissite1.png", "size": 110245, "type": "image/png" }, { "file": "projects/thissite/thissite2.avif", "size": 9406, "type": "image/avif" }, { "file": "projects/thissite/thissite2.png", "size": 26478, "type": "image/png" }, { "file": "projects/tictactoe/tictactoe0.avif", "size": 4119, "type": "image/avif" }, { "file": "projects/tictactoe/tictactoe0.png", "size": 9260, "type": "image/png" }, { "file": "projects/tictactoe/tictactoe1.avif", "size": 3862, "type": "image/avif" }, { "file": "projects/tictactoe/tictactoe1.png", "size": 7811, "type": "image/png" }, { "file": "projects/tictactoe/tictactoe2.avif", "size": 6484, "type": "image/avif" }, { "file": "projects/tictactoe/tictactoe2.png", "size": 11626, "type": "image/png" }, { "file": "resume.pdf", "size": 74025, "type": "application/pdf" }, { "file": "site.webmanifest", "size": 263, "type": "application/manifest+json" }, { "file": "taskr.png", "size": 6871, "type": "image/png" }, { "file": "thissite.png", "size": 12306, "type": "image/png" }, { "file": "tictactoe.png", "size": 6215, "type": "image/png" }, { "file": "wave.svg", "size": 1094, "type": "image/svg+xml" }],
@@ -2698,7 +2078,7 @@ ${``}`;
       {
         type: "page",
         pattern: /^\/projects\/([^/]+?)\/?$/,
-        params: (m2) => ({ slug: d2(m2[1]) }),
+        params: (m2) => ({ slug: d$1(m2[1]) }),
         a: ["src/routes/projects/__layout.reset.svelte", "src/routes/projects/[slug].svelte"],
         b: []
       },
@@ -2747,7 +2127,7 @@ ${``}`;
       return index;
     })
   };
-  var metadata_lookup = { "src/routes/__layout.svelte": { "entry": "pages/__layout.svelte-6e08d05f.js", "css": ["assets/pages/__layout.svelte-175ea587.css", "assets/Logo-ef7eb8cb.css"], "js": ["pages/__layout.svelte-6e08d05f.js", "chunks/vendor-eb904315.js", "chunks/Logo-1c47093f.js", "chunks/drag-4ea0f5db.js", "chunks/singletons-12a22614.js"], "styles": [] }, "src/routes/__error.svelte": { "entry": "pages/__error.svelte-637fadfa.js", "css": ["assets/pages/__error.svelte-6ce823fd.css"], "js": ["pages/__error.svelte-637fadfa.js", "chunks/vendor-eb904315.js"], "styles": [] }, "src/routes/index.svelte": { "entry": "pages/index.svelte-f92c4761.js", "css": ["assets/pages/index.svelte-abed5f47.css"], "js": ["pages/index.svelte-f92c4761.js", "chunks/vendor-eb904315.js", "chunks/drag-4ea0f5db.js", "chunks/singletons-12a22614.js"], "styles": [] }, "src/routes/projects/__layout.reset.svelte": { "entry": "pages/projects/__layout.reset.svelte-6d639c31.js", "css": ["assets/pages/projects/__layout.reset.svelte-46ec1fca.css", "assets/Logo-ef7eb8cb.css"], "js": ["pages/projects/__layout.reset.svelte-6d639c31.js", "chunks/preload-helper-ec9aa979.js", "chunks/vendor-eb904315.js", "chunks/Logo-1c47093f.js", "chunks/drag-4ea0f5db.js", "chunks/singletons-12a22614.js"], "styles": [] }, "src/routes/projects/[slug].svelte": { "entry": "pages/projects/[slug].svelte-aa3ec33b.js", "css": [], "js": ["pages/projects/[slug].svelte-aa3ec33b.js", "chunks/vendor-eb904315.js"], "styles": [] }, "src/routes/contact/index.svelte": { "entry": "pages/contact/index.svelte-1e0ed786.js", "css": ["assets/pages/contact/index.svelte-77b0478b.css"], "js": ["pages/contact/index.svelte-1e0ed786.js", "chunks/vendor-eb904315.js"], "styles": [] }, "src/routes/resume/index.svelte": { "entry": "pages/resume/index.svelte-84e2a7b1.js", "css": ["assets/pages/resume/index.svelte-b4ce9365.css"], "js": ["pages/resume/index.svelte-84e2a7b1.js", "chunks/vendor-eb904315.js"], "styles": [] } };
+  var metadata_lookup = { "src/routes/__layout.svelte": { "entry": "pages/__layout.svelte-d7330fce.js", "css": ["assets/pages/__layout.svelte-175ea587.css", "assets/vendor-ec9510ad.css", "assets/Logo-ef7eb8cb.css"], "js": ["pages/__layout.svelte-d7330fce.js", "chunks/vendor-25f6bc4e.js", "chunks/Logo-7011980c.js", "chunks/drag-dfa31cf3.js", "chunks/singletons-12a22614.js"], "styles": [] }, "src/routes/__error.svelte": { "entry": "pages/__error.svelte-e48bd3f3.js", "css": ["assets/pages/__error.svelte-6ce823fd.css", "assets/vendor-ec9510ad.css"], "js": ["pages/__error.svelte-e48bd3f3.js", "chunks/vendor-25f6bc4e.js"], "styles": [] }, "src/routes/index.svelte": { "entry": "pages/index.svelte-afa39f4a.js", "css": ["assets/pages/index.svelte-abed5f47.css", "assets/vendor-ec9510ad.css"], "js": ["pages/index.svelte-afa39f4a.js", "chunks/vendor-25f6bc4e.js", "chunks/drag-dfa31cf3.js", "chunks/singletons-12a22614.js"], "styles": [] }, "src/routes/projects/__layout.reset.svelte": { "entry": "pages/projects/__layout.reset.svelte-2a0bd3e3.js", "css": ["assets/pages/projects/__layout.reset.svelte-46ec1fca.css", "assets/vendor-ec9510ad.css", "assets/Logo-ef7eb8cb.css"], "js": ["pages/projects/__layout.reset.svelte-2a0bd3e3.js", "chunks/preload-helper-ec9aa979.js", "chunks/vendor-25f6bc4e.js", "chunks/Logo-7011980c.js", "chunks/drag-dfa31cf3.js", "chunks/singletons-12a22614.js"], "styles": [] }, "src/routes/projects/[slug].svelte": { "entry": "pages/projects/[slug].svelte-6e8b983d.js", "css": ["assets/vendor-ec9510ad.css"], "js": ["pages/projects/[slug].svelte-6e8b983d.js", "chunks/vendor-25f6bc4e.js"], "styles": [] }, "src/routes/contact/index.svelte": { "entry": "pages/contact/index.svelte-5b093572.js", "css": ["assets/pages/contact/index.svelte-77b0478b.css", "assets/vendor-ec9510ad.css"], "js": ["pages/contact/index.svelte-5b093572.js", "chunks/vendor-25f6bc4e.js"], "styles": [] }, "src/routes/resume/index.svelte": { "entry": "pages/resume/index.svelte-f6a21158.js", "css": ["assets/pages/resume/index.svelte-b4ce9365.css", "assets/vendor-ec9510ad.css"], "js": ["pages/resume/index.svelte-f6a21158.js", "chunks/vendor-25f6bc4e.js"], "styles": [] } };
   async function load_component(file) {
     const { entry, css: css2, js, styles } = metadata_lookup[file];
     return {
@@ -2764,24 +2144,29 @@ ${``}`;
     const host = request.headers["host"];
     return respond({ ...request, host }, options, { prerender });
   }
-  var subscriber_queue3 = [];
-  function writable3(value, start = noop3) {
+  var subscriber_queue = [];
+  function readable(value, start) {
+    return {
+      subscribe: writable(value, start).subscribe
+    };
+  }
+  function writable(value, start = noop) {
     let stop;
     const subscribers = new Set();
     function set(new_value) {
-      if (safe_not_equal3(value, new_value)) {
+      if (safe_not_equal(value, new_value)) {
         value = new_value;
         if (stop) {
-          const run_queue = !subscriber_queue3.length;
+          const run_queue = !subscriber_queue.length;
           for (const subscriber of subscribers) {
             subscriber[1]();
-            subscriber_queue3.push(subscriber, value);
+            subscriber_queue.push(subscriber, value);
           }
           if (run_queue) {
-            for (let i2 = 0; i2 < subscriber_queue3.length; i2 += 2) {
-              subscriber_queue3[i2][0](subscriber_queue3[i2 + 1]);
+            for (let i2 = 0; i2 < subscriber_queue.length; i2 += 2) {
+              subscriber_queue[i2][0](subscriber_queue[i2 + 1]);
             }
-            subscriber_queue3.length = 0;
+            subscriber_queue.length = 0;
           }
         }
       }
@@ -2789,13 +2174,13 @@ ${``}`;
     function update(fn) {
       set(fn(value));
     }
-    function subscribe2(run22, invalidate = noop3) {
-      const subscriber = [run22, invalidate];
+    function subscribe2(run2, invalidate = noop) {
+      const subscriber = [run2, invalidate];
       subscribers.add(subscriber);
       if (subscribers.size === 1) {
-        stop = start(set) || noop3;
+        stop = start(set) || noop;
       }
-      run22(value);
+      run2(value);
       return () => {
         subscribers.delete(subscriber);
         if (subscribers.size === 0) {
@@ -2806,7 +2191,45 @@ ${``}`;
     }
     return { set, update, subscribe: subscribe2 };
   }
-  var isNavOpen = writable3(true);
+  function derived(stores, fn, initial_value) {
+    const single = !Array.isArray(stores);
+    const stores_array = single ? [stores] : stores;
+    const auto = fn.length < 2;
+    return readable(initial_value, (set) => {
+      let inited = false;
+      const values = [];
+      let pending = 0;
+      let cleanup = noop;
+      const sync = () => {
+        if (pending) {
+          return;
+        }
+        cleanup();
+        const result = fn(single ? values[0] : values, set);
+        if (auto) {
+          set(result);
+        } else {
+          cleanup = is_function(result) ? result : noop;
+        }
+      };
+      const unsubscribers = stores_array.map((store2, i2) => subscribe(store2, (value) => {
+        values[i2] = value;
+        pending &= ~(1 << i2);
+        if (inited) {
+          sync();
+        }
+      }, () => {
+        pending |= 1 << i2;
+      }));
+      inited = true;
+      sync();
+      return function stop() {
+        run_all(unsubscribers);
+        cleanup();
+      };
+    });
+  }
+  var isNavOpen = writable(true);
   var contact = "data:image/png;base64,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";
   var cv = "/_app/assets/cv-780e515c.png";
   var github = "/_app/assets/github-79b1a74f.png";
@@ -2817,24 +2240,111 @@ ${``}`;
   var taskr$1 = "/_app/assets/taskr-d7557b53.png";
   var thissite$1 = "/_app/assets/thissite-6295f94e.png";
   var tictactoe$1 = "/_app/assets/tictactoe-799237a6.png";
+  var parseNumber = parseFloat;
+  function joinCss(obj, separator = ";") {
+    let texts;
+    if (Array.isArray(obj)) {
+      texts = obj.filter((text) => text);
+    } else {
+      texts = [];
+      for (const prop in obj) {
+        if (obj[prop]) {
+          texts.push(`${prop}:${obj[prop]}`);
+        }
+      }
+    }
+    return texts.join(separator);
+  }
+  function getStyles(style, size, pull, fw) {
+    let float;
+    let width;
+    const height = "1em";
+    let lineHeight;
+    let fontSize;
+    let textAlign;
+    let verticalAlign = "-.125em";
+    const overflow = "visible";
+    if (fw) {
+      textAlign = "center";
+      width = "1.25em";
+    }
+    if (pull) {
+      float = pull;
+    }
+    if (size) {
+      if (size == "lg") {
+        fontSize = "1.33333em";
+        lineHeight = ".75em";
+        verticalAlign = "-.225em";
+      } else if (size == "xs") {
+        fontSize = ".75em";
+      } else if (size == "sm") {
+        fontSize = ".875em";
+      } else {
+        fontSize = size.replace("x", "em");
+      }
+    }
+    return joinCss([
+      joinCss({
+        float,
+        width,
+        height,
+        "line-height": lineHeight,
+        "font-size": fontSize,
+        "text-align": textAlign,
+        "vertical-align": verticalAlign,
+        "transform-origin": "center",
+        overflow
+      }),
+      style
+    ]);
+  }
+  function getTransform(scale, translateX, translateY, rotate, flip, translateTimes = 1, translateUnit = "", rotateUnit = "") {
+    let flipX = 1;
+    let flipY = 1;
+    if (flip) {
+      if (flip == "horizontal") {
+        flipX = -1;
+      } else if (flip == "vertical") {
+        flipY = -1;
+      } else {
+        flipX = flipY = -1;
+      }
+    }
+    return joinCss([
+      `translate(${parseNumber(translateX) * translateTimes}${translateUnit},${parseNumber(translateY) * translateTimes}${translateUnit})`,
+      `scale(${flipX * parseNumber(scale)},${flipY * parseNumber(scale)})`,
+      rotate && `rotate(${rotate}${rotateUnit})`
+    ], " ");
+  }
+  var css$j = {
+    code: ".spin.svelte-1cj2gr0{animation:svelte-1cj2gr0-spin 2s 0s infinite linear}.pulse.svelte-1cj2gr0{animation:svelte-1cj2gr0-spin 1s infinite steps(8)}@keyframes svelte-1cj2gr0-spin{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}",
+    map: `{"version":3,"file":"fa.svelte","sources":["fa.svelte"],"sourcesContent":["<script>\\nimport {\\n  joinCss,\\n  getStyles,\\n  getTransform,\\n} from './utils';\\n\\nlet clazz = '';\\nexport { clazz as class };\\nexport let id = '';\\nexport let style = '';\\n\\nexport let icon;\\n\\nexport let size = '';\\nexport let color = '';\\n\\nexport let fw = false;\\nexport let pull = '';\\n\\nexport let scale = 1;\\nexport let translateX = 0;\\nexport let translateY = 0;\\nexport let rotate = '';\\nexport let flip = false;\\n\\nexport let spin = false;\\nexport let pulse = false;\\n\\n// Duotone Icons\\nexport let primaryColor = '';\\nexport let secondaryColor = '';\\nexport let primaryOpacity = 1;\\nexport let secondaryOpacity = 0.4;\\nexport let swapOpacity = false;\\n\\nlet i;\\nlet c;\\nlet s;\\nlet transform;\\n\\n$: i = (icon && icon.icon) || [0, 0, '', [], ''];\\n\\n$: c = joinCss(\\n  [\\n    clazz,\\n    'fa',\\n    spin && 'spin',\\n    pulse && 'pulse',\\n  ],\\n  ' ',\\n);\\n\\n$: s = getStyles(style, size, pull, fw);\\n\\n$: transform = getTransform(scale, translateX, translateY, rotate, flip, 512);\\n<\/script>\\n\\n<style>\\n.spin {\\n  animation: spin 2s 0s infinite linear;\\n}\\n\\n.pulse {\\n  animation: spin 1s infinite steps(8);\\n}\\n\\n@keyframes spin {\\n  0% {\\n    transform: rotate(0deg);\\n  }\\n  100% {\\n    transform: rotate(360deg);\\n  }\\n}\\n</style>\\n\\n{#if i[4]}\\n  <svg\\n    {id}\\n    class={c}\\n    style={s}\\n    viewBox={\`0 0 \${i[0]} \${i[1]}\`}\\n    aria-hidden=\\"true\\"\\n    role=\\"img\\"\\n    xmlns=\\"http://www.w3.org/2000/svg\\"\\n  >\\n    <g\\n      transform={\`translate(\${i[0] / 2} \${i[1] / 2})\`}\\n      transform-origin={\`\${i[0] / 4} 0\`}\\n    >\\n      <g {transform}>\\n        {#if typeof i[4] == 'string'}\\n          <path\\n            d={i[4]}\\n            fill={color || primaryColor || 'currentColor'}\\n            transform={\`translate(\${i[0] / -2} \${i[1] / -2})\`}\\n          />\\n        {:else}\\n          <path\\n            d={i[4][0]}\\n            fill={secondaryColor || color || 'currentColor'}\\n            fill-opacity={swapOpacity != false ? primaryOpacity : secondaryOpacity}\\n            transform={\`translate(\${i[0] / -2} \${i[1] / -2})\`}\\n          />\\n          <path\\n            d={i[4][1]}\\n            fill={primaryColor || color || 'currentColor'}\\n            fill-opacity={swapOpacity != false ? secondaryOpacity : primaryOpacity}\\n            transform={\`translate(\${i[0] / -2} \${i[1] / -2})\`}\\n          />\\n        {/if}\\n      </g>\\n    </g>\\n  </svg>\\n{/if}\\n"],"names":[],"mappings":"AA2DA,KAAK,eAAC,CAAC,AACL,SAAS,CAAE,mBAAI,CAAC,EAAE,CAAC,EAAE,CAAC,QAAQ,CAAC,MAAM,AACvC,CAAC,AAED,MAAM,eAAC,CAAC,AACN,SAAS,CAAE,mBAAI,CAAC,EAAE,CAAC,QAAQ,CAAC,MAAM,CAAC,CAAC,AACtC,CAAC,AAED,WAAW,mBAAK,CAAC,AACf,EAAE,AAAC,CAAC,AACF,SAAS,CAAE,OAAO,IAAI,CAAC,AACzB,CAAC,AACD,IAAI,AAAC,CAAC,AACJ,SAAS,CAAE,OAAO,MAAM,CAAC,AAC3B,CAAC,AACH,CAAC"}`
+  };
   var Fa = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     let { class: clazz = "" } = $$props;
     let { id = "" } = $$props;
     let { style = "" } = $$props;
     let { icon } = $$props;
-    let { fw = false } = $$props;
-    let { flip = false } = $$props;
-    let { pull = "" } = $$props;
-    let { rotate = "" } = $$props;
     let { size = "" } = $$props;
     let { color = "" } = $$props;
+    let { fw = false } = $$props;
+    let { pull = "" } = $$props;
+    let { scale = 1 } = $$props;
+    let { translateX = 0 } = $$props;
+    let { translateY = 0 } = $$props;
+    let { rotate = "" } = $$props;
+    let { flip = false } = $$props;
+    let { spin = false } = $$props;
+    let { pulse = false } = $$props;
     let { primaryColor = "" } = $$props;
     let { secondaryColor = "" } = $$props;
     let { primaryOpacity = 1 } = $$props;
     let { secondaryOpacity = 0.4 } = $$props;
     let { swapOpacity = false } = $$props;
     let i2;
-    let s3;
+    let c2;
+    let s2;
     let transform;
     if ($$props.class === void 0 && $$bindings.class && clazz !== void 0)
       $$bindings.class(clazz);
@@ -2844,18 +2354,28 @@ ${``}`;
       $$bindings.style(style);
     if ($$props.icon === void 0 && $$bindings.icon && icon !== void 0)
       $$bindings.icon(icon);
-    if ($$props.fw === void 0 && $$bindings.fw && fw !== void 0)
-      $$bindings.fw(fw);
-    if ($$props.flip === void 0 && $$bindings.flip && flip !== void 0)
-      $$bindings.flip(flip);
-    if ($$props.pull === void 0 && $$bindings.pull && pull !== void 0)
-      $$bindings.pull(pull);
-    if ($$props.rotate === void 0 && $$bindings.rotate && rotate !== void 0)
-      $$bindings.rotate(rotate);
     if ($$props.size === void 0 && $$bindings.size && size !== void 0)
       $$bindings.size(size);
     if ($$props.color === void 0 && $$bindings.color && color !== void 0)
       $$bindings.color(color);
+    if ($$props.fw === void 0 && $$bindings.fw && fw !== void 0)
+      $$bindings.fw(fw);
+    if ($$props.pull === void 0 && $$bindings.pull && pull !== void 0)
+      $$bindings.pull(pull);
+    if ($$props.scale === void 0 && $$bindings.scale && scale !== void 0)
+      $$bindings.scale(scale);
+    if ($$props.translateX === void 0 && $$bindings.translateX && translateX !== void 0)
+      $$bindings.translateX(translateX);
+    if ($$props.translateY === void 0 && $$bindings.translateY && translateY !== void 0)
+      $$bindings.translateY(translateY);
+    if ($$props.rotate === void 0 && $$bindings.rotate && rotate !== void 0)
+      $$bindings.rotate(rotate);
+    if ($$props.flip === void 0 && $$bindings.flip && flip !== void 0)
+      $$bindings.flip(flip);
+    if ($$props.spin === void 0 && $$bindings.spin && spin !== void 0)
+      $$bindings.spin(spin);
+    if ($$props.pulse === void 0 && $$bindings.pulse && pulse !== void 0)
+      $$bindings.pulse(pulse);
     if ($$props.primaryColor === void 0 && $$bindings.primaryColor && primaryColor !== void 0)
       $$bindings.primaryColor(primaryColor);
     if ($$props.secondaryColor === void 0 && $$bindings.secondaryColor && secondaryColor !== void 0)
@@ -2866,79 +2386,13 @@ ${``}`;
       $$bindings.secondaryOpacity(secondaryOpacity);
     if ($$props.swapOpacity === void 0 && $$bindings.swapOpacity && swapOpacity !== void 0)
       $$bindings.swapOpacity(swapOpacity);
+    $$result.css.add(css$j);
     i2 = icon && icon.icon || [0, 0, "", [], ""];
-    {
-      {
-        let float;
-        let width;
-        const height = "1em";
-        let lineHeight;
-        let fontSize;
-        let textAlign;
-        let verticalAlign = "-.125em";
-        const overflow = "visible";
-        if (fw) {
-          textAlign = "center";
-          width = "1.25em";
-        }
-        if (pull) {
-          float = pull;
-        }
-        if (size) {
-          if (size == "lg") {
-            fontSize = "1.33333em";
-            lineHeight = ".75em";
-            verticalAlign = "-.225em";
-          } else if (size == "xs") {
-            fontSize = ".75em";
-          } else if (size == "sm") {
-            fontSize = ".875em";
-          } else {
-            fontSize = size.replace("x", "em");
-          }
-        }
-        const styleObj = {
-          float,
-          width,
-          height,
-          "line-height": lineHeight,
-          "font-size": fontSize,
-          "text-align": textAlign,
-          "vertical-align": verticalAlign,
-          overflow
-        };
-        let styleStr = "";
-        for (const prop in styleObj) {
-          if (styleObj[prop]) {
-            styleStr += `${prop}:${styleObj[prop]};`;
-          }
-        }
-        s3 = styleStr + style;
-      }
-    }
-    {
-      {
-        let t = "";
-        if (flip) {
-          let flipX = 1;
-          let flipY = 1;
-          if (flip == "horizontal") {
-            flipX = -1;
-          } else if (flip == "vertical") {
-            flipY = -1;
-          } else {
-            flipX = flipY = -1;
-          }
-          t += ` scale(${flipX} ${flipY})`;
-        }
-        if (rotate) {
-          t += ` rotate(${rotate} 0 0)`;
-        }
-        transform = t;
-      }
-    }
-    return `${i2[4] ? `<svg${add_attribute("id", id, 0)}${add_attribute("class", clazz, 0)}${add_attribute("style", s3, 0)}${add_attribute("viewBox", `0 0 ${i2[0]} ${i2[1]}`, 0)} aria-hidden="${"true"}" role="${"img"}" xmlns="${"http://www.w3.org/2000/svg"}"><g transform="${"translate(256 256)"}"><g${add_attribute("transform", transform, 0)}>${typeof i2[4] == "string" ? `<path${add_attribute("d", i2[4], 0)}${add_attribute("fill", color || primaryColor || "currentColor", 0)} transform="${"translate(-256 -256)"}"></path>` : `<path${add_attribute("d", i2[4][0], 0)}${add_attribute("fill", secondaryColor || color || "currentColor", 0)}${add_attribute("fill-opacity", swapOpacity != false ? primaryOpacity : secondaryOpacity, 0)} transform="${"translate(-256 -256)"}"></path>
-          <path${add_attribute("d", i2[4][1], 0)}${add_attribute("fill", primaryColor || color || "currentColor", 0)}${add_attribute("fill-opacity", swapOpacity != false ? secondaryOpacity : primaryOpacity, 0)} transform="${"translate(-256 -256)"}"></path>`}</g></g></svg>` : ``}`;
+    c2 = joinCss([clazz, "fa", spin && "spin", pulse && "pulse"], " ");
+    s2 = getStyles(style, size, pull, fw);
+    transform = getTransform(scale, translateX, translateY, rotate, flip, 512);
+    return `${i2[4] ? `<svg${add_attribute("id", id, 0)} class="${escape(null_to_empty(c2)) + " svelte-1cj2gr0"}"${add_attribute("style", s2, 0)}${add_attribute("viewBox", `0 0 ${i2[0]} ${i2[1]}`, 0)} aria-hidden="${"true"}" role="${"img"}" xmlns="${"http://www.w3.org/2000/svg"}"><g${add_attribute("transform", `translate(${i2[0] / 2} ${i2[1] / 2})`, 0)}${add_attribute("transform-origin", `${i2[0] / 4} 0`, 0)}><g${add_attribute("transform", transform, 0)}>${typeof i2[4] == "string" ? `<path${add_attribute("d", i2[4], 0)}${add_attribute("fill", color || primaryColor || "currentColor", 0)}${add_attribute("transform", `translate(${i2[0] / -2} ${i2[1] / -2})`, 0)}></path>` : `<path${add_attribute("d", i2[4][0], 0)}${add_attribute("fill", secondaryColor || color || "currentColor", 0)}${add_attribute("fill-opacity", swapOpacity != false ? primaryOpacity : secondaryOpacity, 0)}${add_attribute("transform", `translate(${i2[0] / -2} ${i2[1] / -2})`, 0)}></path>
+          <path${add_attribute("d", i2[4][1], 0)}${add_attribute("fill", primaryColor || color || "currentColor", 0)}${add_attribute("fill-opacity", swapOpacity != false ? secondaryOpacity : primaryOpacity, 0)}${add_attribute("transform", `translate(${i2[0] / -2} ${i2[1] / -2})`, 0)}></path>`}</g></g></svg>` : ``}`;
   });
   var Fa$1 = Fa;
   var css$i = {
@@ -2993,7 +2447,7 @@ ${``}`;
       showMenu = value;
     });
     $$result.css.add(css$g);
-    return `<button id="${"expander"}" aria-label="${"expand menu"}" href="${"/"}"${add_attribute("tooltip", `${showMenu ? "Hide" : "Show"} Menu`, 0)} flow="${"right"}" class="${"svelte-1gytyth"}"><div id="${"arrow"}" class="${escape2(null_to_empty(showMenu ? "toggle-arrow" : null)) + " svelte-1gytyth"}">${validate_component(Fa$1, "Fa").$$render($$result, { icon: faAngleLeft, size: "2x" }, {}, {})}</div>
+    return `<button id="${"expander"}" aria-label="${"expand menu"}" href="${"/"}"${add_attribute("tooltip", `${showMenu ? "Hide" : "Show"} Menu`, 0)} flow="${"right"}" class="${"svelte-1gytyth"}"><div id="${"arrow"}" class="${escape(null_to_empty(showMenu ? "toggle-arrow" : null)) + " svelte-1gytyth"}">${validate_component(Fa$1, "Fa").$$render($$result, { icon: faAngleLeft, size: "2x" }, {}, {})}</div>
 </button>`;
   });
   var css$f = {
@@ -3113,7 +2567,7 @@ ${showMenu ? `<div class="${"wrapper svelte-1mu4fbn"}"><nav class="${"svelte-1mu
       $$bindings.rel(rel);
     $$result.css.add(css$d);
     return `
-${href ? `<div><a${add_attribute("href", href, 0)}${add_attribute("target", target, 0)}${add_attribute("rel", rel, 0)}><button class="${"svelte-yd01wg"}">${escape2(text)}
+${href ? `<div><a${add_attribute("href", href, 0)}${add_attribute("target", target, 0)}${add_attribute("rel", rel, 0)}><button class="${"svelte-yd01wg"}">${escape(text)}
             ${validate_component(Fa$1, "Fa").$$render($$result, { icon, size: "1.2x" }, {}, {})}</button></a></div>` : ``}`;
   });
   var daniImg = "/_app/assets/dani-12f12348.png";
@@ -3188,8 +2642,8 @@ ${href ? `<div><a${add_attribute("href", href, 0)}${add_attribute("target", targ
       $$bindings.status(status);
     $$result.css.add(css$a);
     return `<div class="${"svelte-1nxnt6h"}"><h1 class="${"svelte-1nxnt6h"}">Error - Something bad happened \u{1F92D}</h1>
-    <h3>${escape2(error2.message[0].toUpperCase() + error2.message.slice(1, error2.message.length))}</h3>
-    <h3>Status Code: ${escape2(status)}</h3>
+    <h3>${escape(error2.message[0].toUpperCase() + error2.message.slice(1, error2.message.length))}</h3>
+    <h3>Status Code: ${escape(status)}</h3>
     ${slots.default ? slots.default({}) : ``}
 </div>`;
   });
@@ -3463,7 +2917,7 @@ ${slots.default ? slots.default({}) : ``}`;
     if ($$props.text === void 0 && $$bindings.text && text !== void 0)
       $$bindings.text(text);
     $$result.css.add(css$7);
-    return `<div class="${"pill svelte-1cfvwnf"}">${escape2(text)}
+    return `<div class="${"pill svelte-1cfvwnf"}">${escape(text)}
 </div>`;
   });
   var css$6 = {
@@ -3475,7 +2929,7 @@ ${slots.default ? slots.default({}) : ``}`;
     if ($$props.descriptionData === void 0 && $$bindings.descriptionData && descriptionData !== void 0)
       $$bindings.descriptionData(descriptionData);
     $$result.css.add(css$6);
-    return `<div id="${"description"}" class="${"svelte-x7cdh0"}">${each(descriptionData, (paragraph) => `<p class="${"svelte-x7cdh0"}">${escape2(paragraph)}
+    return `<div id="${"description"}" class="${"svelte-x7cdh0"}">${each(descriptionData, (paragraph) => `<p class="${"svelte-x7cdh0"}">${escape(paragraph)}
         </p>`)}
 </div>`;
   });
@@ -3488,7 +2942,7 @@ ${slots.default ? slots.default({}) : ``}`;
     if ($$props.projectNameData === void 0 && $$bindings.projectNameData && projectNameData !== void 0)
       $$bindings.projectNameData(projectNameData);
     $$result.css.add(css$5);
-    return `<div class="${"svelte-hoa4zs"}">${escape2(projectNameData)}
+    return `<div class="${"svelte-hoa4zs"}">${escape(projectNameData)}
 </div>`;
   });
   var css$4 = {
@@ -3500,7 +2954,7 @@ ${slots.default ? slots.default({}) : ``}`;
     if ($$props.titleData === void 0 && $$bindings.titleData && titleData !== void 0)
       $$bindings.titleData(titleData);
     $$result.css.add(css$4);
-    return `<h2 class="${"svelte-1uohm2b"}">${escape2(titleData)}
+    return `<h2 class="${"svelte-1uohm2b"}">${escape(titleData)}
 </h2>`;
   });
   var css$3 = {
@@ -3660,6 +3114,446 @@ ${slots.default ? slots.default({}) : ``}`;
     [Symbol.toStringTag]: "Module",
     "default": U5Bslugu5D
   });
+  function n(e) {
+    return Object.prototype.toString.call(e) === "[object Object]";
+  }
+  function r(e) {
+    return Object.keys(e || {}).reduce((t, i2) => Object.assign(Object.assign({}, t), { [i2]: n(e[i2]) ? r(e[i2]) : Array.isArray(e[i2]) ? [...e[i2]] : e[i2] }), {});
+  }
+  function i(e, t) {
+    return function(e2, t2) {
+      return Object.keys(e2).reduce((n2, r2) => Object.assign(Object.assign({}, n2), { [r2]: t2(e2[r2]) }), {});
+    }(e, (e2) => n(e2) ? i(e2, t) : Array.isArray(e2) ? e2.map(function(e3) {
+      return function(t2) {
+        return n(t2) ? i(t2, e3) : e3;
+      };
+    }(t)) : t);
+  }
+  function o(...e) {
+    const t = e.pop(), a2 = r(e.shift());
+    if (e.length === 0)
+      return a2;
+    for (const u2 of e) {
+      if (!u2)
+        continue;
+      const e2 = Object.keys(u2);
+      for (const c2 of e2) {
+        const e3 = t(a2[c2], u2[c2]);
+        if (e3 !== void 0)
+          a2[c2] = e3;
+        else if (n(u2[c2]) && n(a2[c2]))
+          a2[c2] = o(a2[c2], u2[c2], t);
+        else if (Array.isArray(u2[c2]))
+          a2[c2] = u2[c2].map((e4, r2) => n(e4) ? o(Array.isArray(a2[c2]) ? a2[c2][r2] : a2[c2], e4, t) : e4);
+        else if (n(u2[c2])) {
+          const e4 = i(r(u2[c2]), void 0);
+          a2[c2] = o(e4, u2[c2], t);
+        } else
+          u2[c2] !== void 0 && (a2[c2] = u2[c2]);
+      }
+    }
+    return a2;
+  }
+  function a(e, t) {
+    if (!n(e) || !n(t)) {
+      if (Array.isArray(t)) {
+        if (t.some(n))
+          return;
+        const r2 = Array.isArray(e) ? e : [];
+        return t.map((e2, t2) => {
+          var n2;
+          return (n2 = r2[t2]) !== null && n2 !== void 0 ? n2 : e2;
+        });
+      }
+      return e !== void 0 ? e : void 0;
+    }
+  }
+  function u(...e) {
+    return o(...e, a);
+  }
+  function c(...e) {
+    return o(...e, () => {
+    });
+  }
+  function l(e, t, n2) {
+    const r2 = (n3) => String.prototype.split.call(t, n3).filter(Boolean).reduce((e2, t2) => e2 != null ? e2[t2] : e2, e), i2 = r2(/[,[\]]+?/) || r2(/[,[\].]+?/);
+    return i2 === void 0 || i2 === e ? n2 : i2;
+  }
+  function s(e, t, n2) {
+    Object(e) !== e ? e = {} : e !== void 0 && (e = r(e));
+    let i2 = Array.isArray(t) ? t : t.toString().match(/[^.[\]]+/g) || [];
+    return i2.slice(0, -1).reduce((e2, t2, n3) => Object(e2[t2]) === e2[t2] ? e2[t2] : e2[t2] = Math.abs(Number(i2[n3 + 1])) >> 0 == +i2[n3 + 1] ? [] : {}, e)[i2[i2.length - 1]] = n2, e;
+  }
+  function d(e, t) {
+    var n2;
+    if (Object(e) !== e)
+      return;
+    e !== void 0 && (e = r(e));
+    let i2 = Array.isArray(t) ? t : t.toString().match(/[^.[\]]+/g) || [];
+    return (n2 = i2.slice(0, -1).reduce((e2, t2) => Object(e2[t2]) === e2[t2] ? e2[t2] : void 0, e)) === null || n2 === void 0 || delete n2[i2[i2.length - 1]], e;
+  }
+  function f(e, t, n2) {
+    Object(e) !== e && (e = {});
+    let r2 = t.toString().match(/[^.[\]]+/g) || [];
+    return r2.slice(0, -1).reduce((e2, t2, n3) => Object(e2[t2]) === e2[t2] ? e2[t2] : e2[t2] = Math.abs(Number(r2[n3 + 1])) >> 0 == +r2[n3 + 1] ? [] : {}, e)[r2[r2.length - 1]] = n2(l(e, t)), e;
+  }
+  function v(e, t) {
+    return function(e2, t2) {
+      return Object.keys(e2).some((n2) => t2(e2[n2]));
+    }(e, (e2) => n(e2) ? v(e2, t) : t(e2));
+  }
+  function m(e) {
+    return e.hasAttribute("data-felte-index") ? Number(e.dataset.felteIndex) : void 0;
+  }
+  function y(e) {
+    var t;
+    return ((t = e) === null || t === void 0 ? void 0 : t.nodeName) === "INPUT";
+  }
+  function b(e) {
+    var t;
+    return ((t = e) === null || t === void 0 ? void 0 : t.nodeName) === "SELECT";
+  }
+  function h(e) {
+    var t;
+    return ((t = e) === null || t === void 0 ? void 0 : t.nodeName) === "FIELDSET";
+  }
+  function p(e) {
+    return y(e) || function(e2) {
+      var t;
+      return ((t = e2) === null || t === void 0 ? void 0 : t.nodeName) === "TEXTAREA";
+    }(e) || b(e);
+  }
+  function g(e) {
+    return e.nodeType === Node.ELEMENT_NODE;
+  }
+  function A(e, t) {
+    const n2 = m(e);
+    let r2 = "";
+    t ? r2 = t : p(e) && (r2 = e.name), r2 = n2 === void 0 ? r2 : `${r2}[${n2}]`;
+    let i2 = e.parentNode;
+    if (!i2)
+      return r2;
+    for (; i2 && i2.nodeName !== "FORM"; ) {
+      if (h(i2) && i2.name) {
+        const e2 = m(i2);
+        r2 = `${e2 === void 0 ? i2.name : `${i2.name}[${e2}]`}.${r2}`;
+      }
+      i2 = i2.parentNode;
+    }
+    return r2;
+  }
+  function E(e) {
+    const t = e.dataset.felteFieldset, n2 = m(e), r2 = n2 === void 0 ? e.name : `${e.name}[${n2}]`;
+    return t ? `${t}.${r2}` : r2;
+  }
+  function O(e) {
+    let t = e;
+    for (; t && t.nodeName !== "FORM"; ) {
+      if (t.hasAttribute("data-felte-ignore"))
+        return true;
+      t = t.parentElement;
+    }
+    return false;
+  }
+  function S(e) {
+    if (p(e))
+      return [e];
+    if (e.childElementCount === 0)
+      return [];
+    const t = new Set();
+    for (const n2 of e.children) {
+      if (p(n2) && t.add(n2), h(n2))
+        for (const e2 of n2.elements)
+          p(e2) && t.add(e2);
+      n2.childElementCount > 0 && S(n2).forEach((e2) => t.add(e2));
+    }
+    return Array.from(t);
+  }
+  function j(e) {
+    for (const t of e.elements)
+      if (p(t) || h(t)) {
+        if (e.name && t.name) {
+          const n2 = m(e), r2 = n2 === void 0 ? e.name : `${e.name}[${n2}]`;
+          t.dataset.felteFieldset = e.dataset.felteFieldset ? `${e.dataset.felteFieldset}.${r2}` : r2;
+        }
+        e.dataset.felteUnsetOnRemove !== "true" || t.hasAttribute("data-felte-unset-on-remove") || (t.dataset.felteUnsetOnRemove = "true");
+      }
+  }
+  function N(e) {
+    return e.type.match(/^(number|range)$/) ? e.value ? +e.value : void 0 : e.value;
+  }
+  function k(e) {
+    var t;
+    let n2 = {};
+    for (const r2 of e.elements) {
+      if (h(r2) && j(r2), !p(r2) || !r2.name)
+        continue;
+      const i2 = A(r2), o2 = m(r2);
+      if (y(r2)) {
+        if (r2.type === "checkbox") {
+          if (l(n2, i2) === void 0) {
+            if (Array.from(e.querySelectorAll(`[name="${r2.name}"]`)).filter((e2) => !!p(e2) && (o2 !== void 0 ? Number(e2.dataset.felteIndex) === o2 : i2 === A(e2))).length === 1) {
+              n2 = s(n2, i2, r2.checked);
+              continue;
+            }
+            n2 = s(n2, i2, r2.checked ? [r2.value] : []);
+            continue;
+          }
+          Array.isArray(l(n2, i2)) && r2.checked && f(n2, i2, (e2) => (o2 === void 0 || Array.isArray(e2) || (e2 = []), [...e2, r2.value]));
+          continue;
+        }
+        if (r2.type === "radio") {
+          if (l(n2, i2))
+            continue;
+          n2 = s(n2, i2, r2.checked ? r2.value : void 0);
+          continue;
+        }
+        if (r2.type === "file") {
+          n2 = s(n2, i2, r2.multiple ? Array.from(r2.files || []) : (t = r2.files) === null || t === void 0 ? void 0 : t[0]);
+          continue;
+        }
+      }
+      const a2 = N(r2);
+      n2 = s(n2, i2, a2);
+    }
+    return { defaultData: n2 };
+  }
+  function $(e, t) {
+    if (!p(e))
+      return;
+    const n2 = t;
+    if (y(e)) {
+      if (e.type === "checkbox") {
+        const t2 = n2;
+        return t2 === void 0 || typeof t2 == "boolean" ? void (e.checked = !!t2) : void (Array.isArray(t2) && (t2.includes(e.value) ? e.checked = true : e.checked = false));
+      }
+      if (e.type === "radio") {
+        const t2 = n2;
+        return void (e.value === t2 ? e.checked = true : e.checked = false);
+      }
+      if (e.type === "file")
+        return e.files = null, void (e.value = "");
+    }
+    e.value = String(n2 != null ? n2 : "");
+  }
+  function x(e, t) {
+    for (const n2 of e.elements)
+      h(n2) && j(n2), p(n2) && n2.name && $(n2, l(t, A(n2)));
+  }
+  function V(e, t) {
+    if (!n(e) && !n(t)) {
+      if (e === null)
+        return t;
+      if (t === null)
+        return e;
+      if (e && t)
+        return Array.isArray(e) || (e = [e]), Array.isArray(t) || (t = [t]), [...e, ...t];
+    }
+  }
+  async function L(e, t) {
+    if (t)
+      return Array.isArray(t) ? o(...await Promise.all(t.map((t2) => t2(e))), V) : t(e);
+  }
+  function T() {
+  }
+  function F(e) {
+    let t;
+    return function(e2, ...t2) {
+      if (e2 == null)
+        return T;
+      const n2 = e2.subscribe(...t2);
+      return n2.unsubscribe ? () => n2.unsubscribe() : n2;
+    }(e, (e2) => t = e2)(), t;
+  }
+  function M({ stores: e, config: t, currentExtenders: n2, extender: o2, addValidator: a2 }) {
+    var f2;
+    const { isSubmitting: h2, data: j2, touched: V2, errors: T2 } = e;
+    function M2(e2) {
+      var r2, o3, a3;
+      const u2 = (r2 = e2 == null ? void 0 : e2.onSubmit) !== null && r2 !== void 0 ? r2 : t.onSubmit, c2 = (o3 = e2 == null ? void 0 : e2.validate) !== null && o3 !== void 0 ? o3 : t.validate, l2 = (a3 = e2 == null ? void 0 : e2.onError) !== null && a3 !== void 0 ? a3 : t.onError;
+      return async function(e3) {
+        e3 == null || e3.preventDefault(), h2.set(true);
+        const t2 = F(j2), r3 = await L(t2, c2);
+        if (V2.update((e4) => i(e4, true)), r3 && (T2.set(r3), v(r3, (e4) => !!e4)))
+          return n2.forEach((e4) => {
+            var n3;
+            return (n3 = e4 == null ? void 0 : e4.onSubmitError) === null || n3 === void 0 ? void 0 : n3.call(e4, { data: t2, errors: r3 });
+          }), void h2.set(false);
+        try {
+          await u2(t2);
+        } catch (e4) {
+          if (!l2)
+            throw e4;
+          const r4 = l2(e4);
+          r4 && (T2.set(r4), n2.forEach((e5) => {
+            var n3;
+            return (n3 = e5 == null ? void 0 : e5.onSubmitError) === null || n3 === void 0 ? void 0 : n3.call(e5, { data: t2, errors: r4 });
+          }));
+        } finally {
+          h2.set(false);
+        }
+      };
+    }
+    function w2(e2, t2) {
+      const n3 = t2 === void 0 ? e2 : `${e2}[${t2}]`;
+      V2.update((e3) => s(e3, n3, true));
+    }
+    function D(e2) {
+      j2.set(r(e2)), R && x(R, e2);
+    }
+    let R, I = (f2 = t.initialValues) !== null && f2 !== void 0 ? f2 : {};
+    const U = M2();
+    return { handleSubmit: U, createSubmitHandler: M2, reset: function() {
+      D(r(I)), V2.update((e2) => i(e2, false));
+    }, setTouched: w2, setError: function(e2, t2) {
+      T2.update((n3) => s(n3, e2, t2));
+    }, setField: function(e2, t2, n3 = true) {
+      if (j2.update((n4) => s(n4, e2, t2)), n3 && w2(e2), R)
+        for (const n4 of R.elements) {
+          if (!p(n4) || !n4.name)
+            continue;
+          const r2 = A(n4);
+          if (e2 === r2)
+            return void $(n4, t2);
+        }
+    }, setFields: D, validate: async function() {
+      const e2 = F(j2);
+      V2.update((e3) => i(e3, true));
+      const n3 = await L(e2, t.validate);
+      return T2.set(n3 || {}), n3;
+    }, form: function(e2) {
+      function f3(n3) {
+        return n3({ form: e2, controls: Array.from(e2.elements).filter(p), data: j2, errors: T2, touched: V2, config: t, addValidator: a2 });
+      }
+      n2 = o2.map(f3), e2.noValidate = !!t.validate;
+      const { defaultData: v2 } = k(e2);
+      function h3(e3) {
+        var n3;
+        const r2 = e3.target;
+        if (!r2 || !p(r2) || b(r2) || O(r2))
+          return;
+        if (["checkbox", "radio", "file"].includes(r2.type))
+          return;
+        if (!r2.name)
+          return;
+        ((n3 = t.touchTriggerEvents) === null || n3 === void 0 ? void 0 : n3.input) && w2(A(r2));
+        const i2 = N(r2);
+        j2.update((e4) => s(e4, A(r2), i2));
+      }
+      function $2(n3) {
+        var r2;
+        const i2 = n3.target;
+        i2 && p(i2) && !O(i2) && i2.name && (((r2 = t.touchTriggerEvents) === null || r2 === void 0 ? void 0 : r2.change) && w2(A(i2)), b(i2) && j2.update((e3) => s(e3, A(i2), i2.value)), y(i2) && (i2.type === "checkbox" && function(t2) {
+          const n4 = m(t2), r3 = A(t2), i3 = Array.from(e2.querySelectorAll(`[name="${t2.name}"]`)).filter((e3) => !!p(e3) && (n4 !== void 0 ? Number(e3.dataset.felteIndex) === n4 : r3 === A(e3)));
+          i3.length === 1 ? j2.update((e3) => s(e3, A(t2), t2.checked)) : j2.update((e3) => s(e3, A(t2), i3.filter(y).filter((e4) => e4.checked).map((e4) => e4.value)));
+        }(i2), i2.type === "radio" && function(t2) {
+          const n4 = e2.querySelectorAll(`[name="${t2.name}"]`), r3 = Array.from(n4).find((e3) => y(e3) && e3.checked);
+          j2.update((e3) => s(e3, A(t2), r3 == null ? void 0 : r3.value));
+        }(i2), i2.type === "file" && function(e3) {
+          const t2 = e3.files;
+          j2.update((n4) => s(n4, A(e3), e3.multiple ? Array.from(t2 != null ? t2 : []) : t2 == null ? void 0 : t2[0]));
+        }(i2)));
+      }
+      function x2(e3) {
+        var n3;
+        const r2 = e3.target;
+        r2 && p(r2) && !O(r2) && r2.name && ((n3 = t.touchTriggerEvents) === null || n3 === void 0 ? void 0 : n3.blur) && w2(A(r2));
+      }
+      function L2(e3) {
+        for (const t2 of e3)
+          t2.dataset.felteUnsetOnRemove === "true" && j2.update((e4) => d(e4, E(t2)));
+      }
+      R = e2, I = c(r(v2), I), D(I), V2.set(i(I, false));
+      const F2 = new MutationObserver(function(t2) {
+        for (const r2 of t2)
+          if (r2.type === "childList") {
+            if (r2.addedNodes.length > 0) {
+              if (!Array.from(r2.addedNodes).some((e3) => !!g(e3) && (!!p(e3) || S(e3).length > 0)))
+                continue;
+              n2.forEach((e3) => {
+                var t4;
+                return (t4 = e3 == null ? void 0 : e3.destroy) === null || t4 === void 0 ? void 0 : t4.call(e3);
+              }), n2 = o2.map(f3);
+              const { defaultData: t3 } = k(e2), a3 = i(t3, false);
+              j2.update((e3) => u(e3, t3)), V2.update((e3) => u(e3, a3));
+            }
+            if (r2.removedNodes.length > 0)
+              for (const e3 of r2.removedNodes) {
+                if (!g(e3))
+                  continue;
+                const t3 = S(e3);
+                t3.length !== 0 && (n2.forEach((e4) => {
+                  var t4;
+                  return (t4 = e4 == null ? void 0 : e4.destroy) === null || t4 === void 0 ? void 0 : t4.call(e4);
+                }), n2 = o2.map(f3), L2(t3));
+              }
+          }
+      });
+      F2.observe(e2, { childList: true, subtree: true }), e2.addEventListener("input", h3), e2.addEventListener("change", $2), e2.addEventListener("focusout", x2), e2.addEventListener("submit", U);
+      const M3 = T2.subscribe((t2) => {
+        for (const n3 of e2.elements) {
+          if (!p(n3) || !n3.name)
+            continue;
+          const e3 = l(t2, A(n3)), r2 = Array.isArray(e3) ? e3.join("\n") : typeof e3 == "string" ? e3 : void 0;
+          r2 !== n3.dataset.felteValidationMessage && (r2 ? n3.dataset.felteValidationMessage = r2 : delete n3.dataset.felteValidationMessage);
+        }
+      });
+      return { destroy() {
+        F2.disconnect(), e2.removeEventListener("input", h3), e2.removeEventListener("change", $2), e2.removeEventListener("focusout", x2), e2.removeEventListener("submit", U), M3(), n2.forEach((e3) => {
+          var t2;
+          return (t2 = e3 == null ? void 0 : e3.destroy) === null || t2 === void 0 ? void 0 : t2.call(e3);
+        });
+      } };
+    } };
+  }
+  function w(a2) {
+    return function(e, t) {
+      var i2, a3;
+      function u2(t2) {
+        e.validate ? e.validate = [...e.validate, t2] : e.validate = [t2];
+      }
+      (i2 = e.extend) !== null && i2 !== void 0 || (e.extend = []), (a3 = e.touchTriggerEvents) !== null && a3 !== void 0 || (e.touchTriggerEvents = { change: true, blur: true }), e.validate && !Array.isArray(e.validate) && (e.validate = [e.validate]);
+      const c2 = Array.isArray(e.extend) ? e.extend : [e.extend];
+      let l2 = [];
+      const { isSubmitting: s2, data: d2, errors: f2, touched: v2, isValid: m2 } = t.stores;
+      l2 = c2.map((t2) => t2({ errors: f2, touched: v2, data: d2, config: e, addValidator: u2 }));
+      const y2 = M({ currentExtenders: l2, extender: c2, config: e, addValidator: u2, stores: { data: d2, errors: f2, touched: v2, isValid: m2, isSubmitting: s2 } });
+      function b2(e2, t2) {
+        if (!n(e2))
+          return e2 !== t2;
+      }
+      function h2(e2, t2) {
+        if (!n(e2))
+          return t2 || e2;
+      }
+      return Object.assign({ data: Object.assign(Object.assign({}, d2), { set: function(t2) {
+        return v2.update((n2) => {
+          const i3 = o(r(t2), e.initialValues, b2);
+          return o(i3, n2, h2);
+        }), d2.set(t2);
+      } }), errors: f2, touched: v2, isValid: m2, isSubmitting: s2 }, y2);
+    }(a2, { stores: function(a3) {
+      const u2 = i(a3.initialValues || {}, false), c2 = writable(u2), l2 = writable(a3.initialValues ? r(a3.initialValues) : {}), s2 = writable({}, (e) => l2.subscribe(async function(t) {
+        let n2 = {};
+        a3.validate && t && (n2 = await L(t, a3.validate), e(n2 || {}));
+      }));
+      function d2(e, t) {
+        if (!n(t)) {
+          if (Array.isArray(t)) {
+            if (t.some(n))
+              return;
+            const r2 = Array.isArray(e) ? e : [];
+            return t.map((e2, t2) => e2 && r2[t2] || null);
+          }
+          return t && e || null;
+        }
+      }
+      const { subscribe: f2 } = derived([s2, c2], ([e, t]) => o(e, t, d2));
+      let m2 = false;
+      const y2 = derived(s2, (e) => !a3.validate || (m2 ? !v(e, (e2) => !!e2) : (m2 = true, false)));
+      return { touched: c2, isSubmitting: writable(false), isValid: y2, errors: { subscribe: f2, set: s2.set, update: s2.update }, data: l2 };
+    }(a2) });
+  }
   var css$1 = {
     code: "main.svelte-11msbfu{flex-grow:1}h1.svelte-11msbfu{color:var(--color-primary-grey);font-size:3rem;text-align:center;margin-top:5rem;margin-bottom:2.5rem}input.svelte-11msbfu,textarea.svelte-11msbfu{border:none;width:30rem;color:var(--color-primary-dark);display:flex;margin:1rem auto;padding:1rem;border-radius:0.375rem}textarea.svelte-11msbfu{height:10rem}input[type=submit].svelte-11msbfu{width:auto;padding:0.75rem 1.5rem;background:var(--color-primary-light);border:2px solid var(--color-primary-dark);color:var(--color-primary-dark)}input[type=submit].svelte-11msbfu:hover{color:var(--color-primary-light);border:2px solid var(--color-primary-light);background:var(--color-primary-dark)}",
     map: `{"version":3,"file":"index.svelte","sources":["index.svelte"],"sourcesContent":["<script>\\n    import emailjs from 'emailjs-com';\\n    import { createForm } from 'felte';\\n\\n    let buttonText = 'Send';\\n\\n    const { form, reset } = createForm({\\n        onSubmit: async (values) => {\\n            buttonText = 'Sending';\\n            emailjs.send('service_i47aoaq', 'template_aflqbbg', values, 'user_O8soHnleeJBxVzS3CBIrf').then(() => {\\n                buttonText = 'Sent';\\n                reset();\\n                setTimeout(() => {\\n                    buttonText = 'Send';\\n                }, 5000);\\n            }, (error) => {\\n                buttonText = 'Error';\\n                // eslint-disable-next-line no-console\\n                console.log(error);\\n            });\\n        },\\n    });\\n<\/script>\\n\\n<main>\\n    <h1>Contact Me</h1>\\n    <form use:form >\\n        <input type=\\"text\\" name=\\"from_name\\" placeholder=\\"From\\" required>\\n        <input type=\\"email\\" name=\\"email\\" placeholder=\\"Email\\" required>\\n        <textarea type=\\"text\\" name=\\"message\\" placeholder=\\"Message\\" required />\\n        <input type=\\"submit\\" value={ buttonText } />\\n    </form>\\n</main>\\n<slot />\\n\\n<style>\\n    main {\\n        flex-grow: 1;\\n    }\\n\\n    h1 {\\n        color: var(--color-primary-grey);\\n        font-size:3rem;\\n        text-align: center;\\n        margin-top: 5rem;\\n        margin-bottom: 2.5rem;\\n    }\\n\\n    input, textarea {\\n        border: none;\\n        width: 30rem;\\n        color: var(--color-primary-dark);\\n        display: flex;\\n        margin: 1rem auto;\\n        padding: 1rem;\\n        border-radius: 0.375rem;\\n    }\\n\\n    textarea {\\n        height: 10rem;\\n    }\\n\\n    input[type=submit] {\\n        width: auto;\\n        padding: 0.75rem 1.5rem;\\n        background: var(--color-primary-light);\\n        border: 2px solid var(--color-primary-dark);\\n        color: var(--color-primary-dark);\\n    }\\n    input[type=submit]:hover {\\n        color: var(--color-primary-light);\\n        border:2px solid var(--color-primary-light);\\n        background: var(--color-primary-dark);\\n    }\\n</style>"],"names":[],"mappings":"AAoCI,IAAI,eAAC,CAAC,AACF,SAAS,CAAE,CAAC,AAChB,CAAC,AAED,EAAE,eAAC,CAAC,AACA,KAAK,CAAE,IAAI,oBAAoB,CAAC,CAChC,UAAU,IAAI,CACd,UAAU,CAAE,MAAM,CAClB,UAAU,CAAE,IAAI,CAChB,aAAa,CAAE,MAAM,AACzB,CAAC,AAED,oBAAK,CAAE,QAAQ,eAAC,CAAC,AACb,MAAM,CAAE,IAAI,CACZ,KAAK,CAAE,KAAK,CACZ,KAAK,CAAE,IAAI,oBAAoB,CAAC,CAChC,OAAO,CAAE,IAAI,CACb,MAAM,CAAE,IAAI,CAAC,IAAI,CACjB,OAAO,CAAE,IAAI,CACb,aAAa,CAAE,QAAQ,AAC3B,CAAC,AAED,QAAQ,eAAC,CAAC,AACN,MAAM,CAAE,KAAK,AACjB,CAAC,AAED,KAAK,CAAC,IAAI,CAAC,MAAM,CAAC,eAAC,CAAC,AAChB,KAAK,CAAE,IAAI,CACX,OAAO,CAAE,OAAO,CAAC,MAAM,CACvB,UAAU,CAAE,IAAI,qBAAqB,CAAC,CACtC,MAAM,CAAE,GAAG,CAAC,KAAK,CAAC,IAAI,oBAAoB,CAAC,CAC3C,KAAK,CAAE,IAAI,oBAAoB,CAAC,AACpC,CAAC,AACD,KAAK,CAAC,IAAI,CAAC,MAAM,gBAAC,MAAM,AAAC,CAAC,AACtB,KAAK,CAAE,IAAI,qBAAqB,CAAC,CACjC,OAAO,GAAG,CAAC,KAAK,CAAC,IAAI,qBAAqB,CAAC,CAC3C,UAAU,CAAE,IAAI,oBAAoB,CAAC,AACzC,CAAC"}`
