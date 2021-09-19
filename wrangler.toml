@@ -1,0 +1,18 @@
+name = "portfolio"
+type = "javascript"
+route = ''
+account_id = '6daf0f5cbb5a23380c83e9bed1e7e1a9'
+usage_model = ''
+compatibility_flags = []
+workers_dev = true
+compatibility_date = "2021-09-19"
+
+[site]
+bucket = "./build"
+entry-point = "./workers-site"
+
+[build]
+command = "npm run build"
+
+[build.upload]
+format = "service-worker"

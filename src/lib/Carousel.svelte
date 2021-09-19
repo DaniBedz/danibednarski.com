@@ -26,7 +26,6 @@
                         type="image/avif"
                         srcset={ screenshot.avifSrc }
                         alt="project screenshot"
-                        width="100%"
                         draggable="false"
                     >
                     <img
@@ -44,8 +43,9 @@
 
 <style>
     #screenshots {
-        min-height: calc((60vw / 16) * 9);
-        width: 59vw;
+        /* height: 100%; */
+        height: calc((60vw / 16) * 9);
+        width: 60vw;
         -webkit-user-drag: none;
         cursor: pointer;
         margin: 2rem auto 1rem auto;
@@ -55,7 +55,9 @@
     }
 
     img {
+        height: 100%;
         width: 100%;
+        object-fit: cover;
     }
 
     :global(.sc-carousel-progress__indicator) {

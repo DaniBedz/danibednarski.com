@@ -48,12 +48,13 @@
 
 <script>
     import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
-    import { fly, fade } from 'svelte/transition';
+    import { fly } from 'svelte/transition';
 
     import AppBar from '$lib/AppBar.svelte';
     import AppMenu from '$lib/AppMenu.svelte';
     import AppMenuItem from '$lib/AppMenuItem.svelte';
     import Carousel from '$lib/Carousel.svelte';
+    import Logo from '$lib/Logo.svelte';
     import Pill from '$lib/Pill.svelte';
     import ProjectDescription from '$lib/ProjectDescription.svelte';
     import ProjectHeader from '$lib/ProjectHeader.svelte';
@@ -73,6 +74,7 @@
     <AppBar />
         <div in:fly|local={{ x: -400, duration: 600 }}>
             <AppMenu>
+                <Logo />
                 <AppMenuItem href="#screenshots" text="Screenshots" />
                 <AppMenuItem href="#description" text="Description" />
                 <AppMenuItem href="#technologies-used" text="Technologies used" />

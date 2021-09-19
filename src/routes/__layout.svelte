@@ -17,12 +17,14 @@
     import AppBar from '$lib/AppBar.svelte';
     import AppMenu from '$lib/AppMenu.svelte';
     import AppMenuItem from '$lib/AppMenuItem.svelte';
+    import Logo from '$lib/Logo.svelte';
 </script>
 
     <div>
         <AppBar />
         <div in:fly|local={{ x: -400, duration: 600 }}>
             <AppMenu>
+                <Logo />
                 <AppMenuItem href='/resume' text='Resume' internal/>
                 <AppMenuItem href='https://github.com/danibedz' text='GitHub' target='_blank' rel='noreferrer' icon={ faExternalLinkAlt } />
                 <AppMenuItem href='https://www.linkedin.com/in/danibednarski/' text='LinkedIn' target='_blank' rel='noreferrer' icon={ faExternalLinkAlt } />

@@ -16,7 +16,7 @@
 
 </script>
 
-<button id="expander" href="/" on:click={ toggleMenu } tooltip={ `${ showMenu ? 'Hide' : 'Show' } Menu` } flow="right">
+<button id="expander" aria-label="expand menu" href="/" on:click={ toggleMenu } tooltip={ `${ showMenu ? 'Hide' : 'Show' } Menu` } flow="right">
     <div id="arrow" class={showMenu ? 'toggle-arrow' : null }>
         <Fa icon={ faAngleLeft } size="2x" />
     </div>

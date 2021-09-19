@@ -28,8 +28,8 @@
 <div class="wrapper">
     <nav>
         <AppBarHomeIcon tooltip={ 'Home' } projectIcon={ faHouseUser } href="/" />
-        <AppBarIcon tooltip={ 'bedz.me' } projectIcon={ lionHead } href="/projects/bedzme" alt="bedz.me lion icon" />
         <AppBarIcon tooltip={ 'myob Sales Tracker' } projectIcon={ myob } href="/projects/salestracker" alt="myob icon" />
+        <AppBarIcon tooltip={ 'bedz.me' } projectIcon={ lionHead } href="/projects/bedzme" alt="bedz.me lion icon" />
         <AppBarIcon tooltip={ 'Taskr' } projectIcon={ taskr } href="/projects/taskr" alt="taskr icon" />
         <AppBarIcon tooltip={ '21' } projectIcon={ icon21 } href="/projects/21" alt="21 icon" />
         <AppBarIcon tooltip={ 'Tic-Tac-Toe' } projectIcon={ tictactoe } href="/projects/tictactoe" alt="tic-tac-toe icon" />
