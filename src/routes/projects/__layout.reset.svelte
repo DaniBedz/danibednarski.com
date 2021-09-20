@@ -8,13 +8,14 @@
 
 <script context="module">
     export async function load( { page } ) {
-        const screenshotsPng = Object.values(import.meta.globEager('/static/projects/**/*.png'))
-            .filter((path) => path.default.includes(page.params.slug));
-        let pngPaths = screenshotsPng.map((path) => path.default);
-
-        const screenshotsAvif = Object.values(import.meta.globEager('/static/projects/**/*.avif'))
-            .filter((path) => path.default.includes(page.params.slug));
-        let avifPaths = screenshotsAvif.map((path) => path.default);
+        const pngPaths = [];
+        const avifPaths = [];
+        for (let i = 0; i < 3; i++) {
+            let png = `/projects/${ page.params.slug }/${ page.params.slug }${ i }.png`;
+            let avif = `/projects/${ page.params.slug }/${ page.params.slug }${ i }.avif`;
+            pngPaths.push(png);
+            avifPaths.push(avif);
+        }
 
         const screenshotData = [];
 
@@ -22,16 +23,13 @@
             const entry = {
                 id: i,
                 pngSrc: pngPaths[i],
+                avifSrc: avifPaths[i],
             };
-            for (let j = 0; j < avifPaths.length; j++) {
-                if (avifPaths[j].includes(`${ page.params.slug }${ i }`)) {
-                    entry.avifSrc = avifPaths[j];
-                }
-            }
             screenshotData.push(entry);
         }
 
         const project = (await import(`../../markdown/${ page.params.slug }.md`));
+
         return {
             props: {
                 descriptionData: project.metadata.description,

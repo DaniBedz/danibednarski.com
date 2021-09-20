@@ -8,8 +8,9 @@
         "preview": "svelte-kit preview"
     },
     "devDependencies": {
-        "@sveltejs/adapter-node": "^1.0.0-next.43",
         "@sveltejs/adapter-cloudflare-workers": "^1.0.0-next.22",
+        "@sveltejs/adapter-node": "^1.0.0-next.43",
+        "@sveltejs/eslint-config": "github:sveltejs/eslint-config",
         "@sveltejs/kit": "next",
         "emailjs-com": "^3.2.0",
         "eslint": "^7.32.0",
@@ -17,7 +18,8 @@
         "eslint-plugin-svelte3": "^3.2.1",
         "mdsvex": "^0.9.8",
         "svelte": "^3.42.6",
-        "svelte-carousel": "^1.0.15"
+        "svelte-carousel": "^1.0.15",
+        "typescript": "^4.4.3"
     },
     "dependencies": {
         "@fortawesome/free-solid-svg-icons": "^5.15.3",

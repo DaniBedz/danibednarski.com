@@ -1,6 +1,8 @@
 <script>
     import { onMount } from 'svelte';
 
+    import { carouselDrag } from '$lib/carouselDrag';
+
     export let screenshotData;
 
     let Carousel;
@@ -32,7 +34,7 @@
                         type="image/png"
                         src={ screenshot.pngSrc }
                         alt="project screenshot"
-                        on:click={ () => { window.open(screenshot.pngSrc); } }
+                        use:carouselDrag={ { href: screenshot.pngSrc } }
                         draggable="false"
                     >
                 </picture>
@@ -43,7 +45,6 @@
 
 <style>
     #screenshots {
-        /* height: 100%; */
         height: calc((60vw / 16) * 9);
         width: 60vw;
         -webkit-user-drag: none;

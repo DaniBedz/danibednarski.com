@@ -6,7 +6,7 @@
     export let projectIcon;
 </script>
 
-    <a { href } sveltekit:prefetch>
+    <a { href } sveltekit:prefetch draggable="false">
         <button { tooltip } aria-label={ tooltip } flow="right">
             <Fa icon={ projectIcon } size='2.5x' />
         </button>

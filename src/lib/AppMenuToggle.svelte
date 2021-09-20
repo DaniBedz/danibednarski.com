@@ -40,7 +40,6 @@
         min-width: 40px;
         border-radius: 50%;
         border: none;
-        color: var(--color-primary-dark);
         background-color: var(--color-primary-light);
         border: 3px solid var(--color-primary-dark);
 
