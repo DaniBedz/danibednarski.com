@@ -2032,9 +2032,9 @@ ${``}`;
       amp: false,
       dev: false,
       entry: {
-        file: assets + "/_app/start-76b31002.js",
+        file: assets + "/_app/start-acf99bbb.js",
         css: [assets + "/_app/assets/start-61d1577b.css", assets + "/_app/assets/vendor-ec9510ad.css"],
-        js: [assets + "/_app/start-76b31002.js", assets + "/_app/chunks/vendor-25f6bc4e.js", assets + "/_app/chunks/preload-helper-ec9aa979.js", assets + "/_app/chunks/singletons-12a22614.js"]
+        js: [assets + "/_app/start-acf99bbb.js", assets + "/_app/chunks/vendor-25f6bc4e.js", assets + "/_app/chunks/preload-helper-ec9aa979.js", assets + "/_app/chunks/singletons-12a22614.js"]
       },
       fetched: void 0,
       floc: false,
@@ -2127,7 +2127,7 @@ ${``}`;
       return index;
     })
   };
-  var metadata_lookup = { "src/routes/__layout.svelte": { "entry": "pages/__layout.svelte-d7330fce.js", "css": ["assets/pages/__layout.svelte-175ea587.css", "assets/vendor-ec9510ad.css", "assets/Logo-ef7eb8cb.css"], "js": ["pages/__layout.svelte-d7330fce.js", "chunks/vendor-25f6bc4e.js", "chunks/Logo-7011980c.js", "chunks/drag-dfa31cf3.js", "chunks/singletons-12a22614.js"], "styles": [] }, "src/routes/__error.svelte": { "entry": "pages/__error.svelte-e48bd3f3.js", "css": ["assets/pages/__error.svelte-6ce823fd.css", "assets/vendor-ec9510ad.css"], "js": ["pages/__error.svelte-e48bd3f3.js", "chunks/vendor-25f6bc4e.js"], "styles": [] }, "src/routes/index.svelte": { "entry": "pages/index.svelte-afa39f4a.js", "css": ["assets/pages/index.svelte-abed5f47.css", "assets/vendor-ec9510ad.css"], "js": ["pages/index.svelte-afa39f4a.js", "chunks/vendor-25f6bc4e.js", "chunks/drag-dfa31cf3.js", "chunks/singletons-12a22614.js"], "styles": [] }, "src/routes/projects/__layout.reset.svelte": { "entry": "pages/projects/__layout.reset.svelte-2a0bd3e3.js", "css": ["assets/pages/projects/__layout.reset.svelte-46ec1fca.css", "assets/vendor-ec9510ad.css", "assets/Logo-ef7eb8cb.css"], "js": ["pages/projects/__layout.reset.svelte-2a0bd3e3.js", "chunks/preload-helper-ec9aa979.js", "chunks/vendor-25f6bc4e.js", "chunks/Logo-7011980c.js", "chunks/drag-dfa31cf3.js", "chunks/singletons-12a22614.js"], "styles": [] }, "src/routes/projects/[slug].svelte": { "entry": "pages/projects/[slug].svelte-6e8b983d.js", "css": ["assets/vendor-ec9510ad.css"], "js": ["pages/projects/[slug].svelte-6e8b983d.js", "chunks/vendor-25f6bc4e.js"], "styles": [] }, "src/routes/contact/index.svelte": { "entry": "pages/contact/index.svelte-5b093572.js", "css": ["assets/pages/contact/index.svelte-77b0478b.css", "assets/vendor-ec9510ad.css"], "js": ["pages/contact/index.svelte-5b093572.js", "chunks/vendor-25f6bc4e.js"], "styles": [] }, "src/routes/resume/index.svelte": { "entry": "pages/resume/index.svelte-f6a21158.js", "css": ["assets/pages/resume/index.svelte-b4ce9365.css", "assets/vendor-ec9510ad.css"], "js": ["pages/resume/index.svelte-f6a21158.js", "chunks/vendor-25f6bc4e.js"], "styles": [] } };
+  var metadata_lookup = { "src/routes/__layout.svelte": { "entry": "pages/__layout.svelte-84c9094b.js", "css": ["assets/pages/__layout.svelte-175ea587.css", "assets/vendor-ec9510ad.css", "assets/Logo-e8e73b6f.css"], "js": ["pages/__layout.svelte-84c9094b.js", "chunks/vendor-25f6bc4e.js", "chunks/Logo-39a26244.js", "chunks/drag-dfa31cf3.js", "chunks/singletons-12a22614.js"], "styles": [] }, "src/routes/__error.svelte": { "entry": "pages/__error.svelte-e48bd3f3.js", "css": ["assets/pages/__error.svelte-6ce823fd.css", "assets/vendor-ec9510ad.css"], "js": ["pages/__error.svelte-e48bd3f3.js", "chunks/vendor-25f6bc4e.js"], "styles": [] }, "src/routes/index.svelte": { "entry": "pages/index.svelte-afa39f4a.js", "css": ["assets/pages/index.svelte-abed5f47.css", "assets/vendor-ec9510ad.css"], "js": ["pages/index.svelte-afa39f4a.js", "chunks/vendor-25f6bc4e.js", "chunks/drag-dfa31cf3.js", "chunks/singletons-12a22614.js"], "styles": [] }, "src/routes/projects/__layout.reset.svelte": { "entry": "pages/projects/__layout.reset.svelte-661f4ec0.js", "css": ["assets/pages/projects/__layout.reset.svelte-814f5d30.css", "assets/vendor-ec9510ad.css", "assets/Logo-e8e73b6f.css"], "js": ["pages/projects/__layout.reset.svelte-661f4ec0.js", "chunks/preload-helper-ec9aa979.js", "chunks/vendor-25f6bc4e.js", "chunks/Logo-39a26244.js", "chunks/drag-dfa31cf3.js", "chunks/singletons-12a22614.js"], "styles": [] }, "src/routes/projects/[slug].svelte": { "entry": "pages/projects/[slug].svelte-6e8b983d.js", "css": ["assets/vendor-ec9510ad.css"], "js": ["pages/projects/[slug].svelte-6e8b983d.js", "chunks/vendor-25f6bc4e.js"], "styles": [] }, "src/routes/contact/index.svelte": { "entry": "pages/contact/index.svelte-5b093572.js", "css": ["assets/pages/contact/index.svelte-77b0478b.css", "assets/vendor-ec9510ad.css"], "js": ["pages/contact/index.svelte-5b093572.js", "chunks/vendor-25f6bc4e.js"], "styles": [] }, "src/routes/resume/index.svelte": { "entry": "pages/resume/index.svelte-f6a21158.js", "css": ["assets/pages/resume/index.svelte-b4ce9365.css", "assets/vendor-ec9510ad.css"], "js": ["pages/resume/index.svelte-f6a21158.js", "chunks/vendor-25f6bc4e.js"], "styles": [] } };
   async function load_component(file) {
     const { entry, css: css2, js, styles } = metadata_lookup[file];
     return {
@@ -2144,92 +2144,6 @@ ${``}`;
     const host = request.headers["host"];
     return respond({ ...request, host }, options, { prerender });
   }
-  var subscriber_queue = [];
-  function readable(value, start) {
-    return {
-      subscribe: writable(value, start).subscribe
-    };
-  }
-  function writable(value, start = noop) {
-    let stop;
-    const subscribers = new Set();
-    function set(new_value) {
-      if (safe_not_equal(value, new_value)) {
-        value = new_value;
-        if (stop) {
-          const run_queue = !subscriber_queue.length;
-          for (const subscriber of subscribers) {
-            subscriber[1]();
-            subscriber_queue.push(subscriber, value);
-          }
-          if (run_queue) {
-            for (let i2 = 0; i2 < subscriber_queue.length; i2 += 2) {
-              subscriber_queue[i2][0](subscriber_queue[i2 + 1]);
-            }
-            subscriber_queue.length = 0;
-          }
-        }
-      }
-    }
-    function update(fn) {
-      set(fn(value));
-    }
-    function subscribe2(run2, invalidate = noop) {
-      const subscriber = [run2, invalidate];
-      subscribers.add(subscriber);
-      if (subscribers.size === 1) {
-        stop = start(set) || noop;
-      }
-      run2(value);
-      return () => {
-        subscribers.delete(subscriber);
-        if (subscribers.size === 0) {
-          stop();
-          stop = null;
-        }
-      };
-    }
-    return { set, update, subscribe: subscribe2 };
-  }
-  function derived(stores, fn, initial_value) {
-    const single = !Array.isArray(stores);
-    const stores_array = single ? [stores] : stores;
-    const auto = fn.length < 2;
-    return readable(initial_value, (set) => {
-      let inited = false;
-      const values = [];
-      let pending = 0;
-      let cleanup = noop;
-      const sync = () => {
-        if (pending) {
-          return;
-        }
-        cleanup();
-        const result = fn(single ? values[0] : values, set);
-        if (auto) {
-          set(result);
-        } else {
-          cleanup = is_function(result) ? result : noop;
-        }
-      };
-      const unsubscribers = stores_array.map((store2, i2) => subscribe(store2, (value) => {
-        values[i2] = value;
-        pending &= ~(1 << i2);
-        if (inited) {
-          sync();
-        }
-      }, () => {
-        pending |= 1 << i2;
-      }));
-      inited = true;
-      sync();
-      return function stop() {
-        run_all(unsubscribers);
-        cleanup();
-      };
-    });
-  }
-  var isNavOpen = writable(true);
   var contact = "data:image/png;base64,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";
   var cv = "/_app/assets/cv-780e515c.png";
   var github = "/_app/assets/github-79b1a74f.png";
@@ -2397,7 +2311,7 @@ ${``}`;
   var Fa$1 = Fa;
   var css$i = {
     code: `button.svelte-12xfadp{transition:transform .25s ease}button.svelte-12xfadp:hover{transform:scale(1.2)}button.svelte-12xfadp{display:flex;margin:1rem auto 3rem;color:var(--color-primary-grey);border:none;background:transparent}[tooltip].svelte-12xfadp{position:relative}[tooltip].svelte-12xfadp::before,[tooltip].svelte-12xfadp::after{text-transform:none;line-height:1;user-select:none;pointer-events:none;position:absolute;display:none;opacity:0}[tooltip].svelte-12xfadp::before{content:'';border:5px solid;z-index:1001}[tooltip].svelte-12xfadp::after{content:attr(tooltip);text-align:center;min-width:3em;max-width:21em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding:1ch 1.5ch;border-radius:.3ch;box-shadow:0 1em 2em -.5em var(--color-primary-dark);background:var(--color-text);color:var(--color-primary-dark);z-index:1000}[tooltip].svelte-12xfadp:hover::before,[tooltip].svelte-12xfadp:hover::after{display:block}[tooltip=''].svelte-12xfadp::before,[tooltip=''].svelte-12xfadp::after{display:none !important}[tooltip][flow^="right"].svelte-12xfadp::before{top:50%;border-left-width:0;border-top-color:transparent;border-bottom-color:transparent;border-right-color:var(--color-text);right:calc(0em - 5px);transform:translate(.5em, -50%)}[tooltip][flow^="right"].svelte-12xfadp::after{top:50%;left:calc(100% + 5px);transform:translate(.5em, -50%)}@keyframes svelte-12xfadp-tooltips-vert{to{opacity:1;transform:translate(-50%, 0)}}@keyframes svelte-12xfadp-tooltips-horz{to{opacity:1;transform:translate(0, -50%)}}[tooltip][flow^="right"].svelte-12xfadp:hover::before,[tooltip][flow^="right"].svelte-12xfadp:hover::after{animation:svelte-12xfadp-tooltips-horz 300ms ease-out forwards}`,
-    map: `{"version":3,"file":"AppBarHomeIcon.svelte","sources":["AppBarHomeIcon.svelte"],"sourcesContent":["<script>\\n    import Fa from 'svelte-fa/src/fa.svelte';\\n\\n    export let href;\\n    export let tooltip = false;\\n    export let projectIcon;\\n<\/script>\\n\\n    <a { href } sveltekit:prefetch>\\n        <button { tooltip } aria-label={ tooltip } flow=\\"right\\">\\n            <Fa icon={ projectIcon } size='2.5x' />\\n        </button>\\n    </a>\\n\\n<style>\\n    button {\\n        transition:transform .25s ease;\\n    }\\n\\n    button:hover {\\n        transform:scale(1.2);\\n    }\\n\\n    button {\\n        display: flex;\\n        margin: 1rem auto 3rem;\\n        color: var(--color-primary-grey);\\n        border: none;\\n        background: transparent;\\n    }\\n\\n    /* START TOOLTIP STYLES */\\n    [tooltip] {\\n        position: relative;\\n    }\\n\\n    /* Applies to all tooltips */\\n    [tooltip]::before,\\n    [tooltip]::after {\\n        text-transform: none;\\n        line-height: 1;\\n        user-select: none;\\n        pointer-events: none;\\n        position: absolute;\\n        display: none;\\n        opacity: 0;\\n    }\\n    [tooltip]::before {\\n        content: '';\\n        border: 5px solid;\\n        z-index: 1001;\\n    }\\n    [tooltip]::after {\\n        content: attr(tooltip);\\n        text-align: center;\\n        min-width: 3em;\\n        max-width: 21em;\\n        white-space: nowrap;\\n        overflow: hidden;\\n        text-overflow: ellipsis;\\n        padding: 1ch 1.5ch;\\n        border-radius: .3ch;\\n        box-shadow: 0 1em 2em -.5em var(--color-primary-dark);\\n        background: var(--color-text);\\n        color: var(--color-primary-dark);\\n        z-index: 1000;\\n    }\\n\\n    /* Make the tooltips respond to hover */\\n    [tooltip]:hover::before,\\n    [tooltip]:hover::after {\\n        display: block;\\n    }\\n\\n    /* don't show empty tooltips */\\n    [tooltip='']::before,\\n    [tooltip='']::after {\\n        display: none !important;\\n    }\\n\\n    [tooltip][flow^=\\"right\\"]::before {\\n        top: 50%;\\n        border-left-width: 0;\\n        border-top-color: transparent;\\n        border-bottom-color: transparent;\\n        border-right-color: var(--color-text);\\n        right: calc(0em - 5px);\\n        transform: translate(.5em, -50%);\\n    }\\n    [tooltip][flow^=\\"right\\"]::after {\\n        top: 50%;\\n        left: calc(100% + 5px);\\n        transform: translate(.5em, -50%);\\n    }\\n\\n    /* KEYFRAMES */\\n    @keyframes tooltips-vert {\\n        to {\\n        opacity: 1;\\n        transform: translate(-50%, 0);\\n        }\\n    }\\n\\n    @keyframes tooltips-horz {\\n        to {\\n        opacity: 1;\\n        transform: translate(0, -50%);\\n        }\\n    }\\n\\n    [tooltip][flow^=\\"right\\"]:hover::before,\\n    [tooltip][flow^=\\"right\\"]:hover::after {\\n        animation: tooltips-horz 300ms ease-out forwards;\\n    }\\n</style>"],"names":[],"mappings":"AAeI,MAAM,eAAC,CAAC,AACJ,WAAW,SAAS,CAAC,IAAI,CAAC,IAAI,AAClC,CAAC,AAED,qBAAM,MAAM,AAAC,CAAC,AACV,UAAU,MAAM,GAAG,CAAC,AACxB,CAAC,AAED,MAAM,eAAC,CAAC,AACJ,OAAO,CAAE,IAAI,CACb,MAAM,CAAE,IAAI,CAAC,IAAI,CAAC,IAAI,CACtB,KAAK,CAAE,IAAI,oBAAoB,CAAC,CAChC,MAAM,CAAE,IAAI,CACZ,UAAU,CAAE,WAAW,AAC3B,CAAC,AAGD,CAAC,OAAO,CAAC,eAAC,CAAC,AACP,QAAQ,CAAE,QAAQ,AACtB,CAAC,AAGD,CAAC,OAAO,gBAAC,QAAQ,CACjB,CAAC,OAAO,gBAAC,OAAO,AAAC,CAAC,AACd,cAAc,CAAE,IAAI,CACpB,WAAW,CAAE,CAAC,CACd,WAAW,CAAE,IAAI,CACjB,cAAc,CAAE,IAAI,CACpB,QAAQ,CAAE,QAAQ,CAClB,OAAO,CAAE,IAAI,CACb,OAAO,CAAE,CAAC,AACd,CAAC,AACD,CAAC,OAAO,gBAAC,QAAQ,AAAC,CAAC,AACf,OAAO,CAAE,EAAE,CACX,MAAM,CAAE,GAAG,CAAC,KAAK,CACjB,OAAO,CAAE,IAAI,AACjB,CAAC,AACD,CAAC,OAAO,gBAAC,OAAO,AAAC,CAAC,AACd,OAAO,CAAE,KAAK,OAAO,CAAC,CACtB,UAAU,CAAE,MAAM,CAClB,SAAS,CAAE,GAAG,CACd,SAAS,CAAE,IAAI,CACf,WAAW,CAAE,MAAM,CACnB,QAAQ,CAAE,MAAM,CAChB,aAAa,CAAE,QAAQ,CACvB,OAAO,CAAE,GAAG,CAAC,KAAK,CAClB,aAAa,CAAE,IAAI,CACnB,UAAU,CAAE,CAAC,CAAC,GAAG,CAAC,GAAG,CAAC,KAAK,CAAC,IAAI,oBAAoB,CAAC,CACrD,UAAU,CAAE,IAAI,YAAY,CAAC,CAC7B,KAAK,CAAE,IAAI,oBAAoB,CAAC,CAChC,OAAO,CAAE,IAAI,AACjB,CAAC,AAGD,CAAC,OAAO,gBAAC,MAAM,QAAQ,CACvB,CAAC,OAAO,gBAAC,MAAM,OAAO,AAAC,CAAC,AACpB,OAAO,CAAE,KAAK,AAClB,CAAC,AAGD,CAAC,OAAO,CAAC,EAAE,gBAAC,QAAQ,CACpB,CAAC,OAAO,CAAC,EAAE,gBAAC,OAAO,AAAC,CAAC,AACjB,OAAO,CAAE,IAAI,CAAC,UAAU,AAC5B,CAAC,AAED,CAAC,OAAO,CAAC,CAAC,IAAI,EAAE,OAAO,gBAAC,QAAQ,AAAC,CAAC,AAC9B,GAAG,CAAE,GAAG,CACR,iBAAiB,CAAE,CAAC,CACpB,gBAAgB,CAAE,WAAW,CAC7B,mBAAmB,CAAE,WAAW,CAChC,kBAAkB,CAAE,IAAI,YAAY,CAAC,CACrC,KAAK,CAAE,KAAK,GAAG,CAAC,CAAC,CAAC,GAAG,CAAC,CACtB,SAAS,CAAE,UAAU,IAAI,CAAC,CAAC,IAAI,CAAC,AACpC,CAAC,AACD,CAAC,OAAO,CAAC,CAAC,IAAI,EAAE,OAAO,gBAAC,OAAO,AAAC,CAAC,AAC7B,GAAG,CAAE,GAAG,CACR,IAAI,CAAE,KAAK,IAAI,CAAC,CAAC,CAAC,GAAG,CAAC,CACtB,SAAS,CAAE,UAAU,IAAI,CAAC,CAAC,IAAI,CAAC,AACpC,CAAC,AAGD,WAAW,4BAAc,CAAC,AACtB,EAAE,AAAC,CAAC,AACJ,OAAO,CAAE,CAAC,CACV,SAAS,CAAE,UAAU,IAAI,CAAC,CAAC,CAAC,CAAC,AAC7B,CAAC,AACL,CAAC,AAED,WAAW,4BAAc,CAAC,AACtB,EAAE,AAAC,CAAC,AACJ,OAAO,CAAE,CAAC,CACV,SAAS,CAAE,UAAU,CAAC,CAAC,CAAC,IAAI,CAAC,AAC7B,CAAC,AACL,CAAC,AAED,CAAC,OAAO,CAAC,CAAC,IAAI,EAAE,OAAO,gBAAC,MAAM,QAAQ,CACtC,CAAC,OAAO,CAAC,CAAC,IAAI,EAAE,OAAO,gBAAC,MAAM,OAAO,AAAC,CAAC,AACnC,SAAS,CAAE,4BAAa,CAAC,KAAK,CAAC,QAAQ,CAAC,QAAQ,AACpD,CAAC"}`
+    map: `{"version":3,"file":"AppBarHomeIcon.svelte","sources":["AppBarHomeIcon.svelte"],"sourcesContent":["<script>\\n    import Fa from 'svelte-fa/src/fa.svelte';\\n\\n    export let href;\\n    export let tooltip = false;\\n    export let projectIcon;\\n<\/script>\\n\\n    <a { href } sveltekit:prefetch draggable=\\"false\\">\\n        <button { tooltip } aria-label={ tooltip } flow=\\"right\\">\\n            <Fa icon={ projectIcon } size='2.5x' />\\n        </button>\\n    </a>\\n\\n<style>\\n    button {\\n        transition:transform .25s ease;\\n    }\\n\\n    button:hover {\\n        transform:scale(1.2);\\n    }\\n\\n    button {\\n        display: flex;\\n        margin: 1rem auto 3rem;\\n        color: var(--color-primary-grey);\\n        border: none;\\n        background: transparent;\\n    }\\n\\n    /* START TOOLTIP STYLES */\\n    [tooltip] {\\n        position: relative;\\n    }\\n\\n    /* Applies to all tooltips */\\n    [tooltip]::before,\\n    [tooltip]::after {\\n        text-transform: none;\\n        line-height: 1;\\n        user-select: none;\\n        pointer-events: none;\\n        position: absolute;\\n        display: none;\\n        opacity: 0;\\n    }\\n    [tooltip]::before {\\n        content: '';\\n        border: 5px solid;\\n        z-index: 1001;\\n    }\\n    [tooltip]::after {\\n        content: attr(tooltip);\\n        text-align: center;\\n        min-width: 3em;\\n        max-width: 21em;\\n        white-space: nowrap;\\n        overflow: hidden;\\n        text-overflow: ellipsis;\\n        padding: 1ch 1.5ch;\\n        border-radius: .3ch;\\n        box-shadow: 0 1em 2em -.5em var(--color-primary-dark);\\n        background: var(--color-text);\\n        color: var(--color-primary-dark);\\n        z-index: 1000;\\n    }\\n\\n    /* Make the tooltips respond to hover */\\n    [tooltip]:hover::before,\\n    [tooltip]:hover::after {\\n        display: block;\\n    }\\n\\n    /* don't show empty tooltips */\\n    [tooltip='']::before,\\n    [tooltip='']::after {\\n        display: none !important;\\n    }\\n\\n    [tooltip][flow^=\\"right\\"]::before {\\n        top: 50%;\\n        border-left-width: 0;\\n        border-top-color: transparent;\\n        border-bottom-color: transparent;\\n        border-right-color: var(--color-text);\\n        right: calc(0em - 5px);\\n        transform: translate(.5em, -50%);\\n    }\\n    [tooltip][flow^=\\"right\\"]::after {\\n        top: 50%;\\n        left: calc(100% + 5px);\\n        transform: translate(.5em, -50%);\\n    }\\n\\n    /* KEYFRAMES */\\n    @keyframes tooltips-vert {\\n        to {\\n        opacity: 1;\\n        transform: translate(-50%, 0);\\n        }\\n    }\\n\\n    @keyframes tooltips-horz {\\n        to {\\n        opacity: 1;\\n        transform: translate(0, -50%);\\n        }\\n    }\\n\\n    [tooltip][flow^=\\"right\\"]:hover::before,\\n    [tooltip][flow^=\\"right\\"]:hover::after {\\n        animation: tooltips-horz 300ms ease-out forwards;\\n    }\\n</style>"],"names":[],"mappings":"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"}`
   };
   var AppBarHomeIcon = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     let { href } = $$props;
@@ -2410,9 +2324,94 @@ ${``}`;
     if ($$props.projectIcon === void 0 && $$bindings.projectIcon && projectIcon !== void 0)
       $$bindings.projectIcon(projectIcon);
     $$result.css.add(css$i);
-    return `<a${add_attribute("href", href, 0)} sveltekit:prefetch><button${add_attribute("tooltip", tooltip, 0)}${add_attribute("aria-label", tooltip, 0)} flow="${"right"}" class="${"svelte-12xfadp"}">${validate_component(Fa$1, "Fa").$$render($$result, { icon: projectIcon, size: "2.5x" }, {}, {})}</button>
+    return `<a${add_attribute("href", href, 0)} sveltekit:prefetch draggable="${"false"}"><button${add_attribute("tooltip", tooltip, 0)}${add_attribute("aria-label", tooltip, 0)} flow="${"right"}" class="${"svelte-12xfadp"}">${validate_component(Fa$1, "Fa").$$render($$result, { icon: projectIcon, size: "2.5x" }, {}, {})}</button>
     </a>`;
   });
+  var subscriber_queue = [];
+  function readable(value, start) {
+    return {
+      subscribe: writable(value, start).subscribe
+    };
+  }
+  function writable(value, start = noop) {
+    let stop;
+    const subscribers = new Set();
+    function set(new_value) {
+      if (safe_not_equal(value, new_value)) {
+        value = new_value;
+        if (stop) {
+          const run_queue = !subscriber_queue.length;
+          for (const subscriber of subscribers) {
+            subscriber[1]();
+            subscriber_queue.push(subscriber, value);
+          }
+          if (run_queue) {
+            for (let i2 = 0; i2 < subscriber_queue.length; i2 += 2) {
+              subscriber_queue[i2][0](subscriber_queue[i2 + 1]);
+            }
+            subscriber_queue.length = 0;
+          }
+        }
+      }
+    }
+    function update(fn) {
+      set(fn(value));
+    }
+    function subscribe2(run2, invalidate = noop) {
+      const subscriber = [run2, invalidate];
+      subscribers.add(subscriber);
+      if (subscribers.size === 1) {
+        stop = start(set) || noop;
+      }
+      run2(value);
+      return () => {
+        subscribers.delete(subscriber);
+        if (subscribers.size === 0) {
+          stop();
+          stop = null;
+        }
+      };
+    }
+    return { set, update, subscribe: subscribe2 };
+  }
+  function derived(stores, fn, initial_value) {
+    const single = !Array.isArray(stores);
+    const stores_array = single ? [stores] : stores;
+    const auto = fn.length < 2;
+    return readable(initial_value, (set) => {
+      let inited = false;
+      const values = [];
+      let pending = 0;
+      let cleanup = noop;
+      const sync = () => {
+        if (pending) {
+          return;
+        }
+        cleanup();
+        const result = fn(single ? values[0] : values, set);
+        if (auto) {
+          set(result);
+        } else {
+          cleanup = is_function(result) ? result : noop;
+        }
+      };
+      const unsubscribers = stores_array.map((store2, i2) => subscribe(store2, (value) => {
+        values[i2] = value;
+        pending &= ~(1 << i2);
+        if (inited) {
+          sync();
+        }
+      }, () => {
+        pending |= 1 << i2;
+      }));
+      inited = true;
+      sync();
+      return function stop() {
+        run_all(unsubscribers);
+        cleanup();
+      };
+    });
+  }
   var css$h = {
     code: `img.svelte-lqpbol.svelte-lqpbol,img.svelte-lqpbol+div.svelte-lqpbol{transition:transform .25s ease}img.svelte-lqpbol.svelte-lqpbol:hover,img.svelte-lqpbol:hover+div.svelte-lqpbol{transform:scale(1.4)}button.svelte-lqpbol.svelte-lqpbol{display:block;position:absolute;margin:0.75rem auto;color:var(--color-primary-grey);border:none;background:transparent}.external-dot.svelte-lqpbol.svelte-lqpbol{position:absolute;top:2rem;left:2rem;height:1rem;width:1rem;background-color:var(--color-green);border-radius:50%}[tooltip].svelte-lqpbol.svelte-lqpbol{position:relative}[tooltip].svelte-lqpbol.svelte-lqpbol::before,[tooltip].svelte-lqpbol.svelte-lqpbol::after{text-transform:none;line-height:1;user-select:none;pointer-events:none;position:absolute;display:none;opacity:0}[tooltip].svelte-lqpbol.svelte-lqpbol::before{content:'';border:5px solid;z-index:1001}[tooltip].svelte-lqpbol.svelte-lqpbol::after{content:attr(tooltip);text-align:center;min-width:3em;max-width:21em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding:1ch 1.5ch;border-radius:.3ch;box-shadow:0 1em 2em -.5em var(--color-primary-dark);;;background:var(--color-text);color:var(--color-primary-dark);z-index:1000}[tooltip].svelte-lqpbol.svelte-lqpbol:hover::before,[tooltip].svelte-lqpbol.svelte-lqpbol:hover::after{display:block}[tooltip=''].svelte-lqpbol.svelte-lqpbol::before,[tooltip=''].svelte-lqpbol.svelte-lqpbol::after{display:none !important}[tooltip][flow^="right"].svelte-lqpbol.svelte-lqpbol::before{top:50%;border-left-width:0;border-top-color:transparent;border-bottom-color:transparent;border-right-color:var(--color-text);right:calc(0em - 5px);transform:translate(.5em, -50%)}[tooltip][flow^="right"].svelte-lqpbol.svelte-lqpbol::after{top:50%;left:calc(100% + 5px);transform:translate(.5em, -50%)}@keyframes svelte-lqpbol-tooltips-vert{to{opacity:1;transform:translate(-50%, 0)}}@keyframes svelte-lqpbol-tooltips-horz{to{opacity:1;transform:translate(0, -50%)}}[tooltip][flow^="right"].svelte-lqpbol.svelte-lqpbol:hover::before,[tooltip][flow^="right"].svelte-lqpbol.svelte-lqpbol:hover::after{animation:svelte-lqpbol-tooltips-horz 300ms ease-out forwards}@keyframes svelte-lqpbol-stretch{0%{transform:scale(1)}50%{transform:scale(1.3)}100%{transform:scale(1)}}`,
     map: `{"version":3,"file":"AppBarIcon.svelte","sources":["AppBarIcon.svelte"],"sourcesContent":["<script>\\n    import { drag } from '$lib/drag';\\n\\n    export let alt;\\n    export let external = null;\\n    export let href = null;\\n    export let projectIcon;\\n    export let tooltip = false;\\n<\/script>\\n\\n{#if external}\\n    <a { href } on:click|preventDefault target=\\"_blank\\" rel=\\"noreferrer\\" draggable=\\"false\\">\\n        <button use:drag={'appBarIcon'} { tooltip } aria-label={ tooltip } flow=\\"right\\">\\n            <img src={ projectIcon } { alt } height=\\"40px\\" width=\\"40px\\" draggable=\\"false\\">\\n            <div class=\\"external-dot\\"/>\\n        </button>\\n    </a>\\n\\n    {:else}\\n        <a {href} on:click|preventDefault sveltekit:prefetch draggable=\\"false\\">\\n            <button use:drag={'appBarIcon'} { tooltip } aria-label={ tooltip } flow=\\"right\\">\\n                <img src={ projectIcon } { alt } height=\\"40px\\" width=\\"40px\\" draggable=\\"false\\">\\n            </button>\\n        </a>\\n{/if}\\n\\n<style>\\n    img, img + div {\\n        transition:transform .25s ease;\\n    }\\n    img:hover, img:hover + div {\\n        transform:scale(1.4);\\n    }\\n\\n    button {\\n        display: block;\\n        position: absolute;\\n        margin: 0.75rem auto;\\n        color: var(--color-primary-grey);\\n        border: none;\\n        background: transparent;\\n    }\\n    .external-dot {\\n        position: absolute;\\n        top: 2rem;\\n        left: 2rem;\\n        height: 1rem;\\n        width: 1rem;\\n        background-color: var(--color-green);\\n        border-radius: 50%;\\n    }\\n    /* START TOOLTIP STYLES */\\n    [tooltip] {\\n        position: relative;\\n    }\\n\\n    /* Applies to all tooltips */\\n    [tooltip]::before,\\n    [tooltip]::after {\\n        text-transform: none;\\n        line-height: 1;\\n        user-select: none;\\n        pointer-events: none;\\n        position: absolute;\\n        display: none;\\n        opacity: 0;\\n    }\\n    [tooltip]::before {\\n        content: '';\\n        border: 5px solid;\\n        z-index: 1001;\\n    }\\n    [tooltip]::after {\\n        content: attr(tooltip);\\n        text-align: center;\\n        min-width: 3em;\\n        max-width: 21em;\\n        white-space: nowrap;\\n        overflow: hidden;\\n        text-overflow: ellipsis;\\n        padding: 1ch 1.5ch;\\n        border-radius: .3ch;\\n        box-shadow: 0 1em 2em -.5em var(--color-primary-dark);;\\n        background: var(--color-text);\\n        color: var(--color-primary-dark);\\n        z-index: 1000;\\n    }\\n\\n    /* Make the tooltips respond to hover */\\n    [tooltip]:hover::before,\\n    [tooltip]:hover::after {\\n        display: block;\\n    }\\n\\n    /* Don't show empty tooltips */\\n    [tooltip='']::before,\\n    [tooltip='']::after {\\n        display: none !important;\\n    }\\n\\n    [tooltip][flow^=\\"right\\"]::before {\\n        top: 50%;\\n        border-left-width: 0;\\n        border-top-color: transparent;\\n        border-bottom-color: transparent;\\n        border-right-color: var(--color-text);\\n        right: calc(0em - 5px);\\n        transform: translate(.5em, -50%);\\n    }\\n    [tooltip][flow^=\\"right\\"]::after {\\n        top: 50%;\\n        left: calc(100% + 5px);\\n        transform: translate(.5em, -50%);\\n    }\\n\\n    /* KEYFRAMES */\\n    @keyframes tooltips-vert {\\n        to {\\n        opacity: 1;\\n        transform: translate(-50%, 0);\\n        }\\n    }\\n\\n    @keyframes tooltips-horz {\\n        to {\\n        opacity: 1;\\n        transform: translate(0, -50%);\\n        }\\n    }\\n\\n    [tooltip][flow^=\\"right\\"]:hover::before,\\n    [tooltip][flow^=\\"right\\"]:hover::after {\\n        animation: tooltips-horz 300ms ease-out forwards;\\n    }\\n\\n    @keyframes stretch {\\n        0% {\\n            transform: scale(1);\\n        }\\n        50% {\\n            transform: scale(1.3);\\n\\n        }\\n        100% {\\n            transform: scale(1);\\n        }\\n    }\\n</style>"],"names":[],"mappings":"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"}`
@@ -2437,9 +2436,10 @@ ${``}`;
     return `${external ? `<a${add_attribute("href", href, 0)} target="${"_blank"}" rel="${"noreferrer"}" draggable="${"false"}"><button${add_attribute("tooltip", tooltip, 0)}${add_attribute("aria-label", tooltip, 0)} flow="${"right"}" class="${"svelte-lqpbol"}"><img${add_attribute("src", projectIcon, 0)}${add_attribute("alt", alt, 0)} height="${"40px"}" width="${"40px"}" draggable="${"false"}" class="${"svelte-lqpbol"}">
             <div class="${"external-dot svelte-lqpbol"}"></div></button></a>` : `<a${add_attribute("href", href, 0)} sveltekit:prefetch draggable="${"false"}"><button${add_attribute("tooltip", tooltip, 0)}${add_attribute("aria-label", tooltip, 0)} flow="${"right"}" class="${"svelte-lqpbol"}"><img${add_attribute("src", projectIcon, 0)}${add_attribute("alt", alt, 0)} height="${"40px"}" width="${"40px"}" draggable="${"false"}" class="${"svelte-lqpbol"}"></button></a>`}`;
   });
+  var isNavOpen = writable(true);
   var css$g = {
-    code: `.toggle-arrow.svelte-1gytyth{transform:rotate(-180deg);transition:all .3s ease}button.svelte-1gytyth{display:flex;position:fixed;bottom:1rem;margin:1rem auto;margin-left:0.75rem;height:40px;width:40px;min-height:40px;min-width:40px;border-radius:50%;border:none;color:var(--color-primary-dark);background-color:var(--color-primary-light);border:3px solid var(--color-primary-dark)}button.svelte-1gytyth:hover{color:var(--color-primary-light);background-color:var(--color-primary-dark);border:2px solid var(--color-primary-light)}#arrow.svelte-1gytyth{margin:auto;transition:all .3s ease}[tooltip].svelte-1gytyth::before,[tooltip].svelte-1gytyth::after{text-transform:none;line-height:1;user-select:none;pointer-events:none;position:absolute;display:none;opacity:0}[tooltip].svelte-1gytyth::before{content:'';border:5px solid;z-index:1001}[tooltip].svelte-1gytyth::after{content:attr(tooltip);text-align:center;min-width:3em;max-width:21em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding:1ch 1.5ch;border-radius:.3ch;box-shadow:0 1em 2em -.5em var(--color-primary-dark);;;background:var(--color-text);color:var(--color-primary-dark);z-index:1000}[tooltip].svelte-1gytyth:hover::before,[tooltip].svelte-1gytyth:hover::after{display:block}[tooltip=''].svelte-1gytyth::before,[tooltip=''].svelte-1gytyth::after{display:none !important}[tooltip][flow^="right"].svelte-1gytyth::before{top:50%;border-left-width:0;border-top-color:transparent;border-bottom-color:transparent;border-right-color:var(--color-text);right:calc(0em - 5px);transform:translate(.5em, -50%)}[tooltip][flow^="right"].svelte-1gytyth::after{top:50%;left:calc(100% + 5px);transform:translate(.5em, -50%)}@keyframes svelte-1gytyth-tooltips-vert{to{opacity:1;transform:translate(-50%, 0)}}@keyframes svelte-1gytyth-tooltips-horz{to{opacity:1;transform:translate(0, -50%)}}[tooltip][flow^="right"].svelte-1gytyth:hover::before,[tooltip][flow^="right"].svelte-1gytyth:hover::after{animation:svelte-1gytyth-tooltips-horz 300ms ease-out forwards}@keyframes svelte-1gytyth-stretch{0%{transform:scale(1)}50%{transform:scale(1.3)}100%{transform:scale(1)}}`,
-    map: `{"version":3,"file":"AppMenuToggle.svelte","sources":["AppMenuToggle.svelte"],"sourcesContent":["<script>\\n    import { faAngleLeft } from '@fortawesome/free-solid-svg-icons';\\n    import Fa from 'svelte-fa/src/fa.svelte';\\n\\n    import { isNavOpen } from '$lib/store';\\n\\n    let showMenu;\\n\\n    isNavOpen.subscribe((value) => {\\n        showMenu = value;\\n    });\\n\\n    function toggleMenu() {\\n        isNavOpen.set(!showMenu);\\n    }\\n\\n<\/script>\\n\\n<button id=\\"expander\\" aria-label=\\"expand menu\\" href=\\"/\\" on:click={ toggleMenu } tooltip={ \`\${ showMenu ? 'Hide' : 'Show' } Menu\` } flow=\\"right\\">\\n    <div id=\\"arrow\\" class={showMenu ? 'toggle-arrow' : null }>\\n        <Fa icon={ faAngleLeft } size=\\"2x\\" />\\n    </div>\\n</button>\\n\\n<style>\\n    .toggle-arrow {\\n        transform: rotate(-180deg);\\n        transition: all .3s ease;\\n    }\\n\\n    button {\\n        display: flex;\\n        position: fixed;\\n        bottom: 1rem;\\n        margin: 1rem auto;\\n        margin-left: 0.75rem;\\n        height: 40px;\\n        width: 40px;\\n        min-height: 40px;\\n        min-width: 40px;\\n        border-radius: 50%;\\n        border: none;\\n        color: var(--color-primary-dark);\\n        background-color: var(--color-primary-light);\\n        border: 3px solid var(--color-primary-dark);\\n\\n    }\\n\\n    button:hover {\\n        color: var(--color-primary-light);\\n        background-color: var(--color-primary-dark);\\n        border: 2px solid var(--color-primary-light);\\n    }\\n\\n    #arrow {\\n        margin: auto;\\n        transition: all .3s ease;\\n    }\\n\\n    /* START TOOLTIP STYLES */\\n\\n    /* Applies to all tooltips */\\n    [tooltip]::before,\\n    [tooltip]::after {\\n        text-transform: none;\\n        line-height: 1;\\n        user-select: none;\\n        pointer-events: none;\\n        position: absolute;\\n        display: none;\\n        opacity: 0;\\n    }\\n    [tooltip]::before {\\n        content: '';\\n        border: 5px solid;\\n        z-index: 1001;\\n    }\\n    [tooltip]::after {\\n        content: attr(tooltip);\\n        text-align: center;\\n        min-width: 3em;\\n        max-width: 21em;\\n        white-space: nowrap;\\n        overflow: hidden;\\n        text-overflow: ellipsis;\\n        padding: 1ch 1.5ch;\\n        border-radius: .3ch;\\n        box-shadow: 0 1em 2em -.5em var(--color-primary-dark);;\\n        background: var(--color-text);\\n        color: var(--color-primary-dark);\\n        z-index: 1000;\\n    }\\n\\n    /* Make the tooltips respond to hover */\\n    [tooltip]:hover::before,\\n    [tooltip]:hover::after {\\n        display: block;\\n    }\\n\\n    /* Don't show empty tooltips */\\n    [tooltip='']::before,\\n    [tooltip='']::after {\\n        display: none !important;\\n    }\\n\\n    [tooltip][flow^=\\"right\\"]::before {\\n        top: 50%;\\n        border-left-width: 0;\\n        border-top-color: transparent;\\n        border-bottom-color: transparent;\\n        border-right-color: var(--color-text);\\n        right: calc(0em - 5px);\\n        transform: translate(.5em, -50%);\\n    }\\n    [tooltip][flow^=\\"right\\"]::after {\\n        top: 50%;\\n        left: calc(100% + 5px);\\n        transform: translate(.5em, -50%);\\n    }\\n\\n    /* KEYFRAMES */\\n    @keyframes tooltips-vert {\\n        to {\\n        opacity: 1;\\n        transform: translate(-50%, 0);\\n        }\\n    }\\n\\n    @keyframes tooltips-horz {\\n        to {\\n        opacity: 1;\\n        transform: translate(0, -50%);\\n        }\\n    }\\n\\n    [tooltip][flow^=\\"right\\"]:hover::before,\\n    [tooltip][flow^=\\"right\\"]:hover::after {\\n        animation: tooltips-horz 300ms ease-out forwards;\\n    }\\n\\n    @keyframes stretch {\\n        0% {\\n            transform: scale(1);\\n        }\\n        50% {\\n            transform: scale(1.3);\\n\\n        }\\n        100% {\\n            transform: scale(1);\\n        }\\n    }\\n</style>"],"names":[],"mappings":"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"}`
+    code: `.toggle-arrow.svelte-1ei0n52{transform:rotate(-180deg);transition:all .3s ease}button.svelte-1ei0n52{display:flex;position:fixed;bottom:1rem;margin:1rem auto;margin-left:0.75rem;height:40px;width:40px;min-height:40px;min-width:40px;border-radius:50%;border:none;background-color:var(--color-primary-light);border:3px solid var(--color-primary-dark)}button.svelte-1ei0n52:hover{color:var(--color-primary-light);background-color:var(--color-primary-dark);border:2px solid var(--color-primary-light)}#arrow.svelte-1ei0n52{margin:auto;transition:all .3s ease}[tooltip].svelte-1ei0n52::before,[tooltip].svelte-1ei0n52::after{text-transform:none;line-height:1;user-select:none;pointer-events:none;position:absolute;display:none;opacity:0}[tooltip].svelte-1ei0n52::before{content:'';border:5px solid;z-index:1001}[tooltip].svelte-1ei0n52::after{content:attr(tooltip);text-align:center;min-width:3em;max-width:21em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding:1ch 1.5ch;border-radius:.3ch;box-shadow:0 1em 2em -.5em var(--color-primary-dark);;;background:var(--color-text);color:var(--color-primary-dark);z-index:1000}[tooltip].svelte-1ei0n52:hover::before,[tooltip].svelte-1ei0n52:hover::after{display:block}[tooltip=''].svelte-1ei0n52::before,[tooltip=''].svelte-1ei0n52::after{display:none !important}[tooltip][flow^="right"].svelte-1ei0n52::before{top:50%;border-left-width:0;border-top-color:transparent;border-bottom-color:transparent;border-right-color:var(--color-text);right:calc(0em - 5px);transform:translate(.5em, -50%)}[tooltip][flow^="right"].svelte-1ei0n52::after{top:50%;left:calc(100% + 5px);transform:translate(.5em, -50%)}@keyframes svelte-1ei0n52-tooltips-vert{to{opacity:1;transform:translate(-50%, 0)}}@keyframes svelte-1ei0n52-tooltips-horz{to{opacity:1;transform:translate(0, -50%)}}[tooltip][flow^="right"].svelte-1ei0n52:hover::before,[tooltip][flow^="right"].svelte-1ei0n52:hover::after{animation:svelte-1ei0n52-tooltips-horz 300ms ease-out forwards}@keyframes svelte-1ei0n52-stretch{0%{transform:scale(1)}50%{transform:scale(1.3)}100%{transform:scale(1)}}`,
+    map: `{"version":3,"file":"AppMenuToggle.svelte","sources":["AppMenuToggle.svelte"],"sourcesContent":["<script>\\n    import { faAngleLeft } from '@fortawesome/free-solid-svg-icons';\\n    import Fa from 'svelte-fa/src/fa.svelte';\\n\\n    import { isNavOpen } from '$lib/store';\\n\\n    let showMenu;\\n\\n    isNavOpen.subscribe((value) => {\\n        showMenu = value;\\n    });\\n\\n    function toggleMenu() {\\n        isNavOpen.set(!showMenu);\\n    }\\n\\n<\/script>\\n\\n<button id=\\"expander\\" aria-label=\\"expand menu\\" href=\\"/\\" on:click={ toggleMenu } tooltip={ \`\${ showMenu ? 'Hide' : 'Show' } Menu\` } flow=\\"right\\">\\n    <div id=\\"arrow\\" class={showMenu ? 'toggle-arrow' : null }>\\n        <Fa icon={ faAngleLeft } size=\\"2x\\" />\\n    </div>\\n</button>\\n\\n<style>\\n    .toggle-arrow {\\n        transform: rotate(-180deg);\\n        transition: all .3s ease;\\n    }\\n\\n    button {\\n        display: flex;\\n        position: fixed;\\n        bottom: 1rem;\\n        margin: 1rem auto;\\n        margin-left: 0.75rem;\\n        height: 40px;\\n        width: 40px;\\n        min-height: 40px;\\n        min-width: 40px;\\n        border-radius: 50%;\\n        border: none;\\n        background-color: var(--color-primary-light);\\n        border: 3px solid var(--color-primary-dark);\\n\\n    }\\n\\n    button:hover {\\n        color: var(--color-primary-light);\\n        background-color: var(--color-primary-dark);\\n        border: 2px solid var(--color-primary-light);\\n    }\\n\\n    #arrow {\\n        margin: auto;\\n        transition: all .3s ease;\\n    }\\n\\n    /* START TOOLTIP STYLES */\\n\\n    /* Applies to all tooltips */\\n    [tooltip]::before,\\n    [tooltip]::after {\\n        text-transform: none;\\n        line-height: 1;\\n        user-select: none;\\n        pointer-events: none;\\n        position: absolute;\\n        display: none;\\n        opacity: 0;\\n    }\\n    [tooltip]::before {\\n        content: '';\\n        border: 5px solid;\\n        z-index: 1001;\\n    }\\n    [tooltip]::after {\\n        content: attr(tooltip);\\n        text-align: center;\\n        min-width: 3em;\\n        max-width: 21em;\\n        white-space: nowrap;\\n        overflow: hidden;\\n        text-overflow: ellipsis;\\n        padding: 1ch 1.5ch;\\n        border-radius: .3ch;\\n        box-shadow: 0 1em 2em -.5em var(--color-primary-dark);;\\n        background: var(--color-text);\\n        color: var(--color-primary-dark);\\n        z-index: 1000;\\n    }\\n\\n    /* Make the tooltips respond to hover */\\n    [tooltip]:hover::before,\\n    [tooltip]:hover::after {\\n        display: block;\\n    }\\n\\n    /* Don't show empty tooltips */\\n    [tooltip='']::before,\\n    [tooltip='']::after {\\n        display: none !important;\\n    }\\n\\n    [tooltip][flow^=\\"right\\"]::before {\\n        top: 50%;\\n        border-left-width: 0;\\n        border-top-color: transparent;\\n        border-bottom-color: transparent;\\n        border-right-color: var(--color-text);\\n        right: calc(0em - 5px);\\n        transform: translate(.5em, -50%);\\n    }\\n    [tooltip][flow^=\\"right\\"]::after {\\n        top: 50%;\\n        left: calc(100% + 5px);\\n        transform: translate(.5em, -50%);\\n    }\\n\\n    /* KEYFRAMES */\\n    @keyframes tooltips-vert {\\n        to {\\n        opacity: 1;\\n        transform: translate(-50%, 0);\\n        }\\n    }\\n\\n    @keyframes tooltips-horz {\\n        to {\\n        opacity: 1;\\n        transform: translate(0, -50%);\\n        }\\n    }\\n\\n    [tooltip][flow^=\\"right\\"]:hover::before,\\n    [tooltip][flow^=\\"right\\"]:hover::after {\\n        animation: tooltips-horz 300ms ease-out forwards;\\n    }\\n\\n    @keyframes stretch {\\n        0% {\\n            transform: scale(1);\\n        }\\n        50% {\\n            transform: scale(1.3);\\n\\n        }\\n        100% {\\n            transform: scale(1);\\n        }\\n    }\\n</style>"],"names":[],"mappings":"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"}`
   };
   var AppMenuToggle = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     let showMenu;
@@ -2447,16 +2447,14 @@ ${``}`;
       showMenu = value;
     });
     $$result.css.add(css$g);
-    return `<button id="${"expander"}" aria-label="${"expand menu"}" href="${"/"}"${add_attribute("tooltip", `${showMenu ? "Hide" : "Show"} Menu`, 0)} flow="${"right"}" class="${"svelte-1gytyth"}"><div id="${"arrow"}" class="${escape(null_to_empty(showMenu ? "toggle-arrow" : null)) + " svelte-1gytyth"}">${validate_component(Fa$1, "Fa").$$render($$result, { icon: faAngleLeft, size: "2x" }, {}, {})}</div>
+    return `<button id="${"expander"}" aria-label="${"expand menu"}" href="${"/"}"${add_attribute("tooltip", `${showMenu ? "Hide" : "Show"} Menu`, 0)} flow="${"right"}" class="${"svelte-1ei0n52"}"><div id="${"arrow"}" class="${escape(null_to_empty(showMenu ? "toggle-arrow" : null)) + " svelte-1ei0n52"}">${validate_component(Fa$1, "Fa").$$render($$result, { icon: faAngleLeft, size: "2x" }, {}, {})}</div>
 </button>`;
   });
   var css$f = {
     code: ".wrapper.svelte-1j2jxph{min-width:4rem}nav.svelte-1j2jxph{position:fixed;height:100%;width:4rem;background:linear-gradient(rgba(125, 211, 252), rgba(45, 212, 191));z-index:1}",
-    map: `{"version":3,"file":"AppBar.svelte","sources":["AppBar.svelte"],"sourcesContent":["<script>\\n    import { isNavOpen } from './store.js';\\n\\n    import contact from '../../static/contact.png';\\n    import cv from '../../static/cv.png';\\n    import github from '../../static/github.png';\\n    import icon21 from '../../static/icon21.png';\\n    import linkedin from '../../static/linkedin.png';\\n    import lionHead from '../../static/lionHead.png';\\n    import myob from '../../static/myob.png';\\n    import taskr from '../../static/taskr.png';\\n    import thissite from '../../static/thissite.png';\\n    import tictactoe from '../../static/tictactoe.png';\\n\\n    import { faHouseUser } from '@fortawesome/free-solid-svg-icons';\\n\\n    import AppBarHomeIcon from '$lib/AppBarHomeIcon.svelte';\\n    import AppBarIcon from '$lib/AppBarIcon.svelte';\\n    import AppMenuToggle from '$lib/AppMenuToggle.svelte';\\n\\n    let showMenu;\\n    isNavOpen.subscribe((value) => {\\n        showMenu = value;\\n    });\\n\\n<\/script>\\n\\n<div class=\\"wrapper\\">\\n    <nav>\\n        <AppBarHomeIcon tooltip={ 'Home' } projectIcon={ faHouseUser } href=\\"/\\" />\\n        <AppBarIcon tooltip={ 'myob Sales Tracker' } projectIcon={ myob } href=\\"/projects/salestracker\\" alt=\\"myob icon\\" />\\n        <AppBarIcon tooltip={ 'bedz.me' } projectIcon={ lionHead } href=\\"/projects/bedzme\\" alt=\\"bedz.me lion icon\\" />\\n        <AppBarIcon tooltip={ 'Taskr' } projectIcon={ taskr } href=\\"/projects/taskr\\" alt=\\"taskr icon\\" />\\n        <AppBarIcon tooltip={ '21' } projectIcon={ icon21 } href=\\"/projects/21\\" alt=\\"21 icon\\" />\\n        <AppBarIcon tooltip={ 'Tic-Tac-Toe' } projectIcon={ tictactoe } href=\\"/projects/tictactoe\\" alt=\\"tic-tac-toe icon\\" />\\n        <AppBarIcon tooltip={ 'This Site' } projectIcon={ thissite } href=\\"/projects/thissite\\" alt=\\"this site icon\\" />\\n        <AppBarIcon tooltip={ 'Resume / CV' } projectIcon={ cv } href=\\"/resume\\" alt=\\"resume icon\\" />\\n        <AppBarIcon tooltip={ 'GitHub' } projectIcon={ github } href=\\"https://github.com/danibedz\\" alt=\\"github icon\\" external />\\n        <AppBarIcon tooltip={ 'LinkedIn' } projectIcon={ linkedin } href=\\"https://www.linkedin.com/in/danibednarski\\" alt=\\"linkedIn icon\\" external />\\n        <AppBarIcon tooltip={ 'Contact Me' } projectIcon={ contact } href=\\"/contact\\" alt=\\"Contact icon\\" />\\n        <AppMenuToggle />\\n    </nav>\\n</div>\\n<style>\\n    .wrapper {\\n        min-width: 4rem;\\n    }\\n    nav {\\n        position: fixed;\\n        height: 100%;\\n        width: 4rem;\\n        background: linear-gradient(rgba(125, 211, 252), rgba(45, 212, 191));\\n        z-index: 1;\\n    }\\n</style>"],"names":[],"mappings":"AA4CI,QAAQ,eAAC,CAAC,AACN,SAAS,CAAE,IAAI,AACnB,CAAC,AACD,GAAG,eAAC,CAAC,AACD,QAAQ,CAAE,KAAK,CACf,MAAM,CAAE,IAAI,CACZ,KAAK,CAAE,IAAI,CACX,UAAU,CAAE,gBAAgB,KAAK,GAAG,CAAC,CAAC,GAAG,CAAC,CAAC,GAAG,CAAC,CAAC,CAAC,KAAK,EAAE,CAAC,CAAC,GAAG,CAAC,CAAC,GAAG,CAAC,CAAC,CACpE,OAAO,CAAE,CAAC,AACd,CAAC"}`
+    map: `{"version":3,"file":"AppBar.svelte","sources":["AppBar.svelte"],"sourcesContent":["<script>\\n    import contact from '/static/contact.png';\\n    import cv from '/static/cv.png';\\n    import github from '/static/github.png';\\n    import icon21 from '/static/icon21.png';\\n    import linkedin from '/static/linkedin.png';\\n    import lionHead from '/static/lionHead.png';\\n    import myob from '/static/myob.png';\\n    import taskr from '/static/taskr.png';\\n    import thissite from '/static/thissite.png';\\n    import tictactoe from '/static/tictactoe.png';\\n\\n    import { faHouseUser } from '@fortawesome/free-solid-svg-icons';\\n\\n    import AppBarHomeIcon from '$lib/AppBarHomeIcon.svelte';\\n    import AppBarIcon from '$lib/AppBarIcon.svelte';\\n    import AppMenuToggle from '$lib/AppMenuToggle.svelte';\\n<\/script>\\n\\n<div class=\\"wrapper\\">\\n    <nav>\\n        <AppBarHomeIcon tooltip={ 'Home' } projectIcon={ faHouseUser } href=\\"/\\" />\\n        <AppBarIcon tooltip={ 'myob Sales Tracker' } projectIcon={ myob } href=\\"/projects/salestracker\\" alt=\\"myob icon\\" />\\n        <AppBarIcon tooltip={ 'bedz.me' } projectIcon={ lionHead } href=\\"/projects/bedzme\\" alt=\\"bedz.me lion icon\\" />\\n        <AppBarIcon tooltip={ 'Taskr' } projectIcon={ taskr } href=\\"/projects/taskr\\" alt=\\"taskr icon\\" />\\n        <AppBarIcon tooltip={ '21' } projectIcon={ icon21 } href=\\"/projects/21\\" alt=\\"21 icon\\" />\\n        <AppBarIcon tooltip={ 'Tic-Tac-Toe' } projectIcon={ tictactoe } href=\\"/projects/tictactoe\\" alt=\\"tic-tac-toe icon\\" />\\n        <AppBarIcon tooltip={ 'This Site' } projectIcon={ thissite } href=\\"/projects/thissite\\" alt=\\"this site icon\\" />\\n        <AppBarIcon tooltip={ 'Resume / CV' } projectIcon={ cv } href=\\"/resume\\" alt=\\"resume icon\\" />\\n        <AppBarIcon tooltip={ 'GitHub' } projectIcon={ github } href=\\"https://github.com/danibedz\\" alt=\\"github icon\\" external />\\n        <AppBarIcon tooltip={ 'LinkedIn' } projectIcon={ linkedin } href=\\"https://www.linkedin.com/in/danibednarski\\" alt=\\"linkedIn icon\\" external />\\n        <AppBarIcon tooltip={ 'Contact Me' } projectIcon={ contact } href=\\"/contact\\" alt=\\"Contact icon\\" />\\n        <AppMenuToggle />\\n    </nav>\\n</div>\\n<style>\\n    .wrapper {\\n        min-width: 4rem;\\n    }\\n    nav {\\n        position: fixed;\\n        height: 100%;\\n        width: 4rem;\\n        background: linear-gradient(rgba(125, 211, 252), rgba(45, 212, 191));\\n        z-index: 1;\\n    }\\n</style>"],"names":[],"mappings":"AAoCI,QAAQ,eAAC,CAAC,AACN,SAAS,CAAE,IAAI,AACnB,CAAC,AACD,GAAG,eAAC,CAAC,AACD,QAAQ,CAAE,KAAK,CACf,MAAM,CAAE,IAAI,CACZ,KAAK,CAAE,IAAI,CACX,UAAU,CAAE,gBAAgB,KAAK,GAAG,CAAC,CAAC,GAAG,CAAC,CAAC,GAAG,CAAC,CAAC,CAAC,KAAK,EAAE,CAAC,CAAC,GAAG,CAAC,CAAC,GAAG,CAAC,CAAC,CACpE,OAAO,CAAE,CAAC,AACd,CAAC"}`
   };
   var AppBar = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-    isNavOpen.subscribe((value) => {
-    });
     $$result.css.add(css$f);
     return `<div class="${"wrapper svelte-1j2jxph"}"><nav class="${"svelte-1j2jxph"}">${validate_component(AppBarHomeIcon, "AppBarHomeIcon").$$render($$result, {
       tooltip: "Home",
@@ -2573,7 +2571,7 @@ ${href ? `<div><a${add_attribute("href", href, 0)}${add_attribute("target", targ
   var daniImg = "/_app/assets/dani-12f12348.png";
   var css$c = {
     code: "img.svelte-1tuv5cx{position:fixed;height:calc(171px * 0.4);width:calc(456px * 0.4);display:flex;top:1rem;margin-left:1.5rem;padding-bottom:2rem}",
-    map: `{"version":3,"file":"Logo.svelte","sources":["Logo.svelte"],"sourcesContent":["<script>\\n    import daniImg from '../../static/dani.png';\\n<\/script>\\n\\n<a href=\\"/\\">\\n    <img src={ daniImg } alt=\\"dani logo\\" />\\n</a>\\n\\n<style>\\n    img {\\n        position: fixed;\\n        height: calc(171px * 0.4);\\n        width: calc(456px * 0.4);\\n        display: flex;\\n        top: 1rem;\\n        margin-left: 1.5rem;\\n        padding-bottom: 2rem;\\n    }\\n</style>"],"names":[],"mappings":"AASI,GAAG,eAAC,CAAC,AACD,QAAQ,CAAE,KAAK,CACf,MAAM,CAAE,KAAK,KAAK,CAAC,CAAC,CAAC,GAAG,CAAC,CACzB,KAAK,CAAE,KAAK,KAAK,CAAC,CAAC,CAAC,GAAG,CAAC,CACxB,OAAO,CAAE,IAAI,CACb,GAAG,CAAE,IAAI,CACT,WAAW,CAAE,MAAM,CACnB,cAAc,CAAE,IAAI,AACxB,CAAC"}`
+    map: `{"version":3,"file":"Logo.svelte","sources":["Logo.svelte"],"sourcesContent":["<script>\\n    import daniImg from '/static/dani.png';\\n<\/script>\\n\\n<a href=\\"/\\">\\n    <img src={ daniImg } alt=\\"dani logo\\" />\\n</a>\\n\\n<style>\\n    img {\\n        position: fixed;\\n        height: calc(171px * 0.4);\\n        width: calc(456px * 0.4);\\n        display: flex;\\n        top: 1rem;\\n        margin-left: 1.5rem;\\n        padding-bottom: 2rem;\\n    }\\n</style>"],"names":[],"mappings":"AASI,GAAG,eAAC,CAAC,AACD,QAAQ,CAAE,KAAK,CACf,MAAM,CAAE,KAAK,KAAK,CAAC,CAAC,CAAC,GAAG,CAAC,CACzB,KAAK,CAAE,KAAK,KAAK,CAAC,CAAC,CAAC,GAAG,CAAC,CACxB,OAAO,CAAE,IAAI,CACb,GAAG,CAAE,IAAI,CACT,WAAW,CAAE,MAAM,CACnB,cAAc,CAAE,IAAI,AACxB,CAAC"}`
   };
   var Logo = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     $$result.css.add(css$c);
@@ -2671,239 +2669,23 @@ ${slots.default ? slots.default({}) : ``}`;
     [Symbol.toStringTag]: "Module",
     "default": Routes
   });
-  var _210$1 = "/_app/assets/210-28bdf8f3.avif";
-  var __glob_20_0 = /* @__PURE__ */ Object.freeze({
-    __proto__: null,
-    [Symbol.toStringTag]: "Module",
-    "default": _210$1
-  });
-  var _211$1 = "/_app/assets/211-c555a31e.avif";
-  var __glob_20_1 = /* @__PURE__ */ Object.freeze({
-    __proto__: null,
-    [Symbol.toStringTag]: "Module",
-    "default": _211$1
-  });
-  var _212$1 = "/_app/assets/212-cecac751.avif";
-  var __glob_20_2 = /* @__PURE__ */ Object.freeze({
-    __proto__: null,
-    [Symbol.toStringTag]: "Module",
-    "default": _212$1
-  });
-  var bedzme0$1 = "/_app/assets/bedzme0-24ddc7ee.avif";
-  var __glob_20_3 = /* @__PURE__ */ Object.freeze({
-    __proto__: null,
-    [Symbol.toStringTag]: "Module",
-    "default": bedzme0$1
-  });
-  var bedzme1$1 = "/_app/assets/bedzme1-6c35c45a.avif";
-  var __glob_20_4 = /* @__PURE__ */ Object.freeze({
-    __proto__: null,
-    [Symbol.toStringTag]: "Module",
-    "default": bedzme1$1
-  });
-  var bedzme2$1 = "/_app/assets/bedzme2-10d8da27.avif";
-  var __glob_20_5 = /* @__PURE__ */ Object.freeze({
-    __proto__: null,
-    [Symbol.toStringTag]: "Module",
-    "default": bedzme2$1
-  });
-  var salestracker0$1 = "data:image/avif;base64,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";
-  var __glob_20_6 = /* @__PURE__ */ Object.freeze({
-    __proto__: null,
-    [Symbol.toStringTag]: "Module",
-    "default": salestracker0$1
-  });
-  var salestracker1$1 = "/_app/assets/salestracker1-d89f0060.avif";
-  var __glob_20_7 = /* @__PURE__ */ Object.freeze({
-    __proto__: null,
-    [Symbol.toStringTag]: "Module",
-    "default": salestracker1$1
-  });
-  var salestracker2$1 = "/_app/assets/salestracker2-33ea075e.avif";
-  var __glob_20_8 = /* @__PURE__ */ Object.freeze({
-    __proto__: null,
-    [Symbol.toStringTag]: "Module",
-    "default": salestracker2$1
-  });
-  var taskr0$1 = "/_app/assets/taskr0-f6e10c3e.avif";
-  var __glob_20_9 = /* @__PURE__ */ Object.freeze({
-    __proto__: null,
-    [Symbol.toStringTag]: "Module",
-    "default": taskr0$1
-  });
-  var taskr1$1 = "/_app/assets/taskr1-6af84883.avif";
-  var __glob_20_10 = /* @__PURE__ */ Object.freeze({
-    __proto__: null,
-    [Symbol.toStringTag]: "Module",
-    "default": taskr1$1
-  });
-  var taskr2$1 = "/_app/assets/taskr2-f3f0b9d5.avif";
-  var __glob_20_11 = /* @__PURE__ */ Object.freeze({
-    __proto__: null,
-    [Symbol.toStringTag]: "Module",
-    "default": taskr2$1
-  });
-  var thissite0$1 = "/_app/assets/thissite0-b9cdbf5b.avif";
-  var __glob_20_12 = /* @__PURE__ */ Object.freeze({
-    __proto__: null,
-    [Symbol.toStringTag]: "Module",
-    "default": thissite0$1
-  });
-  var thissite1$1 = "/_app/assets/thissite1-f7499dad.avif";
-  var __glob_20_13 = /* @__PURE__ */ Object.freeze({
-    __proto__: null,
-    [Symbol.toStringTag]: "Module",
-    "default": thissite1$1
-  });
-  var thissite2$1 = "/_app/assets/thissite2-88faa567.avif";
-  var __glob_20_14 = /* @__PURE__ */ Object.freeze({
-    __proto__: null,
-    [Symbol.toStringTag]: "Module",
-    "default": thissite2$1
-  });
-  var tictactoe0$1 = "/_app/assets/tictactoe0-11a36306.avif";
-  var __glob_20_15 = /* @__PURE__ */ Object.freeze({
-    __proto__: null,
-    [Symbol.toStringTag]: "Module",
-    "default": tictactoe0$1
-  });
-  var tictactoe1$1 = "data:image/avif;base64,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";
-  var __glob_20_16 = /* @__PURE__ */ Object.freeze({
-    __proto__: null,
-    [Symbol.toStringTag]: "Module",
-    "default": tictactoe1$1
-  });
-  var tictactoe2$1 = "/_app/assets/tictactoe2-698d1310.avif";
-  var __glob_20_17 = /* @__PURE__ */ Object.freeze({
-    __proto__: null,
-    [Symbol.toStringTag]: "Module",
-    "default": tictactoe2$1
-  });
-  var _210 = "/_app/assets/210-05b2fa60.png";
-  var __glob_19_0 = /* @__PURE__ */ Object.freeze({
-    __proto__: null,
-    [Symbol.toStringTag]: "Module",
-    "default": _210
-  });
-  var _211 = "/_app/assets/211-984527bd.png";
-  var __glob_19_1 = /* @__PURE__ */ Object.freeze({
-    __proto__: null,
-    [Symbol.toStringTag]: "Module",
-    "default": _211
-  });
-  var _212 = "/_app/assets/212-a7c0053f.png";
-  var __glob_19_2 = /* @__PURE__ */ Object.freeze({
-    __proto__: null,
-    [Symbol.toStringTag]: "Module",
-    "default": _212
-  });
-  var bedzme0 = "/_app/assets/bedzme0-ddb77022.png";
-  var __glob_19_3 = /* @__PURE__ */ Object.freeze({
-    __proto__: null,
-    [Symbol.toStringTag]: "Module",
-    "default": bedzme0
-  });
-  var bedzme1 = "/_app/assets/bedzme1-ec3db312.png";
-  var __glob_19_4 = /* @__PURE__ */ Object.freeze({
-    __proto__: null,
-    [Symbol.toStringTag]: "Module",
-    "default": bedzme1
-  });
-  var bedzme2 = "/_app/assets/bedzme2-07fb1a61.png";
-  var __glob_19_5 = /* @__PURE__ */ Object.freeze({
-    __proto__: null,
-    [Symbol.toStringTag]: "Module",
-    "default": bedzme2
-  });
-  var salestracker0 = "/_app/assets/salestracker0-92a154da.png";
-  var __glob_19_6 = /* @__PURE__ */ Object.freeze({
-    __proto__: null,
-    [Symbol.toStringTag]: "Module",
-    "default": salestracker0
-  });
-  var salestracker1 = "/_app/assets/salestracker1-5892d3c2.png";
-  var __glob_19_7 = /* @__PURE__ */ Object.freeze({
-    __proto__: null,
-    [Symbol.toStringTag]: "Module",
-    "default": salestracker1
-  });
-  var salestracker2 = "/_app/assets/salestracker2-bf99c6f5.png";
-  var __glob_19_8 = /* @__PURE__ */ Object.freeze({
-    __proto__: null,
-    [Symbol.toStringTag]: "Module",
-    "default": salestracker2
-  });
-  var taskr0 = "/_app/assets/taskr0-51d2b2ed.png";
-  var __glob_19_9 = /* @__PURE__ */ Object.freeze({
-    __proto__: null,
-    [Symbol.toStringTag]: "Module",
-    "default": taskr0
-  });
-  var taskr1 = "/_app/assets/taskr1-3a7234f9.png";
-  var __glob_19_10 = /* @__PURE__ */ Object.freeze({
-    __proto__: null,
-    [Symbol.toStringTag]: "Module",
-    "default": taskr1
-  });
-  var taskr2 = "/_app/assets/taskr2-d17d4fe5.png";
-  var __glob_19_11 = /* @__PURE__ */ Object.freeze({
-    __proto__: null,
-    [Symbol.toStringTag]: "Module",
-    "default": taskr2
-  });
-  var thissite0 = "/_app/assets/thissite0-ca99a830.png";
-  var __glob_19_12 = /* @__PURE__ */ Object.freeze({
-    __proto__: null,
-    [Symbol.toStringTag]: "Module",
-    "default": thissite0
-  });
-  var thissite1 = "/_app/assets/thissite1-5f13e801.png";
-  var __glob_19_13 = /* @__PURE__ */ Object.freeze({
-    __proto__: null,
-    [Symbol.toStringTag]: "Module",
-    "default": thissite1
-  });
-  var thissite2 = "/_app/assets/thissite2-ea040470.png";
-  var __glob_19_14 = /* @__PURE__ */ Object.freeze({
-    __proto__: null,
-    [Symbol.toStringTag]: "Module",
-    "default": thissite2
-  });
-  var tictactoe0 = "/_app/assets/tictactoe0-8a149e66.png";
-  var __glob_19_15 = /* @__PURE__ */ Object.freeze({
-    __proto__: null,
-    [Symbol.toStringTag]: "Module",
-    "default": tictactoe0
-  });
-  var tictactoe1 = "/_app/assets/tictactoe1-6bcc97df.png";
-  var __glob_19_16 = /* @__PURE__ */ Object.freeze({
-    __proto__: null,
-    [Symbol.toStringTag]: "Module",
-    "default": tictactoe1
-  });
-  var tictactoe2 = "/_app/assets/tictactoe2-48e6bab1.png";
-  var __glob_19_17 = /* @__PURE__ */ Object.freeze({
-    __proto__: null,
-    [Symbol.toStringTag]: "Module",
-    "default": tictactoe2
-  });
   var css$8 = {
-    code: "#screenshots.svelte-1bu43fg{height:calc((60vw / 16) * 9);width:60vw;-webkit-user-drag:none;cursor:pointer;margin:2rem auto 1rem auto;padding-top:1.5rem;padding-bottom:0.25rem}img.svelte-1bu43fg{height:100%;width:100%;object-fit:cover}.sc-carousel-progress__indicator{background-color:var(--color-primary-light) !important}.sc-carousel__pages-window{border-radius:0.5rem !important}.sc-carousel-arrow__circle{height:calc(2vw + 2rem) !important;width:calc(2vw + 2rem) !important}.sc-carousel-arrow__arrow{border:solid var(--color-text) !important;border-width:0 var(--sc-arrow-size) var(--sc-arrow-size) 0 !important}*{--sc-arrow-size:calc(0.4vw) !important}",
-    map: `{"version":3,"file":"Carousel.svelte","sources":["Carousel.svelte"],"sourcesContent":["<script>\\n    import { onMount } from 'svelte';\\n\\n    export let screenshotData;\\n\\n    let Carousel;\\n\\n    onMount(async () => {\\n        const module = await import('svelte-carousel');\\n        Carousel = module.default;\\n    });\\n<\/script>\\n\\n<div id=\\"screenshots\\">\\n    {#key screenshotData}\\n        <svelte:component\\n            this={ Carousel }\\n            autoplay\\n            autoplayDuration={ 5000 }\\n            autoplayProgressVisible\\n            pauseOnFocus\\n        >\\n            {#each screenshotData as screenshot}\\n                <picture>\\n                    <source\\n                        type=\\"image/avif\\"\\n                        srcset={ screenshot.avifSrc }\\n                        alt=\\"project screenshot\\"\\n                        draggable=\\"false\\"\\n                    >\\n                    <img\\n                        type=\\"image/png\\"\\n                        src={ screenshot.pngSrc }\\n                        alt=\\"project screenshot\\"\\n                        on:click={ () => { window.open(screenshot.pngSrc); } }\\n                        draggable=\\"false\\"\\n                    >\\n                </picture>\\n            {/each}\\n        </svelte:component>\\n    {/key}\\n</div>\\n\\n<style>\\n    #screenshots {\\n        /* height: 100%; */\\n        height: calc((60vw / 16) * 9);\\n        width: 60vw;\\n        -webkit-user-drag: none;\\n        cursor: pointer;\\n        margin: 2rem auto 1rem auto;\\n\\n        padding-top: 1.5rem;\\n        padding-bottom: 0.25rem;\\n    }\\n\\n    img {\\n        height: 100%;\\n        width: 100%;\\n        object-fit: cover;\\n    }\\n\\n    :global(.sc-carousel-progress__indicator) {\\n        background-color: var(--color-primary-light) !important;\\n    }\\n\\n    :global(.sc-carousel__pages-window) {\\n        border-radius: 0.5rem !important;\\n    }\\n\\n    :global(.sc-carousel-arrow__circle) {\\n        height: calc(2vw + 2rem) !important;\\n        width: calc(2vw + 2rem) !important;\\n    }\\n    :global(.sc-carousel-arrow__arrow) {\\n        border: solid var(--color-text) !important;\\n        border-width: 0 var(--sc-arrow-size) var(--sc-arrow-size) 0 !important;\\n    }\\n    :global(*) {\\n        --sc-arrow-size: calc(0.4vw) !important;\\n    }\\n</style>"],"names":[],"mappings":"AA4CI,YAAY,eAAC,CAAC,AAEV,MAAM,CAAE,KAAK,CAAC,IAAI,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAC7B,KAAK,CAAE,IAAI,CACX,iBAAiB,CAAE,IAAI,CACvB,MAAM,CAAE,OAAO,CACf,MAAM,CAAE,IAAI,CAAC,IAAI,CAAC,IAAI,CAAC,IAAI,CAE3B,WAAW,CAAE,MAAM,CACnB,cAAc,CAAE,OAAO,AAC3B,CAAC,AAED,GAAG,eAAC,CAAC,AACD,MAAM,CAAE,IAAI,CACZ,KAAK,CAAE,IAAI,CACX,UAAU,CAAE,KAAK,AACrB,CAAC,AAEO,gCAAgC,AAAE,CAAC,AACvC,gBAAgB,CAAE,IAAI,qBAAqB,CAAC,CAAC,UAAU,AAC3D,CAAC,AAEO,0BAA0B,AAAE,CAAC,AACjC,aAAa,CAAE,MAAM,CAAC,UAAU,AACpC,CAAC,AAEO,0BAA0B,AAAE,CAAC,AACjC,MAAM,CAAE,KAAK,GAAG,CAAC,CAAC,CAAC,IAAI,CAAC,CAAC,UAAU,CACnC,KAAK,CAAE,KAAK,GAAG,CAAC,CAAC,CAAC,IAAI,CAAC,CAAC,UAAU,AACtC,CAAC,AACO,yBAAyB,AAAE,CAAC,AAChC,MAAM,CAAE,KAAK,CAAC,IAAI,YAAY,CAAC,CAAC,UAAU,CAC1C,YAAY,CAAE,CAAC,CAAC,IAAI,eAAe,CAAC,CAAC,IAAI,eAAe,CAAC,CAAC,CAAC,CAAC,UAAU,AAC1E,CAAC,AACO,CAAC,AAAE,CAAC,AACR,eAAe,CAAE,YAAY,UAAU,AAC3C,CAAC"}`
+    code: "#screenshots.svelte-dfcqqi{height:calc((60vw / 16) * 9);width:60vw;-webkit-user-drag:none;cursor:pointer;margin:2rem auto 1rem auto;padding-top:1.5rem;padding-bottom:0.25rem}img.svelte-dfcqqi{height:100%;width:100%;object-fit:cover}.sc-carousel-progress__indicator{background-color:var(--color-primary-light) !important}.sc-carousel__pages-window{border-radius:0.5rem !important}.sc-carousel-arrow__circle{height:calc(2vw + 2rem) !important;width:calc(2vw + 2rem) !important}.sc-carousel-arrow__arrow{border:solid var(--color-text) !important;border-width:0 var(--sc-arrow-size) var(--sc-arrow-size) 0 !important}*{--sc-arrow-size:calc(0.4vw) !important}",
+    map: `{"version":3,"file":"Carousel.svelte","sources":["Carousel.svelte"],"sourcesContent":["<script>\\n    import { onMount } from 'svelte';\\n\\n    import { carouselDrag } from '$lib/carouselDrag';\\n\\n    export let screenshotData;\\n\\n    let Carousel;\\n\\n    onMount(async () => {\\n        const module = await import('svelte-carousel');\\n        Carousel = module.default;\\n    });\\n<\/script>\\n\\n<div id=\\"screenshots\\">\\n    {#key screenshotData}\\n        <svelte:component\\n            this={ Carousel }\\n            autoplay\\n            autoplayDuration={ 5000 }\\n            autoplayProgressVisible\\n            pauseOnFocus\\n        >\\n            {#each screenshotData as screenshot}\\n                <picture>\\n                    <source\\n                        type=\\"image/avif\\"\\n                        srcset={ screenshot.avifSrc }\\n                        alt=\\"project screenshot\\"\\n                        draggable=\\"false\\"\\n                    >\\n                    <img\\n                        type=\\"image/png\\"\\n                        src={ screenshot.pngSrc }\\n                        alt=\\"project screenshot\\"\\n                        use:carouselDrag={ { href: screenshot.pngSrc } }\\n                        draggable=\\"false\\"\\n                    >\\n                </picture>\\n            {/each}\\n        </svelte:component>\\n    {/key}\\n</div>\\n\\n<style>\\n    #screenshots {\\n        height: calc((60vw / 16) * 9);\\n        width: 60vw;\\n        -webkit-user-drag: none;\\n        cursor: pointer;\\n        margin: 2rem auto 1rem auto;\\n\\n        padding-top: 1.5rem;\\n        padding-bottom: 0.25rem;\\n    }\\n\\n    img {\\n        height: 100%;\\n        width: 100%;\\n        object-fit: cover;\\n    }\\n\\n    :global(.sc-carousel-progress__indicator) {\\n        background-color: var(--color-primary-light) !important;\\n    }\\n\\n    :global(.sc-carousel__pages-window) {\\n        border-radius: 0.5rem !important;\\n    }\\n\\n    :global(.sc-carousel-arrow__circle) {\\n        height: calc(2vw + 2rem) !important;\\n        width: calc(2vw + 2rem) !important;\\n    }\\n    :global(.sc-carousel-arrow__arrow) {\\n        border: solid var(--color-text) !important;\\n        border-width: 0 var(--sc-arrow-size) var(--sc-arrow-size) 0 !important;\\n    }\\n    :global(*) {\\n        --sc-arrow-size: calc(0.4vw) !important;\\n    }\\n</style>"],"names":[],"mappings":"AA8CI,YAAY,cAAC,CAAC,AACV,MAAM,CAAE,KAAK,CAAC,IAAI,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAC7B,KAAK,CAAE,IAAI,CACX,iBAAiB,CAAE,IAAI,CACvB,MAAM,CAAE,OAAO,CACf,MAAM,CAAE,IAAI,CAAC,IAAI,CAAC,IAAI,CAAC,IAAI,CAE3B,WAAW,CAAE,MAAM,CACnB,cAAc,CAAE,OAAO,AAC3B,CAAC,AAED,GAAG,cAAC,CAAC,AACD,MAAM,CAAE,IAAI,CACZ,KAAK,CAAE,IAAI,CACX,UAAU,CAAE,KAAK,AACrB,CAAC,AAEO,gCAAgC,AAAE,CAAC,AACvC,gBAAgB,CAAE,IAAI,qBAAqB,CAAC,CAAC,UAAU,AAC3D,CAAC,AAEO,0BAA0B,AAAE,CAAC,AACjC,aAAa,CAAE,MAAM,CAAC,UAAU,AACpC,CAAC,AAEO,0BAA0B,AAAE,CAAC,AACjC,MAAM,CAAE,KAAK,GAAG,CAAC,CAAC,CAAC,IAAI,CAAC,CAAC,UAAU,CACnC,KAAK,CAAE,KAAK,GAAG,CAAC,CAAC,CAAC,IAAI,CAAC,CAAC,UAAU,AACtC,CAAC,AACO,yBAAyB,AAAE,CAAC,AAChC,MAAM,CAAE,KAAK,CAAC,IAAI,YAAY,CAAC,CAAC,UAAU,CAC1C,YAAY,CAAE,CAAC,CAAC,IAAI,eAAe,CAAC,CAAC,IAAI,eAAe,CAAC,CAAC,CAAC,CAAC,UAAU,AAC1E,CAAC,AACO,CAAC,AAAE,CAAC,AACR,eAAe,CAAE,YAAY,UAAU,AAC3C,CAAC"}`
   };
   var Carousel_1 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     let { screenshotData } = $$props;
     if ($$props.screenshotData === void 0 && $$bindings.screenshotData && screenshotData !== void 0)
       $$bindings.screenshotData(screenshotData);
     $$result.css.add(css$8);
-    return `<div id="${"screenshots"}" class="${"svelte-1bu43fg"}">${validate_component(missing_component, "svelte:component").$$render($$result, {
+    return `<div id="${"screenshots"}" class="${"svelte-dfcqqi"}">${validate_component(missing_component, "svelte:component").$$render($$result, {
       autoplay: true,
       autoplayDuration: 5e3,
       autoplayProgressVisible: true,
       pauseOnFocus: true
     }, {}, {
       default: () => `${each(screenshotData, (screenshot) => `<picture><source type="${"image/avif"}"${add_attribute("srcset", screenshot.avifSrc, 0)} alt="${"project screenshot"}" draggable="${"false"}">
-                    <img type="${"image/png"}"${add_attribute("src", screenshot.pngSrc, 0)} alt="${"project screenshot"}" draggable="${"false"}" class="${"svelte-1bu43fg"}">
+                    <img type="${"image/png"}"${add_attribute("src", screenshot.pngSrc, 0)} alt="${"project screenshot"}" draggable="${"false"}" class="${"svelte-dfcqqi"}">
                 </picture>`)}`
     })}
 </div>`;
@@ -3001,21 +2783,24 @@ ${slots.default ? slots.default({}) : ``}`;
   }
   var css$2 = {
     code: "main.svelte-1uw12di{display:flex;height:100%}article.svelte-1uw12di{position:static;height:100%}",
-    map: `{"version":3,"file":"__layout.reset.svelte","sources":["__layout.reset.svelte"],"sourcesContent":["<svelte:head>\\n\\t<title>The Portfolio of Dani Bednarski - danibednarski.com</title>\\n\\t<meta name=\\"description\\" content=\\"The portfolio website of Dani Bednarski. My name is Dani and I'm a web developer based in Melbourne, Australia.\\n        What motivates me is making things that people love to use, and want to share with others.\\n        Please explore the site, check out some of the projects that I have worked on, and reach out if you like what you see.\\" />\\n\\t<html lang=\\"en\\" />\\n</svelte:head>\\n\\n<script context=\\"module\\">\\n    export async function load( { page } ) {\\n        const screenshotsPng = Object.values(import.meta.globEager('/static/projects/**/*.png'))\\n            .filter((path) => path.default.includes(page.params.slug));\\n        let pngPaths = screenshotsPng.map((path) => path.default);\\n\\n        const screenshotsAvif = Object.values(import.meta.globEager('/static/projects/**/*.avif'))\\n            .filter((path) => path.default.includes(page.params.slug));\\n        let avifPaths = screenshotsAvif.map((path) => path.default);\\n\\n        const screenshotData = [];\\n\\n        for (let i = 0; i < pngPaths.length; i++) {\\n            const entry = {\\n                id: i,\\n                pngSrc: pngPaths[i],\\n            };\\n            for (let j = 0; j < avifPaths.length; j++) {\\n                if (avifPaths[j].includes(\`\${ page.params.slug }\${ i }\`)) {\\n                    entry.avifSrc = avifPaths[j];\\n                }\\n            }\\n            screenshotData.push(entry);\\n        }\\n\\n        const project = (await import(\`../../markdown/\${ page.params.slug }.md\`));\\n        return {\\n            props: {\\n                descriptionData: project.metadata.description,\\n                github: project.metadata.github,\\n                liveSite: project.metadata.liveSite,\\n                projectNameData: project.metadata.projectName,\\n                screenshotData,\\n                technologiesUsed: project.metadata.technologiesUsed,\\n                titleData: project.metadata.title,\\n            },\\n        };\\n    }\\n<\/script>\\n\\n<script>\\n    import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';\\n    import { fly } from 'svelte/transition';\\n\\n    import AppBar from '$lib/AppBar.svelte';\\n    import AppMenu from '$lib/AppMenu.svelte';\\n    import AppMenuItem from '$lib/AppMenuItem.svelte';\\n    import Carousel from '$lib/Carousel.svelte';\\n    import Logo from '$lib/Logo.svelte';\\n    import Pill from '$lib/Pill.svelte';\\n    import ProjectDescription from '$lib/ProjectDescription.svelte';\\n    import ProjectHeader from '$lib/ProjectHeader.svelte';\\n    import ProjectTitle from '$lib/ProjectTitle.svelte';\\n    import TechnologiesUsed from '$lib/TechnologiesUsed.svelte';\\n\\n    export let descriptionData;\\n    export let github;\\n    export let liveSite;\\n    export let projectNameData;\\n    export let screenshotData;\\n    export let technologiesUsed;\\n    export let titleData;\\n<\/script>\\n\\n<main>\\n    <AppBar />\\n        <div in:fly|local={{ x: -400, duration: 600 }}>\\n            <AppMenu>\\n                <Logo />\\n                <AppMenuItem href=\\"#screenshots\\" text=\\"Screenshots\\" />\\n                <AppMenuItem href=\\"#description\\" text=\\"Description\\" />\\n                <AppMenuItem href=\\"#technologies-used\\" text=\\"Technologies used\\" />\\n                <AppMenuItem href={ liveSite } text=\\"Live Site\\" icon={ faExternalLinkAlt } target=\\"_blank\\" rel=\\"noreferrer\\" />\\n                <AppMenuItem href={ github } text=\\"GitHub\\" icon={ faExternalLinkAlt } target=\\"_blank\\" rel=\\"noreferrer\\" />\\n            </AppMenu>\\n        </div>\\n    <article>\\n        <Carousel { screenshotData } />\\n        <ProjectHeader { projectNameData } />\\n        <ProjectTitle { titleData } />\\n        <ProjectDescription { descriptionData } />\\n        <TechnologiesUsed>\\n            {#each technologiesUsed as technology}\\n                <Pill text={ technology } />\\n            {/each}\\n        </TechnologiesUsed>\\n    </article>\\n    <slot/>\\n</main>\\n\\n<style>\\n    main {\\n        display: flex;\\n        height: 100%;\\n    }\\n\\n    article {\\n        position: static;\\n        height: 100%;\\n    }\\n</style>"],"names":[],"mappings":"AAmGI,IAAI,eAAC,CAAC,AACF,OAAO,CAAE,IAAI,CACb,MAAM,CAAE,IAAI,AAChB,CAAC,AAED,OAAO,eAAC,CAAC,AACL,QAAQ,CAAE,MAAM,CAChB,MAAM,CAAE,IAAI,AAChB,CAAC"}`
+    map: `{"version":3,"file":"__layout.reset.svelte","sources":["__layout.reset.svelte"],"sourcesContent":["<svelte:head>\\n\\t<title>The Portfolio of Dani Bednarski - danibednarski.com</title>\\n\\t<meta name=\\"description\\" content=\\"The portfolio website of Dani Bednarski. My name is Dani and I'm a web developer based in Melbourne, Australia.\\n        What motivates me is making things that people love to use, and want to share with others.\\n        Please explore the site, check out some of the projects that I have worked on, and reach out if you like what you see.\\" />\\n\\t<html lang=\\"en\\" />\\n</svelte:head>\\n\\n<script context=\\"module\\">\\n    export async function load( { page } ) {\\n        const pngPaths = [];\\n        const avifPaths = [];\\n        for (let i = 0; i < 3; i++) {\\n            let png = \`/projects/\${ page.params.slug }/\${ page.params.slug }\${ i }.png\`;\\n            let avif = \`/projects/\${ page.params.slug }/\${ page.params.slug }\${ i }.avif\`;\\n            pngPaths.push(png);\\n            avifPaths.push(avif);\\n        }\\n\\n        const screenshotData = [];\\n\\n        for (let i = 0; i < pngPaths.length; i++) {\\n            const entry = {\\n                id: i,\\n                pngSrc: pngPaths[i],\\n                avifSrc: avifPaths[i],\\n            };\\n            screenshotData.push(entry);\\n        }\\n\\n        const project = (await import(\`../../markdown/\${ page.params.slug }.md\`));\\n\\n        return {\\n            props: {\\n                descriptionData: project.metadata.description,\\n                github: project.metadata.github,\\n                liveSite: project.metadata.liveSite,\\n                projectNameData: project.metadata.projectName,\\n                screenshotData,\\n                technologiesUsed: project.metadata.technologiesUsed,\\n                titleData: project.metadata.title,\\n            },\\n        };\\n    }\\n<\/script>\\n\\n<script>\\n    import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';\\n    import { fly } from 'svelte/transition';\\n\\n    import AppBar from '$lib/AppBar.svelte';\\n    import AppMenu from '$lib/AppMenu.svelte';\\n    import AppMenuItem from '$lib/AppMenuItem.svelte';\\n    import Carousel from '$lib/Carousel.svelte';\\n    import Logo from '$lib/Logo.svelte';\\n    import Pill from '$lib/Pill.svelte';\\n    import ProjectDescription from '$lib/ProjectDescription.svelte';\\n    import ProjectHeader from '$lib/ProjectHeader.svelte';\\n    import ProjectTitle from '$lib/ProjectTitle.svelte';\\n    import TechnologiesUsed from '$lib/TechnologiesUsed.svelte';\\n\\n    export let descriptionData;\\n    export let github;\\n    export let liveSite;\\n    export let projectNameData;\\n    export let screenshotData;\\n    export let technologiesUsed;\\n    export let titleData;\\n<\/script>\\n\\n<main>\\n    <AppBar />\\n        <div in:fly|local={{ x: -400, duration: 600 }}>\\n            <AppMenu>\\n                <Logo />\\n                <AppMenuItem href=\\"#screenshots\\" text=\\"Screenshots\\" />\\n                <AppMenuItem href=\\"#description\\" text=\\"Description\\" />\\n                <AppMenuItem href=\\"#technologies-used\\" text=\\"Technologies used\\" />\\n                <AppMenuItem href={ liveSite } text=\\"Live Site\\" icon={ faExternalLinkAlt } target=\\"_blank\\" rel=\\"noreferrer\\" />\\n                <AppMenuItem href={ github } text=\\"GitHub\\" icon={ faExternalLinkAlt } target=\\"_blank\\" rel=\\"noreferrer\\" />\\n            </AppMenu>\\n        </div>\\n    <article>\\n        <Carousel { screenshotData } />\\n        <ProjectHeader { projectNameData } />\\n        <ProjectTitle { titleData } />\\n        <ProjectDescription { descriptionData } />\\n        <TechnologiesUsed>\\n            {#each technologiesUsed as technology}\\n                <Pill text={ technology } />\\n            {/each}\\n        </TechnologiesUsed>\\n    </article>\\n    <slot/>\\n</main>\\n\\n<style>\\n    main {\\n        display: flex;\\n        height: 100%;\\n    }\\n\\n    article {\\n        position: static;\\n        height: 100%;\\n    }\\n</style>"],"names":[],"mappings":"AAiGI,IAAI,eAAC,CAAC,AACF,OAAO,CAAE,IAAI,CACb,MAAM,CAAE,IAAI,AAChB,CAAC,AAED,OAAO,eAAC,CAAC,AACL,QAAQ,CAAE,MAAM,CAChB,MAAM,CAAE,IAAI,AAChB,CAAC"}`
   };
   async function load({ page }) {
-    const screenshotsPng = Object.values({ "/static/projects/21/210.png": __glob_19_0, "/static/projects/21/211.png": __glob_19_1, "/static/projects/21/212.png": __glob_19_2, "/static/projects/bedzme/bedzme0.png": __glob_19_3, "/static/projects/bedzme/bedzme1.png": __glob_19_4, "/static/projects/bedzme/bedzme2.png": __glob_19_5, "/static/projects/salestracker/salestracker0.png": __glob_19_6, "/static/projects/salestracker/salestracker1.png": __glob_19_7, "/static/projects/salestracker/salestracker2.png": __glob_19_8, "/static/projects/taskr/taskr0.png": __glob_19_9, "/static/projects/taskr/taskr1.png": __glob_19_10, "/static/projects/taskr/taskr2.png": __glob_19_11, "/static/projects/thissite/thissite0.png": __glob_19_12, "/static/projects/thissite/thissite1.png": __glob_19_13, "/static/projects/thissite/thissite2.png": __glob_19_14, "/static/projects/tictactoe/tictactoe0.png": __glob_19_15, "/static/projects/tictactoe/tictactoe1.png": __glob_19_16, "/static/projects/tictactoe/tictactoe2.png": __glob_19_17 }).filter((path) => path.default.includes(page.params.slug));
-    let pngPaths = screenshotsPng.map((path) => path.default);
-    const screenshotsAvif = Object.values({ "/static/projects/21/210.avif": __glob_20_0, "/static/projects/21/211.avif": __glob_20_1, "/static/projects/21/212.avif": __glob_20_2, "/static/projects/bedzme/bedzme0.avif": __glob_20_3, "/static/projects/bedzme/bedzme1.avif": __glob_20_4, "/static/projects/bedzme/bedzme2.avif": __glob_20_5, "/static/projects/salestracker/salestracker0.avif": __glob_20_6, "/static/projects/salestracker/salestracker1.avif": __glob_20_7, "/static/projects/salestracker/salestracker2.avif": __glob_20_8, "/static/projects/taskr/taskr0.avif": __glob_20_9, "/static/projects/taskr/taskr1.avif": __glob_20_10, "/static/projects/taskr/taskr2.avif": __glob_20_11, "/static/projects/thissite/thissite0.avif": __glob_20_12, "/static/projects/thissite/thissite1.avif": __glob_20_13, "/static/projects/thissite/thissite2.avif": __glob_20_14, "/static/projects/tictactoe/tictactoe0.avif": __glob_20_15, "/static/projects/tictactoe/tictactoe1.avif": __glob_20_16, "/static/projects/tictactoe/tictactoe2.avif": __glob_20_17 }).filter((path) => path.default.includes(page.params.slug));
-    let avifPaths = screenshotsAvif.map((path) => path.default);
+    const pngPaths = [];
+    const avifPaths = [];
+    for (let i2 = 0; i2 < 3; i2++) {
+      let png = `/projects/${page.params.slug}/${page.params.slug}${i2}.png`;
+      let avif = `/projects/${page.params.slug}/${page.params.slug}${i2}.avif`;
+      pngPaths.push(png);
+      avifPaths.push(avif);
+    }
     const screenshotData = [];
     for (let i2 = 0; i2 < pngPaths.length; i2++) {
-      const entry = { id: i2, pngSrc: pngPaths[i2] };
-      for (let j2 = 0; j2 < avifPaths.length; j2++) {
-        if (avifPaths[j2].includes(`${page.params.slug}${i2}`)) {
-          entry.avifSrc = avifPaths[j2];
-        }
-      }
+      const entry = {
+        id: i2,
+        pngSrc: pngPaths[i2],
+        avifSrc: avifPaths[i2]
+      };
       screenshotData.push(entry);
     }
     const project = await __variableDynamicImportRuntime0__(`../../markdown/${page.params.slug}.md`);
