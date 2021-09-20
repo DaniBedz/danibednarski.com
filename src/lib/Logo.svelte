@@ -1,5 +1,5 @@
 <script>
-    import daniImg from '/dani.png';
+    import daniImg from '/static/dani.png';
 </script>
 
 <a href="/">

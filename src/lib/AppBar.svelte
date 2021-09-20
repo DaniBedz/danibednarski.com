@@ -1,14 +1,14 @@
 <script>
-    import contact from '/contact.png';
-    import cv from '/cv.png';
-    import github from '/github.png';
-    import icon21 from '/icon21.png';
-    import linkedin from '/linkedin.png';
-    import lionHead from '/lionHead.png';
-    import myob from '/myob.png';
-    import taskr from '/taskr.png';
-    import thissite from '/thissite.png';
-    import tictactoe from '/tictactoe.png';
+    import contact from '/static/contact.png';
+    import cv from '/static/cv.png';
+    import github from '/static/github.png';
+    import icon21 from '/static/icon21.png';
+    import linkedin from '/static/linkedin.png';
+    import lionHead from '/static/lionHead.png';
+    import myob from '/static/myob.png';
+    import taskr from '/static/taskr.png';
+    import thissite from '/static/thissite.png';
+    import tictactoe from '/static/tictactoe.png';
 
     import { faHouseUser } from '@fortawesome/free-solid-svg-icons';
 
