@@ -4,22 +4,54 @@
     export let alt;
     export let external = null;
     export let href = null;
-    export let projectIcon;
+    export let projectIconAvif;
+    export let projectIconPng;
     export let tooltip = false;
 </script>
 
 {#if external}
     <a { href } on:click|preventDefault target="_blank" rel="noreferrer" draggable="false">
-        <button use:drag={'appBarIcon'} { tooltip } aria-label={ tooltip } flow="right">
-            <img src={ projectIcon } { alt } height="40px" width="40px" draggable="false">
-            <div class="external-dot"/>
+        <button use:drag={'appBarIconExternal'} { tooltip } aria-label={ tooltip } flow="right">
+
+            <picture>
+                    <source
+                        type="image/avif"
+                        srcset={ projectIconAvif }
+                        { alt }
+                        draggable="false"
+                    >
+                    <img
+                        type="image/png"
+                        { alt }
+                        src={ projectIconPng }
+                        height="40px"
+                        width="40px"
+                        draggable="false"
+                    >
+                    <div class="external-dot"/>
+                </picture>
         </button>
     </a>
 
     {:else}
         <a {href} on:click|preventDefault sveltekit:prefetch draggable="false">
             <button use:drag={'appBarIcon'} { tooltip } aria-label={ tooltip } flow="right">
-                <img src={ projectIcon } { alt } height="40px" width="40px" draggable="false">
+                <picture>
+                    <source
+                        type="image/avif"
+                        srcset={ projectIconAvif }
+                        { alt }
+                        draggable="false"
+                    >
+                    <img
+                        type="image/png"
+                        src={ projectIconPng }
+                        { alt }
+                        height="40px"
+                        width="40px"
+                        draggable="false"
+                    >
+                </picture>
             </button>
         </a>
 {/if}

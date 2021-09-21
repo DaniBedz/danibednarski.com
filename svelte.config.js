@@ -1,6 +1,6 @@
 import mdsvexConfig from './mdsvex.config.js';
 
-import adapter from '@sveltejs/adapter-static';
+import adapter from '@sveltejs/adapter-cloudflare-workers';
 import { mdsvex } from 'mdsvex';
 
 

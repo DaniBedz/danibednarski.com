@@ -5,10 +5,11 @@
     "scripts": {
         "dev": "svelte-kit dev --port 2323",
         "build": "svelte-kit build",
-        "preview": "svelte-kit preview"
+        "preview": "svelte-kit preview",
+        "deploy": "wrangler publish"
     },
     "devDependencies": {
-        "@sveltejs/adapter-static": "^1.0.0-next.19",
+        "@sveltejs/adapter-cloudflare-workers": "^1.0.0-next.22",
         "@sveltejs/eslint-config": "github:sveltejs/eslint-config",
         "@sveltejs/kit": "next",
         "emailjs-com": "^3.2.0",
@@ -17,15 +18,13 @@
         "eslint-plugin-svelte3": "^3.2.1",
         "mdsvex": "^0.9.8",
         "svelte": "^3.42.6",
-        "svelte-carousel": "^1.0.15",
-        "typescript": "^4.4.3"
+        "svelte-carousel": "^1.0.15"
     },
     "dependencies": {
         "@fortawesome/free-solid-svg-icons": "^5.15.3",
         "felte": "^0.8.0",
         "marked": "^3.0.4",
-        "svelte-fa": "^2.3.3",
-        "svelte-preprocess": "^4.9.4"
+        "svelte-fa": "^2.3.3"
     },
     "eslintIgnore": [
         "package.json"

@@ -1,10 +1,26 @@
 <script>
-    import daniImg from '/static/dani.png';
+    import daniImgPng from '/static/dani.png';
+    import daniImgAvif from '/static/dani.avif';
 </script>
 
 <a href="/">
-    <img src={ daniImg } alt="dani logo" />
+    <picture>
+        <source
+            type="image/avif"
+            srcset={ daniImgAvif }
+            alt="dani logo"
+            draggable="false"
+        >
+        <img
+            type="image/png"
+            src={ daniImgPng }
+            alt="dani logo"
+            draggable="false"
+        >
+    </picture>
 </a>
+
+
 
 <style>
     img {

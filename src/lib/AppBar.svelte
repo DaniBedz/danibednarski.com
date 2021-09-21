@@ -1,14 +1,24 @@
 <script>
-    import contact from '/static/contact.png';
-    import cv from '/static/cv.png';
-    import github from '/static/github.png';
-    import icon21 from '/static/icon21.png';
-    import linkedin from '/static/linkedin.png';
-    import lionHead from '/static/lionHead.png';
-    import myob from '/static/myob.png';
-    import taskr from '/static/taskr.png';
-    import thissite from '/static/thissite.png';
-    import tictactoe from '/static/tictactoe.png';
+    import contactAvif from '/static/contact.avif';
+    import contactPng from '/static/contact.png';
+    import cvAvif from '/static/cv.avif';
+    import cvPng from '/static/cv.png';
+    import githubAvif from '/static/github.avif';
+    import githubPng from '/static/github.png';
+    import icon21Avif from '/static/icon21.avif';
+    import icon21Png from '/static/icon21.png';
+    import linkedinAvif from '/static/linkedin.avif';
+    import linkedinPng from '/static/linkedin.png';
+    import lionHeadAvif from '/static/lionHead.avif';
+    import lionHeadPng from '/static/lionHead.png';
+    import myobAvif from '/static/myob.avif';
+    import myobPng from '/static/myob.png';
+    import taskrAvif from '/static/taskr.avif';
+    import taskrPng from '/static/taskr.png';
+    import thissiteAvif from '/static/thissite.avif';
+    import thissitePng from '/static/thissite.png';
+    import tictactoeAvif from '/static/tictactoe.avif';
+    import tictactoePng from '/static/tictactoe.png';
 
     import { faHouseUser } from '@fortawesome/free-solid-svg-icons';
 
@@ -20,16 +30,16 @@
 <div class="wrapper">
     <nav>
         <AppBarHomeIcon tooltip={ 'Home' } projectIcon={ faHouseUser } href="/" />
-        <AppBarIcon tooltip={ 'myob Sales Tracker' } projectIcon={ myob } href="/projects/salestracker" alt="myob icon" />
-        <AppBarIcon tooltip={ 'bedz.me' } projectIcon={ lionHead } href="/projects/bedzme" alt="bedz.me lion icon" />
-        <AppBarIcon tooltip={ 'Taskr' } projectIcon={ taskr } href="/projects/taskr" alt="taskr icon" />
-        <AppBarIcon tooltip={ '21' } projectIcon={ icon21 } href="/projects/21" alt="21 icon" />
-        <AppBarIcon tooltip={ 'Tic-Tac-Toe' } projectIcon={ tictactoe } href="/projects/tictactoe" alt="tic-tac-toe icon" />
-        <AppBarIcon tooltip={ 'This Site' } projectIcon={ thissite } href="/projects/thissite" alt="this site icon" />
-        <AppBarIcon tooltip={ 'Resume / CV' } projectIcon={ cv } href="/resume" alt="resume icon" />
-        <AppBarIcon tooltip={ 'GitHub' } projectIcon={ github } href="https://github.com/danibedz" alt="github icon" external />
-        <AppBarIcon tooltip={ 'LinkedIn' } projectIcon={ linkedin } href="https://www.linkedin.com/in/danibednarski" alt="linkedIn icon" external />
-        <AppBarIcon tooltip={ 'Contact Me' } projectIcon={ contact } href="/contact" alt="Contact icon" />
+        <AppBarIcon tooltip={ 'myob Sales Tracker' } projectIconPng={ myobPng } projectIconAvif={ myobAvif } href="/projects/salestracker" alt="myob icon" />
+        <AppBarIcon tooltip={ 'bedz.me' } projectIconPng={ lionHeadPng } projectIconAvif={ lionHeadAvif } href="/projects/bedzme" alt="bedz.me lion icon" />
+        <AppBarIcon tooltip={ 'Taskr' } projectIconPng={ taskrPng } projectIconAvif={ taskrAvif } href="/projects/taskr" alt="taskr icon" />
+        <AppBarIcon tooltip={ '21' } projectIconPng={ icon21Png } projectIconAvif={ icon21Avif } href="/projects/21" alt="21 icon" />
+        <AppBarIcon tooltip={ 'Tic-Tac-Toe' } projectIconPng={ tictactoePng } projectIconAvif={ tictactoeAvif } href="/projects/tictactoe" alt="tic-tac-toe icon" />
+        <AppBarIcon tooltip={ 'This Site' } projectIconPng={ thissitePng } projectIconAvif={ thissiteAvif } href="/projects/thissite" alt="this site icon" />
+        <AppBarIcon tooltip={ 'Resume / CV' } projectIconPng={ cvPng } projectIconAvif={ cvAvif } href="/resume" alt="resume icon" />
+        <AppBarIcon tooltip={ 'GitHub' } projectIconPng={ githubPng } projectIconAvif={ githubAvif } href="https://github.com/danibedz" alt="github icon" external />
+        <AppBarIcon tooltip={ 'LinkedIn' } projectIconPng={ linkedinPng } projectIconAvif={ linkedinAvif } href="https://www.linkedin.com/in/danibednarski" alt="linkedIn icon" external />
+        <AppBarIcon tooltip={ 'Contact Me' } projectIconPng={ contactPng } projectIconAvif={ contactAvif } href="/contact" alt="Contact icon" />
         <AppMenuToggle />
     </nav>
 </div>

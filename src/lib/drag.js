@@ -50,14 +50,7 @@ export function drag(node, params) {
 
     function handleMouseUp() {
         if (!dragged & params === 'appBarIcon') { goto(node.parentElement.href); }
-        // node.dispatchEvent(
-        //     new CustomEvent('dragStop', {
-        //         detail: {
-        //             x,
-        //             y,
-        //         },
-        //     }),
-        // );
+        if (!dragged & params === 'appBarIconExternal') { window.open(node.parentElement.href, '_blank', 'noopener', 'noreferrer'); }
 
         dragged = false;
         x = 0;
