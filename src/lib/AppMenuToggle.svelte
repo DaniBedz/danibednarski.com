@@ -57,7 +57,7 @@
     button {
         position: fixed;
         display: flex;
-        margin: 0.4rem 0.4rem;
+        margin: 0.4rem 0.55rem;
         border: none;
         background: transparent;
         bottom: 0.5rem;
