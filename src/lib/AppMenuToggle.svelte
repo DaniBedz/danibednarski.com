@@ -1,8 +1,8 @@
 <script>
-    import { faAngleLeft } from '@fortawesome/free-solid-svg-icons';
-    import Fa from 'svelte-fa/src/fa.svelte';
-
     import { isNavOpen } from '$lib/store';
+
+    import toggleAvif from '/static/toggle.avif';
+    import togglePng from '/static/toggle.png';
 
     let showMenu;
 
@@ -13,51 +13,57 @@
     function toggleMenu() {
         isNavOpen.set(!showMenu);
     }
-
 </script>
 
-<button id="expander" aria-label="expand menu" href="/" on:click={ toggleMenu } tooltip={ `${ showMenu ? 'Hide' : 'Show' } Menu` } flow="right">
-    <div id="arrow" class={showMenu ? 'toggle-arrow' : null }>
-        <Fa icon={ faAngleLeft } size="2x" />
-    </div>
+<button on:click={ toggleMenu } tooltip={ `${ showMenu ? 'Hide' : 'Show' } Menu` } flow="right" draggable="false">
+    <picture>
+        <source
+            type="image/avif"
+            srcset={ toggleAvif }
+            alt="toggle menu"
+            draggable="false"
+            class={showMenu ? 'toggle-arrow' : null }
+        >
+        <img
+            type="image/png"
+            src={ togglePng }
+            alt="toggle menu"
+            height="40px"
+            width="40px"
+            draggable="false"
+            class={showMenu ? 'toggle-arrow' : null }
+        >
+    </picture>
 </button>
 
 <style>
     .toggle-arrow {
         transform: rotate(-180deg);
-        transition: all .3s ease;
+    }
+
+    img {
+        transition:transform .25s ease;
+    }
+
+    picture {
+        transition:transform .25s ease;
+    }
+
+    picture:hover {
+        transform:scale(1.4);
+        transition:transform .25s ease;
     }
 
     button {
-        display: flex;
         position: fixed;
-        bottom: 1rem;
-        margin: 1rem auto;
-        margin-left: 0.75rem;
-        height: 40px;
-        width: 40px;
-        min-height: 40px;
-        min-width: 40px;
-        border-radius: 50%;
+        display: flex;
+        margin: 0.4rem 0.4rem;
         border: none;
-        background-color: var(--color-primary-light);
-        border: 3px solid var(--color-primary-dark);
-
-    }
-
-    button:hover {
-        color: var(--color-primary-light);
-        background-color: var(--color-primary-dark);
-        border: 2px solid var(--color-primary-light);
-    }
-
-    #arrow {
-        margin: auto;
-        transition: all .3s ease;
+        background: transparent;
+        bottom: 0.5rem;
     }
 
     /* START TOOLTIP STYLES */
-
     /* Applies to all tooltips */
     [tooltip]::before,
     [tooltip]::after {
