@@ -9,7 +9,7 @@
     let windowWidth;
 
     $: if (windowWidth < 700) {
-        showMenu = false;
+        isNavOpen.set(false);
     }
 </script>
 
@@ -26,13 +26,17 @@
 <style>
     /* Menu styles */
     .wrapper {
-        min-width: 15rem;
+        width: 15vw;
+        min-width: 8rem;
+        max-width: 13rem;
         margin-top: 7rem;
     }
     nav {
         position: fixed;
         height: 100%;
-        width: 15rem;
+        width: 17vw;
+        min-width: 10rem;
+        max-width: 15rem;
         background-color: var(--color-primary-dark);
     }
 </style>

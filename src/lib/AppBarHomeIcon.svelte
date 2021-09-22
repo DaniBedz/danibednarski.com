@@ -8,7 +8,7 @@
 
     <a { href } sveltekit:prefetch draggable="false">
         <button { tooltip } aria-label={ tooltip } flow="right">
-            <Fa icon={ projectIcon } size='2.5x' />
+            <Fa icon={ projectIcon } size='2.3x' />
         </button>
     </a>
 
@@ -18,13 +18,13 @@
     }
 
     button:hover {
-        transform:scale(1.2);
+        transform:scale(1.1);
     }
 
     button {
         display: flex;
-        margin: 1rem auto 3rem;
-        color: var(--color-primary-grey);
+        margin: 1rem auto;
+        color: var(--color-primary-dark);
         border: none;
         background: transparent;
     }

@@ -14,8 +14,7 @@
         isNavOpen.set(!showMenu);
     }
 </script>
-
-<button on:click={ toggleMenu } tooltip={ `${ showMenu ? 'Hide' : 'Show' } Menu` } flow="right" draggable="false">
+<button id="toggle" on:click={ toggleMenu } tooltip={ `${ showMenu ? 'Hide' : 'Show' } Menu` } flow="right" draggable="false">
     <picture>
         <source
             type="image/avif"
@@ -50,21 +49,22 @@
     }
 
     picture:hover {
-        transform:scale(1.4);
+        transform:scale(1.2);
         transition:transform .25s ease;
     }
 
     button {
-        position: fixed;
         display: flex;
-        margin: 0.4rem 0.55rem;
+        margin: 0.75rem auto 2rem;
         border: none;
-        background: transparent;
-        bottom: 0.5rem;
+        background: transparent;;
     }
 
     /* START TOOLTIP STYLES */
     /* Applies to all tooltips */
+    [tooltip] {
+        position: relative;
+    }
     [tooltip]::before,
     [tooltip]::after {
         text-transform: none;

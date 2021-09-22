@@ -30,6 +30,7 @@
 <div class="wrapper">
     <nav>
         <AppBarHomeIcon tooltip={ 'Home' } projectIcon={ faHouseUser } href="/" />
+        <AppMenuToggle />
         <AppBarIcon tooltip={ 'myob Sales Tracker' } projectIconPng={ myobPng } projectIconAvif={ myobAvif } href="/projects/salestracker" alt="myob icon" />
         <AppBarIcon tooltip={ 'bedz.me' } projectIconPng={ lionHeadPng } projectIconAvif={ lionHeadAvif } href="/projects/bedzme" alt="bedz.me lion icon" />
         <AppBarIcon tooltip={ 'Taskr' } projectIconPng={ taskrPng } projectIconAvif={ taskrAvif } href="/projects/taskr" alt="taskr icon" />
@@ -40,17 +41,16 @@
         <AppBarIcon tooltip={ 'GitHub' } projectIconPng={ githubPng } projectIconAvif={ githubAvif } href="https://github.com/danibedz" alt="github icon" external />
         <AppBarIcon tooltip={ 'LinkedIn' } projectIconPng={ linkedinPng } projectIconAvif={ linkedinAvif } href="https://www.linkedin.com/in/danibednarski" alt="linkedIn icon" external />
         <AppBarIcon tooltip={ 'Contact Me' } projectIconPng={ contactPng } projectIconAvif={ contactAvif } href="/contact" alt="Contact icon" />
-        <AppMenuToggle />
     </nav>
 </div>
 <style>
     .wrapper {
-        min-width: 4rem;
+        width: 50px;
     }
     nav {
+        width: 50px;
         position: fixed;
         height: 100%;
-        width: 4rem;
         background: linear-gradient(rgba(125, 211, 252), rgba(45, 212, 191));
         z-index: 1;
     }

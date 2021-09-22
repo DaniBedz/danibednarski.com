@@ -3,8 +3,8 @@ import { spring } from 'svelte/motion';
 import { goto } from '$app/navigation';
 
 export function drag(node, params) {
-    let x;
-    let y;
+    let x, y;
+
     let dragged;
 
     const coordinates = spring(
@@ -31,15 +31,18 @@ export function drag(node, params) {
         window.addEventListener('mousemove', handleMouseMove);
         window.addEventListener('mouseup', handleMouseUp);
 
-        node.style.zIndex = 3;
+        if (params !== 'noZIndex') { node.style.zIndex = 3; }
     }
 
     function handleMouseMove(event) {
         dragged = true;
+
         const dx = event.clientX - x;
         const dy = event.clientY - y;
+
         x = event.clientX;
         y = event.clientY;
+
         coordinates.update(($coords) => {
             return {
                 x: $coords.x + dx,
@@ -53,15 +56,18 @@ export function drag(node, params) {
         if (!dragged & params === 'appBarIconExternal') { window.open(node.parentElement.href, '_blank', 'noopener', 'noreferrer'); }
 
         dragged = false;
+
         x = 0;
         y = 0;
+
         coordinates.update(() => {
             return {
                 x: 0,
                 y: 0,
             };
         });
-        node.style.zIndex = 1;
+
+        if (params !== 'noZIndex') { node.style.zIndex = 1; }
 
         window.removeEventListener('mousemove', handleMouseMove);
         window.removeEventListener('mouseup', handleMouseUp);

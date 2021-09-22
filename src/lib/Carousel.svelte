@@ -45,8 +45,10 @@
 
 <style>
     #screenshots {
-        height: calc((60vw / 16) * 9);
-        width: 60vw;
+        height: calc((60vw / 16) * 9 + 3rem);
+        width: calc(60vw + 10rem);
+        max-height: 40rem;
+        max-width: 80rem;
         -webkit-user-drag: none;
         cursor: pointer;
         margin: 2rem auto 1rem auto;

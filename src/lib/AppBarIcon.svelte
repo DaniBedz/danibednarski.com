@@ -61,7 +61,7 @@
         transition:transform .25s ease;
     }
     img:hover, img:hover + div {
-        transform:scale(1.4);
+        transform:scale(1.2);
     }
 
     button {
