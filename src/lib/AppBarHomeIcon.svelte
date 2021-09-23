@@ -27,6 +27,7 @@
         color: var(--color-primary-dark);
         border: none;
         background: transparent;
+        padding: 0;
     }
 
     /* START TOOLTIP STYLES */

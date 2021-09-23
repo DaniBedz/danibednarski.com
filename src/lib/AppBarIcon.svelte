@@ -70,16 +70,20 @@
         margin: 0.75rem auto;
         color: var(--color-primary-grey);
         border: none;
+        height: 40px;
+        width: 40px;
         background: transparent;
+        padding: 0;
     }
     .external-dot {
         position: absolute;
         top: 2rem;
-        left: 2rem;
+        left: 1.75rem;
         height: 1rem;
         width: 1rem;
         background-color: var(--color-green);
         border-radius: 50%;
+        padding: 0;
     }
     /* START TOOLTIP STYLES */
     [tooltip] {

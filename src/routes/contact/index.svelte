@@ -1,5 +1,5 @@
 <script>
-    import emailjs from 'emailjs-com';
+    import { send } from 'emailjs-com';
     import { createForm } from 'felte';
 
     let buttonText = 'Send';
@@ -7,7 +7,7 @@
     const { form, reset } = createForm({
         onSubmit: async (values) => {
             buttonText = 'Sending';
-            emailjs.send('service_i47aoaq', 'template_aflqbbg', values, 'user_O8soHnleeJBxVzS3CBIrf').then(() => {
+            send('service_i47aoaq', 'template_aflqbbg', values, 'user_O8soHnleeJBxVzS3CBIrf').then(() => {
                 buttonText = 'Sent';
                 reset();
                 setTimeout(() => {
@@ -39,7 +39,7 @@
     }
 
     h1 {
-        color: var(--color-primary-grey);
+        color: var(--color-primary-text);
         font-size:3rem;
         text-align: center;
         margin-top: 5rem;

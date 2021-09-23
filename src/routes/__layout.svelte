@@ -12,30 +12,53 @@
 
 <script>
     import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
+    import { onMount } from 'svelte';
     import { fly } from 'svelte/transition';
 
     import AppBar from '$lib/AppBar.svelte';
     import AppMenu from '$lib/AppMenu.svelte';
     import AppMenuItem from '$lib/AppMenuItem.svelte';
     import Logo from '$lib/Logo.svelte';
+    import { isNavOpen, handleResize } from '$lib/store.js';
+
+    let showMenu;
+    let windowWidth;
+
+    isNavOpen.subscribe((value) => {
+        showMenu = value;
+    });
+
+    onMount(() => {
+        handleResize(windowWidth);
+    });
+
 </script>
 
-    <div>
+    <svelte:window on:resize={ () => handleResize(windowWidth) } bind:innerWidth={ windowWidth } />
+
+    <layout style={ showMenu ? 'grid-template-columns: 50px 14rem auto;' : 'grid-template-columns: 50px 0 auto;'}>
         <AppBar />
         <div in:fly|local={{ x: -400, duration: 600 }}>
-            <AppMenu>
-                <Logo />
-                <AppMenuItem href='/resume' text='Resume' internal/>
-                <AppMenuItem href='https://github.com/danibedz' text='GitHub' target='_blank' rel='noreferrer' icon={ faExternalLinkAlt } />
-                <AppMenuItem href='https://www.linkedin.com/in/danibednarski/' text='LinkedIn' target='_blank' rel='noreferrer' icon={ faExternalLinkAlt } />
-                <AppMenuItem href='/contact' text='Contact' internal />
-            </AppMenu>
+            {#if showMenu}
+                <AppMenu>
+                    <Logo />
+                    <AppMenuItem href='/resume' text='Resume' internal/>
+                    <AppMenuItem href='https://github.com/danibedz' text='GitHub' target='_blank' rel='noreferrer' icon={ faExternalLinkAlt } />
+                    <AppMenuItem href='https://www.linkedin.com/in/danibednarski/' text='LinkedIn' target='_blank' rel='noreferrer' icon={ faExternalLinkAlt } />
+                    <AppMenuItem href='/contact' text='Contact' internal />
+                </AppMenu>
+            {/if}
         </div>
         <slot />
-    </div>
+    </layout>
 
 <style>
     @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+    layout {
+        display: grid;
+        height: 100%;
+    }
 
     :global(:root) {
         --color-primary-light: rgb(34, 211, 238);
@@ -45,7 +68,7 @@
         --color-green: rgb(16, 185, 129);
 
     }
-    :global(html, body) {
+    :global(html, body, #svelte) {
         height: 100%;
         font-family: monospace, 'Courier New', Courier;
         overscroll-behavior: none;
@@ -68,9 +91,5 @@
 
     :global(button:focus) {
         outline: none !important;
-    }
-
-    div {
-        display: flex;
     }
 </style>

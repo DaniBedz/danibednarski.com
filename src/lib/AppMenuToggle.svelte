@@ -54,10 +54,12 @@
     }
 
     button {
+        /* pointer-events: none; */
         display: flex;
-        margin: 0.75rem auto 2rem;
+        margin: 1rem auto 2rem;
         border: none;
-        background: transparent;;
+        background: transparent;
+        padding: 0;
     }
 
     /* START TOOLTIP STYLES */

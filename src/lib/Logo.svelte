@@ -20,15 +20,11 @@
     </picture>
 </a>
 
-
-
 <style>
     img {
         position: fixed;
         height: auto;
-        width: 13vw;
-        min-width: 7rem;
-        max-width: 11rem;
+        width: 11rem;
         display: flex;
         top: 1rem;
         margin-left: 1.5rem;

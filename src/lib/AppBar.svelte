@@ -45,6 +45,7 @@
 </div>
 <style>
     .wrapper {
+        height: 100%;
         width: 50px;
     }
     nav {

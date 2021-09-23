@@ -45,20 +45,13 @@
 
 <style>
     #screenshots {
-        height: calc((60vw / 16) * 9 + 3rem);
-        width: calc(60vw + 10rem);
-        max-height: 40rem;
-        max-width: 80rem;
+        height: auto;
+        padding: 0;
         -webkit-user-drag: none;
-        cursor: pointer;
-        margin: 2rem auto 1rem auto;
-
-        padding-top: 1.5rem;
-        padding-bottom: 0.25rem;
     }
 
     img {
-        height: 100%;
+        height: auto;
         width: 100%;
         object-fit: cover;
     }

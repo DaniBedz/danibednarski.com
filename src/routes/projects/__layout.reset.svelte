@@ -46,6 +46,7 @@
 
 <script>
     import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
+    import { onMount } from 'svelte';
     import { fly } from 'svelte/transition';
 
     import AppBar from '$lib/AppBar.svelte';
@@ -57,6 +58,7 @@
     import ProjectDescription from '$lib/ProjectDescription.svelte';
     import ProjectHeader from '$lib/ProjectHeader.svelte';
     import ProjectTitle from '$lib/ProjectTitle.svelte';
+    import { isNavOpen, handleResize } from '$lib/store.js';
     import TechnologiesUsed from '$lib/TechnologiesUsed.svelte';
 
     export let descriptionData;
@@ -66,11 +68,25 @@
     export let screenshotData;
     export let technologiesUsed;
     export let titleData;
+
+    let showMenu;
+    let windowWidth;
+
+    isNavOpen.subscribe((value) => {
+        showMenu = value;
+    });
+
+    onMount(() => {
+        handleResize(windowWidth);
+    });
 </script>
 
-<main>
+<svelte:window on:resize={ () => handleResize(windowWidth) } bind:innerWidth={ windowWidth } />
+
+<layout style={ showMenu ? 'grid-template-columns: 50px 14rem auto' : 'grid-template-columns: 50px 0px auto'}>
     <AppBar />
-        <div in:fly|local={{ x: -400, duration: 600 }}>
+    <nav in:fly|local={{ x: -400, duration: 600 }}>
+        {#if showMenu}
             <AppMenu>
                 <Logo />
                 <AppMenuItem href="#screenshots" text="Screenshots" />
@@ -79,29 +95,44 @@
                 <AppMenuItem href={ liveSite } text="Live Site" icon={ faExternalLinkAlt } target="_blank" rel="noreferrer" />
                 <AppMenuItem href={ github } text="GitHub" icon={ faExternalLinkAlt } target="_blank" rel="noreferrer" />
             </AppMenu>
-        </div>
-    <article>
-        <Carousel { screenshotData } />
-        <ProjectHeader { projectNameData } />
-        <ProjectTitle { titleData } />
-        <ProjectDescription { descriptionData } />
-        <TechnologiesUsed>
-            {#each technologiesUsed as technology}
-                <Pill text={ technology } />
-            {/each}
-        </TechnologiesUsed>
-    </article>
+        {/if}
+    </nav>
+    <main class={showMenu ? 'menu-open' : 'menu-closed' }>
+        <Carousel class="carousel" { screenshotData } />
+        <article>
+            <ProjectHeader { projectNameData } />
+            <ProjectTitle { titleData } />
+            <ProjectDescription { descriptionData } />
+            <TechnologiesUsed>
+                {#each technologiesUsed as technology}
+                    <Pill text={ technology } />
+                {/each}
+            </TechnologiesUsed>
+        </article>
+    </main>
     <slot/>
-</main>
+</layout>
 
 <style>
-    main {
-        display: flex;
-        height: 100%;
+    layout {
+        display: grid;
     }
 
     article {
-        position: static;
-        height: 100%;
+        margin: 2rem;
+    }
+
+    main {
+        position: absolute;
+        right: 0;
+        margin-top: 2rem;
+    }
+
+    .menu-open {
+        width: calc((100% - 50px) - 14rem);
+    }
+
+    .menu-closed {
+        width: calc(100% - 50px);
     }
 </style>
