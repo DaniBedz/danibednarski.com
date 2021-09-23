@@ -1,26 +1,38 @@
 <script>
+    import Prism from 'svelte-prismjs';
+
     import { drag } from '$lib/drag';
+    import { isNavOpen } from '$lib/store.js';
+
+    let showMenu;
+
+    let code = `
+    const name = 'Dani Bednarski';
+
+    const about = () => {
+        return 'My name is Dani and I am a web developer based in Melbourne, Australia.';
+    };
+
+    const motivation = () => {
+        return 'What motivates me is making things that people love to use, and want to share with others.';
+    };
+
+    const usePortfolio = () => {
+        return 'Please explore the site, check out some of the projects that I have worked on, and reach out if you like what you see.';
+    };
+    `;
+
+    isNavOpen.subscribe((value) => {
+        showMenu = value;
+    });
 </script>
 
 <main id="main" use:drag>
-    <article>
-        <span class='code return'>const name = '</span><span>Dani Bednarski</span><span class='code'>';</span><br>
-
-        <span class='code return'>const about = () => &#123;</span>
-        <span class='code indent'><br>return '</span><span class='indent'>My name is Dani and I am a web developer based in Melbourne, Australia.<span class='code'>';</span></span><br>
-        <span class='code return'>&#125;;</span>
-        <br>
-
-        <span class='code return'>const motivation = () => &#123;</span>
-        <span class='code indent'><br>return '</span><span class='indent'>What motivates me is making things that people love to use, and want to share with others.<span class='code'>';</span></span><br>
-        <span class='code return'>&#125;;</span>
-        <br>
-
-        <span class='code return'>const usePortfolio = () => &#123;</span>
-        <span class='code indent'><br>return '</span><span class='indent'>Please explore the site, check out some of the projects that I have worked on, and <a href="/contact">reach out</a> if you like what you see.<span class='code'>';</span></span><br>
-        <span class='code return'>&#125;;</span>
-        <br>
-    </article>
+    <code class={ showMenu ? 'menu-open hide-scrollbar' : 'menu-closed hide-scrollbar' }>
+        <Prism showLineNumbers={true}>
+            {code}
+        </Prism>
+    </code>
 
     <wrapper draggable="false">
         <img on:drag|preventDefault src="/coding.svg" alt="coder" draggable="false" />
@@ -34,9 +46,17 @@
         grid-template-rows: 50% 50%;
         padding: 0;
     }
-    article {
-        margin: calc(15vh) 3rem 3rem;
+    code {
         grid-row: 1 / 1;
+        margin: auto;
+    }
+
+    .menu-open {
+        width: calc((100vw - 50px) - 14rem - 4.8em);
+    }
+
+    .menu-closed {
+        width: calc(100vw - 50px - 4.8em);
     }
 
     wrapper {
@@ -47,26 +67,7 @@
     }
     img {
         width: 70vw;
-        max-width: 40rem;
+        max-width: 35rem;
         -webkit-user-drag: none;
-    }
-    .code {
-        color: var(--color-primary-light);
-    }
-    .indent {
-        position: relative;
-        left: 2rem;
-    }
-
-    .return {
-        line-height: 3em;
-    }
-    span {
-        color: var(--color-text);
-    }
-
-    a {
-        text-decoration: underline var(--color-primary-light) 3px;
-        color: white;
     }
 </style>
