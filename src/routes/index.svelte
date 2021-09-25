@@ -3,23 +3,36 @@
 
     import { drag } from '$lib/drag';
     import { isNavOpen } from '$lib/store.js';
+    import '../../src/code-block.css';
 
     let showMenu;
 
-    let code = `
-    const name = 'Dani Bednarski';
+    let codeText = `
+    const dani =
+        {
+            name: 'Dani Bednarski',
+            job: 'Software Engineer 💻',
+            location: 'Melbourne, Australia 🦘',
+            contact: 'email@danibednarski.com',
+        };
 
-    const about = () => {
-        return 'My name is Dani and I am a web developer based in Melbourne, Australia.';
-    };
+    const interestsArray =
+        [
+            'Making software that people 💙 to use',
+            'Learning new things 🧠',
+            'Problem solving 🛠',
+        ];
 
-    const motivation = () => {
-        return 'What motivates me is making things that people love to use, and want to share with others.';
-    };
+    async function usePortfolio() {
+        await exploreSite();
+        await checkoutProjects();
 
-    const usePortfolio = () => {
-        return 'Please explore the site, check out some of the projects that I have worked on, and reach out if you like what you see.';
-    };
+        if (isInterested || isQuestion) {
+            return contactMe(dani.contact);
+        } else {
+            alert('Have a great day! 🙂')
+        };
+    }
     `;
 
     isNavOpen.subscribe((value) => {
@@ -27,46 +40,45 @@
     });
 </script>
 
-<main id="main" use:drag>
-    <code class={ showMenu ? 'menu-open hide-scrollbar' : 'menu-closed hide-scrollbar' }>
-        <Prism showLineNumbers={true}>
-            {code}
+<main id="main">
+    <codeBlock use:drag class={ showMenu ? 'menu-open' : 'menu-closed' }>
+        <Prism showLineNumbers>
+            { codeText }
         </Prism>
-    </code>
+    </codeBlock>
 
-    <wrapper draggable="false">
-        <img on:drag|preventDefault src="/coding.svg" alt="coder" draggable="false" />
+    <wrapper use:drag draggable="false">
+        <img src="/coding.svg" alt="coder" draggable="false" />
     </wrapper>
-    </main>
+</main>
 <slot />
 
 <style>
     main {
-        display: grid;
-        grid-template-rows: 50% 50%;
+        display: flex;
         padding: 0;
     }
-    code {
-        grid-row: 1 / 1;
-        margin: auto;
+    codeBlock {
+        margin: 1rem 1.4rem;
     }
 
     .menu-open {
-        width: calc((100vw - 50px) - 14rem - 4.8em);
+        width: calc((100vw - 50px) - 14rem - 2.8em);
     }
 
     .menu-closed {
-        width: calc(100vw - 50px - 4.8em);
+        width: calc(100vw - 50px - 2.8em);
     }
 
     wrapper {
         display: grid;
-        grid-row: 2 / 2;
         justify-items: end;
         align-items: end;
     }
     img {
-        width: 70vw;
+        position: absolute;
+        width: 40vw;
+        min-width: 23rem;
         max-width: 35rem;
         -webkit-user-drag: none;
     }

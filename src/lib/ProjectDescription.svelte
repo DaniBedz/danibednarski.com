@@ -2,7 +2,7 @@
     export let descriptionData;
 </script>
 
-<div>
+<div id="description">
     {#each descriptionData as paragraph}
         <p>
             { paragraph }

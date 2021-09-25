@@ -119,7 +119,7 @@
     }
 
     article {
-        margin: 2rem;
+        margin: 2rem 4rem;
     }
 
     main {

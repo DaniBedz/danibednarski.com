@@ -48,7 +48,8 @@
 
     input, textarea {
         border: none;
-        width: 30rem;
+        min-width: 20rem;
+        width: 35vw;
         color: var(--color-primary-dark);
         display: flex;
         margin: 1rem auto;

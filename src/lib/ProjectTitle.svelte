@@ -9,6 +9,6 @@
 <style>
     h2 {
         color: var(--color-primary-light);
-        font-size: calc(1vw + 0.5rem);
+        font-size: calc(1vw + 0.75rem);
     }
 </style>

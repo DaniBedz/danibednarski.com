@@ -3,6 +3,8 @@ import { spring } from 'svelte/motion';
 import { goto } from '$app/navigation';
 
 export function drag(node, params) {
+    const tooltip = node.getAttribute('tooltip');
+    const zIndex = node.style.zIndex;
     let x, y;
 
     let dragged;
@@ -31,11 +33,12 @@ export function drag(node, params) {
         window.addEventListener('mousemove', handleMouseMove);
         window.addEventListener('mouseup', handleMouseUp);
 
-        if (params !== 'noZIndex') { node.style.zIndex = 3; }
+        node.style['z-index'] = 3;
     }
 
     function handleMouseMove(event) {
         dragged = true;
+        node.setAttribute('tooltip', '');
 
         const dx = event.clientX - x;
         const dy = event.clientY - y;
@@ -67,7 +70,8 @@ export function drag(node, params) {
             };
         });
 
-        if (params !== 'noZIndex') { node.style.zIndex = 1; }
+        node.style.zIndex = zIndex;
+        node.setAttribute('tooltip', tooltip);
 
         window.removeEventListener('mousemove', handleMouseMove);
         window.removeEventListener('mouseup', handleMouseUp);

@@ -9,10 +9,10 @@ export function toggleIsNavOpen() {
 }
 
 export function handleResize(windowWidth) {
-    if (windowWidth < 700) {
+    if (windowWidth < 750) {
         isNavOpen.set(false);
     }
-    if (windowWidth >= 700) {
+    if (windowWidth >= 750) {
         isNavOpen.set(true);
     }
 }

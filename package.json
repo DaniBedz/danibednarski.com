@@ -22,7 +22,6 @@
         "svelte-prismjs": "^1.0.2"
     },
     "dependencies": {
-        "@fortawesome/free-solid-svg-icons": "^5.15.3",
         "felte": "^0.8.0",
         "marked": "^3.0.4",
         "svelte-fa": "^2.3.3"

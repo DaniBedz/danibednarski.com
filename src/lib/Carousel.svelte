@@ -45,9 +45,12 @@
 
 <style>
     #screenshots {
+        display: flex;
         height: auto;
-        padding: 0;
+        margin: auto;
+        padding: 1rem 0 0;
         -webkit-user-drag: none;
+        max-width: 80rem;
     }
 
     img {

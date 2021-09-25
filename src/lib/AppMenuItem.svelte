@@ -1,13 +1,13 @@
 <script>
-    export let icon = null;
     export let internal = null;
     export let href;
     export let target = null;
     export let text;
     export let rel = null;
 
-    import Fa from 'svelte-fa/src/fa.svelte';
     import { fly } from 'svelte/transition';
+
+    import externalIcon from '/static/externalIcon.svg';
 
     function highlightElement(elementId) {
         const element = document.querySelector(elementId);
@@ -36,7 +36,9 @@
     <a on:click={ target || internal ? null : highlightElement(href)} { href } { target } { rel }>
         <button >
             { text }
-            <Fa icon={ icon } size="1.2x" />
+            {#if target}
+                <img src={ externalIcon } alt='external' />
+            {/if}
         </button>
         </a>
     </div>
@@ -54,6 +56,17 @@
         border-radius: 0.375rem;
         margin: 5%;
         padding: 1rem;
+    }
+
+    img {
+        height: 20px;
+        width: 20px;
+        position: relative;
+        right: -15px;
+    }
+
+    img:hover {
+        filter: invert(100%);
     }
 
     button:hover {

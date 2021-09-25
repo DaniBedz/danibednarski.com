@@ -2,13 +2,15 @@
     export let projectNameData;
 </script>
 
-<div>
+<h1>
     { projectNameData }
-</div>
+</h1>
 
 <style>
-    div {
+    h1 {
         color: var(--color-primary-light);
-        font-size: calc(1vw + 2rem);
+        font-size: calc(1vw + 1.5rem);
+        margin-block-start: 0em;
+        margin-block-end: 0em;
     }
 </style>

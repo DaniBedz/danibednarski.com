@@ -1,19 +1,23 @@
 <script>
-    import Fa from 'svelte-fa/src/fa.svelte';
+    import HomeIcon from '/static/home.svg';
 
     export let href;
     export let tooltip = false;
-    export let projectIcon;
 </script>
 
     <a { href } sveltekit:prefetch draggable="false">
         <button { tooltip } aria-label={ tooltip } flow="right">
-            <Fa icon={ projectIcon } size='2.3x' />
+            <img src={ HomeIcon } alt='home'>
         </button>
     </a>
 
 <style>
     button {
+        display: flex;
+        margin: 1rem auto;
+        padding: 0;
+        border: none;
+        background: transparent;
         transition:transform .25s ease;
     }
 
@@ -21,16 +25,13 @@
         transform:scale(1.1);
     }
 
-    button {
-        display: flex;
-        margin: 1rem auto;
-        color: var(--color-primary-dark);
-        border: none;
-        background: transparent;
-        padding: 0;
+    img {
+        height: 40px;
+        width: 40px;
     }
 
-    /* START TOOLTIP STYLES */
+
+    /* Tooltip Styles */
     [tooltip] {
         position: relative;
     }
@@ -38,13 +39,13 @@
     /* Applies to all tooltips */
     [tooltip]::before,
     [tooltip]::after {
-        text-transform: none;
+        display: none;
+        position: absolute;
         line-height: 1;
+        opacity: 0;
+        text-transform: none;
         user-select: none;
         pointer-events: none;
-        position: absolute;
-        display: none;
-        opacity: 0;
     }
     [tooltip]::before {
         content: '';
@@ -53,18 +54,18 @@
     }
     [tooltip]::after {
         content: attr(tooltip);
-        text-align: center;
         min-width: 3em;
         max-width: 21em;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
         padding: 1ch 1.5ch;
+        text-align: center;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        color: var(--color-primary-dark);
+        background: var(--color-text);
         border-radius: .3ch;
         box-shadow: 0 1em 2em -.5em var(--color-primary-dark);
-        background: var(--color-text);
-        color: var(--color-primary-dark);
-        z-index: 1000;
+        overflow: hidden;
+        z-index: 1;
     }
 
     /* Make the tooltips respond to hover */
@@ -73,7 +74,7 @@
         display: block;
     }
 
-    /* don't show empty tooltips */
+    /* Don't show empty tooltips */
     [tooltip='']::before,
     [tooltip='']::after {
         display: none !important;
@@ -81,12 +82,12 @@
 
     [tooltip][flow^="right"]::before {
         top: 50%;
+        right: calc(0em - 5px);
+        transform: translate(.5em, -50%);
         border-left-width: 0;
         border-top-color: transparent;
         border-bottom-color: transparent;
         border-right-color: var(--color-text);
-        right: calc(0em - 5px);
-        transform: translate(.5em, -50%);
     }
     [tooltip][flow^="right"]::after {
         top: 50%;
@@ -94,18 +95,18 @@
         transform: translate(.5em, -50%);
     }
 
-    /* KEYFRAMES */
+    /* Keyframes */
     @keyframes tooltips-vert {
         to {
-        opacity: 1;
-        transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+            opacity: 1;
         }
     }
 
     @keyframes tooltips-horz {
         to {
-        opacity: 1;
-        transform: translate(0, -50%);
+            transform: translate(0, -50%);
+            opacity: 1;
         }
     }
 

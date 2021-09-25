@@ -1,8 +1,7 @@
 <script>
     import { isNavOpen } from '$lib/store';
 
-    import toggleAvif from '/static/toggle.avif';
-    import togglePng from '/static/toggle.png';
+    import toggleSvg from '/static/toggle.svg';
 
     let showMenu;
 
@@ -14,30 +13,29 @@
         isNavOpen.set(!showMenu);
     }
 </script>
-<button id="toggle" on:click={ toggleMenu } tooltip={ `${ showMenu ? 'Hide' : 'Show' } Menu` } flow="right" draggable="false">
+
+<button
+    id="toggle"
+    on:click={ toggleMenu }
+    tooltip={ `${ showMenu ? 'Hide' : 'Show' } Menu` }
+    flow="right"
+    draggable="false"
+>
     <picture>
-        <source
-            type="image/avif"
-            srcset={ toggleAvif }
-            alt="toggle menu"
-            draggable="false"
-            class={showMenu ? 'toggle-arrow' : null }
-        >
         <img
-            type="image/png"
-            src={ togglePng }
+            src={ toggleSvg }
             alt="toggle menu"
             height="40px"
             width="40px"
             draggable="false"
-            class={showMenu ? 'toggle-arrow' : null }
+            class={ showMenu ? '' : 'toggle-arrow' }
         >
     </picture>
 </button>
 
 <style>
     .toggle-arrow {
-        transform: rotate(-180deg);
+        transform: rotate(180deg);
     }
 
     img {
@@ -54,7 +52,6 @@
     }
 
     button {
-        /* pointer-events: none; */
         display: flex;
         margin: 1rem auto 2rem;
         border: none;
@@ -62,8 +59,7 @@
         padding: 0;
     }
 
-    /* START TOOLTIP STYLES */
-    /* Applies to all tooltips */
+    /* Tooltip styles */
     [tooltip] {
         position: relative;
     }
@@ -125,7 +121,7 @@
         transform: translate(.5em, -50%);
     }
 
-    /* KEYFRAMES */
+    /* Keyframes */
     @keyframes tooltips-vert {
         to {
         opacity: 1;

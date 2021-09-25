@@ -13,7 +13,7 @@
         background: var(--color-primary-light);
         font-size: calc(1vw + 0.5rem);
         margin: 0.3rem;
-        padding: 0.3rem 1.5rem;
+        padding: 0.3rem 1rem;
         border: 0.25rem solid var(--color-text);
         border-radius: 50px;
         white-space: nowrap;

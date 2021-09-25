@@ -1,33 +1,21 @@
 <script>
-    import daniImgPng from '/static/dani.png';
-    import daniImgAvif from '/static/dani.avif';
+    import daniImgSvg from '/static/dani.svg';
 </script>
 
 <a href="/">
-    <picture>
-        <source
-            type="image/avif"
-            srcset={ daniImgAvif }
-            alt="dani logo"
-            draggable="false"
-        >
-        <img
-            type="image/png"
-            src={ daniImgPng }
-            alt="dani logo"
-            draggable="false"
-        >
-    </picture>
+    <img
+        src={ daniImgSvg }
+        alt="dani logo"
+        draggable="false"
+        onmousedown="return false"
+    >
 </a>
 
 <style>
     img {
-        position: fixed;
         height: auto;
-        width: 11rem;
-        display: flex;
-        top: 1rem;
+        width: 12.5rem;
         margin-left: 1.5rem;
-        padding-bottom: 2rem;
+        margin-bottom: 2rem;
     }
 </style>

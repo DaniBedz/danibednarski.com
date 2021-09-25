@@ -70,8 +70,11 @@
     }
     :global(html, body, #svelte) {
         height: 100%;
-        font-family: monospace, 'Courier New', Courier;
         overscroll-behavior: none;
+    }
+
+    :global(html, body, #svelte, input, button) {
+        font-family: monospace, 'Courier New', Courier;
     }
     :global(body) {
         background: var(--color-primary-dark);
