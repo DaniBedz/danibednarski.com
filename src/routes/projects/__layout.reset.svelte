@@ -1,11 +1,3 @@
-<svelte:head>
-	<title>The Portfolio of Dani Bednarski - danibednarski.com</title>
-	<meta name="description" content="The portfolio website of Dani Bednarski. My name is Dani and I'm a web developer based in Melbourne, Australia.
-        What motivates me is making things that people love to use, and want to share with others.
-        Please explore the site, check out some of the projects that I have worked on, and reach out if you like what you see." />
-	<html lang="en" />
-</svelte:head>
-
 <script context="module">
     export async function load( { page } ) {
         const pngPaths = [];
@@ -53,8 +45,8 @@
     import AppMenu from '$lib/AppMenu.svelte';
     import AppMenuItem from '$lib/AppMenuItem.svelte';
     import Carousel from '$lib/Carousel.svelte';
+    import Head from '$lib/Head.svelte';
     import Logo from '$lib/Logo.svelte';
-    import Pill from '$lib/Pill.svelte';
     import ProjectDescription from '$lib/ProjectDescription.svelte';
     import ProjectHeader from '$lib/ProjectHeader.svelte';
     import ProjectTitle from '$lib/ProjectTitle.svelte';
@@ -81,6 +73,8 @@
     });
 </script>
 
+<Head />
+
 <svelte:window on:resize={ () => handleResize(windowWidth) } bind:innerWidth={ windowWidth } />
 
 <layout style={ showMenu ? 'grid-template-columns: 50px 14rem auto' : 'grid-template-columns: 50px 0px auto'}>
@@ -98,16 +92,12 @@
         {/if}
     </nav>
     <main class={showMenu ? 'menu-open' : 'menu-closed' }>
-        <Carousel class="carousel" { screenshotData } />
+        <Carousel { screenshotData } />
         <article>
             <ProjectHeader { projectNameData } />
             <ProjectTitle { titleData } />
             <ProjectDescription { descriptionData } />
-            <TechnologiesUsed>
-                {#each technologiesUsed as technology}
-                    <Pill text={ technology } />
-                {/each}
-            </TechnologiesUsed>
+            <TechnologiesUsed { technologiesUsed } />
         </article>
     </main>
     <slot/>
@@ -119,7 +109,7 @@
     }
 
     article {
-        margin: 2rem 4rem;
+        margin: 2rem;
     }
 
     main {

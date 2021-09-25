@@ -1,6 +1,6 @@
 import { get, writable } from 'svelte/store';
 
-export const isNavOpen = writable(false);
+export const isNavOpen = writable(true);
 
 export const navContents = writable([]);
 

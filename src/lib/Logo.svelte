@@ -13,7 +13,7 @@
 
 <style>
     img {
-        height: auto;
+        height: 100%;
         width: 12.5rem;
         margin-left: 1.5rem;
         margin-bottom: 2rem;

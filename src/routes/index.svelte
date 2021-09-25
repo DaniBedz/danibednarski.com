@@ -77,6 +77,8 @@
     }
     img {
         position: absolute;
+        bottom: 0;
+        right: 0;
         width: 40vw;
         min-width: 23rem;
         max-width: 35rem;
