@@ -1,19 +1,26 @@
 <script>
-    import { onMount } from 'svelte';
+import { isNavOpen } from './store.js';
 
-    import { carouselDrag } from '$lib/carouselDrag';
+import { onMount } from 'svelte';
 
-    export let screenshotData;
+import { carouselDrag } from '$lib/carouselDrag';
 
-    let Carousel;
+export let screenshotData;
 
-    onMount(async () => {
-        const module = await import('svelte-carousel');
-        Carousel = module.default;
-    });
+let Carousel;
+
+let showMenu;
+
+isNavOpen.subscribe((value) => {
+    showMenu = value;
+});
+
+onMount(async () => {
+    const module = await import('svelte-carousel');
+    Carousel = module.default;
+});
 </script>
-
-<div id="screenshots">
+<div id="screenshots" class={ showMenu ? 'navOpen' : 'navClosed'}>
     {#key screenshotData}
         <svelte:component
             this={ Carousel }
@@ -42,31 +49,34 @@
         </svelte:component>
     {/key}
 </div>
-
 <style>
     #screenshots {
-        display: flex;
-        height: auto;
-        margin: auto;
-        padding: 1rem 0 0;
-        -webkit-user-drag: none;
         max-width: 80rem;
+        margin: auto;
+        cursor: pointer;
+        -webkit-user-drag: none;
     }
 
+    .navOpen {
+        height: clamp(14rem, -8rem + 49.5vw, 42rem);
+        width: clamp(24rem, 10rem + 20vw, auto);
+    }
+
+    .navClosed {
+        height: clamp(14rem, -1rem + 50vw, 42rem);
+        width: clamp(24rem, 10rem + 20vw, auto);
+    }
     img {
         height: 100%;
         width: 100%;
         object-fit: cover;
     }
-
     :global(.sc-carousel-progress__indicator) {
         background-color: var(--color-primary-light) !important;
     }
-
     :global(.sc-carousel__pages-window) {
         border-radius: 0.5rem !important;
     }
-
     :global(.sc-carousel-arrow__circle) {
         height: calc(2vw + 2rem) !important;
         width: calc(2vw + 2rem) !important;

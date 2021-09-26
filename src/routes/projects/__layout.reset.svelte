@@ -85,7 +85,7 @@
                 <Logo />
                 <AppMenuItem href="#screenshots" text="Screenshots" />
                 <AppMenuItem href="#description" text="Description" />
-                <AppMenuItem href="#technologies-used" text="Technologies used" />
+                <AppMenuItem href="#technologies-used" text="Technologies Used" />
                 <AppMenuItem href={ liveSite } text="Live Site" icon={ faExternalLinkAlt } target="_blank" rel="noreferrer" />
                 <AppMenuItem href={ github } text="GitHub" icon={ faExternalLinkAlt } target="_blank" rel="noreferrer" />
             </AppMenu>
@@ -109,7 +109,7 @@
     }
 
     article {
-        margin: 2rem;
+        margin: 0 2rem 1rem;
     }
 
     main {
