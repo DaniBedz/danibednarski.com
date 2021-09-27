@@ -5,10 +5,9 @@
     export let text;
     export let rel;
 
-    import InlineSVG from 'svelte-inline-svg';
     import { fly } from 'svelte/transition';
 
-    import externalIcon from '/static/externalIcon.svg';
+    import ExternalIcon from '$lib/externalIcon.svelte';
 
 
     function highlightElement(elementId) {
@@ -30,19 +29,21 @@
         }, 3000);
     }
 
-    const svgAttributes = {
-        height: '20px',
-        width: '20px',
-    };
+    let iconColor = 'var(--color-primary-light)';
 </script>
 
 {#if href}
     <div transition:fly|local={{ x: -200 }} >
         <a on:click={ target || internal ? null : highlightElement(href)} { href } { target } { rel }>
-            <button >
+            <button
+                on:mouseover={ () => iconColor = 'var(--color-primary-dark)' }
+                on:focus={ () => iconColor = 'var(--color-primary-dark)' }
+                on:mouseout={ () => iconColor = 'var(--color-primary-light)' }
+                on:blur={ () => iconColor = 'var(--color-primary-light)' }
+            >
                 { text }
                 {#if target}
-                    <InlineSVG src={ externalIcon } { ...svgAttributes } />
+                    <ExternalIcon { iconColor }/>
                 {/if}
             </button>
         </a>
@@ -64,7 +65,7 @@
     }
 
     button:hover {
-        background: var(--color-text);
+        background: var(--color-primary-light);
         color: var(--color-primary-dark);
     }
 </style>
