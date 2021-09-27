@@ -19,6 +19,7 @@ onMount(async () => {
         Carousel = module.default;
 });
 </script>
+
 <div id="screenshots" class={ showMenu ? 'navOpen' : 'navClosed'}>
     {#key screenshotData}
         <svelte:component
@@ -48,6 +49,7 @@ onMount(async () => {
         </svelte:component>
     {/key}
 </div>
+
 <style>
     #screenshots {
         max-width: 80rem;

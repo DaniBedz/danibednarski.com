@@ -3,11 +3,11 @@
     import '/src/tooltip.css';
 
     export let alt;
-    export let external = null;
-    export let href = null;
+    export let external;
+    export let href;
     export let projectIconAvif;
     export let projectIconPng;
-    export let tooltip = false;
+    export let tooltip;
 </script>
 
 {#if external}

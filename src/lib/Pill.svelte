@@ -2,12 +2,12 @@
     export let text;
 </script>
 
-<div class="pill">
+<pill>
     { text }
-</div>
+</pill>
 
 <style>
-    .pill {
+    pill {
         width: min-content;
         color: var(--color-primary-dark);
         background: var(--color-primary-light);
@@ -15,10 +15,11 @@
         padding: 0.3rem 1rem;
         border: 0.25rem solid var(--color-text);
         border-radius: 50px;
+        font-size: 1.25rem;
         white-space: nowrap;
     }
 
-    .pill:hover {
+    pill:hover {
         cursor: default;
     }
 </style>

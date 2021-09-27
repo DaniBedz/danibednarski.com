@@ -15,6 +15,7 @@
     h2 {
         color: var(--color-primary-light);
         text-align: left;
+        font-size: 1.5rem;
     }
 
     div {

@@ -42,7 +42,7 @@
             <button >
                 { text }
                 {#if target}
-                        <InlineSVG src={ externalIcon } { ...svgAttributes } />
+                    <InlineSVG src={ externalIcon } { ...svgAttributes } />
                 {/if}
             </button>
         </a>
