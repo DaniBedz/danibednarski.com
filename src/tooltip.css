@@ -27,10 +27,11 @@
     overflow: hidden;
     text-overflow: ellipsis;
     padding: 1ch 1.5ch;
-    border-radius: .3ch;
-    box-shadow: 0 1em 2em -.5em var(--color-primary-dark);;
-    background: var(--color-text);
-    color: var(--color-primary-dark);
+    border-radius: 5px;
+    border: 1px solid var(--color-primary-light);
+    box-shadow: 0 0 1.5em 0.1em var(--color-primary-light);
+    background: var(--color-primary-dark);
+    color: var(--color-text);
     z-index: 1000;
 }
 
@@ -51,7 +52,6 @@
     border-left-width: 0;
     border-top-color: transparent;
     border-bottom-color: transparent;
-    border-right-color: var(--color-text);
     right: calc(0em - 5px);
     transform: translate(.5em, -50%);
 }
@@ -61,7 +61,7 @@
     transform: translate(.5em, -50%);
 }
 
-/* KEYFRAMES */
+/* Keyframes */
 @keyframes tooltips-vert {
     to {
     opacity: 1;
@@ -78,7 +78,7 @@
 
 [tooltip][flow^="right"]:hover::before,
 [tooltip][flow^="right"]:hover::after {
-    animation: tooltips-horz 300ms ease-out forwards;
+    animation: tooltips-horz 0ms ease-out forwards;
 }
 
 @keyframes stretch {
