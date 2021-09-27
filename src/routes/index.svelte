@@ -1,6 +1,7 @@
 <script>
     import Prism from 'svelte-prismjs';
 
+    import CodingImage from '$lib/CodingImage.svelte';
     import { isNavOpen } from '$lib/core';
     import { drag } from '$lib/drag';
     import '../../src/code-block.css';
@@ -48,7 +49,7 @@
     </codeBlock>
 
     <wrapper use:drag draggable="false">
-        <img src="/coding.svg" alt="coder" draggable="false" />
+        <CodingImage />
     </wrapper>
 </main>
 <slot />
@@ -71,17 +72,12 @@
     }
 
     wrapper {
-        display: grid;
-        justify-items: end;
-        align-items: end;
-    }
-    img {
         position: absolute;
-        bottom: 0;
         right: 0;
-        width: 40vw;
-        min-width: 18rem;
-        max-width: 35rem;
+        bottom: 0;
+        width: 35vw;
+        min-width: 20rem;
+        max-width: 40rem;
         -webkit-user-drag: none;
     }
 </style>

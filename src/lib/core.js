@@ -23,8 +23,8 @@ export function handleResize(windowWidth) {
     if (browser) {
         let savedColor = localStorage.getItem('themeColor');
         if (!savedColor) {
-            localStorage.setItem('themeColor', '--color-light-blue');
-            savedColor = '--color-light-blue';
+            localStorage.setItem('themeColor', '--color-blue');
+            savedColor = '--color-blue';
         }
         document.querySelector(':root').style.setProperty('--color-primary-light', `var(${ savedColor })`);
     }

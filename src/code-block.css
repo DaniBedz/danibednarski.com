@@ -32,7 +32,7 @@ pre[class*=language-] {
 
 :not(pre)>code[class*=language-],
 pre[class*=language-] {
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.4);
 }
 
 :not(pre)>code[class*=language-] {
@@ -93,11 +93,12 @@ pre[class*=language-] {
 .token.class-name,
 .token.function {
     color: var(--color-primary-light);
+    filter: brightness(140%);
 }
 
 .token.keyword {
     color: var(--color-primary-light);
-    filter:brightness(70%);
+    filter:brightness(80%);
 }
 
 .token.important,
