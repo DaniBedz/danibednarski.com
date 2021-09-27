@@ -15,8 +15,7 @@
                 }, 5000);
             }, (error) => {
                 buttonText = 'Error';
-                // eslint-disable-next-line no-console
-                console.log(error);
+                console.error(error);
             });
         },
     });

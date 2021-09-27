@@ -23,7 +23,7 @@ module.exports = {
             },
         ],
         indent: ['warn', 4, { SwitchCase: 1 }],
-        'no-console': 'warn',
+        'no-console': ['warn', { 'allow': ['warn', 'error'] }],
         'no-unused-expressions': ['warn', {
             allowShortCircuit: true,
             allowTernary: true,
