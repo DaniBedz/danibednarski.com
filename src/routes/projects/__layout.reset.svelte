@@ -37,7 +37,6 @@
 </script>
 
 <script>
-    import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
     import { onMount } from 'svelte';
     import { fly } from 'svelte/transition';
 
@@ -45,13 +44,15 @@
     import AppMenu from '$lib/AppMenu.svelte';
     import AppMenuItem from '$lib/AppMenuItem.svelte';
     import Carousel from '$lib/Carousel.svelte';
+    import { isNavOpen, handleResize } from '$lib/core';
     import Head from '$lib/Head.svelte';
     import Logo from '$lib/Logo.svelte';
     import ProjectDescription from '$lib/ProjectDescription.svelte';
     import ProjectHeader from '$lib/ProjectHeader.svelte';
     import ProjectTitle from '$lib/ProjectTitle.svelte';
-    import { isNavOpen, handleResize } from '$lib/store.js';
     import TechnologiesUsed from '$lib/TechnologiesUsed.svelte';
+    import WaveSvg from '$lib/wave.svelte';
+
 
     export let descriptionData;
     export let github;
@@ -74,6 +75,9 @@
 </script>
 
 <Head />
+<background>
+    <WaveSvg />
+</background>
 
 <svelte:window on:resize={ () => handleResize(windowWidth) } bind:innerWidth={ windowWidth } />
 
@@ -86,8 +90,8 @@
                 <AppMenuItem href="#screenshots" text="Screenshots" />
                 <AppMenuItem href="#description" text="Description" />
                 <AppMenuItem href="#technologies-used" text="Technologies Used" />
-                <AppMenuItem href={ liveSite } text="Live Site" icon={ faExternalLinkAlt } target="_blank" rel="noreferrer" />
-                <AppMenuItem href={ github } text="GitHub" icon={ faExternalLinkAlt } target="_blank" rel="noreferrer" />
+                <AppMenuItem href={ liveSite } text="Live Site" target="_blank" rel="noreferrer" />
+                <AppMenuItem href={ github } text="GitHub" target="_blank" rel="noreferrer" />
             </AppMenu>
         {/if}
     </nav>
@@ -104,6 +108,12 @@
 </layout>
 
 <style>
+    background {
+        position: absolute;
+        width: 100vw;
+        z-index: -1;
+    }
+
     layout {
         display: grid;
     }

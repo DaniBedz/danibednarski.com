@@ -3,7 +3,7 @@
 
     import { isNavOpen } from '$lib/core';
     import { drag } from '$lib/drag';
-    import '../../src/code-block.css';
+    import '/src/code-block.css';
 
     let showMenu;
 
@@ -11,16 +11,16 @@
     const dani =
         {
             name: 'Dani Bednarski',
-            job: 'Software Engineer',
-            location: 'Melbourne, Australia',
+            job: 'Software Engineer 💻',
+            location: 'Melbourne, Australia 🦘',
             contact: 'email@danibednarski.com',
         };
 
     const interestsArray =
         [
-            'Making software that people love to use',
-            'Learning new things',
-            'Problem solving',
+            'Making software that people 💙 to use',
+            'Learning new things 🧠',
+            'Problem solving 🛠',
         ];
 
     async function usePortfolio() {
@@ -30,7 +30,7 @@
         if (isInterested || isQuestion) {
             return contactMe(dani.contact);
         } else {
-            alert('Have a great day!')
+            alert('Have a great day! 🙂')
         };
     }
     `;
@@ -80,7 +80,7 @@
         bottom: 0;
         right: 0;
         width: 40vw;
-        min-width: 18rem;
+        min-width: 23rem;
         max-width: 35rem;
         -webkit-user-drag: none;
     }

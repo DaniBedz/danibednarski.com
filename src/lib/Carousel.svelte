@@ -1,9 +1,8 @@
 <script>
-import { isNavOpen } from './store.js';
+    import { onMount } from 'svelte';
 
-import { onMount } from 'svelte';
-
-import { carouselDrag } from '$lib/carouselDrag';
+    import { carouselDrag } from '$lib/carouselDrag';
+    import { isNavOpen } from '$lib/core';
 
 export let screenshotData;
 
@@ -12,12 +11,12 @@ let Carousel;
 let showMenu;
 
 isNavOpen.subscribe((value) => {
-    showMenu = value;
+        showMenu = value;
 });
 
 onMount(async () => {
-    const module = await import('svelte-carousel');
-    Carousel = module.default;
+        const module = await import('svelte-carousel');
+        Carousel = module.default;
 });
 </script>
 <div id="screenshots" class={ showMenu ? 'navOpen' : 'navClosed'}>
@@ -82,7 +81,7 @@ onMount(async () => {
         width: calc(2vw + 2rem) !important;
     }
     :global(.sc-carousel-arrow__arrow) {
-        border: solid var(--color-text) !important;
+        border: solid var(--color-primary-light) !important;
         border-width: 0 var(--sc-arrow-size) var(--sc-arrow-size) 0 !important;
     }
     :global(*) {

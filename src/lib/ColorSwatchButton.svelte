@@ -1,0 +1,43 @@
+<script>
+    export let backgroundColor;
+    export let rotate;
+
+    import { isColorSwatchOpen } from '$lib/core';
+
+    function handleChooseColor() {
+        isColorSwatchOpen.set(false);
+        localStorage.setItem('themeColor', backgroundColor);
+        document.querySelector(':root').style.setProperty('--color-primary-light', `var(${ backgroundColor })`);
+    }
+</script>
+
+<swatch
+    style={ `
+        border-color: var(${ backgroundColor }) transparent transparent;
+        transform: rotate(${ rotate });
+    ` }
+    on:click={ handleChooseColor }
+/>
+
+<style>
+    swatch {
+        position: absolute;
+        display: flex;
+        margin: auto;
+        top: -50%;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: calc(7rem + 5vw) calc(2rem + 2vw) calc(2rem + 3vw);
+        transform-origin: center bottom 0;
+    }
+
+    swatch:hover {
+        filter: brightness(50%);
+        cursor: pointer;
+    }
+
+</style>

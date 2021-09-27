@@ -5,8 +5,7 @@
 <style>
     main {
         display: flex;
-        height: 100vh;
-        width: 100%;
+        margin-left: 1rem;
     }
     iframe {
         border: none;

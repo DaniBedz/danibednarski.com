@@ -47,10 +47,11 @@
     }
 
     input, textarea {
-        border: none;
+        border: 2px solid var(--color-primary-light);
         min-width: 20rem;
         width: 35vw;
-        color: var(--color-primary-dark);
+        color: var(--color-text);
+        background-color: var(--color-primary-dark);
         display: flex;
         margin: 1rem auto;
         padding: 1rem;

@@ -1,13 +1,15 @@
 <script>
-    export let internal = null;
+    export let internal;
     export let href;
-    export let target = null;
+    export let target;
     export let text;
-    export let rel = null;
+    export let rel;
 
+    import InlineSVG from 'svelte-inline-svg';
     import { fly } from 'svelte/transition';
 
     import externalIcon from '/static/externalIcon.svg';
+
 
     function highlightElement(elementId) {
         const element = document.querySelector(elementId);
@@ -27,19 +29,22 @@
             element.style = currentStyles;
         }, 3000);
     }
+
+    const svgAttributes = {
+        height: '20px',
+        width: '20px',
+    };
 </script>
 
-<!-- If AppMenuItem does not have front matter for item, (e.g. private repo, no github),
-    don't render element -->
 {#if href}
-<div transition:fly|local={{ x: -200 }} >
-    <a on:click={ target || internal ? null : highlightElement(href)} { href } { target } { rel }>
-        <button >
-            { text }
-            {#if target}
-                <img src={ externalIcon } alt='external' />
-            {/if}
-        </button>
+    <div transition:fly|local={{ x: -200 }} >
+        <a on:click={ target || internal ? null : highlightElement(href)} { href } { target } { rel }>
+            <button >
+                { text }
+                {#if target}
+                        <InlineSVG src={ externalIcon } { ...svgAttributes } />
+                {/if}
+            </button>
         </a>
     </div>
 {/if}
@@ -48,7 +53,7 @@
     button {
         display: flex;
         justify-content: space-between;
-        width: 90%;
+        width: 100%;
         color: var(--color-text);
         background-color: transparent;
         text-align: left;
@@ -56,17 +61,6 @@
         border-radius: 0.375rem;
         margin: 5%;
         padding: 1rem;
-    }
-
-    img {
-        height: 20px;
-        width: 20px;
-        position: relative;
-        right: -15px;
-    }
-
-    img:hover {
-        filter: invert(100%);
     }
 
     button:hover {

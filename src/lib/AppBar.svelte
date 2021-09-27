@@ -20,22 +20,22 @@
     import tictactoeAvif from '/static/tictactoe.avif';
     import tictactoePng from '/static/tictactoe.png';
 
-    import { faHouseUser } from '@fortawesome/free-solid-svg-icons';
-
     import AppBarHomeIcon from '$lib/AppBarHomeIcon.svelte';
     import AppBarIcon from '$lib/AppBarIcon.svelte';
     import AppMenuToggle from '$lib/AppMenuToggle.svelte';
+
+    import ColorSwatchIcon from './ColorSwatch.svelte';
 </script>
 
 <wrapper>
     <nav>
         <AppBarHomeIcon
             tooltip={ 'Home' }
-            projectIcon={ faHouseUser }
             href="/"
             alt="home"
         />
         <AppMenuToggle />
+        <ColorSwatchIcon />
         <AppBarIcon
             tooltip={ 'myob Sales Tracker' }
             projectIconPng={ myobPng }
@@ -121,7 +121,7 @@
         height: 100%;
         width: 50px;
         position: fixed;
-        background: linear-gradient(rgba(125, 211, 252), rgba(45, 212, 191));
+        background: linear-gradient(var(--color-primary-light), var(--color-primary-dark));
         z-index: 1;
     }
 </style>

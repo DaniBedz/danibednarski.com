@@ -1,0 +1,43 @@
+:root {
+    --color-primary-light: var(--color-primary-dark);
+    --color-primary-dark: rgb(17, 24, 39);
+    --color-primary-grey: rgb(55, 65, 81);
+    --color-text: rgb(255, 255, 255);
+    --color-red: rgb(255, 0, 0);
+    --color-orange: rgb(255, 108, 25);
+    --color-peach: rgb(219, 151, 121);
+    --color-yellow: rgb(255, 255, 0);
+    --color-light-green: rgb(32, 255, 0);
+    --color-green: rgb(47, 129, 50);
+    --color-light-blue: rgb(34, 211, 238);
+    --color-blue: rgb(0, 138, 244);
+    --color-indigo: rgb(64, 85, 168);
+    --color-purple: rgb(93, 0, 255);
+    --color-pink: rgb(245, 0, 249);
+    --color-maroon: rgb(173, 33, 103);
+    --color-go: rgb(16, 185, 129);
+}
+html, body, #svelte {
+    height: 100%;
+    overscroll-behavior: none;
+}
+
+html, body, #svelte, input, button {
+    font-family: monospace, 'Courier New', Courier;
+}
+body:not(svg) {
+    background: var(--color-primary-dark);
+    color: var(--color-text);
+    font-size: 16px;
+    margin: 0;
+}
+a, button {
+    cursor: pointer;
+    font-family: monospace, 'Courier New', Courier;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+button:focus {
+    outline: none !important;
+}
