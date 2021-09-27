@@ -86,6 +86,11 @@ onMount(async () => {
         border: solid var(--color-primary-light) !important;
         border-width: 0 var(--sc-arrow-size) var(--sc-arrow-size) 0 !important;
     }
+
+    :global(.sc-carousel-dot__dot_active) {
+        background-color: var(--color-primary-light) !important;
+
+    }
     :global(*) {
         --sc-arrow-size: calc(0.4vw) !important;
     }
