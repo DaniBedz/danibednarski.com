@@ -13,7 +13,6 @@
 {#if external}
     <a { href } on:click|preventDefault target="_blank" rel="noreferrer" draggable="false">
         <button use:drag={'appBarIconExternal'} { tooltip } aria-label={ tooltip } flow="right">
-
             <picture>
                     <source
                         type="image/avif"

@@ -21,8 +21,8 @@
     id="colorSwatchIcon"
     on:click={ toggleColorSwatch }
     tooltip="Choose Theme"
-    flow="right"
     draggable="false"
+    flow="right"
 >
     <img
         src={ colorSwatchIconSvg }
@@ -72,7 +72,7 @@
         transition:transform .25s ease;
     }
 
-    button:hover {
+    img:hover {
         transform:scale(1.2);
         transition:transform .25s ease;
     }
