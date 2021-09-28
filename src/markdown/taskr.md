@@ -1,6 +1,6 @@
 ---
-title: "A Simple Todo App"
 projectName: "taskr.me"
+title: "A Simple Todo App"
 description: 
     [
         "As part of Generation Australia's web developer program, we used pair programming and agile methodology and create 

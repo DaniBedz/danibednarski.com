@@ -1,6 +1,6 @@
 ---
-title: "This site"
-projectName: "danibednarski.com"
+projectName: "This site"
+title: "danibednarski.com"
 description:
     [
         "After hearing about Svelte on the Syntax podcast, I decided to give it a try. I am in love 😍. After completing 

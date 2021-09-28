@@ -1,6 +1,6 @@
 ---
-title: "A Simple Link Shortener Service"
 projectName: "bedz.me"
+title: "A Simple Link Shortener Service"
 description:
     [
         "I decided to make a link shortener service as I have always wondered how they worked and owned a short domain from a previous project. 

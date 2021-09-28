@@ -1,6 +1,6 @@
 ---
-title: "A professional sales tool for tracking client information, quotes and sales."
 projectName: "myob Sales Tracker"
+title: "A professional sales tool for tracking client information, quotes and sales."
 description:
     [
         "I built this project to allow my wife to track her quotes and sales easier. She was using OneNote to do this previously and would found that 
