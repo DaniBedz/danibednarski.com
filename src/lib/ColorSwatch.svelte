@@ -50,11 +50,12 @@
 </button>
 
 {#if showColorSwatch}
-    <overlay on:click={ toggleColorSwatch }>
+    <overlay id="overlay" on:click={ toggleColorSwatch }>
         {#each swatchData as swatch}
             <ColorSwatchButton
                 backgroundColor={ swatch.backgroundColor }
                 rotate={ swatch.rotate }
+                toggleColorSwatch
             />
         {/each}
     </overlay>
@@ -68,8 +69,12 @@
     }
 
     img {
-        height: 40px;
-        width: 40px;
+        max-height: 40px;
+        max-width: 40px;
+        min-height: 30px;
+        min-width: 30px;
+        height: calc(1rem + 3.5vw);
+        width: calc(1rem + 3.5vw);
     }
 
     button {

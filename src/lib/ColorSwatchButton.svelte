@@ -1,6 +1,7 @@
 <script>
     export let backgroundColor;
     export let rotate;
+    export let toggleColorSwatch;
 
     import { fly } from 'svelte/transition';
 
@@ -9,18 +10,21 @@
     function handleChooseColor() {
         localStorage.setItem('themeColor', backgroundColor);
         document.querySelector(':root').style.setProperty('--color-primary-light', `var(${ backgroundColor })`);
+        toggleColorSwatch();
         isColorSwatchOpen.set(false);
     }
 
 </script>
 
 <swatch
+    id="swatch"
     style={ `
         border-color: var(${ backgroundColor }) transparent transparent;
         transform: rotate(${ rotate }deg);
     ` }
     on:click={ handleChooseColor }
-    in:fly={{ x: 0, y: 0, duration: 400, delay: rotate }}
+    in:fly={{ x: 300, y: 0, duration: 700 }}
+    out:fly={{ x: 300, y: 0, duration: 200 }}
 />
 
 <style>
