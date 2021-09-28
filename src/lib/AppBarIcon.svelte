@@ -11,33 +11,35 @@
 </script>
 
 {#if external}
-    <a { href } on:click|preventDefault target="_blank" rel="noreferrer" draggable="false">
-        <button use:drag={'appBarIconExternal'} { tooltip } aria-label={ tooltip } flow="right">
-            <dot-wrapper>
-                <div class="external-dot"/>
-            </dot-wrapper>
+<a { href } on:click|preventDefault target="_blank" rel="noreferrer" draggable="false">
+    <button use:drag={'appBarIconExternal'} { tooltip } aria-label={ tooltip } flow="right">
+        <dot-wrapper>
+            <div class="external-dot"/>
             <picture>
-                    <source
-                        type="image/avif"
-                        srcset={ projectIconAvif }
-                        { alt }
-                        draggable="false"
-                    >
-                    <img
-                        type="image/png"
-                        { alt }
-                        src={ projectIconPng }
-                        height="100%"
-                        width="100%"
-                        draggable="false"
-                    >
-                </picture>
+                <source
+                type="image/avif"
+                srcset={ projectIconAvif }
+                { alt }
+                draggable="false"
+                >
+                <img
+                    type="image/png"
+                    { alt }
+                    src={ projectIconPng }
+                    draggable="false"
+                >
+            </picture>
+        </dot-wrapper>
         </button>
     </a>
 
     {:else}
         <a {href} on:click|preventDefault sveltekit:prefetch draggable="false">
             <button use:drag={'appBarIcon'} { tooltip } aria-label={ tooltip } flow="right">
+                <dot-wrapper>
+                    <!-- {#if false}
+                        <div class="external-dot"/>
+                    {/if} -->
                 <picture>
                     <source
                         type="image/avif"
@@ -49,20 +51,23 @@
                         type="image/png"
                         src={ projectIconPng }
                         { alt }
-                        height="100%"
-                        width="100%"
                         draggable="false"
                     >
                 </picture>
+                </dot-wrapper>
             </button>
         </a>
 {/if}
 
 <style>
-    img, img + div {
+    img {
+        height: 100%;
+        width: 100%;
+    }
+    img, dot-wrapper > .external-dot {
         transition:transform .25s ease;
     }
-    img:hover, img:hover + div {
+    img:hover, dot-wrapper:hover > .external-dot {
         transform:scale(1.2);
     }
 
@@ -81,24 +86,26 @@
         background: transparent;
         padding: 0;
     }
-    .external-dot {
-        position: absolute;
-        display: flex;
-        align-self: end;
-        height: 30%;
-        width: 30%;
-        background-color: var(--color-go);
-        border-radius: 50%;
-        padding: 0;
-    }
 
     dot-wrapper {
         display: flex;
-        position: absolute;
         height: 100%;
         width: 100%;
         justify-content: end;
         align-content: end;
         margin: auto;
+        z-index: 1;
+    }
+    .external-dot {
+        top: clamp(1.5rem, 1rem + 2vw, 1.85rem);
+        position: absolute;
+        display: flex;
+        align-self: end;
+        height: 35%;
+        width: 35%;
+        background-color: var(--color-go);
+        border-radius: 50%;
+        padding: 0;
+        z-index: 1;
     }
 </style>

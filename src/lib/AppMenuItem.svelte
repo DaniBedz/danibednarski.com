@@ -9,7 +9,6 @@
 
     import ExternalIcon from '$lib/externalIcon.svelte';
 
-
     function highlightElement(elementId) {
         const element = document.querySelector(elementId);
         const currentStyles = element.style;
@@ -55,17 +54,17 @@
         display: flex;
         justify-content: space-between;
         width: 100%;
-        color: var(--color-text);
+        margin: 0.75rem;
+        padding: 1rem;
         background-color: transparent;
+        color: var(--color-text);
         text-align: left;
         border: none;
         border-radius: 0.375rem;
-        margin: 0.75rem;
-        padding: 1rem;
     }
 
     button:hover {
-        background: var(--color-primary-light);
+        background-color: var(--color-primary-light);
         color: var(--color-primary-dark);
     }
 </style>

@@ -19,19 +19,19 @@
         padding: 0;
         border: none;
         background: transparent;
-        transition:transform .25s ease;
-    }
-
-    img:hover {
-        transform:scale(1.1);
     }
 
     img {
-        max-height: 40px;
-        max-width: 40px;
         min-height: 30px;
         min-width: 30px;
         height: calc(1rem + 3.5vw);
         width: calc(1rem + 3.5vw);
+        max-height: 40px;
+        max-width: 40px;
+        transition:transform .25s ease;
+    }
+
+    img:hover {
+        transform:scale(1.2);
     }
 </style>
