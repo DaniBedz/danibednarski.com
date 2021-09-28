@@ -43,6 +43,7 @@
         text-align: center;
         margin-top: 5rem;
         margin-bottom: 2.5rem;
+        background-color: var(--color-primary-dark);
     }
 
     input, textarea {
