@@ -2,21 +2,25 @@
     export let backgroundColor;
     export let rotate;
 
+    import { fly } from 'svelte/transition';
+
     import { isColorSwatchOpen } from '$lib/core';
 
     function handleChooseColor() {
-        isColorSwatchOpen.set(false);
         localStorage.setItem('themeColor', backgroundColor);
         document.querySelector(':root').style.setProperty('--color-primary-light', `var(${ backgroundColor })`);
+        isColorSwatchOpen.set(false);
     }
+
 </script>
 
 <swatch
     style={ `
         border-color: var(${ backgroundColor }) transparent transparent;
-        transform: rotate(${ rotate });
+        transform: rotate(${ rotate }deg);
     ` }
     on:click={ handleChooseColor }
+    in:fly={{ x: 0, y: 0, duration: 400, delay: rotate }}
 />
 
 <style>
@@ -33,6 +37,7 @@
         border-style: solid;
         border-width: calc(7rem + 5vw) calc(2rem + 2vw) calc(2rem + 3vw);
         transform-origin: center bottom 0;
+        z-index: 10;
     }
 
     swatch:hover {
