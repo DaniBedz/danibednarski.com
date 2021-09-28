@@ -8,7 +8,7 @@
     import { isNavOpen, handleResize } from '$lib/core';
     import Head from '$lib/Head.svelte';
     import Logo from '$lib/Logo.svelte';
-    import WaveSvg from '$lib/wave.svelte';
+    import WaveSvg from '$lib/Wave.svelte';
 
     let showMenu;
     let windowWidth;

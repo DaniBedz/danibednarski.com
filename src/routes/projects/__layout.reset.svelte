@@ -51,7 +51,7 @@
     import ProjectHeader from '$lib/ProjectHeader.svelte';
     import ProjectTitle from '$lib/ProjectTitle.svelte';
     import TechnologiesUsed from '$lib/TechnologiesUsed.svelte';
-    import WaveSvg from '$lib/wave.svelte';
+    import WaveSvg from '$lib/Wave.svelte';
 
 
     export let descriptionData;
