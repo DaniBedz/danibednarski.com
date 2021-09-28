@@ -28,6 +28,5 @@
         width: 100%;
         padding: 0;
         margin: 0;
-        /* max-width: 70rem; */
     }
 </style>

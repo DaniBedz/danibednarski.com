@@ -241,12 +241,19 @@
 </svg>
 
 <style>
+    svg {
+        display: flex;
+        height: auto;
+        width: 100%;
+        max-width: 70rem;
+        margin: auto;
+    }
     .B {
         fill: #404040
     }
 
     .C {
-        font-family: Montserrat
+        font-family: Arial, Helvetica, sans-serif
     }
 
     .D {
