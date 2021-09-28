@@ -9,7 +9,7 @@
         Resume = module.default;
     });
 
-    $: showMenu = true;
+    let showMenu;
 
     isNavOpen.subscribe((value) => {
         showMenu = value;
@@ -25,6 +25,9 @@
         display: grid;
         position: relative;
         align-content: baseline;
-        justify-content: center;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        /* max-width: 70rem; */
     }
 </style>

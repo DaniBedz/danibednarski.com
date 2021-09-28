@@ -13,6 +13,9 @@
 {#if external}
     <a { href } on:click|preventDefault target="_blank" rel="noreferrer" draggable="false">
         <button use:drag={'appBarIconExternal'} { tooltip } aria-label={ tooltip } flow="right">
+            <dot-wrapper>
+                <div class="external-dot"/>
+            </dot-wrapper>
             <picture>
                     <source
                         type="image/avif"
@@ -24,11 +27,10 @@
                         type="image/png"
                         { alt }
                         src={ projectIconPng }
-                        height="40px"
-                        width="40px"
+                        height="100%"
+                        width="100%"
                         draggable="false"
                     >
-                    <div class="external-dot"/>
                 </picture>
         </button>
     </a>
@@ -47,8 +49,8 @@
                         type="image/png"
                         src={ projectIconPng }
                         { alt }
-                        height="40px"
-                        width="40px"
+                        height="100%"
+                        width="100%"
                         draggable="false"
                     >
                 </picture>
@@ -70,19 +72,33 @@
         margin: 0.75rem auto;
         color: var(--color-primary-grey);
         border: none;
-        height: 40px;
-        width: 40px;
+        max-height: 40px;
+        max-width: 40px;
+        min-height: 30px;
+        min-width: 30px;
+        height: calc(1rem + 3.5vw);
+        width: calc(1rem + 3.5vw);
         background: transparent;
         padding: 0;
     }
     .external-dot {
         position: absolute;
-        top: 2rem;
-        left: 1.75rem;
-        height: 1rem;
-        width: 1rem;
+        display: flex;
+        align-self: end;
+        height: 30%;
+        width: 30%;
         background-color: var(--color-go);
         border-radius: 50%;
         padding: 0;
+    }
+
+    dot-wrapper {
+        display: flex;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        justify-content: end;
+        align-content: end;
+        margin: auto;
     }
 </style>

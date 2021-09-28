@@ -39,7 +39,7 @@
 
     h1 {
         color: var(--color-primary-text);
-        font-size:3rem;
+        font-size:2rem;
         text-align: center;
         margin-top: 5rem;
         margin-bottom: 2.5rem;
@@ -48,8 +48,9 @@
 
     input, textarea {
         border: 2px solid var(--color-primary-light);
-        min-width: 20rem;
+        min-width: 15rem;
         width: 35vw;
+        max-width: 40rem;
         color: var(--color-text);
         background-color: var(--color-primary-dark);
         display: flex;
@@ -63,11 +64,17 @@
     }
 
     input[type=submit] {
+        display: grid;
+        /* margin: auto; */
         width: auto;
         padding: 0.75rem 1.5rem;
-        background: var(--color-primary-light);
         border: 2px solid var(--color-primary-dark);
+        background: var(--color-primary-light);
         color: var(--color-primary-dark);
+        text-align: center;
+        -webkit-appearance: none;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
     }
     input[type=submit]:hover {
         color: var(--color-primary-light);
