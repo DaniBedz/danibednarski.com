@@ -22,7 +22,7 @@
         transition:transform .25s ease;
     }
 
-    button:hover {
+    img:hover {
         transform:scale(1.1);
     }
 
