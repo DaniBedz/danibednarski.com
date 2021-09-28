@@ -5,7 +5,7 @@
 <style>
     nav {
         position: fixed;
-        width: 14rem;
+        width: 13.5rem;
         margin-top: 2rem;
     }
 </style>

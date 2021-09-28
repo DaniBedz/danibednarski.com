@@ -60,7 +60,7 @@
         text-align: left;
         border: none;
         border-radius: 0.375rem;
-        margin: 5%;
+        margin: 0.75rem;
         padding: 1rem;
     }
 
