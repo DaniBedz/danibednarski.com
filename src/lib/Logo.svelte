@@ -2,7 +2,7 @@
     import DaniImgSvg from '$lib/dani.svelte';
 </script>
 
-<a href="/" onmousedown="return false">
+<a href="/" aria-label="Home" onmousedown="return false">
     <DaniImgSvg />
 </a>
 
