@@ -3,9 +3,9 @@ code[class*=language-],
 pre[class*=language-] {
     color: #f8f8f2;
     background: 0 0;
-    text-shadow: 0 1px rgba(0, 0, 0, .3);
+    text-shadow: 0 1px rgba(0, 0, 0, 0.3);
     font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-    font-size: clamp(0.5rem, 0.1rem + 1.5vw, 1.3rem);
+    font-size: clamp(0.6rem, 0.1rem + 1.5vw, 1.3rem);
     text-align: left;
     white-space: pre;
     word-spacing: normal;
@@ -32,7 +32,7 @@ pre[class*=language-] {
 
 :not(pre)>code[class*=language-],
 pre[class*=language-] {
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.7);
 }
 
 :not(pre)>code[class*=language-] {
