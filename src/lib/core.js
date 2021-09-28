@@ -19,6 +19,10 @@ export function handleResize(windowWidth) {
     }
 }
 
+export function toggleColorSwatch() {
+    isColorSwatchOpen.set(!get(isColorSwatchOpen));
+}
+
 (function setThemeColor() {
     if (browser) {
         let savedColor = localStorage.getItem('themeColor');

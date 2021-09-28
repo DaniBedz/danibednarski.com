@@ -2,19 +2,15 @@
     import colorSwatchIconSvg from '/static/ColorSwatchIcon.svg';
 
     import '/src/tooltip.css';
-    import { isColorSwatchOpen } from '$lib/core';
-
     import ColorSwatchButton from './ColorSwatchButton.svelte';
+
+    import { isColorSwatchOpen, toggleColorSwatch } from '$lib/core';
 
     let showColorSwatch;
 
     isColorSwatchOpen.subscribe((value) => {
         showColorSwatch = value;
     });
-
-    function toggleColorSwatch() {
-        isColorSwatchOpen.set(!showColorSwatch);
-    }
 
     const swatchData = [
         { backgroundColor: '--color-red', rotate: '0' },
@@ -49,13 +45,12 @@
     >
 </button>
 
-{#if showColorSwatch}
+{#if showColorSwatch }
     <overlay id="overlay" on:click={ toggleColorSwatch }>
         {#each swatchData as swatch}
             <ColorSwatchButton
                 backgroundColor={ swatch.backgroundColor }
                 rotate={ swatch.rotate }
-                toggleColorSwatch
             />
         {/each}
     </overlay>

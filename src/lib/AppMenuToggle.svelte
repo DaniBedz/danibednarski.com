@@ -39,7 +39,7 @@
     }
 
     img {
-        transition:transform .25s ease;
+        transition:transform 0.25s ease;
         max-height: 40px;
         max-width: 40px;
         min-height: 30px;
@@ -49,12 +49,12 @@
     }
 
     picture {
-        transition:transform .25s ease;
+        transition:transform 0.25s ease;
     }
 
     picture:hover {
         transform:scale(1.2);
-        transition:transform .25s ease;
+        transition:transform 0.25s ease;
     }
 
     button {
