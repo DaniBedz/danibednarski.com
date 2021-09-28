@@ -17,11 +17,9 @@
         "eslint-plugin-import": "^2.24.2",
         "eslint-plugin-svelte3": "^3.2.1",
         "felte": "^0.8.0",
-        "marked": "^3.0.4",
         "mdsvex": "^0.9.8",
         "svelte": "^3.42.6",
         "svelte-carousel": "^1.0.15",
-        "svelte-inline-svg": "^1.0.8",
         "svelte-prismjs": "^1.0.2"
     },
     "eslintIgnore": [
