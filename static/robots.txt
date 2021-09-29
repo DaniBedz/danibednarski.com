@@ -1,0 +1,3 @@
+Sitemap: http://danibednarski.com/sitemap.xml
+User-agent: *
+Allow: /
