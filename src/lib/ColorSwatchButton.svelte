@@ -18,7 +18,7 @@
         transform: rotate(${ rotate }deg);
     ` }
     in:fly={{ x: 300, y: 0, duration: 700 }}
-    out:fly={{ x: 300, y: 0, duration: 200 }}
+    out:fly={{ x: 0, y: -300, duration: 200 }}
 />
 
 <style>
