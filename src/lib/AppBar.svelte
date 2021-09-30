@@ -9,8 +9,8 @@
     import icon21Png from '/static/icon21.png';
     import linkedinAvif from '/static/linkedin.avif';
     import linkedinPng from '/static/linkedin.png';
-    import lionHeadAvif from '/static/lionHead.avif';
-    import lionHeadPng from '/static/lionHead.png';
+    import bedzmeAvif from '/static/bedzme.avif';
+    import bedzmePng from '/static/bedzme.png';
     import myobAvif from '/static/myob.avif';
     import myobPng from '/static/myob.png';
     import taskrAvif from '/static/taskr.avif';
@@ -32,7 +32,6 @@
         <AppBarHomeIcon
             tooltip={ 'Home' }
             href="/"
-            alt="home"
         />
         <AppMenuToggle />
         <ColorSwatchIcon />
@@ -45,8 +44,8 @@
         />
         <AppBarIcon
             tooltip={ 'bedz.me' }
-            projectIconPng={ lionHeadPng }
-            projectIconAvif={ lionHeadAvif }
+            projectIconPng={ bedzmePng }
+            projectIconAvif={ bedzmeAvif }
             href="/projects/bedzme"
             alt="bedz.me icon"
         />
