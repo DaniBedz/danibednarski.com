@@ -75,13 +75,14 @@
 </script>
 
 <Head />
-<background>
-    <WaveSvg />
-</background>
+<WaveSvg />
 
-<svelte:window on:resize={ () => handleResize(windowWidth) } bind:innerWidth={ windowWidth } />
+<svelte:window
+    bind:innerWidth={ windowWidth }
+    on:resize={ () => handleResize(windowWidth) }
+/>
 
-<layout style={ showMenu ? 'grid-template-columns: 50px 14rem auto' : 'grid-template-columns: 50px 0px auto'}>
+<layout class={ showMenu ? 'layout-menu-open' : 'layout-menu-closed' }>
     <AppBar />
     <nav in:fly|local={{ x: -400, duration: 600 }}>
         {#if showMenu}
@@ -108,12 +109,6 @@
 </layout>
 
 <style>
-    background {
-        position: absolute;
-        width: 100vw;
-        z-index: -1;
-    }
-
     layout {
         display: grid;
     }
@@ -134,5 +129,13 @@
 
     .menu-closed {
         width: calc(100% - 50px);
+    }
+
+    .layout-menu-open {
+        grid-template-columns: 50px 14rem auto;
+    }
+
+    .layout-menu-closed {
+        grid-template-columns: 50px 0 auto;
     }
 </style>

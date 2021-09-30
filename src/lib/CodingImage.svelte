@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 906 789" fill-rule="evenodd"
 preserveAspectRatio="xMidYMid">
     <g fill-rule="nonzero">
-        <path d="M768 286h52v27h-52v-27zm4 33h52v27h-52v-27zM729 90h52v27h-52V90zm37 31h52v27h-52v-27zM666 92h52v27h-52V92zm167 60h53v27h-53v-27zm-63 2h52v27h-52v-27zm-67-31h52v27h-52v-27zm127 237h53v27h-53v-27zm-63 2h52v27h-52v-27z" fill="var(--color-primary-light)" filter="brightness(70%)" fill-opacity=".2" />
+        <path d="M768 286h52v27h-52v-27zm4 33h52v27h-52v-27zM729 90h52v27h-52V90zm37 31h52v27h-52v-27zM666 92h52v27h-52V92zm167 60h53v27h-53v-27zm-63 2h52v27h-52v-27zm-67-31h52v27h-52v-27zm127 237h53v27h-53v-27zm-63 2h52v27h-52v-27z" fill="var(--color-primary-light)" filter="brightness(140%)" fill-opacity=".2" />
     </g>
     <g transform="translate(-4 -5)">
         <g fill-rule="nonzero">
-            <path d="M7 292h52v27H7v-27zm37 31h52v27H44v-27zM326 8h52v27h-52V8zm411 498h52v27h-52v-27zM48 356h52v27H48v-27zM363 39h52v27h-52V39zM171 222h53v27h-53v-27zm39 31h52v27h-52v-27zm99-17h52v27h-52v-27zm-95 50h52v27h-52v-27zm593 220h52v27h-52v-27z" fill="var(--color-primary-light)" filter="brightness(70%)" fill-opacity=".2" />
+            <path d="M7 292h52v27H7v-27zm37 31h52v27H44v-27zM326 8h52v27h-52V8zm411 498h52v27h-52v-27zM48 356h52v27H48v-27zM363 39h52v27h-52V39zM171 222h53v27h-53v-27zm39 31h52v27h-52v-27zm99-17h52v27h-52v-27zm-95 50h52v27h-52v-27zm593 220h52v27h-52v-27z" fill="var(--color-primary-light)" filter="brightness(140%)" fill-opacity=".2" />
             <path d="M729 398c-3-19-5-38-6-57-1-32-23-59-54-69-5-2-11-3-18-5-58-12-76-1-78 0-2-3-3-6-4-9l-1-1c12-13 19-29 20-45 10-10 16-22 16-35 0-11-5-21-12-30v-17c0-42-34-76-76-76h-6c-42 0-76 34-76 76v18c-6 9-10 19-10 29 0 13 5 24 15 34 1 17 8 34 21 46l1 10-105 22s-40 1-66 55c-22 45-65 161-78 195l-4 10 1-1-1 3s1 0 2-1c-2 14-2 39 17 42 16 3 57 4 88 4h371v-3c0-3 0-6-1-9v-1c2 3 3 5 4 8-1 0-1 1-1 1h1s0 1-1 2c0 0 43-110 43-175 0-7-1-14-2-21zM462 281c0-3 0-6-1-9l1 9zM333 517v27l-17 3 17-30z" fill="url(#A)" />
             <g fill="var(--color-primary-light)" filter="brightness(60%)">
                 <path d="M511 65c42 0 76 34 76 76v32H435v-32c0-42 34-76 76-76z" />
@@ -13,7 +13,7 @@ preserveAspectRatio="xMidYMid">
             </g>
             <path d="M457 241s18 94 0 119c-19 25 55 35 55 35l75-27 11-68s-46-26-37-78l-104 19zm223 317s5 20-21 24c-15 2-31 2-46-1l-6-51h60l13 28zm-458-27s-12 47 14 51 121 4 121 4v-55l-43 9-40-38-52 29z" fill="#f7c4a7" />
             <path d="M462 272l-101 21s-39 2-64 53-79 197-79 197 46-46 100 4l36-65-8 103h280v-49s58 31 54 49c0 0 49-128 39-187-4-18-6-36-6-54-2-31-22-58-52-67-5-2-11-3-17-4-60-13-75 0-75 0s-12 37-12 54c0 22-31 37-31 37s-47-11-49-20-19-62-15-72z" fill-opacity=".1" />
-            <path d="M462 269l-101 21s-39 2-64 53-79 198-79 198 46-47 100 3l36-65-8 103h280v-49s58 31 54 49c0 0 49-128 39-187-4-18-6-36-6-54-2-31-22-58-52-67-5-2-11-3-17-4-60-13-75 0-75 0s-12 37-12 54c0 22-31 37-31 37s-47-11-49-20-19-62-15-72z" fill="var(--color-primary-light)" filter="brightness(20%)" />
+            <path d="M462 269l-101 21s-39 2-64 53-79 198-79 198 46-47 100 3l36-65-8 103h280v-49s58 31 54 49c0 0 49-128 39-187-4-18-6-36-6-54-2-31-22-58-52-67-5-2-11-3-17-4-60-13-75 0-75 0s-12 37-12 54c0 22-31 37-31 37s-47-11-49-20-19-62-15-72z" fill="var(--color-primary-light)" filter="brightness(100%)" />
             <path d="M566 265c-5-13-5-25-3-38l-105 18s2 8 3 20c14 14 33 22 53 22 19 0 38-8 52-22z" fill-opacity=".1" />
             <path d="M583 211c0 39-32 71-71 71-39 1-72-30-73-69v-2c0-28 16-53 40-65 2.667-.667 5-1.667 7-3 12-4 25-5 37-3 33 6 58 33 60 66v5z" fill="#f7c4a7" />
             <use xlink:href="#E" />
@@ -29,9 +29,9 @@ preserveAspectRatio="xMidYMid">
         </g>
         <use xlink:href="#B" x="432.348" y="119.486" width="154.134" height="35.212" transform="matrix(.994415 0 0 .978115 4 5)" />
         <g fill-rule="nonzero">
-            <path d="M596 151h7v41h-7z" fill="var(--color-primary-light)" />
+            <path d="M596 151h7v41h-7z" fill="var(--color-primary-light)" filter="brightness(140%)" />
             <path d="M586 178c14 0 25 11 25 25v2c0 14-11 25-25 25v-52z" fill="#666" />
-            <path d="M416 151h7v41h-7z" fill="var(--color-primary-light)" filter="brightness(80%)" />
+            <path d="M416 151h7v41h-7z" fill="var(--color-primary-light)" filter="brightness(140%)" />
             <path d="M595 106c-10-20-31-45-78-47h-1l-16 1c-46 2-68 27-78 47-6 14-10 29-10 45h6l5-1c1-13 4-27 10-39 12-26 35-40 68-41l15-1c33 2 56 15 69 41 5 12 9 26 9 40h11c0-16-3-31-10-45z" fill="#666" />
             <path d="M81 587h777v208H81z" fill="#d6d6e3" />
             <path d="M81 601h777v27H81z" fill-opacity=".1" />
@@ -47,7 +47,7 @@ preserveAspectRatio="xMidYMid">
         <path d="M581 225c0-4-1-8-3-8-6-1-2 21-13 26-9 4-3 7-33-11-12-7-14-4-19-3-3 0-5-1-8-1-7-1-11 3-16 6-3 1-5 1-8 3-4 1-5 4-8 6s-7 5-11 5c-12 1-19-18-19-28-1-9-15-3-1 38 5 14 33 37 47 45 11 6 20 9 33 6 15-4 23-15 33-25 19-21 27-35 26-59zm-53 36c1-2 2-1-3-3-17-9-21-4-28 0-2 1-1 1-2 3 0 3-9 0-10-1-3-3-1-9 1-11 7-12 18-12 26-12 11-1 17 1 23 12 8 12-8 15-7 12z" fill="#5b2c00" />
         <path d="M483 260c0-9 13-16 29-16 15 0 28 7 28 16s-13 16-28 16c-16 0-29-7-29-16z" fill="#f7c4a7" />
         <path d="M465 269c0-25 21-44 47-44s47 20 46 45c-11-14-28-23-46-23s-36 8-47 22z" fill="#5b2c00" />
-        <path d="M442 221c0 3-2 6-5 6s-6-3-6-6l-2-45c0-3 2-6 5-6 4 0 6 2 6 5l2 46zm129-45c0-3 3-6 6-6s5 3 5 6v45c0 3-2 6-5 6s-6-3-6-6v-45z" fill="var(--color-primary-light)" filter="brightness(80%)" />
+        <path d="M442 221c0 3-2 6-5 6s-6-3-6-6l-2-45c0-3 2-6 5-6 4 0 6 2 6 5l2 46zm129-45c0-3 3-6 6-6s5 3 5 6v45c0 3-2 6-5 6s-6-3-6-6v-45z" fill="var(--color-primary-light)" filter="brightness(140%)" />
     </g>
     <defs>
         <linearGradient id="A" x1="6.017" y1="8.526" x2="6.017" y2="7.551" gradientUnits="userSpaceOnUse">

@@ -24,13 +24,11 @@
 </script>
 
 <Head/>
-<background>
-    <WaveSvg />
-</background>
+<WaveSvg />
 
 <svelte:window on:resize={ () => handleResize(windowWidth) } bind:innerWidth={ windowWidth } />
 
-<layout style={ showMenu ? 'grid-template-columns: 50px 14rem auto;' : 'grid-template-columns: 50px 0 auto;'}>
+<layout class={ showMenu ? 'layout-menu-open' : 'layout-menu-closed' }>
     <AppBar />
     <div in:fly|local={{ x: -400, duration: 600 }}>
         {#if showMenu}
@@ -47,14 +45,16 @@
 </layout>
 
 <style>
-    background {
-        position: absolute;
-        width: 100vw;
-        z-index: -1;
-    }
-
     layout {
         display: grid;
         height: 100%;
+    }
+
+    .layout-menu-open {
+        grid-template-columns: 50px 14rem auto;
+    }
+
+    .layout-menu-closed {
+        grid-template-columns: 50px 0 auto;
     }
 </style>

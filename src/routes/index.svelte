@@ -13,7 +13,7 @@
 
 <main id="main">
     <!-- Hidden - SEO -->
-    <h1>Dani Bednarski - Software Engineer ["Svelte", "JavaScript", "React"]</h1>
+    <h1 class="hide-header">Dani Bednarski - Software Engineer ["Svelte", "JavaScript", "React"]</h1>
 
     <CodeBlock />
 
@@ -29,7 +29,7 @@
         padding: 0;
     }
 
-    h1 {
+    .hide-header {
         display: none;
     }
 

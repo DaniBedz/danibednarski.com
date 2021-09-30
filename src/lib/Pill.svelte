@@ -9,17 +9,20 @@
 <style>
     pill {
         width: min-content;
-        color: var(--color-primary-dark);
-        background: var(--color-primary-light);
-        margin: 0.3rem;
+        background: var(--color-primary-dark);
+        margin: 0.7rem;
         padding: 0.3rem 1rem;
-        border: 0.25rem solid var(--color-text);
+        color: var(--color-text);
+        border: 0.25rem solid var(--color-primary-light);
         border-radius: 50px;
         font-size: 1.25rem;
         white-space: nowrap;
     }
 
     pill:hover {
+        background: var(--color-primary-light);
+        color: var(--color-primary-dark);
+        border: 0.25rem solid var(--color-text);
         cursor: default;
     }
 </style>
