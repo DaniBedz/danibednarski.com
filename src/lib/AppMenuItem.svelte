@@ -1,9 +1,9 @@
 <script>
-    export let internal;
+    export let internal = null;
     export let href;
-    export let target;
+    export let target = null;
     export let text;
-    export let rel;
+    export let rel = null;
 
     import { fly } from 'svelte/transition';
 

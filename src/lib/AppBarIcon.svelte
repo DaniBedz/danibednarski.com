@@ -3,7 +3,7 @@
     import '/src/tooltip.css';
 
     export let alt;
-    export let external;
+    export let external = null;
     export let href;
     export let projectIconAvif;
     export let projectIconPng;
@@ -37,9 +37,6 @@
         <a {href} on:click|preventDefault sveltekit:prefetch draggable="false">
             <button use:drag={'appBarIcon'} { tooltip } aria-label={ tooltip } flow="right">
                 <dot-wrapper>
-                    <!-- {#if false}
-                        <div class="external-dot"/>
-                    {/if} -->
                 <picture>
                     <source
                         type="image/avif"

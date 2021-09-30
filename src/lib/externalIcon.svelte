@@ -6,7 +6,7 @@
     fill={ iconColor }
     height="20px"
     width="20px"
-    alt="external"
+    aria-label="external icon"
     filter="var(--zero-invert)"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 512 512"
