@@ -3,7 +3,7 @@ import { get, writable } from 'svelte/store';
 import { browser } from '$app/env';
 import '/src/global.css';
 
-export const isNavOpen = writable(true);
+export const isNavOpen = writable(false);
 export const isColorSwatchOpen = writable(false);
 
 export function toggleIsNavOpen() {
@@ -13,8 +13,7 @@ export function toggleIsNavOpen() {
 export function handleResize(windowWidth) {
     if (windowWidth < 750) {
         isNavOpen.set(false);
-    }
-    if (windowWidth >= 750) {
+    } else {
         isNavOpen.set(true);
     }
 }
