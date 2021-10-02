@@ -1,41 +1,41 @@
 <script>
-    import { drag } from '$lib/drag';
     import '/src/tooltip.css';
 
     export let alt;
     export let external = null;
     export let href;
+    export let id;
     export let projectIconAvif;
     export let projectIconPng;
     export let tooltip;
 </script>
 
 {#if external}
-<a { href } on:click|preventDefault target="_blank" rel="noreferrer" draggable="false">
-    <button use:drag={'appBarIconExternal'} { tooltip } aria-label={ tooltip } flow="right">
-        <dot-wrapper>
-            <div class="external-dot"/>
-            <picture>
-                <source
-                type="image/avif"
-                srcset={ projectIconAvif }
-                { alt }
-                draggable="false"
-                >
-                <img
-                    type="image/png"
+    <a { id } { href } on:click|preventDefault target="_blank" rel="noreferrer" draggable="false">
+        <button { tooltip } aria-label={ tooltip } flow="right">
+            <dot-wrapper>
+                <div class="external-dot"/>
+                <picture>
+                    <source
+                    type="image/avif"
+                    srcset={ projectIconAvif }
                     { alt }
-                    src={ projectIconPng }
                     draggable="false"
-                >
-            </picture>
-        </dot-wrapper>
+                    >
+                    <img
+                        type="image/png"
+                        { alt }
+                        src={ projectIconPng }
+                        draggable="false"
+                    >
+                </picture>
+            </dot-wrapper>
         </button>
     </a>
 
     {:else}
-        <a {href} on:click|preventDefault sveltekit:prefetch draggable="false">
-            <button use:drag={'appBarIcon'} { tooltip } aria-label={ tooltip } flow="right">
+        <a { id } {href} on:click|preventDefault sveltekit:prefetch draggable="false">
+            <button { tooltip } aria-label={ tooltip } flow="right">
                 <dot-wrapper>
                 <picture>
                     <source
