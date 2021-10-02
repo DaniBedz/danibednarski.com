@@ -10,7 +10,6 @@
     pill {
         width: min-content;
         background: var(--color-primary-dark);
-        margin: 0.7rem;
         padding: 0.3rem 1rem;
         color: var(--color-text);
         border: 0.25rem solid var(--color-primary-light);
@@ -23,6 +22,5 @@
         background: var(--color-primary-light);
         color: var(--color-primary-dark);
         border: 0.25rem solid var(--color-text);
-        cursor: default;
     }
 </style>

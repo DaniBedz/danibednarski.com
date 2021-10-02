@@ -11,7 +11,17 @@ description:
     ]
 
 slug: "tictactoe"
-technologiesUsed: ["JavaScript", "readline-sync"]
+technologiesUsed: [
+    {
+        name: "JavaScript" ,
+        url: "https://tc39.es/",
+    },
+    {
+        name: "readline-sync",
+        url: "https://github.com/anseki/readline-sync",
+
+    },
+]
 github: "https://github.com/DaniBedz/JS101/blob/master/lesson_6/tictactoe.js"
 liveSite: "https://replit.com/@DaniBedz/tictactoe#index.js"
 ---

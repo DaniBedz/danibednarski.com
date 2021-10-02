@@ -14,9 +14,25 @@ description:
         "I haven't used a form framework before either, so I decided to implement a contact form using 'Felte', which I 
         chose due to the minimal, clean syntax."
     ]
-
 slug: "thissite"
-technologiesUsed: ["Svelte", "Sveltekit", "MDsveX", "Felte"]
+technologiesUsed: [
+    {
+        name: "Svelte",
+        url: "https://svelte.dev/",
+    },
+    {
+        name: "Sveltekit",
+        url: "https://kit.svelte.dev/",
+    },
+    {
+        name: "MDsveX",
+        url: "https://mdsvex.pngwn.io/",
+    },
+    {
+        name:  "Felte",
+        url: "https://felte.dev/",
+    },
+]
 github: "https://github.com/DaniBedz/danibednarski.com"
 liveSite: "https://danibednarski.com"
 ---

@@ -26,7 +26,10 @@
 <Head/>
 <WaveSvg />
 
-<svelte:window on:resize={ () => handleResize(windowWidth) } bind:innerWidth={ windowWidth } />
+<svelte:window
+    on:resize={ () => handleResize(windowWidth) }
+    bind:innerWidth={ windowWidth }
+/>
 
 <layout class={ showMenu ? 'layout-menu-open' : 'layout-menu-closed' }>
     <AppBar />

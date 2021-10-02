@@ -13,7 +13,40 @@ description:
     ]
 
 slug: "bedzme"
-technologiesUsed: ["YOURLS", "nginx", "Ubuntu 20.04", "PHP", "MySQL", "AWS", "EC2", "CloudFront"]
+technologiesUsed: [
+    {
+        name: "YOURLS",
+        url: "https://yourls.org/",
+    },
+    {
+        name: "nginx",
+        url: "https://www.nginx.com/",
+    },
+    {
+        name: "Ubuntu 20.04",
+        url: "https://ubuntu.com/",
+    },
+    {
+        name: "PHP",
+        url: "https://www.php.net/",
+    },
+    {
+        name: "MySQL",
+        url: "https://www.mysql.com/",
+    },
+    {
+        name: "AWS",
+        url: "https://aws.amazon.com/",
+    },
+    {
+        name: "EC2",
+        url: "https://aws.amazon.com/ec2/",
+    },
+    {
+        name:  "CloudFront",
+        url: "https://aws.amazon.com/cloudfront/",
+    },
+]
 github: "https://github.com/DaniBedz/bedz.me"
 liveSite: "https://bedz.me"
 ---

@@ -3,7 +3,8 @@ import { get, writable } from 'svelte/store';
 import { browser } from '$app/env';
 import '/src/global.css';
 
-export const isNavOpen = writable(false);
+export const isNavOpen = writable(true);
+
 export const isColorSwatchOpen = writable(false);
 
 export function toggleIsNavOpen() {

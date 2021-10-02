@@ -20,7 +20,44 @@ description:
     ]
 
 slug: "salestracker"
-technologiesUsed: ["Vite", "React", "Firebase", "Bootstrap", "Raviger", "Flatpickr", "Alertify.js", "Vultr (VPS)", "Caddy"]
+technologiesUsed: [
+    {
+        name: "Vite",
+        url: "https://vitejs.dev/",
+    },
+    {
+        name: "React",
+        url: "https://reactjs.org/",
+    },
+    {
+        name: "Firebase",
+        url: "https://firebase.google.com/",
+    },
+    {
+        name: "Bootstrap",
+        url: "https://getbootstrap.com/",
+    },
+    {
+        name: "Raviger",
+        url: "https://kyeotic.github.io/raviger/",
+    },
+    {
+        name: "Flatpickr",
+        url: "https://flatpickr.js.org/",
+    },
+    {
+        name: "Alertify.js",
+        url: "https://alertifyjs.com/",
+    },
+    {
+        name: "Vultr (VPS)",
+        url: "https://www.vultr.com/",
+    },
+    {
+        name: "Caddy",
+        url: "https://caddyserver.com/",
+    },
+]
 github: "https://github.com/DaniBedz/myob-sales-tracker"
 liveSite: "https://myob.danibednarski.com"
 ---

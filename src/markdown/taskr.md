@@ -14,9 +14,45 @@ description:
         I also added notifications using AlertifyJS."
 
     ]
-
 slug: "taskr"
-technologiesUsed: ["HTML5", "CSS3", "JavaScript", "Firebase", "jQuery", "Flatpickr", "Bootstrap-select", "AlertifyJS", "Font Awesome"]
+technologiesUsed: [
+    {
+        name: "HTML5",
+        url: "https://developer.mozilla.org/en-US/docs/Web/HTML",
+    },
+    {
+        name: "CSS3",
+        url: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    },
+    {
+        name: "JavaScript",
+        url: "https://tc39.es/",
+    },
+    {
+        name: "Firebase",
+        url: "https://firebase.google.com/",
+    },
+    {
+        name: "jQuery",
+        url: "https://jquery.com/",
+    },
+    {
+        name: "Flatpickr",
+        url: "https://flatpickr.js.org/",
+    },
+    {
+        name: "Bootstrap-select",
+        url: "https://developer.snapappointments.com/bootstrap-select/",
+    },
+    {
+        name: "AlertifyJS",
+        url: "https://alertifyjs.com/",
+    },
+    {
+        name: "Font Awesome",
+        url: "https://fontawesome.com/",
+    },
+]
 github: "https://github.com/DaniBedz/todo"
 liveSite: "https://taskr.me"
 ---
