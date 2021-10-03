@@ -54,6 +54,15 @@
         },
         {
             id: 3,
+            projectIconPng: thissitePng,
+            projectIconAvif: thissiteAvif,
+            tooltip: 'This Site',
+            href: '/projects/thissite',
+            alt: 'This Site project',
+            external: false,
+        },
+        {
+            id: 4,
             projectIconPng: taskrPng,
             projectIconAvif: taskrAvif,
             tooltip: 'Taskr',
@@ -62,7 +71,7 @@
             external: false,
         },
         {
-            id: 4,
+            id: 5,
             projectIconPng: icon21Png,
             projectIconAvif: icon21Avif,
             tooltip: 'Twenty One',
@@ -71,21 +80,12 @@
             external: false,
         },
         {
-            id: 5,
+            id: 6,
             projectIconPng: tictactoePng,
             projectIconAvif: tictactoeAvif,
             tooltip: 'Tic-Tac-Toe',
             href: '/projects/tictactoe',
             alt: 'Tic-Tac-Toe project',
-            external: false,
-        },
-        {
-            id: 6,
-            projectIconPng: thissitePng,
-            projectIconAvif: thissiteAvif,
-            tooltip: 'This Site',
-            href: '/projects/thissite',
-            alt: 'This Site project',
             external: false,
         },
         {

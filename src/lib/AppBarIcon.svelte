@@ -11,7 +11,7 @@
 </script>
 
 {#if external}
-    <a { id } { href } target="_blank" rel="noreferrer" draggable="false">
+    <a { id } { href } target="_blank" rel="noreferrer">
         <button { tooltip } aria-label={ tooltip } flow="right">
             <dot-wrapper>
                 <div class="external-dot"/>
@@ -20,13 +20,12 @@
                     type="image/avif"
                     srcset={ projectIconAvif }
                     { alt }
-                    draggable="false"
+
                     >
                     <img
                         type="image/png"
                         { alt }
                         src={ projectIconPng }
-                        draggable="false"
                     >
                 </picture>
             </dot-wrapper>
@@ -34,7 +33,7 @@
     </a>
 
     {:else}
-        <a { id } { href } sveltekit:prefetch draggable="false">
+        <a { id } { href } sveltekit:prefetch>
             <button { tooltip } aria-label={ tooltip } flow="right">
                 <dot-wrapper>
                 <picture>
@@ -42,13 +41,11 @@
                         type="image/avif"
                         srcset={ projectIconAvif }
                         { alt }
-                        draggable="false"
                     >
                     <img
                         type="image/png"
                         src={ projectIconPng }
                         { alt }
-                        draggable="false"
                     >
                 </picture>
                 </dot-wrapper>
