@@ -1,13 +1,8 @@
 import { spring } from 'svelte/motion';
 
-import { goto } from '$app/navigation';
-
-export function drag(node, params) {
-    const tooltip = node.getAttribute('tooltip');
+export function drag(node) {
     const zIndex = node.style.zIndex;
     let x, y;
-
-    let dragged;
 
     const coordinates = spring(
         {
@@ -37,9 +32,6 @@ export function drag(node, params) {
     }
 
     function handleMouseMove(event) {
-        dragged = true;
-        node.setAttribute('tooltip', '');
-
         const dx = event.clientX - x;
         const dy = event.clientY - y;
 
@@ -55,11 +47,6 @@ export function drag(node, params) {
     }
 
     function handleMouseUp() {
-        if (!dragged & params === 'appBarIcon') { goto(node.parentElement.href); }
-        if (!dragged & params === 'appBarIconExternal') { window.open(node.parentElement.href, '_blank', 'noopener', 'noreferrer'); }
-
-        dragged = false;
-
         x = 0;
         y = 0;
 
@@ -71,7 +58,6 @@ export function drag(node, params) {
         });
 
         node.style.zIndex = zIndex;
-        node.setAttribute('tooltip', tooltip);
 
         window.removeEventListener('mousemove', handleMouseMove);
         window.removeEventListener('mouseup', handleMouseUp);

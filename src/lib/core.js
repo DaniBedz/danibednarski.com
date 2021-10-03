@@ -24,12 +24,8 @@ export function toggleColorSwatch() {
 }
 
 (function setThemeColor() {
-    if (browser) {
-        let savedColor = localStorage.getItem('themeColor');
-        if (!savedColor) {
-            localStorage.setItem('themeColor', '--color-blue');
-            savedColor = '--color-blue';
-        }
-        document.querySelector(':root').style.setProperty('--color-primary-light', `var(${ savedColor })`);
+    const themeColor = localStorage.getItem('themeColor') || '--color-blue';
+    if (browser && themeColor) {
+        document.querySelector(':root').style.setProperty('--color-primary-light', `var(${ themeColor })`);
     }
 })();

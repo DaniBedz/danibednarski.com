@@ -11,7 +11,7 @@
 </script>
 
 {#if external}
-    <a { id } { href } on:click|preventDefault target="_blank" rel="noreferrer" draggable="false">
+    <a { id } { href } target="_blank" rel="noreferrer" draggable="false">
         <button { tooltip } aria-label={ tooltip } flow="right">
             <dot-wrapper>
                 <div class="external-dot"/>
@@ -34,7 +34,7 @@
     </a>
 
     {:else}
-        <a { id } {href} on:click|preventDefault sveltekit:prefetch draggable="false">
+        <a { id } { href } sveltekit:prefetch draggable="false">
             <button { tooltip } aria-label={ tooltip } flow="right">
                 <dot-wrapper>
                 <picture>

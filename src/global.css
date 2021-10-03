@@ -1,5 +1,5 @@
 :root {
-    --color-primary-light: var(--color-primary-dark);
+    --color-primary-light: transparent;
     --color-primary-dark: rgb(17, 24, 39);
     --color-primary-grey: rgb(55, 65, 81);
     --color-text: rgb(255, 255, 255);
