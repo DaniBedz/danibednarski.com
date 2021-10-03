@@ -24,8 +24,8 @@ export function toggleColorSwatch() {
 }
 
 (function setThemeColor() {
-    const themeColor = localStorage.getItem('themeColor') || '--color-blue';
-    if (browser && themeColor) {
+    if (browser) {
+        const themeColor = localStorage.getItem('themeColor') || '--color-blue';
         document.querySelector(':root').style.setProperty('--color-primary-light', `var(${ themeColor })`);
     }
 })();

@@ -22,6 +22,8 @@
 
     import ColorSwatchIcon from './ColorSwatch.svelte';
 
+    import { browser } from '$app/env';
+
     import { onMount } from 'svelte';
     import { dndzone } from 'svelte-dnd-action';
     import { flip } from 'svelte/animate';
@@ -138,12 +140,14 @@
     const flipDurationMs = 100;
 
     function handleDndConsider(e) {
-        itemStore.set(e.detail.items);
+        if (browser) itemStore.set(e.detail.items);
     }
 
     function handleDndFinalize(e) {
-        itemStore.set(e.detail.items);
-        localStorage.setItem('AppMenuData', JSON.stringify(e.detail.items));
+        if (browser) {
+            itemStore.set(e.detail.items);
+            localStorage.setItem('AppMenuData', JSON.stringify(e.detail.items));
+        }
     }
 </script>
 

@@ -4,9 +4,13 @@
 
     import { fly } from 'svelte/transition';
 
+    import { browser } from '$app/env';
+
     function handleChooseColor() {
-        localStorage.setItem('themeColor', backgroundColor);
-        document.querySelector(':root').style.setProperty('--color-primary-light', `var(${ backgroundColor })`);
+        if (browser) {
+            localStorage.setItem('themeColor', backgroundColor);
+            document.querySelector(':root').style.setProperty('--color-primary-light', `var(${ backgroundColor })`);
+        }
     }
 </script>
 
