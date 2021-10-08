@@ -1,24 +1,24 @@
 <script>
-    import contactAvif from '/static/contact.avif';
-    import contactPng from '/static/contact.png';
-    import cvAvif from '/static/cv.avif';
-    import cvPng from '/static/cv.png';
-    import githubAvif from '/static/github.avif';
-    import githubPng from '/static/github.png';
-    import icon21Avif from '/static/icon21.avif';
-    import icon21Png from '/static/icon21.png';
-    import linkedInAvif from '/static/linkedin.avif';
-    import linkedInPng from '/static/linkedin.png';
-    import bedzmeAvif from '/static/bedzme.avif';
-    import bedzmePng from '/static/bedzme.png';
-    import myobAvif from '/static/myob.avif';
-    import myobPng from '/static/myob.png';
-    import taskrAvif from '/static/taskr.avif';
-    import taskrPng from '/static/taskr.png';
-    import thissiteAvif from '/static/thissite.avif';
-    import thissitePng from '/static/thissite.png';
-    import tictactoeAvif from '/static/tictactoe.avif';
-    import tictactoePng from '/static/tictactoe.png';
+    import contactAvif from '/static/icons/contact.avif';
+    import contactPng from '/static/icons/contact.png';
+    import cvAvif from '/static/icons/cv.avif';
+    import cvPng from '/static/icons/cv.png';
+    import githubAvif from '/static/icons/github.avif';
+    import githubPng from '/static/icons/github.png';
+    import icon21Avif from '/static/icons/icon21.avif';
+    import icon21Png from '/static/icons/icon21.png';
+    import linkedInAvif from '/static/icons/linkedin.avif';
+    import linkedInPng from '/static/icons/linkedin.png';
+    import bedzmeAvif from '/static/icons/bedzme.avif';
+    import bedzmePng from '/static/icons/bedzme.png';
+    import myobAvif from '/static/icons/myob.avif';
+    import myobPng from '/static/icons/myob.png';
+    import taskrAvif from '/static/icons/taskr.avif';
+    import taskrPng from '/static/icons/taskr.png';
+    import thissiteAvif from '/static/icons/thissite.avif';
+    import thissitePng from '/static/icons/thissite.png';
+    import tictactoeAvif from '/static/icons/tictactoe.avif';
+    import tictactoePng from '/static/icons/tictactoe.png';
 
     import ColorSwatchIcon from './ColorSwatch.svelte';
 

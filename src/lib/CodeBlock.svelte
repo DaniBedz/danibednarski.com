@@ -40,15 +40,16 @@
     `;
 </script>
 
-<codeBlock use:drag class={ showMenu ? 'menu-open' : 'menu-closed' }>
+    <div use:drag class={ showMenu ? 'menu-open' : 'menu-closed' }>
         <Prism showLineNumbers>
             { codeText }
         </Prism>
-    </codeBlock>
+    </div>
 
 <style>
-    codeBlock {
+    div {
         margin: 1rem 1.4rem;
+        z-index: 2;
     }
 
     .menu-open {

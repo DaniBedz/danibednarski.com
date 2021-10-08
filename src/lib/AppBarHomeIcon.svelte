@@ -1,5 +1,5 @@
 <script>
-    import HomeIcon from '/static/home.svg';
+    import HomeIcon from '/static/icons/home.svg';
     import '/src/tooltip.css';
 
     export let href;

@@ -1,7 +1,7 @@
 <script>
     import { isNavOpen } from '$lib/core';
 
-    import toggleSvg from '/static/toggle.svg';
+    import toggleSvg from '/static/icons/toggle.svg';
 
     import '/src/tooltip.css';
 

@@ -1,5 +1,5 @@
 <script>
-    import colorSwatchIconSvg from '/static/ColorSwatchIcon.svg';
+    import colorSwatchIconSvg from '/static/icons/ColorSwatchIcon.svg';
 
     import '/src/tooltip.css';
     import ColorSwatchButton from './ColorSwatchButton.svelte';
