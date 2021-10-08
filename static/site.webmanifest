@@ -1,6 +1,7 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "The portfolio of Dani Bednarski - danibednarski.com",
+    "short_name": "danibednarski.com",
+    "start_url": "/",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
@@ -15,5 +16,6 @@
     ],
     "theme_color": "#008af4",
     "background_color": "#008af4",
-    "display": "standalone"
+    "display": "standalone",
+    "prefer_related_applications": true
 }
