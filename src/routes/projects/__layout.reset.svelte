@@ -46,7 +46,6 @@
     import Carousel from '$lib/Carousel.svelte';
     import { isNavOpen, handleResize } from '$lib/core';
     import Head from '$lib/Head.svelte';
-    import Logo from '$lib/Logo.svelte';
     import ProjectDescription from '$lib/ProjectDescription.svelte';
     import ProjectHeader from '$lib/ProjectHeader.svelte';
     import ProjectTitle from '$lib/ProjectTitle.svelte';
@@ -84,10 +83,9 @@
 
 <layout class={ showMenu ? 'layout-menu-open' : 'layout-menu-closed' }>
     <AppBar />
-    <nav in:fly|local={{ x: -400, duration: 600 }}>
+    <nav in:fly={{ x: -400, duration: 600 }}>
         {#if showMenu}
             <AppMenu>
-                <Logo />
                 <AppMenuItem href="#screenshots" text="Screenshots" />
                 <AppMenuItem href="#description" text="Description" />
                 <AppMenuItem href="#technologies-used" text="Technologies Used" />
@@ -109,8 +107,12 @@
 </layout>
 
 <style>
+    nav {
+        /* height: 100% !important; */
+    }
     layout {
         display: grid;
+        height: 100%;
     }
 
     article {
@@ -121,6 +123,7 @@
         position: absolute;
         right: 0;
         margin-top: 2rem;
+        transition: all 0.6s;
     }
 
     .menu-open {

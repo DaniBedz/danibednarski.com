@@ -32,7 +32,7 @@
 </script>
 
 {#if href}
-    <div transition:fly|local={{ x: -200 }} >
+    <div in:fly={{ x: -200 }} >
         <a on:click={ target || internal ? null : highlightElement(href)} { href } { target } { rel }>
             <button
                 on:mouseover={ () => iconColor = 'var(--color-primary-dark)' }

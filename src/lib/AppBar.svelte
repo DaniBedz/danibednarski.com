@@ -185,6 +185,7 @@
     wrapper {
         height: 100%;
         width: 50px;
+        grid-column: 1;
     }
 
     nav {

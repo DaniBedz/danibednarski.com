@@ -7,7 +7,6 @@
     import AppMenuItem from '$lib/AppMenuItem.svelte';
     import { isNavOpen, handleResize } from '$lib/core';
     import Head from '$lib/Head.svelte';
-    import Logo from '$lib/Logo.svelte';
     import WaveSvg from '$lib/Wave.svelte';
 
     let showMenu;
@@ -31,26 +30,28 @@
     bind:innerWidth={ windowWidth }
 />
 
-<layout class={ showMenu ? 'layout-menu-open' : 'layout-menu-closed' }>
-    <AppBar />
-    <div in:fly|local={{ x: -400, duration: 600 }}>
-        {#if showMenu}
+<layout
+    class={ showMenu ? 'layout-menu-open' : 'layout-menu-closed' }
+>
+        <AppBar />
+        <div>
+            {#if showMenu}
             <AppMenu>
-                <Logo />
                 <AppMenuItem href='/resume' text='Resume' internal />
                 <AppMenuItem href='https://github.com/danibedz' text='GitHub' target='_blank' rel='noreferrer' />
                 <AppMenuItem href='https://www.linkedin.com/in/danibednarski/' text='LinkedIn' target='_blank' rel='noreferrer' />
                 <AppMenuItem href='/contact' text='Contact' internal />
             </AppMenu>
-        {/if}
-    </div>
-    <slot />
-</layout>
+            {/if}
+        </div>
+        <slot />
+    </layout>
 
 <style>
     layout {
         display: grid;
         height: 100%;
+        transition: all 0.6s ease;
     }
 
     .layout-menu-open {

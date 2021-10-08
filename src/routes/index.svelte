@@ -25,8 +25,8 @@
 
 <style>
     main {
-        display: flex;
-        padding: 0;
+        padding: 0 1rem 1rem;
+        grid-column: 3;
     }
 
     .hide-header {
