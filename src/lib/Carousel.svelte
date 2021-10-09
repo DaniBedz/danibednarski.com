@@ -20,7 +20,7 @@ onMount(async () => {
 });
 </script>
 
-<div id="screenshots">
+<div id="screenshots" class={ showMenu ? 'navOpen' : 'navClosed'}>
     {#key screenshotData}
         <svelte:component
             this={ Carousel }
@@ -57,6 +57,15 @@ onMount(async () => {
         cursor: pointer;
         -webkit-user-drag: none;
         padding: 1rem;
+    }
+
+    .navOpen {
+        height: clamp(0rem, -10.75rem + 51vw, 42rem);
+        width: clamp(24rem, 10rem + 20vw, auto);
+    }
+    .navClosed {
+        height: clamp(12rem, -2.75rem + 52vw, 42rem);
+        width: clamp(24rem, 10rem + 20vw, auto);
     }
 
     img {
