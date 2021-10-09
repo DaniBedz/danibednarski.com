@@ -1,6 +1,5 @@
 <script>
     import { onMount } from 'svelte';
-    import { fly } from 'svelte/transition';
 
     import AppBar from '$lib/AppBar.svelte';
     import AppMenu from '$lib/AppMenu.svelte';
