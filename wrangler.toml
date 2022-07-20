@@ -1,19 +1,13 @@
-name = "portfolio"
-type = "javascript"
+name = "danibednarskicom"
 account_id = "6daf0f5cbb5a23380c83e9bed1e7e1a9"
-zone_id = "27b0785e91a530f2d14fc6c269846419"
 route = "danibednarski.com/*"
-usage_model = ""
 compatibility_flags = []
 workers_dev = true
 compatibility_date = "2021-09-19"
+main = "workers-site/index.js"
 
 [site]
 bucket = "./build"
-entry-point = "./workers-site"
 
 [build]
 command = "npm run build && sed -i '' 's/browserTTL: null/browserTTL: 31536000/g' workers-site/index.js"
-
-[build.upload]
-format = "service-worker"

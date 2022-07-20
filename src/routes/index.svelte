@@ -13,7 +13,7 @@
 
 <main id="main">
     <!-- Hidden - SEO -->
-    <h1 class="hide-header">Dani Bednarski - Software Engineer ["Svelte", "JavaScript", "React"]</h1>
+    <h1 class="hide-header">Dani Bednarski - Software Engineer ["Svelte", "React", "JavaScript"]</h1>
 
     <CodeBlock />
 
